@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Radio {
 
     private String genre;
-    private ArrayList<Station> stations;
+    private ArrayList<Station> stations/* = new ArrayList<Station>()*/;
 
     public Radio(String genre, ArrayList<Station> stations){
         this.genre = genre;
@@ -27,4 +27,15 @@ public class Radio {
     public ArrayList<Station> getStations() {
         return stations;
     }
+
+    public String[] getStationNames(){
+        String[] result = new String[stations.size()];
+
+        for (int i = 0; i < result.length; i++) {
+            result[i] = stations.get(i).getName();
+        }
+
+        return result;
+    }
+
 }

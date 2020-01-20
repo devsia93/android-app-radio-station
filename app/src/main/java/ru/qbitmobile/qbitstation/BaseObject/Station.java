@@ -1,37 +1,38 @@
 package ru.qbitmobile.qbitstation.BaseObject;
 
 public class Station {
-    private String mName;
-    private String mStream;
-    private String mImage;
+    private String name;
+    private String stream;
+    private String image;
 
     public Station(String name, String stream, String image){
-        this.mName = name;
-        this.mStream = stream;
-        this.mImage = image;
+        this.name = name;
+        this.stream = stream;
+        this.image = image;
     }
 
     public String getName() {
-        return mName;
+        return name;
     }
 
     public void setName(String name) {
-        this.mName = name;
+        this.name = name;
     }
 
     public void setStream(String stream) {
-        this.mStream = stream;
+        this.stream = stream;
     }
 
     public void setImage(String image) {
-        this.mImage = image;
+        this.image = image;
     }
 
     public String getImage() {
-        return mImage;
+        return image;
     }
 
     public String getStream() {
-        return mStream;
+        return stream;
     }
+
 }

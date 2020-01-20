@@ -5,6 +5,8 @@ INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/mai
 INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-24:12
 INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-24:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/d0e8e43fb6a7e73328d164319af9d4e8/glide-4.11.0/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/b93bf6e7d1c4b3635ecaeeca62a2d844/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/b6dc2f42932f0a17eedf197d5518472e/expandablelayout-2.9.2/AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/514b34dadbf8e5520ce78c9418b31f25/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/0a5e1b036768b77b325f9c9fff6932cd/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ccaa5e56a493b9488c3ed0d2565d0366/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -18,21 +20,21 @@ MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/ivan/.gradle/caches
 MERGED from [androidx.media:media:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/af1c135ec086ab72910cb8eb1c5e5b64/media-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/041bda8f130d4b42990ebcde0f6dc048/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/3abde5b60aac3c617ee2493a824e9744/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ece749b2aabe02c40af6bfecc8abb6f/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/952c7eb96ce9207cbb23b64d6adce29b/activity-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/332c5cdf7c7457b1fce41d5ec85170dd/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/8cfdb015f22e9a9787e01ac2a7d1a540/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f1586becb00c58303072c0e58f56049/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.customview:customview:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f552cbe538e9b49a5d22679aeffe5f2/customview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ed4e1f2a06368756a9810e64d21024a9/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/06c21245b4ddb0e2eaad10c2d1707e3b/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ece749b2aabe02c40af6bfecc8abb6f/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/952c7eb96ce9207cbb23b64d6adce29b/activity-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/332c5cdf7c7457b1fce41d5ec85170dd/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/562dc0bf5271c61f65ec6c64ea84320f/core-1.1.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/c7abc6221c461b5360188cd419965256/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/c2c3c0fa879562a9c8d71f77ba3bc154/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/a5be9ee033bf7981e67c193565d34bec/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/45cc5936d786093ff7f40d3bbab35053/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/bf4db21929d45566e5bed4a4f04ae5ae/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/5ef9a552b7d331b450f40e1f933e0ca7/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/c2c3c0fa879562a9c8d71f77ba3bc154/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f4e70f7cf70c38da20d2c2bf38807702/lifecycle-runtime-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/aa7f0bb7282b0afe9df096d467cac69b/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/29ffe015fd995317329c0358862696c2/savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
@@ -110,6 +112,10 @@ INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/mai
 INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/d0e8e43fb6a7e73328d164319af9d4e8/glide-4.11.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/d0e8e43fb6a7e73328d164319af9d4e8/glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/b93bf6e7d1c4b3635ecaeeca62a2d844/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/b93bf6e7d1c4b3635ecaeeca62a2d844/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/b6dc2f42932f0a17eedf197d5518472e/expandablelayout-2.9.2/AndroidManifest.xml:8:5-10:41
+MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/b6dc2f42932f0a17eedf197d5518472e/expandablelayout-2.9.2/AndroidManifest.xml:8:5-10:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/514b34dadbf8e5520ce78c9418b31f25/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/514b34dadbf8e5520ce78c9418b31f25/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/0a5e1b036768b77b325f9c9fff6932cd/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
@@ -136,12 +142,6 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/ivan/.gradle
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/041bda8f130d4b42990ebcde0f6dc048/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/3abde5b60aac3c617ee2493a824e9744/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/3abde5b60aac3c617ee2493a824e9744/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ece749b2aabe02c40af6bfecc8abb6f/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ece749b2aabe02c40af6bfecc8abb6f/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/952c7eb96ce9207cbb23b64d6adce29b/activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/952c7eb96ce9207cbb23b64d6adce29b/activity-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/332c5cdf7c7457b1fce41d5ec85170dd/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/332c5cdf7c7457b1fce41d5ec85170dd/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/8cfdb015f22e9a9787e01ac2a7d1a540/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/8cfdb015f22e9a9787e01ac2a7d1a540/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f1586becb00c58303072c0e58f56049/slidingpanelayout-1.0.0/AndroidManifest.xml:20:5-44
@@ -152,10 +152,18 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/ivan/.g
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ed4e1f2a06368756a9810e64d21024a9/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/06c21245b4ddb0e2eaad10c2d1707e3b/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/06c21245b4ddb0e2eaad10c2d1707e3b/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ece749b2aabe02c40af6bfecc8abb6f/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ece749b2aabe02c40af6bfecc8abb6f/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/952c7eb96ce9207cbb23b64d6adce29b/activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/952c7eb96ce9207cbb23b64d6adce29b/activity-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/332c5cdf7c7457b1fce41d5ec85170dd/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/332c5cdf7c7457b1fce41d5ec85170dd/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/562dc0bf5271c61f65ec6c64ea84320f/core-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/562dc0bf5271c61f65ec6c64ea84320f/core-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/c7abc6221c461b5360188cd419965256/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/c7abc6221c461b5360188cd419965256/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/c2c3c0fa879562a9c8d71f77ba3bc154/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/c2c3c0fa879562a9c8d71f77ba3bc154/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/a5be9ee033bf7981e67c193565d34bec/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/a5be9ee033bf7981e67c193565d34bec/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/45cc5936d786093ff7f40d3bbab35053/documentfile-1.0.0/AndroidManifest.xml:20:5-44
@@ -164,8 +172,6 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/i
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/bf4db21929d45566e5bed4a4f04ae5ae/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/5ef9a552b7d331b450f40e1f933e0ca7/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.print:print:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/5ef9a552b7d331b450f40e1f933e0ca7/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/c2c3c0fa879562a9c8d71f77ba3bc154/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/c2c3c0fa879562a9c8d71f77ba3bc154/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f4e70f7cf70c38da20d2c2bf38807702/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f4e70f7cf70c38da20d2c2bf38807702/lifecycle-runtime-2.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/aa7f0bb7282b0afe9df096d467cac69b/lifecycle-viewmodel-2.1.0/AndroidManifest.xml:20:5-44

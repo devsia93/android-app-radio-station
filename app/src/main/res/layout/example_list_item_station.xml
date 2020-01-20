@@ -10,7 +10,7 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:scaleType="centerCrop"
-        android:layout_margin="8dp"/>
+        android:src="@drawable/ic_launcher_background"/>
 
     <TextView
         android:id="@+id/tvSatation"
