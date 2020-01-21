@@ -26,7 +26,7 @@ public class StationAdapter extends BaseAdapter {
     public StationAdapter (Context context, Radio radio){
         mRadio = radio;
         mContext = context;
-        mLayoutInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        mLayoutInflater = (LayoutInflater) LayoutInflater.from(context);
     }
 
     @Override
@@ -56,7 +56,7 @@ public class StationAdapter extends BaseAdapter {
         Station station= mRadio.getStations().get(position);
         mImageViewStation = view.findViewById(R.id.ivStation);
 
-        ((TextView) view.findViewById(R.id.tvSatation)).setText(station.getName());
+        ((TextView) view.findViewById(R.id.tvStation)).setText(station.getName());
         Glide.with(view.getContext())
                 .load(mRadio.getStations().get(position).getImage())
                 .error(R.drawable.ic_launcher_foreground)

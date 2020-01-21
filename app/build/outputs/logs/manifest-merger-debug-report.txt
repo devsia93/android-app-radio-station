@@ -1,10 +1,11 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-24:12
+ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-25:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/d0e8e43fb6a7e73328d164319af9d4e8/glide-4.11.0/AndroidManifest.xml:2:1-12:12
+MERGED from [com.google.android.material:material:1.0.0-alpha1] /home/ivan/.gradle/caches/transforms-2/files-2.1/c4c9b9bb95ae555b8f37967632942c2d/material-1.0.0-alpha1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/b93bf6e7d1c4b3635ecaeeca62a2d844/recyclerview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/b6dc2f42932f0a17eedf197d5518472e/expandablelayout-2.9.2/AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/514b34dadbf8e5520ce78c9418b31f25/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -15,10 +16,12 @@ MERGED from [androidx.fragment:fragment:1.1.0] /home/ivan/.gradle/caches/transfo
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/230c050f7abb294c4a554b9cce40d3c5/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/4dd375ff3b9cdb68967e3ec18f05a532/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/748c0c8c16721f269a60bc92e82fc888/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0-alpha1] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ce6965eb1153c1e071261cf10578d6/transition-1.0.0-alpha1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0-alpha1] /home/ivan/.gradle/caches/transforms-2/files-2.1/c53ede449802601f66712750d0df8df4/cardview-1.0.0-alpha1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ea68ebbb6c36e9f385bdaf784697c436/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/5ef26c5f70bb0e9aa01f925926df8980/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/af1c135ec086ab72910cb8eb1c5e5b64/media-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/041bda8f130d4b42990ebcde0f6dc048/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/af1c135ec086ab72910cb8eb1c5e5b64/media-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/3abde5b60aac3c617ee2493a824e9744/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/8cfdb015f22e9a9787e01ac2a7d1a540/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f1586becb00c58303072c0e58f56049/slidingpanelayout-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -41,20 +44,20 @@ MERGED from [androidx.savedstate:savedstate:1.0.0] /home/ivan/.gradle/caches/tra
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/05ae3bbdb744f659b205d5d2b4e34c10/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/9c58b200899a47e839086a435f1e7d30/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/b2df145f86f645462bd23edcb3a2c570/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-24:12
-INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-25:12
+INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-25:12
 	package
 		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:3:5-40
 		INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
 		INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-25:12
 		INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-24:12
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-25:12
 		INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:11-69
@@ -62,14 +65,20 @@ uses-permission#android.permission.INTERNET
 ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:5:5-66
 	android:name
 		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:5:22-64
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:6:5-78
+uses-permission#android.permission.VIBRATE
+ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:6:5-66
 	android:name
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:6:22-76
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:6:22-63
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:7:5-77
+	android:name
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:7:22-74
 application
-ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:8:5-22:19
+ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:9:5-23:19
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/d0e8e43fb6a7e73328d164319af9d4e8/glide-4.11.0/AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/d0e8e43fb6a7e73328d164319af9d4e8/glide-4.11.0/AndroidManifest.xml:10:5-20
+MERGED from [com.google.android.material:material:1.0.0-alpha1] /home/ivan/.gradle/caches/transforms-2/files-2.1/c4c9b9bb95ae555b8f37967632942c2d/material-1.0.0-alpha1/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0-alpha1] /home/ivan/.gradle/caches/transforms-2/files-2.1/c4c9b9bb95ae555b8f37967632942c2d/material-1.0.0-alpha1/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/0a5e1b036768b77b325f9c9fff6932cd/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/0a5e1b036768b77b325f9c9fff6932cd/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/e2b01e27754c37c544a7a879906be633/gifdecoder-4.11.0/AndroidManifest.xml:9:5-20
@@ -81,37 +90,39 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/ivan/
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/562dc0bf5271c61f65ec6c64ea84320f/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:13:9-35
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:12:9-54
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:11:9-43
 	android:allowBackup
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:14:9-40
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:15:9-40
 activity#ru.qbitmobile.qbitstation.Activity.MainActivity
-ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:15:9-21:20
+ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:15:19-56
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:16:19-56
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:16:13-20:29
+ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN
-ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:17:17-69
+ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:18:17-69
 	android:name
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:17:25-66
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:18:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:19:17-77
+ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:20:17-77
 	android:name
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:19:27-74
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:20:27-74
 uses-sdk
 INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
 INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/d0e8e43fb6a7e73328d164319af9d4e8/glide-4.11.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/d0e8e43fb6a7e73328d164319af9d4e8/glide-4.11.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.android.material:material:1.0.0-alpha1] /home/ivan/.gradle/caches/transforms-2/files-2.1/c4c9b9bb95ae555b8f37967632942c2d/material-1.0.0-alpha1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0-alpha1] /home/ivan/.gradle/caches/transforms-2/files-2.1/c4c9b9bb95ae555b8f37967632942c2d/material-1.0.0-alpha1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/b93bf6e7d1c4b3635ecaeeca62a2d844/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/b93bf6e7d1c4b3635ecaeeca62a2d844/recyclerview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [net.cachapa.expandablelayout:expandablelayout:2.9.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/b6dc2f42932f0a17eedf197d5518472e/expandablelayout-2.9.2/AndroidManifest.xml:8:5-10:41
@@ -132,14 +143,18 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/ivan/.
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/4dd375ff3b9cdb68967e3ec18f05a532/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/748c0c8c16721f269a60bc92e82fc888/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/748c0c8c16721f269a60bc92e82fc888/exifinterface-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0-alpha1] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ce6965eb1153c1e071261cf10578d6/transition-1.0.0-alpha1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0-alpha1] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ce6965eb1153c1e071261cf10578d6/transition-1.0.0-alpha1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0-alpha1] /home/ivan/.gradle/caches/transforms-2/files-2.1/c53ede449802601f66712750d0df8df4/cardview-1.0.0-alpha1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0-alpha1] /home/ivan/.gradle/caches/transforms-2/files-2.1/c53ede449802601f66712750d0df8df4/cardview-1.0.0-alpha1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ea68ebbb6c36e9f385bdaf784697c436/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ea68ebbb6c36e9f385bdaf784697c436/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/5ef26c5f70bb0e9aa01f925926df8980/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/5ef26c5f70bb0e9aa01f925926df8980/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/af1c135ec086ab72910cb8eb1c5e5b64/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/af1c135ec086ab72910cb8eb1c5e5b64/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/041bda8f130d4b42990ebcde0f6dc048/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/041bda8f130d4b42990ebcde0f6dc048/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/af1c135ec086ab72910cb8eb1c5e5b64/media-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/af1c135ec086ab72910cb8eb1c5e5b64/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/3abde5b60aac3c617ee2493a824e9744/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/3abde5b60aac3c617ee2493a824e9744/viewpager-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/8cfdb015f22e9a9787e01ac2a7d1a540/coordinatorlayout-1.0.0/AndroidManifest.xml:20:5-44

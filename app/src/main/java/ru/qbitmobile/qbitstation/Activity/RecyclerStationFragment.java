@@ -1,5 +1,7 @@
+/*
 package ru.qbitmobile.qbitstation.Activity;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -25,13 +27,14 @@ import ru.qbitmobile.qbitstation.BaseObject.Radio;
 import ru.qbitmobile.qbitstation.BaseObject.Station;
 import ru.qbitmobile.qbitstation.R;
 
+*/
 /**
  * A simple {@link Fragment} subclass.
- */
+ *//*
+
 public class RecyclerStationFragment extends Fragment {
 
     RecyclerView mRecyclerViewStation;
-    StationAdapter mStationAdapter;
     Radio mRadio;
 
     public RecyclerStationFragment(Radio radio) {
@@ -49,13 +52,13 @@ public class RecyclerStationFragment extends Fragment {
         mRecyclerViewStation = view.findViewById(R.id.rvStation);
         mRecyclerViewStation.setLayoutManager(new LinearLayoutManager(getContext()));
 
-        RecyclerStationAdapter recyclerStationAdapter = new RecyclerStationAdapter(mRadio.getStations(), getContext());
-        mRecyclerViewStation.setAdapter(recyclerStationAdapter);
+        mRecyclerViewStation.setAdapter(new RecyclerStationAdapter(mRecyclerViewStation, mRadio.getStations(), getContext()));
 
         return view;
     }
 
-    /*private static class SimpleAdapter extends RecyclerView.Adapter<SimpleAdapter.ViewHolder> {
+    */
+/*private static class SimpleAdapter extends RecyclerView.Adapter<SimpleAdapter.ViewHolder> {
         private static final int UNSELECTED = -1;
 
         private RecyclerView recyclerView;
@@ -131,5 +134,7 @@ public class RecyclerStationFragment extends Fragment {
                 }
             }
         }
-    }*/
+    }*//*
+
 }
+*/

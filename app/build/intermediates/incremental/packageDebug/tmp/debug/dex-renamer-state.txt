@@ -1,4 +1,4 @@
-#Mon Jan 20 17:43:14 GMT+03:00 2020
+#Tue Jan 21 20:24:04 GMT+03:00 2020
 base.0=/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/dex/debug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

@@ -1,14 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.MainActivity">
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/main_container"
+    <!--<ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical" />
+        android:layout_height="match_parent"
+        tools:context=".Activity.MainActivity">
 
-</ScrollView>
+        <LinearLayout
+            android:id="@+id/main_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/bottom_tool_bar"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="bottom"
+            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_launcher_background"
+                android:id="@+id/ivSelectedStation"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Радио Маяк"
+                android:fontFamily="@font/roboto_light"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_marginStart="16dp"
+                android:layout_gravity="center_vertical"
+                android:textSize="20sp"
+                android:id="@+id/tvSelectedNameStation"/>
+
+                <ImageView
+                    android:id="@+id/ibPlayOrPause"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_gravity="end"
+                    android:src="@drawable/ic_play_arrow_black_24dp" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+</LinearLayout>

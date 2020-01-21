@@ -13,75 +13,53 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 
-import java.util.ArrayList;
-import java.util.Collection;
+import java.util.List;
 
-import ru.qbitmobile.qbitstation.BaseObject.Radio;
 import ru.qbitmobile.qbitstation.BaseObject.Station;
 import ru.qbitmobile.qbitstation.R;
 
-public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStationAdapter.StationViewHolder> {
+public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStationAdapter.ViewHolder>{
 
-    private ArrayList<Station> stations = new ArrayList<>();
-    private ArrayList<Station> mStations;
+    private LayoutInflater mLayoutInflater;
+    private List<Station> mStations;
     private Context mContext;
 
-    public RecyclerStationAdapter(ArrayList<Station> stations, Context context){
-        mStations = stations;
+    public RecyclerStationAdapter(Context context, List<Station> stations) {
+        this.mStations = stations;
+        this.mLayoutInflater = LayoutInflater.from(context);
         mContext = context;
-    }
-
-    private void setItems(Collection<Station> stations){
-        this.stations.addAll(stations);
-        notifyDataSetChanged();
     }
 
     @NonNull
     @Override
-    public StationViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        Context context = parent.getContext();
-        LayoutInflater inflater = LayoutInflater.from(context);
-
-        View view = inflater.inflate(R.layout.example_list_item_station, parent, false);
-        return new StationViewHolder(view);
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = mLayoutInflater.inflate(R.layout.example_list_item_station, parent, false);
+        return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull StationViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Station station = mStations.get(position);
-
-        TextView textView = holder.tvStation;
-        textView.setText(station.getName());
+        holder.textView.setText(station.getName());
         Glide.with(mContext)
-                .load(station.getImage())
+                .load(mStations.get(position).getImage())
                 .error(R.drawable.ic_launcher_foreground)
-                .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
-                .into(holder.ivStation);
+                .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
+                .into(holder.imageView);
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mStations.size();
     }
 
-    // Предоставляет прямую ссылку на каждый View-компонент
-    // Используется для кэширования View-компонентов и последующего быстрого доступа к ним
-    class StationViewHolder extends RecyclerView.ViewHolder {
-        // Ваш ViewHolder должен содержать переменные для всех
-        // View-компонентов, которым вы хотите задавать какие-либо свойства
-        // в процессе работы пользователя со списком
-
-        // Мы также создали конструктор, который принимает на вход View-компонент строкИ
-        // и ищет все дочерние компоненты
-
-        public TextView tvStation;
-        public ImageView ivStation;
-
-        public StationViewHolder(View itemView) {
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        final ImageView imageView;
+        final TextView textView;
+        public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvStation = (TextView) itemView.findViewById(R.id.tvSatation);
-            ivStation = (ImageView) itemView.findViewById(R.id.ivStation);
+            imageView = (ImageView) itemView.findViewById(R.id.ivStation);
+            textView = itemView.findViewById(R.id.tvStation);
         }
-
     }
 }

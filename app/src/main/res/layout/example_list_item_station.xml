@@ -2,6 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
     android:orientation="horizontal">
 
     <!-- TODO: Update blank fragment layout -->
@@ -9,14 +10,16 @@
         android:id="@+id/ivStation"
         android:layout_width="48dp"
         android:layout_height="48dp"
+        android:layout_marginLeft="8dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_launcher_background"/>
+        android:src="@drawable/ic_launcher_background" />
 
     <TextView
-        android:id="@+id/tvSatation"
+        android:id="@+id/tvStation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
         android:fontFamily="@font/roboto_light"
         android:textSize="18sp"
         tools:text="Русское Радио" />
