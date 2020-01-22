@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1097803172812",
+    "firebase_url": "https://qbitstation.firebaseio.com",
+    "project_id": "qbitstation",
+    "storage_bucket": "qbitstation.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1097803172812:android:9ff286940c05586b2fab69",
+        "android_client_info": {
+          "package_name": "ru.qbitmobile.qbitstation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1097803172812-c0q1avqdgkfblrkf2p7icmmu8rk59je4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.qbitmobile.qbitstation",
+            "certificate_hash": "15a35010acd1a277364b8d0398ee37bb221fb395"
+          }
+        },
+        {
+          "client_id": "1097803172812-gf7j5sps7jqp58d2if3i20u5tdi8nroq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmS2W6malfx7PyOrMJJM8VFIvVZsQj4Ak"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1097803172812-gf7j5sps7jqp58d2if3i20u5tdi8nroq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

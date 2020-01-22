@@ -3,7 +3,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="8dp"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="@drawable/select_item_on_recycler">
 
     <!-- TODO: Update blank fragment layout -->
     <ImageView

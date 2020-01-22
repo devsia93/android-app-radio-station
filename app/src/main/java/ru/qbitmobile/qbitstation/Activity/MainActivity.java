@@ -14,11 +14,14 @@ import android.util.Log;
 import android.widget.LinearLayout;
 import android.widget.Toolbar;
 
+import com.google.firebase.analytics.FirebaseAnalytics;
+
 import java.io.IOException;
 import java.util.ArrayList;
 
 import ru.qbitmobile.qbitstation.Adapter.RecyclerStationAdapter;
 import ru.qbitmobile.qbitstation.BaseObject.Radio;
+import ru.qbitmobile.qbitstation.Fragment.RadiosFragment;
 import ru.qbitmobile.qbitstation.Helper.JSONHelper;
 import ru.qbitmobile.qbitstation.R;
 
@@ -27,12 +30,14 @@ import static android.provider.ContactsContract.CommonDataKinds.Website.URL;
 public class MainActivity extends FragmentActivity {
 
     LinearLayout llFromFragment;
-    FragmentManager mFragmentManager;
-    FragmentTransaction mFragmentTransaction;
+//    FragmentManager mFragmentManager;
+//    FragmentTransaction mFragmentTransaction;
 
     StationFragment stationFragment;
 
     Toolbar mToolBar;
+
+    private FirebaseAnalytics mFirebaseAnalytics;
 
 //    RecyclerStationFragment mRecyclerStationFragment;
 
@@ -45,24 +50,23 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         ArrayList<Radio> radioArray = new ArrayList<>();
         radioArray = (ArrayList<Radio>) JSONHelper.importFromJSON(getApplicationContext());
-        RecyclerView recyclerView = findViewById(R.id.recyclerView);
-        RecyclerStationAdapter recyclerStationAdapter;
 
+        FragmentManager mFragmentManager = getSupportFragmentManager();
+        FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
         if (radioArray != null) {
             for (Radio r : radioArray) {
-               /* mFragmentManager = getSupportFragmentManager();
-                mFragmentTransaction = mFragmentManager.beginTransaction();
+
 //                stationFragment = new StationFragment(r);
-                mRecyclerStationFragment = new RecyclerStationFragment(r);
-                mFragmentTransaction.add(R.id.main_container, mRecyclerStationFragment);
-                Log.d("debug", r.getStations().get(0).getName());
-                mFragmentTransaction.commit();*/
-                recyclerStationAdapter =  new RecyclerStationAdapter(this, r.getStations());
-                recyclerView.setAdapter(recyclerStationAdapter);
+                RadiosFragment radiosFragment = new RadiosFragment(this, r);
+                mFragmentTransaction.add(R.id.main_container, radiosFragment);
+                Log.d("debug", r.getGenre());
+
             }
         }
+        mFragmentTransaction.commit();
     }
 }
