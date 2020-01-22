@@ -62,7 +62,7 @@ public class MainActivity extends FragmentActivity {
 
 //                stationFragment = new StationFragment(r);
                 RadiosFragment radiosFragment = new RadiosFragment(this, r);
-                mFragmentTransaction.add(R.id.main_container, radiosFragment);
+                mFragmentTransaction.add(R.id.main_container, radiosFragment, r.getGenre());
                 Log.d("debug", r.getGenre());
 
             }
