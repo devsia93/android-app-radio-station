@@ -2,27 +2,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginTop="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="6dp"
     android:orientation="horizontal"
     android:background="@drawable/select_item_on_recycler">
 
-    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        android:layout_marginStart="8dp">
     <ImageView
         android:id="@+id/ivStation"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:layout_marginLeft="8dp"
         android:scaleType="centerCrop"
         android:src="@drawable/ic_launcher_background" />
+    </androidx.cardview.widget.CardView>
 
     <TextView
         android:id="@+id/tvStation"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
         android:fontFamily="@font/roboto_light"
         android:textSize="18sp"
         tools:text="Русское Радио" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/playing_anim"
+        style="@style/AVLoadingIndicatorView.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:padding="10dp"
+        android:visibility="invisible"
+        app:indicatorColor="@color/colorPressed"
+        tools:visibility="visible"
+        android:layout_alignParentEnd="true"
+        app:indicatorName="LineScalePulseOutIndicator" />
+    </RelativeLayout>
 
 </LinearLayout>

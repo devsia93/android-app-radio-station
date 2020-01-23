@@ -1,5 +1,7 @@
 package ru.qbitmobile.qbitstation.Activity;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -27,7 +29,7 @@ import ru.qbitmobile.qbitstation.R;
 
 import static android.provider.ContactsContract.CommonDataKinds.Website.URL;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends AppCompatActivity {
 
     LinearLayout llFromFragment;
 //    FragmentManager mFragmentManager;
@@ -39,16 +41,21 @@ public class MainActivity extends FragmentActivity {
 
     private FirebaseAnalytics mFirebaseAnalytics;
 
-//    RecyclerStationFragment mRecyclerStationFragment;
-
-    private void vibrate() {
-        ((Vibrator) getSystemService(VIBRATOR_SERVICE)).vibrate(5);
+    //    RecyclerStationFragment mRecyclerStationFragment;
+    static {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (savedInstanceState == null) {
+            // Set the local night mode to some value
+            AppCompatDelegate.setDefaultNightMode(
+                    AppCompatDelegate.MODE_NIGHT_YES);
+        }
 
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 

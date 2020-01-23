@@ -35,6 +35,7 @@
             </intent-filter>
         </activity>
 
+        <service android:name="ru.qbitmobile.qbitstation.Notification.NotificationService" />
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
             android:exported="false" >

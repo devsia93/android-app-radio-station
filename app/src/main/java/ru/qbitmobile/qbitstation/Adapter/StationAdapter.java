@@ -63,23 +63,12 @@ public class StationAdapter extends BaseAdapter {
         Station station= mRadio.getStations().get(position);
         mImageViewStation = view.findViewById(R.id.ivStation);
 
-        Bitmap bitmap = null;
         ((TextView) view.findViewById(R.id.tvStation)).setText(station.getName());
-         Glide.with(view.getContext()).asBitmap()
+         Glide.with(view.getContext())
                 .load(mRadio.getStations().get(position).getImage())
                 .error(R.drawable.ic_launcher_foreground)
                 .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
-                .into(new CustomTarget<Bitmap>() {
-                    @Override
-                    public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
-                        mImageViewStation.setImageBitmap(ImageHelper.getRoundedCornerBitmap(resource, 50));
-                    }
-
-                    @Override
-                    public void onLoadCleared(@Nullable Drawable placeholder) {
-
-                    }
-                });
+                .into(mImageViewStation);
 
         return view;
     }

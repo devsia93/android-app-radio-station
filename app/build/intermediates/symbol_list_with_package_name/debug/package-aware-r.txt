@@ -343,6 +343,8 @@ attr imageAspectRatio
 attr imageAspectRatioAdjust
 attr imageButtonStyle
 attr indeterminateProgressStyle
+attr indicatorColor
+attr indicatorName
 attr initialActivityCount
 attr insetForeground
 attr isLightTheme
@@ -455,9 +457,13 @@ attr materialCardViewStyle
 attr materialSwitchStyle
 attr maxActionInlineWidth
 attr maxButtonHeight
+attr maxHeight
 attr maxImageSize
+attr maxWidth
 attr measureWithLargestChild
 attr menu
+attr minHeight
+attr minWidth
 attr multiChoiceItemLayout
 attr navigationContentDescription
 attr navigationIcon
@@ -1197,13 +1203,17 @@ drawable exo_notification_small_icon
 drawable exo_notification_stop
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_close_white_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_pause_black_24dp
+drawable ic_pause_white_24dp
 drawable ic_play_arrow_black_24dp
+drawable ic_play_arrow_white_24dp
+drawable ic_play_circle_filled_white_24dp
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
 drawable notification_action_background
@@ -1218,6 +1228,9 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pause_ntf
+drawable play_button_notif
+drawable play_ntf
 drawable select_item_on_recycler
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1422,6 +1435,7 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id playing_anim
 id progress_circular
 id progress_horizontal
 id radio
@@ -1471,7 +1485,9 @@ id src_in
 id src_over
 id standard
 id start
+id status_bar_collapse
 id status_bar_latest_event_content
+id status_bar_play
 id stretch
 id submenuarrow
 id submit_area
@@ -1625,6 +1641,7 @@ layout recycler_station_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
+layout status_bar
 layout support_simple_spinner_dropdown_item
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -1737,6 +1754,9 @@ string path_password_strike_through
 string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
+style AVLoadingIndicatorView
+style AVLoadingIndicatorView_Large
+style AVLoadingIndicatorView_Small
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog
@@ -2225,6 +2245,7 @@ style Widget_MaterialComponents_TextInputLayout_FilledBox_Dense
 style Widget_MaterialComponents_TextInputLayout_OutlineBox
 style Widget_MaterialComponents_TextInputLayout_OutlineBox_Dense
 style Widget_Support_CoordinatorLayout
+styleable AVLoadingIndicatorView indicatorColor indicatorName maxHeight maxWidth minHeight minWidth
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

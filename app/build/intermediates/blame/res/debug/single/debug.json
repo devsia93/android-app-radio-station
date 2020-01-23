@@ -4,10 +4,6 @@
         "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/mipmap-xxhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_play_arrow_black_24dp.png.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-mdpi/ic_play_arrow_black_24dp.png"
-    },
-    {
         "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_play_arrow_black_24dp.png.flat",
         "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-hdpi/ic_play_arrow_black_24dp.png"
     },
@@ -16,20 +12,176 @@
         "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-ldpi/ic_play_arrow_black_24dp.png"
     },
     {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_pause_black_24dp.png.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_pause_black_24dp.png"
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_pause_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_pause_white_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_close_white_24dp.xml.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_close_white_24dp.xml"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/layout_status_bar.xml.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/layout/status_bar.xml"
     },
     {
         "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher.png.flat",
         "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/layout_fragment_radios.xml.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/layout/fragment_radios.xml"
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_pause_black_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_pause_black_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_pause_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-hdpi/ic_pause_white_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_play_circle_filled_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-ldpi/ic_play_circle_filled_white_24dp.png"
     },
     {
         "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/layout_activity_main.xml.flat",
         "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_pause_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_pause_white_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_pause_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-ldpi/ic_pause_white_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_pause_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-mdpi/ic_pause_white_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_pause_black_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_pause_black_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_play_arrow_black_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_play_arrow_black_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_pause_black_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_pause_black_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/layout_recycler_station_item.xml.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/layout/recycler_station_item.xml"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_pause_black_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-ldpi/ic_pause_black_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_pause_black_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-hdpi/ic_pause_black_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/layout_fragment_station.xml.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/layout/fragment_station.xml"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_play_arrow_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-mdpi/ic_play_arrow_white_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable_play_button_notif.xml.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/drawable/play_button_notif.xml"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_play_arrow_black_24dp.xml.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_play_arrow_black_24dp.xml"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_play_circle_filled_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_play_circle_filled_white_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_play_arrow_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_play_arrow_white_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_play_arrow_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_play_arrow_white_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_pause_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_pause_white_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_play_circle_filled_white_24dp.xml.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_play_circle_filled_white_24dp.xml"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_close_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_close_white_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_play_arrow_black_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-mdpi/ic_play_arrow_black_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_pause_white_24dp.xml.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_pause_white_24dp.xml"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_play_circle_filled_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-mdpi/ic_play_circle_filled_white_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable_play_ntf.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/drawable/play_ntf.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/layout_fragment_radios.xml.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/layout/fragment_radios.xml"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_play_arrow_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_play_arrow_white_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_close_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_close_white_24dp.png"
     },
     {
         "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/font_roboto_light.ttf.flat",
@@ -48,32 +200,28 @@
         "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_play_circle_filled_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_play_circle_filled_white_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_close_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-hdpi/ic_close_white_24dp.png"
     },
     {
         "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/layout_fragment_recycler_station.xml.flat",
         "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/layout/fragment_recycler_station.xml"
     },
     {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-hdpi/ic_launcher_background.png"
-    },
-    {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_launcher_background.xml.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_launcher_background.xml"
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_close_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-ldpi/ic_close_white_24dp.png"
     },
     {
         "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher_background.png.flat",
         "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/mipmap-mdpi/ic_launcher.png"
-    },
-    {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_launcher_background.png"
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_close_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-mdpi/ic_close_white_24dp.png"
     },
     {
         "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_play_arrow_black_24dp.png.flat",
@@ -84,14 +232,6 @@
         "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-mdpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_pause_black_24dp.png.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xhdpi/ic_pause_black_24dp.png"
-    },
-    {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher_round.png.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/layout_example_list_item_station.xml.flat",
         "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/layout/example_list_item_station.xml"
     },
@@ -100,28 +240,16 @@
         "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_play_arrow_black_24dp.png"
     },
     {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_play_arrow_black_24dp.png.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_play_arrow_black_24dp.png"
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_play_arrow_white_24dp.xml.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_play_arrow_white_24dp.xml"
     },
     {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_pause_black_24dp.png.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_pause_black_24dp.png"
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_play_circle_filled_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-hdpi/ic_play_circle_filled_white_24dp.png"
     },
     {
         "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
-    },
-    {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/layout_recycler_station_item.xml.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/layout/recycler_station_item.xml"
-    },
-    {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_pause_black_24dp.png.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-ldpi/ic_pause_black_24dp.png"
     },
     {
         "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-mdpi_ic_pause_black_24dp.png.flat",
@@ -136,10 +264,6 @@
         "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/mipmap-hdpi/ic_launcher.png"
     },
     {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_pause_black_24dp.png.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-hdpi/ic_pause_black_24dp.png"
-    },
-    {
         "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
         "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
@@ -148,20 +272,24 @@
         "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-ldpi/ic_launcher_background.png"
     },
     {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/layout_fragment_station.xml.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/layout/fragment_station.xml"
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_play_arrow_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-hdpi/ic_play_arrow_white_24dp.png"
     },
     {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-anydpi-v21_ic_play_arrow_black_24dp.xml.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-anydpi-v21/ic_play_arrow_black_24dp.xml"
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-ldpi_ic_play_arrow_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-ldpi/ic_play_arrow_white_24dp.png"
     },
     {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable_pause_ntf.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/drawable/pause_ntf.png"
     },
     {
-        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xxxhdpi_ic_play_circle_filled_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxxhdpi/ic_play_circle_filled_white_24dp.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_close_white_24dp.png.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/pngs/debug/drawable-xxhdpi/ic_close_white_24dp.png"
     },
     {
         "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
