@@ -58,19 +58,25 @@ public class MainActivity extends AppCompatActivity {
 
 
 //        StationsFragment stationsFragment = new StationsFragment(this, radioArray);
-
-
+        int i = 0;
+        mLinearLayout.setOrientation(LinearLayout.VERTICAL);
         if (radioArray != null) {
             for (Radio r : radioArray) {
                 FragmentManager mFragmentManager = getSupportFragmentManager();
                 FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
+               /* LinearLayout linearLayout = new LinearLayout(this);
+                linearLayout.setOrientation(LinearLayout.VERTICAL);
+                linearLayout.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));
+                linearLayout.setId(LinearLayout.generateViewId());*/
                 RadiosFragment radiosFragment = new RadiosFragment(r);
 //                stationFragment = new StationFragment(r);
-                mFragmentTransaction.add(R.id.main_container, radiosFragment, r.getGenre());
+                mFragmentTransaction.add(/*linearLayout.getId()*/mLinearLayout.getId(), radiosFragment, r.getGenre());
                 Log.d("debug", r.getGenre());
                 mFragmentTransaction.commit();
-
+                /*mLinearLayout.addView(linearLayout, i);*/
+                i++;
             }
         }
+
     }
 }

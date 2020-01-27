@@ -4,6 +4,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:id="@+id/main_container"
@@ -11,44 +14,6 @@
             android:layout_height="match_parent"
             android:orientation="vertical" />
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/bottom_tool_bar"
-            android:layout_width="match_parent"
-            android:layout_height="54dp"
-            android:layout_gravity="bottom"
-            android:theme="@style/Theme.AppCompat.DayNight.DarkActionBar">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/ic_launcher_background"
-                android:id="@+id/ivSelectedStation"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                tools:text="Радио Маяк"
-                android:fontFamily="@font/roboto_light"
-                android:textColor="@color/colorPrimaryDark"
-                android:layout_marginStart="16dp"
-                android:layout_gravity="center_vertical"
-                android:textSize="20sp"
-                android:id="@+id/tvSelectedNameStation"/>
-
-                <ImageView
-                    android:id="@+id/ibPlayOrPause"
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
-                    android:layout_gravity="end"
-                    android:src="@drawable/ic_play_arrow_black_24dp" />
-
-            </LinearLayout>
-
-        </androidx.appcompat.widget.Toolbar>
+    </ScrollView>
 
 </LinearLayout>

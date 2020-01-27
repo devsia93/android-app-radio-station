@@ -1316,7 +1316,6 @@ id barrier
 id beginning
 id blocking
 id bottom
-id bottom_tool_bar
 id bounce
 id buttonPanel
 id cancel_action
@@ -1405,7 +1404,6 @@ id groups
 id home
 id homeAsUp
 id horizontal
-id ibPlayOrPause
 id icon
 id icon_group
 id icon_only
@@ -1415,7 +1413,6 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
-id ivSelectedStation
 id ivStation
 id labeled
 id largeLabel
@@ -1542,7 +1539,6 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
-id tvSelectedNameStation
 id tvStation
 id unchecked
 id uniform
