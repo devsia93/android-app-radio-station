@@ -2,32 +2,25 @@ package ru.qbitmobile.qbitstation.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
-import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.RecyclerView;
 
-import android.app.ActionBar;
-import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
-import android.os.Vibrator;
 import android.util.Log;
+import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toolbar;
 
+import com.github.aakira.expandablelayout.ExpandableRelativeLayout;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
-import java.io.IOException;
 import java.util.ArrayList;
 
-import ru.qbitmobile.qbitstation.Adapter.RecyclerStationAdapter;
 import ru.qbitmobile.qbitstation.BaseObject.Radio;
 import ru.qbitmobile.qbitstation.Fragment.RadiosFragment;
+import ru.qbitmobile.qbitstation.Fragment.StationsFragment;
 import ru.qbitmobile.qbitstation.Helper.JSONHelper;
 import ru.qbitmobile.qbitstation.R;
-
-import static android.provider.ContactsContract.CommonDataKinds.Website.URL;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -35,9 +28,7 @@ public class MainActivity extends AppCompatActivity {
 //    FragmentManager mFragmentManager;
 //    FragmentTransaction mFragmentTransaction;
 
-    StationFragment stationFragment;
-
-    Toolbar mToolBar;
+    LinearLayout mLinearLayout;
 
     private FirebaseAnalytics mFirebaseAnalytics;
 
@@ -57,23 +48,29 @@ public class MainActivity extends AppCompatActivity {
                     AppCompatDelegate.MODE_NIGHT_YES);
         }
 
+        mLinearLayout = findViewById(R.id.main_container);
+
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
         ArrayList<Radio> radioArray = new ArrayList<>();
         radioArray = (ArrayList<Radio>) JSONHelper.importFromJSON(getApplicationContext());
 
-        FragmentManager mFragmentManager = getSupportFragmentManager();
-        FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
+
+
+//        StationsFragment stationsFragment = new StationsFragment(this, radioArray);
+
+
         if (radioArray != null) {
             for (Radio r : radioArray) {
-
+                FragmentManager mFragmentManager = getSupportFragmentManager();
+                FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
+                RadiosFragment radiosFragment = new RadiosFragment(r);
 //                stationFragment = new StationFragment(r);
-                RadiosFragment radiosFragment = new RadiosFragment(this, r);
                 mFragmentTransaction.add(R.id.main_container, radiosFragment, r.getGenre());
                 Log.d("debug", r.getGenre());
+                mFragmentTransaction.commit();
 
             }
         }
-        mFragmentTransaction.commit();
     }
 }

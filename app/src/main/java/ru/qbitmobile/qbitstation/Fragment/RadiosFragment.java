@@ -4,17 +4,21 @@ import android.content.Context;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
-import java.util.List;
+import com.github.aakira.expandablelayout.ExpandableLinearLayout;
+import com.github.aakira.expandablelayout.ExpandableRelativeLayout;
 
 import ru.qbitmobile.qbitstation.Adapter.RecyclerStationAdapter;
 import ru.qbitmobile.qbitstation.BaseObject.Radio;
-import ru.qbitmobile.qbitstation.BaseObject.Station;
 import ru.qbitmobile.qbitstation.R;
 
 /**
@@ -22,18 +26,15 @@ import ru.qbitmobile.qbitstation.R;
  */
 public class RadiosFragment extends Fragment {
 
-    private List<Station> mStations;
     private Radio mRadio;
+    private TextView tvGenre;
+    private ExpandableLinearLayout expandableLayout1;
 
-    Context mContext;
 
-    RecyclerView mRecyclerView;
-    RecyclerStationAdapter mRecyclerStationAdapter;
-
-    public RadiosFragment(Context context, Radio radio) {
-        mStations = radio.getStations();
+    public RadiosFragment(Radio radio) {
+        // Required empty public constructor
         mRadio = radio;
-        mContext = context;
+
     }
 
 
@@ -43,9 +44,29 @@ public class RadiosFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_radios, container, false);
 
-        mRecyclerView = view.findViewById(R.id.recyclerView);
-        mRecyclerStationAdapter =  new RecyclerStationAdapter(mContext, mRadio.getStations());
-        mRecyclerView.setAdapter(mRecyclerStationAdapter);
+        tvGenre = view.findViewById(R.id.fragment_radios_textview_genre);
+        tvGenre.setText(mRadio.getGenre());
+        expandableLayout1 = (ExpandableLinearLayout) view.findViewById(R.id.expandableLayout1);
+        expandableLayout1.setInRecyclerView(true);
+        tvGenre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (expandableLayout1.isExpanded())
+                    expandableLayout1.toggle(); // toggle expand and collapse
+                else expandableLayout1.expand();
+            }
+        });
+
+
+
+        FragmentManager mFragmentManager = getFragmentManager();
+        FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
+
+        StationsFragment stationsFragment = new StationsFragment(view.getContext(), mRadio);
+        mFragmentTransaction.add(R.id.fragment_radios_container, stationsFragment, mRadio.getGenre()).commit();
+
         return view;
     }
+
+
 }

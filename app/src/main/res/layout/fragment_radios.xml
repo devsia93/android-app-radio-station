@@ -1,20 +1,31 @@
-<LinearLayout android:layout_height="wrap_content"
-    android:layout_width="match_parent"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.RadiosFragment">
 
-<!--    <TextView
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/fragment_radios.textview_genre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/fragment_radios.textview_genre"
-        tools:text="Pop"/>-->
-
-<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/recyclerView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layoutManager="LinearLayoutManager" />
+        android:text="@string/hello_blank_fragment" />
+    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+        android:id="@+id/expandableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ael_duration="400"
+        app:ael_expanded="false"
+        app:ael_interpolator="accelerateDecelerate"
+        app:ael_orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/fragment_radios.container"/>
+    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
 
 </LinearLayout>

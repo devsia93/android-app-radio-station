@@ -15,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.github.aakira.expandablelayout.ExpandableLinearLayout;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.wang.avi.AVLoadingIndicatorView;
 
@@ -41,6 +42,9 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
         mContext = context;
     }
 
+    //test constructor
+
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -52,9 +56,9 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
-//        playing_animation = holder.playViewAnimation;
         Station station = mStations.get(position);
         holder.textView.setText(station.getName());
+        holder.setIsRecyclable(false);
         Glide.with(mContext)
                 .load(mStations.get(position).getImage())
                 .error(R.drawable.ic_launcher_foreground)
@@ -117,11 +121,14 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
         final ImageView imageView;
         final TextView textView;
         final AVLoadingIndicatorView playViewAnimation;
+        public ExpandableLinearLayout expandableLinearLayout;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = (ImageView) itemView.findViewById(R.id.ivStation);
             textView = itemView.findViewById(R.id.tvStation);
             playViewAnimation = itemView.findViewById(R.id.playing_anim);
+
+            expandableLinearLayout = itemView.findViewById(R.id.expandableLayout1);
         }
     }
 }
