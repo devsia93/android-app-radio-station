@@ -37,6 +37,10 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array com_google_android_gms_fonts_certs
+array com_google_android_gms_fonts_certs_dev
+array com_google_android_gms_fonts_certs_prod
+array preloaded_fonts
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -708,9 +712,12 @@ color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
 color colorAccent
+color colorChildContainerBackground
 color colorPressed
 color colorPrimary
 color colorPrimaryDark
+color colorToolbarBackground
+color colorTriangle
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -1127,6 +1134,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable arrow_24dp
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -1214,6 +1222,7 @@ drawable ic_pause_white_24dp
 drawable ic_play_arrow_black_24dp
 drawable ic_play_arrow_white_24dp
 drawable ic_play_circle_filled_white_24dp
+drawable icon_toolbar_search
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
 drawable notification_action_background
@@ -1234,7 +1243,9 @@ drawable play_ntf
 drawable select_item_on_recycler
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+font roboto
 font roboto_light
+font roboto_thin
 id ALT
 id CTRL
 id FUNCTION
@@ -1291,6 +1302,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_search
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1314,6 +1326,13 @@ id center_vertical
 id chains
 id checkbox
 id checked
+id child_container_container
+id child_container_expandableLayout
+id child_container_imageview_arrow
+id child_container_linearlayout_button
+id child_container_main_container
+id child_container_textview_count_stations
+id child_container_textview_genre
 id chronometer
 id clip_horizontal
 id clip_vertical
@@ -1440,7 +1459,6 @@ id recyclerView
 id right
 id right_icon
 id right_side
-id rvStation
 id save_image_matrix
 id save_non_transition_alpha
 id save_scale_type
@@ -1510,6 +1528,7 @@ id time
 id title
 id titleDividerNoCustom
 id title_template
+id toolbar_main
 id top
 id topPanel
 id touch_outside
@@ -1615,8 +1634,8 @@ layout exo_player_view
 layout exo_simple_player_view
 layout exo_track_selection_dialog
 layout fragment_radios
-layout fragment_recycler_station
 layout fragment_stations
+layout layout_child_conteiner
 layout notification_action
 layout notification_action_tombstone
 layout notification_media_action
@@ -1637,6 +1656,8 @@ layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout status_bar
 layout support_simple_spinner_dropdown_item
+layout toolbar_main
+menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_round
 string abc_action_bar_home_description
@@ -1949,6 +1970,7 @@ style ExoMediaButton_Play
 style ExoMediaButton_Previous
 style ExoMediaButton_Rewind
 style ExoMediaButton_VR
+style MySearchViewStyle
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents

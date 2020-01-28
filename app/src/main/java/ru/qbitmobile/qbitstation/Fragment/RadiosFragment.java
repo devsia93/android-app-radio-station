@@ -27,7 +27,7 @@ public class RadiosFragment extends Fragment {
 
     private Radio mRadio;
     private TextView tvGenre;
-    private ExpandableLayout expandableLayout1;
+    public ExpandableLayout expandableLayout1;
 
 
     public RadiosFragment(Radio radio) {
@@ -60,8 +60,7 @@ public class RadiosFragment extends Fragment {
         FragmentManager mFragmentManager = getFragmentManager();
         FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
 
-        StationsFragment stationsFragment = new StationsFragment(view.getContext(), mRadio);
-        mFragmentTransaction.add(R.id.fragment_radios_container, stationsFragment, mRadio.getGenre()).commit();
+       // mFragmentTransaction.add(R.id.fragment_radios_container, stationsFragment, mRadio.getGenre()).commit();
 
         return view;
     }

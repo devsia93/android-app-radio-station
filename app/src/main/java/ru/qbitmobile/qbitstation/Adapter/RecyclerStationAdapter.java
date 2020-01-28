@@ -18,11 +18,8 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.wang.avi.AVLoadingIndicatorView;
 
-import net.cachapa.expandablelayout.ExpandableLayout;
-
 import java.util.List;
 
-import ru.qbitmobile.qbitstation.Activity.MainActivity;
 import ru.qbitmobile.qbitstation.Const;
 import ru.qbitmobile.qbitstation.Helper.AnimatorHelper;
 import ru.qbitmobile.qbitstation.BaseObject.Station;
@@ -43,15 +40,12 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
         mContext = context;
     }
 
-    //test constructor
-
-
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = mLayoutInflater.inflate(R.layout.example_list_item_station, parent, false);
         ViewHolder viewHolder = new ViewHolder(view);
-        viewHolder.setIsRecyclable(false);
+//        viewHolder.setIsRecyclable(false);
         return new ViewHolder(view);
     }
 
@@ -59,7 +53,7 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         Station station = mStations.get(position);
         holder.textView.setText(station.getName());
-        holder.setIsRecyclable(false);
+//        holder.setIsRecyclable(false);
         Glide.with(mContext)
                 .load(mStations.get(position).getImage())
                 .error(R.drawable.ic_launcher_foreground)
@@ -122,14 +116,11 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
         final ImageView imageView;
         final TextView textView;
         final AVLoadingIndicatorView playViewAnimation;
-        public ExpandableLayout expandableLinearLayout;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = (ImageView) itemView.findViewById(R.id.ivStation);
             textView = itemView.findViewById(R.id.tvStation);
             playViewAnimation = itemView.findViewById(R.id.playing_anim);
-
-            expandableLinearLayout = itemView.findViewById(R.id.expandableLayout1);
         }
     }
 }

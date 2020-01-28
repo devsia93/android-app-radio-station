@@ -38,14 +38,6 @@ public class StationsFragment extends Fragment {
         mContext = context;
     }
 
-
-    //test constructor
-//    public StationsFragment(Context context, List<Radio> radios){
-//        isList = true;
-//        mRadios = radios;
-//        mContext = context;
-//    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {

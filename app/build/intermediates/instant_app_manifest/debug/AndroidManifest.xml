@@ -37,6 +37,11 @@
         </activity>
 
         <service android:name="ru.qbitmobile.qbitstation.Notification.NotificationService" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"
             android:exported="false" >

@@ -9,6 +9,8 @@ public class Const {
         String STOPFOREGROUND_ACTION = "ru.qbitmobile.qbitstation.action.stopforeground";
     }
 
+    public static float CURRENT_ROTATE_ARROW = 0;
+
     public static int FOREGROUND_SERVICE = 101;
 
 }
