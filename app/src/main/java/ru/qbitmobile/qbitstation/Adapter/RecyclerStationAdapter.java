@@ -15,9 +15,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.github.aakira.expandablelayout.ExpandableLinearLayout;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.wang.avi.AVLoadingIndicatorView;
+
+import net.cachapa.expandablelayout.ExpandableLayout;
 
 import java.util.List;
 
@@ -121,7 +122,7 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
         final ImageView imageView;
         final TextView textView;
         final AVLoadingIndicatorView playViewAnimation;
-        public ExpandableLinearLayout expandableLinearLayout;
+        public ExpandableLayout expandableLinearLayout;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = (ImageView) itemView.findViewById(R.id.ivStation);

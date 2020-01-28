@@ -6,12 +6,12 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
+import android.text.Layout;
 import android.util.Log;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.Toolbar;
 
-import com.github.aakira.expandablelayout.ExpandableRelativeLayout;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 import java.util.ArrayList;
@@ -64,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
             for (Radio r : radioArray) {
                 FragmentManager mFragmentManager = getSupportFragmentManager();
                 FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
+
+                
                /* LinearLayout linearLayout = new LinearLayout(this);
                 linearLayout.setOrientation(LinearLayout.VERTICAL);
                 linearLayout.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT));

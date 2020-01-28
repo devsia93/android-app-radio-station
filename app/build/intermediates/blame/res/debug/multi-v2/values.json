@@ -313,23 +313,6 @@
                     }
                 },
                 {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/edd42c0ee5618117d9952649d76e5b5f/jetified-expandable-layout-1.6.0/res/values/values.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "839",
-                        "endOffsets": "890"
-                    },
-                    "to": {
-                        "startLines": "5146",
-                        "startColumns": "4",
-                        "startOffsets": "326084",
-                        "endColumns": "839",
-                        "endOffsets": "326919"
-                    }
-                },
-                {
                     "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/generated/res/google-services/debug/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",

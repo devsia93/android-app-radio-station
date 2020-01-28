@@ -14,8 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.github.aakira.expandablelayout.ExpandableLinearLayout;
-import com.github.aakira.expandablelayout.ExpandableRelativeLayout;
+import net.cachapa.expandablelayout.ExpandableLayout;
 
 import ru.qbitmobile.qbitstation.Adapter.RecyclerStationAdapter;
 import ru.qbitmobile.qbitstation.BaseObject.Radio;
@@ -28,7 +27,7 @@ public class RadiosFragment extends Fragment {
 
     private Radio mRadio;
     private TextView tvGenre;
-    private ExpandableLinearLayout expandableLayout1;
+    private ExpandableLayout expandableLayout1;
 
 
     public RadiosFragment(Radio radio) {
@@ -46,8 +45,7 @@ public class RadiosFragment extends Fragment {
 
         tvGenre = view.findViewById(R.id.fragment_radios_textview_genre);
         tvGenre.setText(mRadio.getGenre());
-        expandableLayout1 = (ExpandableLinearLayout) view.findViewById(R.id.expandableLayout1);
-        expandableLayout1.setInRecyclerView(true);
+        expandableLayout1 = (ExpandableLayout) view.findViewById(R.id.expandableLayout1);
         tvGenre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

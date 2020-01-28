@@ -75,12 +75,6 @@ attr ad_marker_color
 attr ad_marker_width
 attr additionalPaddingLeftForIcon
 attr additionalPaddingRightForIcon
-attr ael_defaultChildIndex
-attr ael_defaultPosition
-attr ael_duration
-attr ael_expanded
-attr ael_interpolator
-attr ael_orientation
 attr alertDialogButtonGroupStyle
 attr alertDialogCenterButtons
 attr alertDialogStyle
@@ -1247,8 +1241,6 @@ id FUNCTION
 id META
 id SHIFT
 id SYM
-id accelerate
-id accelerateDecelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
 id accessibility_custom_action_1
@@ -1308,15 +1300,12 @@ id adjust_width
 id alertTitle
 id all
 id always
-id anticipate
-id anticipateOvershoot
 id async
 id auto
 id barrier
 id beginning
 id blocking
 id bottom
-id bounce
 id buttonPanel
 id cancel_action
 id center
@@ -1336,7 +1325,6 @@ id coordinator
 id custom
 id customPanel
 id dark
-id decelerate
 id decor_content_parent
 id default_activity_button
 id design_bottom_sheet
@@ -1379,12 +1367,8 @@ id exo_subtitles
 id exo_track_selection_view
 id exo_vr
 id expand_activities_button
-id expand_button
 id expandableLayout1
-id expandable_layout
 id expanded_menu
-id fastOutLinearIn
-id fastOutSlowIn
 id fill
 id fill_horizontal
 id fill_vertical
@@ -1403,7 +1387,6 @@ id group_divider
 id groups
 id home
 id homeAsUp
-id horizontal
 id icon
 id icon_group
 id icon_only
@@ -1420,8 +1403,6 @@ id left
 id light
 id line1
 id line3
-id linear
-id linearOutSlowIn
 id listMode
 id list_item
 id main_container
@@ -1444,7 +1425,6 @@ id off
 id on
 id one
 id outline
-id overshoot
 id packed
 id parallax
 id parent
@@ -1456,7 +1436,6 @@ id playing_anim
 id progress_circular
 id progress_horizontal
 id radio
-id recycle_station_fragment
 id recyclerView
 id right
 id right_icon
@@ -1545,7 +1524,6 @@ id uniform
 id unlabeled
 id up
 id useLogo
-id vertical
 id video_decoder_gl_surface_view
 id view_offset_helper
 id visible
@@ -1654,7 +1632,6 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
-layout recycler_station_item
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
@@ -2347,4 +2324,3 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
-styleable expandableLayout ael_defaultChildIndex ael_defaultPosition ael_duration ael_expanded ael_interpolator ael_orientation

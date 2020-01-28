@@ -53,7 +53,7 @@ public class StationsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_stations, container, false);
 
         mRecyclerView = view.findViewById(R.id.recyclerView);
-
+        mRecyclerView.setNestedScrollingEnabled(false);
         mRecyclerStationAdapter = new RecyclerStationAdapter(mContext, mRadio.getStations());
         mRecyclerView.setAdapter(mRecyclerStationAdapter);
         return view;

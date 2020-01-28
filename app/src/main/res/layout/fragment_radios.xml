@@ -13,19 +13,22 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/hello_blank_fragment" />
-    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+    <net.cachapa.expandablelayout.ExpandableLayout
         android:id="@+id/expandableLayout1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:ael_duration="400"
-        app:ael_expanded="false"
-        app:ael_interpolator="bounce"
-        app:ael_orientation="vertical">
+        app:el_duration="400"
+        app:el_expanded="false"
+        app:el_parallax="0.5">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:id="@+id/fragment_radios.container"/>
-    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+        </ScrollView>
+    </net.cachapa.expandablelayout.ExpandableLayout>
 
 </LinearLayout>
