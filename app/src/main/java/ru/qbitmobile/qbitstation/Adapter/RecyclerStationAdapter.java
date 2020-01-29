@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -18,6 +20,9 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.wang.avi.AVLoadingIndicatorView;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 
 import ru.qbitmobile.qbitstation.Const;

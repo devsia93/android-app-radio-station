@@ -20,7 +20,7 @@ import ru.qbitmobile.qbitstation.BaseObject.Radio;
 public class JSONHelper {
 
 
-    private static final String JSON_FILE = "radio.json";
+    private static final String JSON_FILE = "data.json";
 
     public static List<Radio> importFromJSON(Context context){
         InputStreamReader streamReader = null;

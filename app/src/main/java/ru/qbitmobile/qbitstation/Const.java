@@ -1,5 +1,10 @@
 package ru.qbitmobile.qbitstation;
 
+import java.util.ArrayList;
+import java.util.List;
+
+import ru.qbitmobile.qbitstation.BaseObject.Station;
+
 public class Const {
 
     public interface ACTION {
@@ -12,5 +17,7 @@ public class Const {
     public static float CURRENT_ROTATE_ARROW = 0;
 
     public static int FOREGROUND_SERVICE = 101;
+
+    public static List<String> ALL_STATIONS = new ArrayList<>();
 
 }

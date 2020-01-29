@@ -22,11 +22,11 @@
                 {
                     "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/values/colors.xml",
                     "from": {
-                        "startLines": "-1,7,-1,-1,-1,8,-1",
-                        "startColumns": "-1,4,-1,-1,-1,4,-1",
-                        "startOffsets": "-1,294,-1,-1,-1,358,-1",
-                        "endColumns": "-1,63,-1,-1,-1,56,-1",
-                        "endOffsets": "-1,353,-1,-1,-1,410,-1"
+                        "startLines": "-1,-1,-1,-1,-1,8,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,4,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,358,-1",
+                        "endColumns": "-1,-1,-1,-1,-1,56,-1",
+                        "endOffsets": "-1,-1,-1,-1,-1,410,-1"
                     },
                     "to": {
                         "startLines": "273,274,275,276,277,278,279",

@@ -362,5 +362,9 @@
     {
         "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
         "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/res/merged/debug/layout_fragment_search.xml.flat",
+        "source": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/res/layout/fragment_search.xml"
     }
 ]

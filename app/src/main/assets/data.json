@@ -508,6 +508,11 @@
         "image": "https://images.radiovolna.net/_files/images/stations/252/fdje595cf0f1049fe535242015.jpg"
       },
       {
+        "stream": "http://209.9.238.6:6042/;",
+        "name": "Rockabilly Radio",
+        "image": "https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/3/b/3/2/355f-65d6-44a8-be4e-afc0c0d38609.jpg"
+      },
+      {
         "stream": "https://rr-russkijrok.hostingradio.ru/russkijrok96.aacp",
         "name": "Русский Рок",
         "image": "https://images.radiovolna.net/_files/images/stations/7053/vdc9593f981f35a8c615134636.jpg"
@@ -1216,6 +1221,21 @@
         "stream": "http://176.9.150.163:8026/stream",
         "name": "Radio BSJ",
         "image": "http://top-radio.ru/assets/image/radio/180/BSJ.png"
+    },
+      {
+        "stream": "http://stream01.radiocon.ru:8000/bobjazz?07988f",
+        "name": "Bob Jazz",
+        "image": "https://online.lagoonfm.ru/wp-content/uploads/2018/08/bob-jazz.jpg"
+    },
+      {
+        "stream": "http://radio.adds.su:8020/radioj?332b",
+        "name": "RadioJ",
+        "image": "https://radiomaniya.ru/sites/default/files/stations/97bcca9cf502bdbb3c84.jpg"
+  },
+      {
+        "stream": "http://173.249.21.17:8108/;?bdb3b2e",
+        "name": "BluesMen Channel",
+        "image": "https://pixhost.icu/avaxhome/41/65/00616541_medium.jpg"
       }
     ]
   },
@@ -1471,16 +1491,16 @@
         "stream": "https://blackstarradio.hostingradio.ru:8024/blackstarradio128.mp3?radiostatistica=top-radio",
         "name": "Black Star Radio",
         "image": "http://top-radio.ru/assets/image/radio/180/bsr.png"
-      },
-      {
-        "stream": "http://epdop.hostingradio.ru:8033/ep-urban128.mp3",
-        "name": "Urban - Европа Плюс",
-        "image": "http://top-radio.ru/assets/image/radio/180/epurban.png"
-      },
+        },
       {
         "stream": "https://zaycevfm.cdnvideo.ru/ZaycevFM_rnb_256.mp3",
         "name": "Зайцев FM RnB",
         "image": "http://top-radio.ru/assets/image/radio/180/zajcevrnb.png"
+    },
+      {
+        "stream": "http://epdop.hostingradio.ru:8033/ep-urban128.mp3",
+        "name": "Urban - Европа Плюс",
+        "image": "http://top-radio.ru/assets/image/radio/180/epurban.png"
       },
       {
         "stream": "http://radio.yasenbit.net:8000/yasenbit128k",
@@ -1638,9 +1658,24 @@
         "image": "https://static.radio.net/images/broadcasts/6a/58/1366/2/c300.png"
       },
       {
+     "stream": "http://sc17.1.fm:8045/;",
+        "name": "1.FM - Otto's Baroque Musick",
+        "image": "https://static.radio.net/images/broadcasts/6a/58/1366/2/c300.png"
+      },
+      {
         "stream": "http://sc-classical.1.fm:8047/",
-        "name": "Otto's Classical Music",
+        "name": "1.FM - All Otto Classical Music",
         "image": "https://static.radio.net/images/broadcasts/c8/0d/6175/2/c300.png"
+      },
+      {
+        "stream": "http://mdr-edge-2053.dus-lg.cdn.addradio.net/mdr/klassik/live/aac/128/stream.aac?ar-distributor=f0e3",
+        "name": "MDR Klassik",
+        "image": "http://api.my-radios.com/images/thumb.php?countryCode=DE&name=14573-8219553.png&size=200"
+      },
+      {
+        "stream": "http://strm112.1.fm/opera_mobile_mp3",
+        "name": "1.FM - Otto's Opera House",
+        "image": "https://volna.top/fls/1fmopera.png"
       },
       {
         "stream": "http://stream.srg-ssr.ch/m/rsc_de/aacp_96",
@@ -1648,9 +1683,9 @@
         "image": "http://www.radioswissclassic.ch/social-media/rsc-web.png"
       },
       {
-        "stream": "http://mdr-edge-2053.dus-lg.cdn.addradio.net/mdr/klassik/live/aac/128/stream.aac?ar-distributor=f0e3",
-        "name": "MDR Klassik",
-        "image": "http://api.my-radios.com/images/thumb.php?countryCode=DE&name=14573-8219553.png&size=200"
+        "stream": "http://pianosolo.streamguys.net/live",
+        "name": "Whisperings Solo Piano Radio",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/a7/16/15/a7161571-96ca-7a24-3d66-c7d13ef01802/source/512x512bb.jpg"
       }
     ]
   },
@@ -1885,7 +1920,7 @@
       {
         "stream": "http://193.124.115.157:8000/;stream.nsv",
         "name": "Голос патриота",
-        "image": "https://vo-radio.ru/images/name/talk/patriot-180.jpg"
+        "image": "https://vo-radio.ru/images/genre/talk/patriot-180.jpg"
       },
       {
         "stream": "http://176.101.223.52:8000/klassnoe",
@@ -1911,6 +1946,31 @@
         "stream": "https://npr-ice.streamguys1.com/live.mp3",
         "name": "National Public Radio (Английский)",
         "image": "http://s12982.pcdn.co/wp-content/uploads/2014/02/NPR.png"
+      },
+      {
+        "stream": "http://fm.1tvcrimea.ru:8000/stream.mp3?8aab5ce7",
+        "name": "Радиостанция Крым»",
+        "image": "https://business-sound.ru/sites/default/files/radio_krym.jpg"
+  },
+      {
+        "stream": "https://radioarctika.hostingradio.ru:80/radioarctika128.mp3?9034cafd",
+        "name": "Радио Русская Арктика»",
+        "image": "https://online-red.com/images/radio-logo/arctica.png"
+  },
+      {
+        "stream": "http://92.222.162.167:8000/live?6286",
+        "name": "Радио Завтра Да»",
+        "image": "https://pbs.twimg.com/media/D33GwjMW4AARJLX.png:large"
+  },
+      {
+        "stream": "http://radiovos.ru:9000/radiovos-64?d8f7",
+        "name": "Радио ВОС»",
+        "image": "https://yt3.ggpht.com/a/AGF-l790ibCOWnSLcs6lt5qwQuIJKHP7HFpChZI-=s900-c-k-c0xffffffff-no-rj-mo"
+  },
+      {
+        "stream": "http://storyfm.hostingradio.ru:8031/storyfm128.mp3?0307",
+        "name": "Story FM»",
+        "image": "https://iphone-image.apkpure.com/v2/app/a/d/9/ad9c86cf9822dccd5b547693c507ae8a.jpg"
       }
     ]
   }

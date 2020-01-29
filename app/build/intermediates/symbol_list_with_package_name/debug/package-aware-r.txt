@@ -1404,6 +1404,7 @@ id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
+id head_fragment
 id home
 id homeAsUp
 id icon
@@ -1456,6 +1457,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id recyclerView
+id recyclerViewSearch
 id right
 id right_icon
 id right_side
@@ -1634,6 +1636,7 @@ layout exo_player_view
 layout exo_simple_player_view
 layout exo_track_selection_dialog
 layout fragment_radios
+layout fragment_search
 layout fragment_stations
 layout layout_child_conteiner
 layout notification_action
