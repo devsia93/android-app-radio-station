@@ -1338,6 +1338,7 @@ id clip_horizontal
 id clip_vertical
 id collapseActionView
 id container
+id container_from_toolbar
 id content
 id contentPanel
 id coordinator
@@ -1404,7 +1405,6 @@ id glide_custom_view_target_tag
 id gone
 id group_divider
 id groups
-id head_fragment
 id home
 id homeAsUp
 id icon

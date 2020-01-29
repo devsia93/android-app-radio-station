@@ -43,8 +43,8 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
     public FilterRecyclerStationAdapter(LayoutInflater layoutInflater, List<Station> stations, Context context) {
         this.mLayoutInflater = layoutInflater;
         this.mContext = context;
-        this.mAllStations = stations;
-        mStations = mAllStations;
+        this.mStations = stations;
+        mAllStations = new ArrayList<>(stations);
     }
 
     @Override
@@ -52,7 +52,7 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
         return filter;
     }
 
-    Filter filter = new Filter() {
+    private Filter filter = new Filter() {
         @Override
         protected FilterResults performFiltering(CharSequence constraint) {
 
@@ -76,7 +76,7 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
         @Override
         protected void publishResults(CharSequence constraint, FilterResults results) {
             mStations.clear();
-            mStations.addAll((Collection<? extends Station>) results);
+            mStations.addAll((Collection<? extends Station>) results.values);
             notifyDataSetChanged();
         }
     };

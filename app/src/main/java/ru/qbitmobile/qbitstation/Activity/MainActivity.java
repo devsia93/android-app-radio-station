@@ -71,14 +71,18 @@ public class MainActivity extends AppCompatActivity {
                     AppCompatDelegate.MODE_NIGHT_YES);
         }
 
+        ArrayList<Radio> radioArray = new ArrayList<>();
+        radioArray = (ArrayList<Radio>) JSONHelper.importFromJSON(getApplicationContext());
+
+        SearchFragment searchFragment = new SearchFragment(radioArray);
+        FragmentTransaction mFragmentTransaction = getSupportFragmentManager().beginTransaction();
+        mFragmentTransaction.add(R.id.container_from_toolbar, searchFragment).commit();
+
         mLinearLayout = findViewById(R.id.main_container);
 
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
-        ArrayList<Radio> radioArray = new ArrayList<>();
-        radioArray = (ArrayList<Radio>) JSONHelper.importFromJSON(getApplicationContext());
-
-        createListStations(radioArray);
+//        createListStations(radioArray);
 
     }
 
@@ -144,10 +148,5 @@ public class MainActivity extends AppCompatActivity {
                      imageView.setRotation(Const.CURRENT_ROTATE_ARROW);
             }
         }
-        SearchFragment searchFragment = new SearchFragment(radioArray);
-        FragmentManager mFragmentManager = getSupportFragmentManager();
-        FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
-        mFragmentTransaction.add(mLinearLayout.getId(), searchFragment).commit();
-
     }
 }

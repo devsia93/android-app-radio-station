@@ -4,6 +4,7 @@ import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
@@ -48,14 +49,23 @@ public class SearchFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_search, container, false);
 
+        setHasOptionsMenu(true);
+
         for(Radio radio : mRadios)
             mStations.addAll(radio.getStations());
 
         mRecyclerView = view.findViewById(R.id.recyclerViewSearch);
         mAdapter = new FilterRecyclerStationAdapter(inflater, mStations, view.getContext());
+        mRecyclerView.setAdapter(mAdapter);
 
-        Toolbar toolbar = view.findViewById(R.id.toolbar_main);
-        ((AppCompatActivity)getActivity()).setSupportActionBar(toolbar);
+        Toolbar toolbar = (Toolbar)view.findViewById(R.id.toolbar_main);
+        AppCompatActivity activity = (AppCompatActivity)getActivity();
+        activity.setSupportActionBar(toolbar);
+        ActionBar actionBar = activity.getSupportActionBar();
+        if(actionBar!= null) {
+
+        }
+
         return view;
     }
 
