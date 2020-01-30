@@ -49,37 +49,38 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
 
     @Override
     public Filter getFilter() {
+        Filter filter = new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence constraint) {
+
+                List<Station> filteredList = new ArrayList<>();
+
+                if (constraint.toString().isEmpty()) {
+                    filteredList.addAll(mAllStations);
+                } else
+                    for (Station station : mAllStations) {
+                        if (station.getName().toLowerCase().contains(constraint.toString().toLowerCase())) {
+                            filteredList.add(station);
+                        }
+                    }
+
+                FilterResults filterResults = new FilterResults();
+                filterResults.values = filteredList;
+
+                return filterResults;
+            }
+
+            @Override
+            protected void publishResults(CharSequence constraint, FilterResults results) {
+                mStations.clear();
+                mStations.addAll((Collection<? extends Station>) results.values);
+                notifyDataSetChanged();
+            }
+        };
+
         return filter;
     }
 
-    private Filter filter = new Filter() {
-        @Override
-        protected FilterResults performFiltering(CharSequence constraint) {
-
-            List<Station> filteredList = new ArrayList<>();
-
-            if (constraint.toString().isEmpty()){
-                filteredList.addAll(mAllStations);
-            } else
-                for (Station station : mAllStations){
-                    if (station.getName().toLowerCase().contains(constraint.toString().toLowerCase())){
-                        filteredList.add(station);
-                    }
-                }
-
-            FilterResults filterResults = new FilterResults();
-            filterResults.values = filteredList;
-
-            return filterResults;
-        }
-
-        @Override
-        protected void publishResults(CharSequence constraint, FilterResults results) {
-            mStations.clear();
-            mStations.addAll((Collection<? extends Station>) results.values);
-            notifyDataSetChanged();
-        }
-    };
 
     @NonNull
     @Override
@@ -91,39 +92,42 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Station station = mStations.get(position);
-        holder.textView.setText(station.getName());
+        if (mStations.get(position) != null && position != 0) {
+            Station station = mStations.get(position);
+            holder.textView.setText(station.getName());
 //        holder.setIsRecyclable(false);
-        Glide.with(mContext)
-                .load(mStations.get(position).getImage())
-                .error(R.drawable.ic_launcher_foreground)
-                .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
-                .into(holder.imageView);
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                createFirebaseReport(position);
-                Log.d("debug", mStations.get(position).getName());
+            Glide.with(mContext)
+                    .load(mStations.get(position).getImage())
+                    .error(R.drawable.ic_launcher_foreground)
+                    .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
+                    .into(holder.imageView);
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    createFirebaseReport(position);
+                    Log.d("debug", mStations.get(position).getName());
 
-                Player player = new Player(mStations.get(position).getStream());
-                player.start(mContext);
+                    Player player = new Player(mStations.get(position).getStream());
+                    player.start(mContext);
 
 
-                startPlayerService();
-                if (animatorHelper != null)
-                    animatorHelper.stopAnimation();
-                animatorHelper = new AnimatorHelper(holder.playViewAnimation);
-                animatorHelper.startAnimation();
-                Log.d("anm", String.valueOf(holder.getItemId()));
-            }
+                    startPlayerService();
+                    if (animatorHelper != null)
+                        animatorHelper.stopAnimation();
+                    animatorHelper = new AnimatorHelper(holder.playViewAnimation);
+                    animatorHelper.startAnimation();
+                    Log.d("anm", String.valueOf(holder.getItemId()));
+                }
 
-            private void startPlayerService() {
-                Intent serviceIntent = new Intent(mContext, NotificationService.class);
-                serviceIntent.setAction(Const.ACTION.STARTFOREGROUND_ACTION);
-                mContext.startService(serviceIntent);
-            }
-        });
+                private void startPlayerService() {
+                    Intent serviceIntent = new Intent(mContext, NotificationService.class);
+                    serviceIntent.setAction(Const.ACTION.STARTFOREGROUND_ACTION);
+                    mContext.startService(serviceIntent);
+                }
+            });
+        }
     }
+
     private void createFirebaseReport(int position) {
         FirebaseAnalytics firebaseAnalytics = FirebaseAnalytics.getInstance(mContext);
         Bundle eventDetails = new Bundle();
@@ -144,6 +148,7 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
         final ImageView imageView;
         final TextView textView;
         final AVLoadingIndicatorView playViewAnimation;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = (ImageView) itemView.findViewById(R.id.ivStation);
