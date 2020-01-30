@@ -4,7 +4,7 @@
             "outputFile": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/1bf5a586abb714eb919164d8c52bc663/cardview-1.0.0-alpha1/res/values-v23/values-v23.xml",
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/0eb052a596ecaf63108f85e2b07e66bf/cardview-1.0.0/res/values-v23/values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -20,6 +20,25 @@
                         "endLines": "50",
                         "endColumns": "12",
                         "endOffsets": "3552"
+                    }
+                },
+                {
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/1ada1f04fe574f45f657dd76c3288360/material-1.2.0-alpha04/res/values-v23/values-v23.xml",
+                    "from": {
+                        "startLines": "2,6",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,320",
+                        "endLines": "5,9",
+                        "endColumns": "10,10",
+                        "endOffsets": "315,588"
+                    },
+                    "to": {
+                        "startLines": "51,55",
+                        "startColumns": "4,4",
+                        "startOffsets": "3557,3822",
+                        "endLines": "54,58",
+                        "endColumns": "10,10",
+                        "endOffsets": "3817,4090"
                     }
                 },
                 {

@@ -13,4 +13,6 @@ public class Const {
 
     public static int FOREGROUND_SERVICE = 101;
 
+    public static String YANDEX_API_KEY = "f204189a-9d5c-425a-b19f-4f96ee739ee7";
+
 }

@@ -14,6 +14,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.Priority;
+import com.bumptech.glide.RequestBuilder;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.wang.avi.AVLoadingIndicatorView;
@@ -24,6 +26,7 @@ import ru.qbitmobile.qbitstation.Const;
 import ru.qbitmobile.qbitstation.Helper.AnimatorHelper;
 import ru.qbitmobile.qbitstation.BaseObject.Station;
 import ru.qbitmobile.qbitstation.Helper.Player;
+import ru.qbitmobile.qbitstation.Helper.ReportHelper;
 import ru.qbitmobile.qbitstation.Notification.NotificationService;
 import ru.qbitmobile.qbitstation.R;
 
@@ -51,19 +54,23 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+        try {
         Station station = mStations.get(position);
         holder.textView.setText(station.getName());
 //        holder.setIsRecyclable(false);
-        Glide.with(mContext)
-                .load(mStations.get(position).getImage())
-                .error(R.drawable.ic_launcher_foreground)
-                .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
-                .into(holder.imageView);
+
+            Glide.with(mContext)
+                    .load(mStations.get(position).getImage())
+                    .diskCacheStrategy(DiskCacheStrategy.ALL)
+                    .into(holder.imageView);
+
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 createFirebaseReport(position);
                 Log.d("debug", mStations.get(position).getName());
+
+                ReportHelper.report(mStations.get(position));
 
                 Player player = new Player(mStations.get(position).getStream());
                 player.start(mContext);
@@ -83,7 +90,9 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
                 mContext.startService(serviceIntent);
             }
         });
-
+        } catch (Exception e){
+            Log.d("glide", e.getMessage());
+        }
     }
 
     @Override
@@ -97,14 +106,18 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
     }
 
     private void createFirebaseReport(int position) {
-        FirebaseAnalytics firebaseAnalytics = FirebaseAnalytics.getInstance(mContext);
-        Bundle eventDetails = new Bundle();
+        try {
+            FirebaseAnalytics firebaseAnalytics = FirebaseAnalytics.getInstance(mContext);
+            Bundle eventDetails = new Bundle();
 
-        StringBuilder sb = new StringBuilder();
-        sb.append(mStations.get(position).getName() + " : " + mStations.get(position).getStream());
+            StringBuilder sb = new StringBuilder();
+            sb.append(mStations.get(position).getName() + " : " + mStations.get(position).getStream());
 
-        eventDetails.putString("station", sb.toString());
-        firebaseAnalytics.logEvent("select_station", eventDetails);
+            eventDetails.putString("station", sb.toString());
+            firebaseAnalytics.logEvent("select_station", eventDetails);
+        } catch (Exception e){
+            Log.d("glide", e.getMessage());
+        }
     }
 
     @Override

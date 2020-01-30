@@ -4,24 +4,7 @@
             "outputFile": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ka/values-ka.xml",
             "map": [
                 {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/daf48b019d1f42471814e347a2fe04fb/jetified-play-services-basement-16.0.1/res/values-ka/values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "201",
-                        "endOffsets": "448"
-                    },
-                    "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "3976",
-                        "endColumns": "201",
-                        "endOffsets": "4173"
-                    }
-                },
-                {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/8913c5778706b764517b7c7ebe4b92c1/jetified-play-services-base-16.0.1/res/values-ka/values.xml",
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/a8190108256f478ca2c6d9d63fb42d4f/play-services-base-17.0.0/res/values-ka/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -86,6 +69,23 @@
                         "startOffsets": "5517,5596,5681,5766,5841,5906,5971,6047,6128,6211,6291,6366,6451,6542,6630,6697,6763,6835,6900,6978,7051,7132,7217,7270,7331,7379,7440,7506,7585,7649,7717,7781,7842,7908,7974,8040,8092,8154,8230,8306",
                         "endColumns": "78,84,84,74,64,64,75,80,82,79,74,84,90,87,66,65,71,64,77,72,80,84,52,60,47,60,65,78,63,67,63,60,65,65,65,51,61,75,75,52",
                         "endOffsets": "5591,5676,5761,5836,5901,5966,6042,6123,6206,6286,6361,6446,6537,6625,6692,6758,6830,6895,6973,7046,7127,7212,7265,7326,7374,7435,7501,7580,7644,7712,7776,7837,7903,7969,8035,8087,8149,8225,8301,8354"
+                    }
+                },
+                {
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/cb1e003e14f23c05b88d55f870e0ae09/jetified-play-services-basement-17.0.0/res/values-ka/values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "201",
+                        "endOffsets": "448"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "3976",
+                        "endColumns": "201",
+                        "endOffsets": "4173"
                     }
                 }
             ]

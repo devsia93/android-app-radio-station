@@ -4,7 +4,7 @@
             "outputFile": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/1ee6d2ab28aac05ff2a62c1228af5b37/material-1.0.0-alpha1/res/values-large-v4/values-large-v4.xml",
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/1ada1f04fe574f45f657dd76c3288360/material-1.2.0-alpha04/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

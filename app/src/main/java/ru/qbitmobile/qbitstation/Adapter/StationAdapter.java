@@ -15,7 +15,7 @@ import androidx.annotation.Nullable;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.request.target.CustomTarget;
+//import com.bumptech.glide.request.target.CustomTarget;
 import com.bumptech.glide.request.transition.Transition;
 
 import ru.qbitmobile.qbitstation.BaseObject.Radio;
@@ -33,7 +33,7 @@ public class StationAdapter extends BaseAdapter {
     public StationAdapter (Context context, Radio radio){
         mRadio = radio;
         mContext = context;
-        mLayoutInflater = (LayoutInflater) LayoutInflater.from(context);
+        mLayoutInflater = LayoutInflater.from(context);
     }
 
     @Override
@@ -66,8 +66,7 @@ public class StationAdapter extends BaseAdapter {
         ((TextView) view.findViewById(R.id.tvStation)).setText(station.getName());
          Glide.with(view.getContext())
                 .load(mRadio.getStations().get(position).getImage())
-                .error(R.drawable.ic_launcher_foreground)
-                .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
+                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(mImageViewStation);
 
         return view;
