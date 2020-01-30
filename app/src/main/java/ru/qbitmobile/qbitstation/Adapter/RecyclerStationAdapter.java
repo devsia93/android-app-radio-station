@@ -35,7 +35,8 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
     private LayoutInflater mLayoutInflater;
     private List<Station> mStations;
     private Context mContext;
-    private static AnimatorHelper animatorHelper;
+
+    private static RecyclerView.ViewHolder preHolder;
 
     public RecyclerStationAdapter(Context context, List<Station> stations) {
         this.mStations = stations;
@@ -73,15 +74,19 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
                 ReportHelper.report(mStations.get(position));
 
                 Player player = new Player(mStations.get(position).getStream());
-                player.start(mContext);
+
+                if (preHolder == holder) {
+                    player.stop();
+                    AnimatorHelper.stopAnimation(holder.playViewAnimation);
+                    preHolder = null;
+                } else {
+                    player.start(mContext);
+                    startPlayerService();
+                    AnimatorHelper.startAnimation(holder.playViewAnimation);
+                    preHolder = holder;
+                }
 
 
-                startPlayerService();
-                if (animatorHelper != null)
-                animatorHelper.stopAnimation();
-                animatorHelper = new AnimatorHelper(holder.playViewAnimation);
-                animatorHelper.startAnimation();
-                Log.d("anm", String.valueOf(holder.getItemId()));
             }
 
             private void startPlayerService() {

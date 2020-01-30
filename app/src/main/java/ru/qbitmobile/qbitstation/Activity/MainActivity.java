@@ -40,6 +40,7 @@ import ru.qbitmobile.qbitstation.Fragment.RadiosFragment;
 import ru.qbitmobile.qbitstation.Fragment.StationsFragment;
 import ru.qbitmobile.qbitstation.Helper.AnimationRotate;
 import ru.qbitmobile.qbitstation.Helper.JSONHelper;
+import ru.qbitmobile.qbitstation.Helper.Player;
 import ru.qbitmobile.qbitstation.Helper.ReportHelper;
 import ru.qbitmobile.qbitstation.R;
 
@@ -62,6 +63,13 @@ public class MainActivity extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Player player = new Player("");
+        player.stop();
     }
 
     @Override

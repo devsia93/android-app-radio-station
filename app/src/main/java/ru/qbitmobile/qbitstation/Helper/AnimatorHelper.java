@@ -6,24 +6,21 @@ import android.view.View;
 import com.wang.avi.AVLoadingIndicatorView;
 
 public class AnimatorHelper {
-    private static AVLoadingIndicatorView indicatorView;
-    public AnimatorHelper(AVLoadingIndicatorView indicatorView){
 
-        if (this.indicatorView != null) {
-            this.indicatorView.setVisibility(View.INVISIBLE);
-        }
-        this.indicatorView = indicatorView;
-    }
+    private static AVLoadingIndicatorView preIndicator;
 
-    public void startAnimation(){
+    public static void startAnimation(AVLoadingIndicatorView indicatorView){
         if (indicatorView != null){
+            if(preIndicator!=null) {
+                preIndicator.setVisibility(View.INVISIBLE);
+            }
             indicatorView.setVisibility(View.VISIBLE);
-            Log.d("audio", indicatorView.getIndicator().toString());
+            preIndicator = indicatorView;
         }
 
     }
 
-    public void stopAnimation(){
+    public static void stopAnimation(AVLoadingIndicatorView indicatorView){
         if (indicatorView != null)
         {
             indicatorView.setVisibility(View.INVISIBLE);

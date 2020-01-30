@@ -1,0 +1,1982 @@
+[
+  {
+    "genre": "Поп",
+    "stations": [
+      {
+        "stream": "https://rusradio.hostingradio.ru/rusradio96.aacp",
+        "name": "Русское Радио",
+        "image": "https://images.radiovolna.net/_files/images/stations/322/yn0d58d0d9432c7fc016444329.jpg"
+      },
+      {
+        "stream": "http://ep128.hostingradio.ru:8030/ep128",
+        "name": "Европа Плюс",
+        "image": "https://images.radiovolna.net/_files/images/stations/25/w6z758cea371338d6812267530.jpg"
+      },
+      {
+        "stream": "http://163.172.160.245:8081/radio/loveradio/icecast.audio?wmsAuthSign=c2VydmVyX3RpbWU9Ni8zLzIwMTggMTI6NTY6MzcgUE0maGFzaF92YWx1ZT1pVm9xV3BzOFplRG1xOFNqc0ZmNUJnPT0mdmFsaWRtaW51dGVzPTcyMA==",
+        "name": "Love Radio",
+        "image": "https://images.radiovolna.net/_files/images/stations/96/f7ul593fd1abf0765867033185.jpg"
+      },
+      {
+        "stream": "http://ic2.101.ru:8000/v1_1",
+        "name": "Радио Energy (NRJ)",
+        "image": "https://images.radiovolna.net/_files/images/stations/307/if3i596e1c7579edc120983284.jpg"
+      },
+      {
+        "stream": "http://ic2.101.ru:8000/v3_1",
+        "name": "Авторадио",
+        "image": "https://images.radiovolna.net/_files/images/stations/109/vlau5943ab66835c8066144213.jpg"
+      },
+      {
+        "stream": "https://live4.zharafm.ru/live",
+        "name": "Радио Жара",
+        "image": "http://top-radio.ru/assets/image/radio/180/zhara-fm.jpg"
+      },
+      {
+        "stream": "http://ic2.101.ru:8000/v5_1",
+        "name": "Юмор FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/356/amzd595651c8d84ea918459515.jpg"
+      },
+      {
+        "stream": "https://hitfm.hostingradio.ru/hitfm96.aacp",
+        "name": "Хит FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/343/tuv7593d4e3124003481445688.jpg"
+      },
+      {
+        "stream": "http://dorognoe.hostingradio.ru:8000/dorognoe_acc",
+        "name": "Дорожное радио",
+        "image": "https://images.radiovolna.net/_files/images/stations/140/kueu58d0d5a689840947816728.jpg"
+      },
+      {
+        "stream": "http://213.59.4.27:8000/silver128.mp3",
+        "name": "Серебряный Дождь",
+        "image": "https://images.radiovolna.net/_files/images/stations/325/nf2w595655a15726e567586194.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/sd90_128",
+        "name": "Record Супердискотека 90-х",
+        "image": "https://images.radiovolna.net/_files/images/stations/336/jqdk593bafd456404110926435.jpg"
+      },
+      {
+        "stream": "http://listen18.vdfm.ru:8000/dacha",
+        "name": "Радио Дача",
+        "image": "https://images.radiovolna.net/_files/images/stations/1302/h47z593fac48c5ac8784227528.jpg"
+      },
+      {
+        "stream": "http://icecast.newradio.cdnvideo.ru/newradio3",
+        "name": "Новое Радио",
+        "image": "https://images.radiovolna.net/_files/images/stations/8401/koly593d5458587b8993193569.jpg"
+      },
+      {
+        "stream": "http://radiomv.hostingradio.ru/radiomv128.mp3",
+        "name": "Милицейская волна",
+        "image": "https://images.radiovolna.net/_files/images/stations/444/aeb21a8739ddc7587792e99649fbdb2b.png"
+      },
+      {
+        "stream": "http://ic2.101.ru:8000/v11_1",
+        "name": "Comedy Radio",
+        "image": "https://images.radiovolna.net/_files/images/stations/1711/pa89596f1fe133331367849550.jpg"
+      },
+      {
+        "stream": "http://listen.radiopassazh.ru/mp3-128",
+        "name": "Радио Русские Песни",
+        "image": "http://top-radio.ru/assets/image/radio/180/russong.png"
+      },
+      {
+        "stream": "http://194.67.200.84:8000/radiovanya",
+        "name": "Радио Ваня",
+        "image": "https://images.radiovolna.net/_files/images/stations/217/l3ss593bddf20aa6c350392316.jpg"
+      },
+      {
+        "stream": "http://ic2.101.ru:8000/v12_1",
+        "name": "Like FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/326/u6tw595d0a8819d29353869174.jpg"
+      },
+      {
+        "stream": "http://ic2.101.ru:8000/v4_1",
+        "name": "Радио Romantika",
+        "image": "https://images.radiovolna.net/_files/images/stations/283/q5w3596e2ef12a2ee148029634.jpg"
+      },
+      {
+        "stream": "http://194.67.200.84:8000/rdd",
+        "name": "Радио для Двоих",
+        "image": "http://top-radio.ru/assets/image/radio/180/radiodlyadvoih.png"
+      },
+     {
+        "stream": "http://tntradio.hostingradio.ru:8027/tntradio128.mp3",
+        "name": "ТНТ Music Radio",
+        "image": "https://images.radiovolna.net/_files/images/stations/406105/bt3s5bf124ad5dda0671362081.jpg"
+      },
+      {
+        "stream": "http://online.radiokarnaval.ru:8000/karnaval",
+        "name": "Радио Карнавал",
+        "image": "https://images.radiovolna.net/_files/images/stations/240/lrc5595616df7a088392870433.jpg"
+      },
+      {
+        "stream": "http://s2.metaradio.ru/mradio.tprdr",
+        "name": "Метарадио",
+        "image": "http://top-radio.ru/assets/image/radio/180/metaradio-logo.png"
+      },
+      {
+        "stream": "http://setmedia.ru:8000/high4",
+        "name": "Натали",
+        "image": "https://images.radiovolna.net/_files/images/stations/261/j70h5a2d77a4e68cf803582916.jpg"
+      },
+      {
+        "stream": "http://stream2.n340.com/18_vostok_28_reg_1?type=.aac&UID=DB4B4BE74F13A67DE1BD6C9B9ABDEDDD",
+        "name": "Восток FM",
+        "image": "http://top-radio.ru/assets/image/radio/180/vostokfmmsk.png"
+      },
+      {
+        "stream": "http://62.80.190.246:8000/ProstoRadiO128",
+        "name": "Просто Радио",
+        "image": "https://images.radiovolna.net/_files/images/stations/597/yr2z58d18f3845db0499588079.jpg"
+      },
+      {
+        "stream": "http://listen.rpfm.ru:9000/premium128",
+        "name": "Радио Premium",
+        "image": "https://images.radiovolna.net/_files/images/stations/26/cyxq59b2587b5ecd0653928549.jpg"
+      },
+      {
+        "stream": "http://zaycevfm.cdnvideo.ru/ZaycevFM_pop_256.mp3",
+        "name": "Зайцев.FM - Поп",
+        "image": "https://images.radiovolna.net/_files/images/stations/147/v6vf595779b8dad2a974163964.jpg"
+      },
+      {
+        "stream": "http://listen.radiopassazh.ru/mp3-128",
+        "name": "Радио Пассаж",
+        "image": "http://top-radio.ru/assets/image/radio/180/passaj.jpg"
+      },
+      {
+        "stream": "http://node-11.zeno.fm/xnmftwm5ybruv?rj-ttl=5&rj-tok=AAABbjsXoggAuFdC-hV6-qi2Vw",
+        "name": "Радио Пятница",
+        "image": "https://images.radiovolna.net/_files/images/stations/417396/cj725c65ad446ec35232387272.jpg"
+      },
+      {
+        "stream": "http://air.radiorecord.ru:805/gop_320",
+        "name": "Record Гоп FM",
+        "image": "http://top-radio.ru/assets/image/radio/180/recordgopfm.png"
+      },
+      {
+        "stream": "http://iskatel.hostingradio.ru:8015/iskatel-128.mp3",
+        "name": "Радио Искатель",
+        "image": "http://top-radio.ru/assets/image/radio/180/iskatel.png"
+      },
+      {
+        "stream": "https://yumfm.hostingradio.ru:8020/yumfm128.mp3",
+        "name": "KFC FM",
+        "image": "http://top-radio.ru/assets/image/radio/180/kfcfm.png"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/rus_320",
+        "name": "Record Russian Mix",
+        "image": "https://images.radiovolna.net/_files/images/stations/601/hgi758d0db2b08718039915312.jpg"
+      },
+      {
+        "stream": "http://46.61.148.62:8000/jam",
+        "name": "Джем FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/134/mu62595f32fabd9ef785540004.jpg"
+      },
+      {
+        "stream": "https://online.radioc.ru/radioc_aacplus",
+        "name": "Радио СИ",
+        "image": "https://images.radiovolna.net/_files/images/stations/405872/r5ws5b35e54d6f72a605994686.jpg"
+      },
+      {
+        "stream": "http://stream.transmit.ru:8000/transmit192",
+        "name": "Трансмит",
+        "image": "https://images.radiovolna.net/_files/images/stations/399597/1485186250_6a54ff4d-6f9c-423f-90ac-c701882440b1.jpg-340204.png"
+      },
+      {
+        "stream": "https://icecast-bulteam.cdnvideo.ru/bolid128",
+        "name": "Радио Болид",
+        "image": "http://top-radio.ru/assets/image/radio/180/bolidv2.png"
+      },
+      {
+        "stream": "http://91.227.68.150:10000/hit128",
+        "name": "MCM",
+        "image": "https://images.radiovolna.net/_files/images/stations/607/yye05a54ee3465472921828894.jpg"
+      },
+      {
+        "stream": "http://stream01.radiocon.ru:8000/live",
+        "name": "Радио Континенталь",
+        "image": "http://top-radio.ru/assets/image/radio/180/radiocon.jpg"
+      },
+      {
+        "stream": "http://radio.dline-media.com/ppr128.mp3",
+        "name": "Пионер FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/197/fjy5594000a37c740195276735.jpg"
+      },
+      {
+        "stream": "https://online.olimpfm.ru/olimp",
+        "name": "Радио Олимп",
+        "image": "http://top-radio.ru/assets/image/radio/180/olimp-fm.png"
+      },
+      {
+        "stream": "http://radio.urg.com.ua/radio-stilnoe",
+        "name": "Перец FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/56/ux3158d0db77ae6ff962469417.jpg"
+      },
+      {
+        "stream": "http://radio.horoshee.fm:8000/mp3",
+        "name": "Хорошее Радио",
+        "image": "https://images.radiovolna.net/_files/images/stations/1615/jfv65961a8f099e65187377841.jpg"
+      },
+      {
+        "stream": "https://online.uniton.ru/uniton",
+        "name": "Юнитон",
+        "image": "https://images.radiovolna.net/_files/images/stations/311/afrm5961aae20605a876741257.jpg"
+      },
+      {
+        "stream": "http://emg02.hostingradio.ru/keksfm64.aac",
+        "name": "Кекс FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/1223/rhxs5acc4ac77d489943717544.jpg"
+      },
+      {
+        "stream": "http://icecast.stranafm.cdnvideo.ru/stranafm_128",
+        "name": "Страна FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/20637/aw3n5a2eb027ae9ad468746547.jpg"
+      },
+       {
+        "stream": "http://icecast.mirtv.cdnvideo.ru:8000/radio_mir128",
+        "name": "Радио Мир",
+        "image": "http://top-radio.ru/assets/image/radio/180/radiomir.jpg"
+      },
+      {
+        "stream": "http://mxsel.maksmedia.ru:8000/maksfm128",
+        "name": "Макс FM - Радио Сочи",
+        "image": "https://images.radiovolna.net/_files/images/stations/165/dky6596f32fe087ce035875450.jpg"
+      },
+      {
+        "stream": "http://sv.wargaming.fm:8051/128",
+        "name": "Wargaming.FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/5583/eey558f8ba5a03936762716466.jpg"
+      },
+      {
+        "stream": "http://radio.russkoe.fm:8000/russkoefm_mp3",
+        "name": "Русское FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/31354/hoor596f94c7171ad520545951.jpg"
+      },
+      {
+        "stream": "http://891fm.streamgates.net/891Fm",
+        "name": "Первое Радио",
+        "image": "https://images.radiovolna.net/_files/images/stations/405384/zevx5b35d3e6c5d40579412229.jpg"
+      },
+      {
+        "stream": "http://online.sputnikfm.ru:8000/sputnik",
+        "name": "Спутник",
+        "image": "https://images.radiovolna.net/_files/images/stations/443/m4yi599c7ad69f7a8570308034.jpg"
+      },
+      {
+        "stream": "http://109.198.108.42:8000/;stream.nsv",
+        "name": "Экорадио",
+        "image": "https://images.radiovolna.net/_files/images/stations/349/r6655a2d613ee2693360961025.jpg"
+      },
+      {
+        "stream": "http://gtrk22.ru:8000/HFMhigh",
+        "name": "Heart FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/72/rrmy594d26540fd49241585428.jpg"
+      },
+      {
+        "stream": "http://icecast.sibinformburo.cdnvideo.ru:8000/dipolfm",
+        "name": "Dipol FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/5843/ar9l596f3002bc641429865815.jpg"
+      },
+      {
+        "stream": "http://178.124.152.212:8008/Zefir",
+        "name": "Zефир FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/405760/houw5acc6fba05709431556366.jpg"
+      },
+      {
+        "stream": "http://av.bimradio.ru:8066/bim_mp3_128k",
+        "name": "БИМ-Радио",
+        "image": "http://top-radio.ru/assets/image/radio/180/bim-radio.png"
+      },
+      {
+        "stream": "http://stream.megaradio.pro/MegaRadio",
+        "name": "Мега Радио",
+        "image": "http://top-radio.ru/assets/image/radio/180/mega-radio.jpg"
+      },
+      {
+        "stream": "http://94.101.239.3:8000/PHR.mp3",
+        "name": "Power Hit Radio",
+        "image": "https://images.radiovolna.net/_files/images/stations/4181/ha0w59745b0613e07924905860.jpg"
+      },
+      {
+        "stream": "http://air2.volna.top:10111/Vesna-MSK",
+        "name": "Весна FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/1247/iadg5a2d75fd3f4ef675285684.jpg"
+      },
+      {
+        "stream": "http://icecastdc.luxnet.ua/lux",
+        "name": "Радiо Люкс FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/42/jb3258d18f6334d64646922499.jpg"
+      },
+      {
+        "stream": "http://62.183.34.109:8000/radio107_256.mp3",
+        "name": "Радио 107",
+        "image": "http://top-radio.ru/assets/image/radio/180/Радио%20107%20Главное%20Хитовое.jpg"
+      },
+      {
+        "stream": "http://setmedia.ru:8000/aac",
+        "name": "Золотой Век",
+        "image": "https://images.radiovolna.net/_files/images/stations/150/z83d59565898540b0198179237.jpg"
+      },
+      {
+        "stream": "http://mad.pub/radio/live",
+        "name": "Mad FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/5906/icv45974bbf9a2c1c313717934.jpg"
+      },
+      {
+        "stream": "https://online.alfafm.ru/alfa",
+        "name": "Радио Альфа",
+        "image": "http://top-radio.ru/assets/image/radio/180/alfa-fm.jpg"
+      },
+      {
+        "stream": "http://stream1.radiord.ru:8000/live96.aac",
+        "name": "Радио Родных Дорог",
+        "image": "https://images.radiovolna.net/_files/images/stations/405839/fck45b226486b1e20578208091.jpg"
+      },
+      {
+        "stream": "http://cast.modnoeradio.ru:8000/mp128",
+        "name": "Модное Радио",
+        "image": "https://images.radiovolna.net/_files/images/stations/5819/bgt9597456ef1e27a014773168.jpg"
+      },
+      {
+        "stream": "http://stream1.hostingradio.ru:8010/9_aac_96",
+        "name": "Свежее Радио",
+        "image": "http://top-radio.ru/assets/image/radio/180/svejee.jpg"
+      },
+      {
+        "stream": "http://eptop128server.streamr.ru:8033/eptop128",
+        "name": "Европа Плюс - Топ 40",
+        "image": "https://images.radiovolna.net/_files/images/stations/5244/p6i15a144d6806fd6398325559.jpg"
+      },
+      {
+        "stream": "https://a2.radioheart.ru:8066/nonstop",
+        "name": "Япарадио",
+        "image": "http://top-radio.ru/assets/image/radio/180/yaparadio.jpg"
+      },
+      {
+        "stream": "https://disney.hostingradio.ru:8060/disney?radiostatistica=TopRadio",
+        "name": "Радио Disney",
+        "image": "http://top-radio.ru/assets/image/radio/180/logo_RD.png"
+      },
+      {
+        "stream": "http://5.79.66.113:8004/;stream.nsv",
+        "name": "Planeta",
+        "image": "https://images.radiovolna.net/_files/images/stations/1229/ylhs597a48993b886564461064.jpg"
+      },
+      {
+        "stream": "http://listen.radionestandart.ru:8200/128.mp3",
+        "name": "Радио Нестандарт",
+        "image": "http://top-radio.ru/assets/image/radio/180/nestandart.png"
+      },
+      {
+        "stream": "http://s0.radioheart.ru:8000/RH16550",
+        "name": "Maks Radio",
+        "image": "http://top-radio.ru/assets/image/radio/180/maksradio.png"
+      },
+      {
+        "stream": "http://air.volna.top/Karl",
+        "name": "Радио Карл",
+        "image": "https://images.radiovolna.net/_files/images/stations/417438/jysw5c7e8425b93fe892386182.jpg"
+      },
+      {
+        "stream": "http://solfm.ru:8000/online320",
+        "name": "Соль FM",
+        "image": "http://top-radio.ru/assets/image/radio/180/solfm.jpg"
+      },
+      {
+        "stream": "http://178.124.203.233:8000/320",
+        "name": "Радио Гродно",
+        "image": "http://top-radio.ru/assets/image/radio/180/grodno-fm.png"
+      },
+      {
+        "stream": "http://sea.1tvcrimea.ru:9003/stream_sea.mp3",
+        "name": "Радио Море",
+        "image": "http://top-radio.ru/assets/image/radio/180/more.jpg"
+      },
+      {
+        "stream": "http://s01.radio-tochka.com:4840/radio",
+        "name": "Новая Волна",
+        "image": "http://top-radio.ru/assets/image/radio/180/novaja-volna.png"
+      },
+      {
+        "stream": "http://185.108.196.182:8090/HQ",
+        "name": "Сибирь (Чита)",
+        "image": "http://top-radio.ru/assets/image/radio/180/radio-sibir.png"
+      },
+      {
+        "stream": "http://live.novoeradio.by:8000/narodnoe-radio-128k",
+        "name": "Народное Радио",
+        "image": "http://top-radio.ru/assets/image/radio/180/narodnoe_radio.jpg"
+      },
+      {
+        "stream": "http://ic3.101.ru:8000/a100",
+        "name": "Авторадио (Санкт-Петербург)",
+        "image": "http://top-radio.ru/assets/image/radio/180/auto.png"
+      },
+      {
+        "stream": "http://178.208.82.215:8000/puls",
+        "name": "Пульс-Радио",
+        "image": "http://top-radio.ru/assets/image/radio/180/puls.jpg"
+      },
+      {
+        "stream": "http://online.astv.ru:8011/astv.mp3",
+        "name": "Радио АСТВ",
+        "image": "http://top-radio.ru/assets/image/radio/180/astvfm.png"
+      },
+      {
+        "stream": "http://media2.brg.ua:8000/power_l",
+        "name": "Power FM Ukraine",
+        "image": "https://images.radiovolna.net/_files/images/stations/14/2b483fa3c06e6c7ed26eb8788a66cb68.jpg"
+      },
+      {
+        "stream": "http://bbcmedia.ic.llnwd.net/stream/bbcmedia_radio1_mf_q",
+        "name": "BBC Radio 1",
+        "image": "https://images.radiovolna.net/_files/images/stations/9052/rbev59804d8309841997633361.jpg"
+      },
+      {
+        "stream": "http://live.borneo.ru:8888/128",
+        "name": "Радио Борнео",
+        "image": "http://top-radio.ru/assets/image/radio/180/borneo-fm.jpg"
+      },
+      {
+        "stream": "http://www.gubernia-media.ru:8000/gubernia",
+        "name": "Радио Губерния",
+        "image": "http://top-radio.ru/assets/image/radio/180/Gubernia.jpg"
+      },
+      {
+        "stream": "https://online.sputnikfm.ru/sputnik",
+        "name": "Радио Спутник",
+        "image": "http://top-radio.ru/assets/image/radio/180/spurnik-volg.jpg"
+      },
+      {
+        "stream": "http://online.intervolna.ru:8001/radio192",
+        "name": "Интерволна",
+        "image": "http://top-radio.ru/assets/image/radio/180/intervolnafm.png"
+      },
+      {
+        "stream": "http://play.tipfm.ru:9000/9696",
+        "name": "Типичное FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/9599/y6695a2eab11dd4b2547712397.jpg"
+      },
+      {
+        "stream": "http://ice.stream.frequence3.net/frequence3-128.mp3",
+        "name": "Frequence 3",
+        "image": "https://images.radiovolna.net/_files/images/stations/24294/0b0ea9a96a1a03674cb7568a59fefc52.png"
+      },
+      {
+        "stream": "http://media.zaoitt.ru:8080/radio.mp3",
+        "name": "Радио Republic",
+        "image": "http://top-radio.ru/assets/image/radio/180/radio-republic.jpg"
+      },
+      {
+        "stream": "http://ice.interra.fm:8000/barix",
+        "name": "Интерра FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/1347/pqsg59565b12ba5c4496676311.jpg"
+      },
+      {
+        "stream": "http://91.219.74.220:8000/IvanovoFM.mp3",
+        "name": "Иваново FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/32440/f2aj59917d1a36afc698572571.jpg"
+      },
+      {
+        "stream": "https://online.100i6fm.ru/city",
+        "name": "Радио Сити",
+        "image": "http://top-radio.ru/assets/image/radio/180/city-tumen.jpg"
+      }
+    ]
+  },
+  {
+    "genre": "Рок",
+    "stations": [
+      {
+        "stream": "http://nashe.streamr.ru/nashe-128.mp3",
+        "name": "Наше Радио",
+        "image": "https://images.radiovolna.net/_files/images/stations/183/v41a5943b3f3b3042859280235.jpg"
+      },
+      {
+        "stream": "http://nashe1.hostingradio.ru/rock-128.mp3",
+        "name": "Rock FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/318/89bdc8544af80e90f37f9e247836d6eb.jpg"
+      },
+      {
+        "stream": "https://maximum.hostingradio.ru/maximum96.aacp",
+        "name": "Maximum",
+        "image": "https://images.radiovolna.net/_files/images/stations/252/fdje595cf0f1049fe535242015.jpg"
+      },
+      {
+        "stream": "http://209.9.238.6:6042/;",
+        "name": "Rockabilly Radio",
+        "image": "https://thumbnailer.mixcloud.com/unsafe/300x300/extaudio/3/b/3/2/355f-65d6-44a8-be4e-afc0c0d38609.jpg"
+      },
+      {
+        "stream": "https://rr-russkijrok.hostingradio.ru/russkijrok96.aacp",
+        "name": "Русский Рок",
+        "image": "https://images.radiovolna.net/_files/images/stations/7053/vdc9593f981f35a8c615134636.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/rock_320",
+        "name": "Record Rock",
+        "image": "https://images.radiovolna.net/_files/images/stations/5246/iurp593bb5506f7df801776593.jpg"
+      },
+      {
+        "stream": "http://online.rockarsenal.ru:8000/rockarsenal_aacplus",
+        "name": "Rock Arsenal",
+        "image": "https://images.radiovolna.net/_files/images/stations/491/mrrq5a2d82e7936c4079297258.jpg"
+      },
+      {
+        "stream": "http://online2.radioroks.ua/RadioROKS_Ballads",
+        "name": "Radio ROKS Рок-Баллады",
+        "image": "http://top-radio.ru/assets/image/radio/180/roks_ballads.png"
+      },
+      {
+        "stream": "http://online-radioroks.tavrmedia.ua/RadioROKS_HD",
+        "name": "Radio ROKS",
+        "image": "http://top-radio.ru/assets/image/radio/180/roks_efir_ua.png"
+      },
+      {
+        "stream": "http://radiocast.muz-lab.ru/VTJT.mp3",
+        "name": "Питер FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/405820/ek9i5b14ff2ed4f39379717925.jpg"
+      },
+      {
+        "stream": "http://icecast.radiorocks.cdnvideo.ru/roks.stream",
+        "name": "Радио Рокс",
+        "image": "http://top-radio.ru/assets/image/radio/180/roks-ru.jpg"
+      },
+      {
+        "stream": "http://94.130.238.52:8032/;",
+        "name": "Party Vibe Rock",
+        "image": "https://images.radiovolna.net/_files/images/stations/3250/jco7594a908ae36c2922163276.jpg"
+      },
+      {
+        "stream": "http://91.211.249.150:8000/live",
+        "name": "UltraFan",
+        "image": "https://images.radiovolna.net/_files/images/stations/417555/euet5ce858960eeb7261890521.jpg"
+      },
+      {
+        "stream": "http://stream6.radiostyle.ru:8006/nomercy",
+        "name": "Nomercy Radio",
+        "image": "https://images.radiovolna.net/_files/images/stations/5735/ew6359be1dcac4260041403890.jpg"
+      },
+      {
+        "stream": "http://192.240.102.3:9036/;stream.nsv",
+        "name": "Восток России",
+        "image": "https://images.radiovolna.net/_files/images/stations/4008/isrn594d25b030161494834567.jpg"
+      },
+      {
+        "stream": "http://radio.goha.ru:8000/grind.fm",
+        "name": "Grind FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/132/hzbc5974b46b3b451902204580.jpg"
+      },
+      {
+        "stream": "http://91.203.176.214:8000/vesnafm",
+        "name": "Весна FM",
+        "image": "http://top-radio.ru/assets/image/radio/180/vesnasmol.png"
+      },
+      {
+        "stream": "http://159.253.18.97:8000/128kbit.mp3",
+        "name": "Экспресс Радио",
+        "image": "http://top-radio.ru/assets/image/radio/180/express-orel.jpg"
+      },
+      {
+        "stream": "http://46.105.180.202:8006/stream",
+        "name": "Неслучайное Радио",
+        "image": "https://images.radiovolna.net/_files/images/stations/402422/n8tc59bc6ebb7909c435044164.jpg"
+      },
+      {
+        "stream": "http://stream3.radiostyle.ru:8001/biker-fm",
+        "name": "Biker FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/112/mqkc59748747b965c060639738.jpg"
+      },
+      {
+        "stream": "http://sc-classrock.1.fm:8200/",
+        "name": "1.FM - Classic Rock Replay",
+        "image": "https://images.radiovolna.net/_files/images/stations/953/riir593fdcd723835578397224.jpg"
+      },
+      {
+        "stream": "http://188.40.135.197:8509/stream",
+        "name": "Devilzz Radio",
+        "image": "https://images.radiovolna.net/_files/images/stations/400858/exzy594c969d3fbb0438993221.jpg"
+      },
+      {
+        "stream": "http://46.105.180.202:8092/live",
+        "name": "Виктори Русский Рок",
+        "image": "https://images.radiovolna.net/_files/images/stations/232970/1478540929_victoree.png"
+      },
+      {
+        "stream": "http://nashe1.hostingradio.ru/nashepunks.mp3",
+        "name": "НАШЕ Радио Панки хой!",
+        "image": "https://images.radiovolna.net/_files/images/stations/406107/ptl75bf12b98e3091630098679.jpg"
+      },
+      {
+        "stream": "http://air.radioulitka.ru:8000/ulitka_192",
+        "name": "Радио Ulitka",
+        "image": "http://top-radio.ru/assets/image/radio/180/ulitka.jpg"
+      },
+      {
+        "stream": "http://live.humorfm.by:8000/avtoradio",
+        "name": "Авторадио (Минск)",
+        "image": "http://top-radio.ru/assets/image/radio/180/avtoradioby.png"
+      },
+      {
+        "stream": "http://85.236.172.22:8000/maximum",
+        "name": "Самара-Максимум",
+        "image": "http://top-radio.ru/assets/image/radio/180/samara-maximum.png"
+      },
+      {
+        "stream": "http://nashe.streamr.ru/nashespb128.mp3",
+        "name": "Наше Радио (Санкт-Петербург)",
+        "image": "https://images.radiovolna.net/_files/images/stations/8257/sbyu5943b54328ac5116125796.jpg"
+      },
+      {
+        "stream": "https://metallica.hostingradio.ru/metallica96.aacp",
+        "name": "Maximum Metallica",
+        "image": "https://images.radiovolna.net/_files/images/stations/1060/c6b77c0f104882ab44772a90c411beb8.png"
+      }
+    ]
+  },
+  {
+    "genre": "Танцевальная",
+    "stations": [
+      {
+        "stream": "https://dfm.hostingradio.ru/dfm128.mp3",
+        "name": "DFM",
+        "image": "https://images.radiovolna.net/_files/images/stations/136/hq2d593fe01f14128858982919.jpg"
+      },
+      {
+        "stream": "http://air.radiorecord.ru:8101/rr_320",
+        "name": "Record",
+        "image": "https://images.radiovolna.net/_files/images/stations/281/y2o258d0d6d0bb1c5377886636.jpg"
+      },
+      {
+        "stream": "https://dfm-disc90.hostingradio.ru/disc9096.aacp",
+        "name": "DFM Дискач 90-х",
+        "image": "https://images.radiovolna.net/_files/images/stations/405633/rsem5a54b2912ace9989206579.jpg"
+      },
+      {
+        "stream": "http://choco.hostingradio.ru:10010/fm",
+        "name": "Radio Chocolate",
+        "image": "https://images.radiovolna.net/_files/images/stations/305/qgpl596f957c105ff369045539.jpg"
+      },
+      {
+        "stream": "http://icecast.vgtrk.cdnvideo.ru/moscowfmen128",
+        "name": "Capital FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/834/uprf597ddad69af48397256218.jpg"
+      },
+      {
+        "stream": "https://dfm-dfmdeep.hostingradio.ru/dfmdeep96.aacp",
+        "name": "DFM Deep",
+        "image": "https://images.radiovolna.net/_files/images/stations/5653/vsl6593fe7c78e68c828604858.jpg"
+      },
+      {
+        "stream": "http://online-kissfm.tavrmedia.ua/KissFM",
+        "name": "Kiss FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/7/q7fz58d18f91c0c38563002038.jpg"
+      },
+      {
+        "stream": "http://217.70.28.155:8002/radio64",
+        "name": "Imagination",
+        "image": "https://images.radiovolna.net/_files/images/stations/73/i6gh597a31d32ce46833548885.jpg"
+      },
+      {
+        "stream": "http://air2.radiorecord.ru:805/brks_320",
+        "name": "Record Breaks",
+        "image": "https://images.radiovolna.net/_files/images/stations/88/u81y593badeb04209772945426.jpg"
+      },
+      {
+        "stream": "http://air2.radiorecord.ru:805/deep_320",
+        "name": "Record Deep",
+        "image": "https://images.radiovolna.net/_files/images/stations/1546/f94y592d63feb595a976155563.jpg"
+      },
+      {
+        "stream": "https://dfm-spoknochi.hostingradio.ru/spoknochi96.aacp",
+        "name": "DFM Спокойной ночи, голыши",
+        "image": "https://images.radiovolna.net/_files/images/stations/870/tn1g593fe8e3d9f1c610213344.jpg"
+      },
+      {
+        "stream": "https://dfm-dfmclub.hostingradio.ru/dfmclub96.aacp",
+        "name": "DFM Club",
+        "image": "https://images.radiovolna.net/_files/images/stations/867/1382689997_dfm_club2.jpg"
+      },
+      {
+        "stream": "http://video.tvr.by:8000/radiusfm",
+        "name": "Радиус FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/400728/1486139474_2viretdzsga.jpg-470470.png"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/fbass_320",
+        "name": "Record Future Bass",
+        "image": "https://images.radiovolna.net/_files/images/stations/405627/a7ym5a53a9ef24609805231587.jpg"
+      },
+      {
+        "stream": "http://stream.dancewave.online:8080/dance.mp3",
+        "name": "Dance Wave",
+        "image": "https://images.radiovolna.net/_files/images/stations/9345/mzbq597a4ea578001106602581.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/trancehits_320",
+        "name": "Record Trance Hits",
+        "image": "https://images.radiovolna.net/_files/images/stations/406166/na135bf68e4abfca3755506238.jpg"
+      },
+      {
+        "stream": "http://stream2.dancewave.online:8080/retrodance.mp3",
+        "name": "Dance Wave Retro",
+        "image": "https://images.radiovolna.net/_files/images/stations/31003/bb837c9abebc4e6c4ae38ff83975c623.png"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/edmhits_320",
+        "name": "Record EDM Hits",
+        "image": "https://images.radiovolna.net/_files/images/stations/406170/n7of5bf68fafb12e0247176246.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/tecktonik_320",
+        "name": "Record Tecktonik",
+        "image": "https://images.radiovolna.net/_files/images/stations/406168/ixoj5bf68f032d7f2072513491.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/eurodance_320",
+        "name": "Record Eurodance",
+        "image": "https://images.radiovolna.net/_files/images/stations/406194/tzvb5bf69c6c6f77b403112570.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/mix_320",
+        "name": "Record Megamix",
+        "image": "https://images.radiovolna.net/_files/images/stations/8262/qmvd593bc1c92b3d6425485561.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/houseclss_320",
+        "name": "Record House Classics",
+        "image": "https://images.radiovolna.net/_files/images/stations/406171/jb0n5bf68fee07111647463924.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/chillhouse_320",
+        "name": "Record Chill House",
+        "image": "https://images.radiovolna.net/_files/images/stations/406186/juyh5bf69938a2031817504312.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/househits_320",
+        "name": "Record House Hits",
+        "image": "https://images.radiovolna.net/_files/images/stations/406176/d5f75bf691a768125832278573.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/neurofunk_320",
+        "name": "Record Neurofunk",
+        "image": "https://images.radiovolna.net/_files/images/stations/406169/pken5bf68f5550ea9755668735.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/russiangold_320",
+        "name": "Record Russian Gold",
+        "image": "https://images.radiovolna.net/_files/images/stations/406195/hz225bf69cad1bf64527118666.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/technopop_320",
+        "name": "Record Technopop",
+        "image": "https://images.radiovolna.net/_files/images/stations/406193/zy0a5bf69c1067289183146472.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/uplift_320",
+        "name": "Record Uplifting",
+        "image": "https://images.radiovolna.net/_files/images/stations/406172/acxu5bf6905c17e35121981496.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/bighits_320",
+        "name": "Record Big Hits",
+        "image": "https://images.radiovolna.net/_files/images/stations/406175/cxlp5bf6914b15b7b320953497.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/2step_320",
+        "name": "Record 2-Step",
+        "image": "https://images.radiovolna.net/_files/images/stations/406167/h5m25bf68ea630258113036750.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/dream_320",
+        "name": "Record Dream Dance",
+        "image": "https://images.radiovolna.net/_files/images/stations/406174/qj8o5bf6910c976de033198716.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/darkside_320",
+        "name": "Record Darkside",
+        "image": "https://images.radiovolna.net/_files/images/stations/406173/sldl5bf690a5b6a0d820153111.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/synth_320",
+        "name": "Record Synthwave",
+        "image": "https://images.radiovolna.net/_files/images/stations/406177/m9ek5bf691e79dada287546403.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/progr_320",
+        "name": "Record Progressive",
+        "image": "https://images.radiovolna.net/_files/images/stations/406178/kqyf5bf69296aa6f7796628931.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/mt_320",
+        "name": "Record MidTempo",
+        "image": "https://images.radiovolna.net/_files/images/stations/406179/cpl35bf6966bdd815191446259.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/elect_320",
+        "name": "Record Electro",
+        "image": "https://images.radiovolna.net/_files/images/stations/406180/h0kk5bf696afe3e42205848664.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/ibiza_320",
+        "name": "Record Innocence",
+        "image": "https://images.radiovolna.net/_files/images/stations/405632/akpp5bf69764f1be3801992235.jpg"
+      },
+      {
+        "stream": "http://air.radiorecord.ru:805/gold_320",
+        "name": "Record Gold",
+        "image": "https://images.radiovolna.net/_files/images/stations/401079/xc4b597331b130f52895019600.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/russianhits_320",
+        "name": "Record Russian Hits",
+        "image": "https://images.radiovolna.net/_files/images/stations/406182/v1xi5bf6981943b71553023482.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/groovetribal_320",
+        "name": "Record Groove/Tribal",
+        "image": "https://images.radiovolna.net/_files/images/stations/406183/lgsu5bf69853a862d740362775.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/complextro_320",
+        "name": "Record Complextro",
+        "image": "https://images.radiovolna.net/_files/images/stations/406184/jjsq5bf698953aaef116759298.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/discofunk_320",
+        "name": "Record Disco/Funk",
+        "image": "https://images.radiovolna.net/_files/images/stations/406192/s0u85bf69b92e80f4904518209.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/drumhits_320",
+        "name": "Record Drum'n'Bass Hits",
+        "image": "https://images.radiovolna.net/_files/images/stations/406196/wiqp5bf69d011a840853525095.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/liquidfunk_320",
+        "name": "Record Liquid Funk",
+        "image": "https://images.radiovolna.net/_files/images/stations/406197/rgw45bf69d4ac3367772200038.jpg"
+      },
+      {
+        "stream": "http://online.radiorecord.ru:8102/jungle_320",
+        "name": "Record Jungle",
+        "image": "https://images.radiovolna.net/_files/images/stations/406198/vo2k5bf69d939dbbe940139733.jpg"
+      }
+    ]
+  },
+  {
+    "genre": "Релакс",
+    "stations": [
+      {
+        "stream": "http://151.80.97.38:8224/live.mp3",
+        "name": "Nebula",
+        "image": "https://pbs.twimg.com/profile_images/895633661579677696/wG48U6b0.jpg"
+      },
+      {
+        "stream": "http://europaplus.hostingradio.ru:8014/radiosept320.mp3",
+        "name": "Радио 7",
+        "image": "http://top-radio.ru/assets/image/radio/180/radio7na7holmah.png"
+      },
+      {
+        "stream": "http://ic3.101.ru:8000/s40",
+        "name": "Relax FM",
+        "image": "http://top-radio.ru/assets/image/radio/180/relax-fm.png"
+      },
+      {
+        "stream": "http://air.radiorecord.ru:805/mdl_320",
+        "name": "Медляк FM",
+        "image": "http://top-radio.ru/assets/image/radio/180/recordmedlyak.png"
+      },
+      {
+        "stream": "https://montecarlo.hostingradio.ru/montecarlo128.mp3",
+        "name": "Монте-Карло",
+        "image": "http://top-radio.ru/assets/image/radio/180/mc.png"
+      },
+      {
+        "stream": "http://77.120.122.224:8000/256kbps",
+        "name": "Psy Radio",
+        "image": "https://www.radiobells.com/stations/psyradio.jpg"
+      },
+      {
+        "stream": "http://62.138.147.36:8010/100austria.mp3",
+        "name": "Lounge FM",
+        "image": "https://images.radiovolna.net/_files/images/stations/2139/yigh595bd5dee1a5a869051277.jpg"
+      },
+      {
+        "stream": "https://zaycevfm.cdnvideo.ru/ZaycevFM_relax_256.mp3",
+        "name": "Зайцев.FM - Relax",
+        "image": "http://top-radio.ru/assets/image/radio/180/zaycevrelax.jpg"
+      },
+      {
+        "stream": "http://air.jivoe.in:8000/mantrajam-hi.mp3",
+        "name": "Живое Радио Мантры",
+        "image": "http://top-radio.ru/assets/image/radio/180/jivoe.jpg"
+      },
+      {
+        "stream": "http://online-radiorelax2.tavrmedia.ua/RadioRelax_Instrumental_HD",
+        "name": "Radio Relax Instrumental",
+        "image": "http://top-radio.ru/assets/image/radio/180/Relax_Instrumental.png"
+      },
+      {
+        "stream": "http://radio.4duk.ru/4duk128.mp3",
+        "name": "ЧипльДук",
+        "image": "http://top-radio.ru/assets/image/radio/180/chipilduk.jpg"
+      },
+      {
+        "stream": "http://listen1.myradio24.com:9000/6262",
+        "name": "Спокойное Радио",
+        "image": "http://top-radio.ru/assets/image/radio/180/spokoinoe.jpg"
+      },
+      {
+        "stream": "http://sanfm.ru:8000/relax",
+        "name": "San FM Relax",
+        "image": "https://images.radiovolna.net/_files/images/stations/4060/izr8595c9244d1e8b976767500.jpg"
+      },
+      {
+        "stream": "http://62.138.147.36:8010/lounge-ooe.mp3",
+        "name": "Lounge FM UKW WIEN",
+        "image": "https://images.radiovolna.net/_files/images/stations/2139/yigh595bd5dee1a5a869051277.jpg"
+      },
+      {
+        "stream": "http://62.138.147.36:8010/digital.mp3",
+        "name": "Lounge FM UKW OÖ",
+        "image": "https://images.radiovolna.net/_files/images/stations/2139/yigh595bd5dee1a5a869051277.jpg"
+      },
+      {
+        "stream": "http://62.138.147.36:8010/100austria.mp3",
+        "name": "Lounge FM 100% AUSTRIA",
+        "image": "https://images.radiovolna.net/_files/images/stations/2139/yigh595bd5dee1a5a869051277.jpg"
+      },
+      {
+        "stream": "http://stream.cdm-chillout.com:8020/stream-mp3-Chill",
+        "name": "Costa Del Mar - Chillout",
+        "image": "https://images.radiovolna.net/_files/images/stations/400725/1486125657_radio.cdm-logo-chilllout-600-.jpg-600600.png"
+      },
+      {
+        "stream": "http://air.radiorecord.ru:805/chil_320",
+        "name": "Chill-Out - Радио Рекорд",
+        "image": "http://top-radio.ru/assets/image/radio/180/recordchillout.png"
+      },
+      {
+        "stream": "http://buddha-beach.vip-radios.fm:8054/stream-128kmp3-BuddhaBeach",
+        "name": "Buddha Beach Radio",
+        "image": "https://images.radiovolna.net/_files/images/stations/405228/utqn5a3b88a151a83751861732.jpg"
+      },
+      {
+        "stream": "http://178.32.111.41:8027/stream-128kmp3-YogaChill",
+        "name": "Yoga Chill",
+        "image": "https://images.radiovolna.net/_files/images/stations/405655/k5af5a59073ad053f019316989.jpg"
+      },
+      {
+        "stream": "https://a7.radioheart.ru:9044/newageradio",
+        "name": "New Age Radio",
+        "image": "http://top-radio.ru/assets/image/radio/180/newageradio.jpg"
+      },
+      {
+        "stream": "http://185.53.169.117:8000/320",
+        "name": "Радио Атмосфера",
+        "image": "http://top-radio.ru/assets/image/radio/180/radioatmosfera.jpg"
+      },
+      {
+        "stream": "https://listen2.myradio24.com/8795",
+        "name": "ChilloutFM",
+        "image": "https://images.radiovolna.net/_files/images/stations/400717/1486122269_pw1qbnafosu.jpg"
+      },
+      {
+        "stream": "http://chill.friskyradio.com/friskychill_mp3_high",
+        "name": "Frisky Radio CHILL",
+        "image": "https://images.radiovolna.net/_files/images/stations/24702/dc20d7448ceb14cf5a604ea9682c3df9.png"
+      },
+      {
+        "stream": "http://195.88.63.114:8000/relax",
+        "name": "Relax - Радио За облаками",
+        "image": "http://top-radio.ru/assets/image/radio/180/za-oblakami.jpg"
+      },
+      {
+        "stream": "http://cast.loungefm.com.ua/acoustic128",
+        "name": "Lounge FM Acoustic",
+        "image": "http://top-radio.ru/assets/image/radio/180/loungefm.png"
+      },
+      {
+        "stream": "http://cast.loungefm.com.ua/terrace128",
+        "name": "Lounge FM Terrace",
+        "image": "http://top-radio.ru/assets/image/radio/180/loungefm.png"
+      },
+      {
+        "stream": "http://212.92.183.74:8370/;",
+        "name": "Радио Рандеву",
+        "image": "http://top-radio.ru/assets/image/radio/180/randevu.jpg"
+      },
+      {
+        "stream": "http://radio.stereoscenic.com/asp-h",
+        "name": "Ambient Sleeping Pill",
+        "image": "https://images.radiovolna.net/_files/images/stations/26190/bd2ffb2506c63c797221dc9ff797f4ed.png"
+      },
+      {
+        "stream": "http://air2.radiorecord.ru:805/cadillac_320",
+        "name": "Cadillac FM - Радио Рекорд",
+        "image": "http://top-radio.ru/assets/image/radio/180/record-cadilac-fm.jpg"
+      }
+    ]
+  },
+  {
+    "genre": "Ретро",
+    "stations": [
+      {
+        "stream": "http://europaplus.hostingradio.ru:8014/retro320.mp3",
+        "name": "Ретро FM",
+        "image": "http://top-radio.ru/assets/image/radio/180/retro_fm.png"
+      },
+      {
+        "stream": "http://air.radiorecord.ru:805/1980_320",
+        "name": "1980-е",
+        "image": "http://top-radio.ru/assets/image/radio/180/record-1980-e.png"
+      },
+     {
+        "stream": "http://online.nashipesni.ru:8000/np-kras",
+        "name": "Наши песни",
+        "image": "http://top-radio.ru/assets/image/radio/180/nashi-pesny.jpg"
+      },
+      {
+        "stream": "http://online.gkvr.ru/radiola_eka_128.mp3",
+        "name": "Радиола",
+        "image": "http://top-radio.ru/assets/image/radio/180/radiola.jpg"
+      },
+      {
+        "stream": "http://music.myradio.ua:8000/kids-songs128.mp3",
+        "name": "Детские Песни",
+        "image": "https://images.radiovolna.net/_files/images/stations/390/tg1k593ff9a5b8a9b096938222.jpg"
+      },
+      {
+        "stream": "http://93.84.112.253:8010/MV128",
+        "name": "Мелодия Века",
+        "image": "http://top-radio.ru/assets/image/radio/180/milodiiveka.png"
+      },
+      {
+        "stream": "http://91.207.59.26/a144",
+        "name": "Радио 101 Дискотека СССР",
+        "image": "http://top-radio.ru/assets/image/radio/180/diskoteka-sssr.jpg"
+      },
+      {
+        "stream": "http://stream128.melodiafm.spb.ru:8000/melodia128",
+        "name": "Мелодия",
+        "image": "http://top-radio.ru/assets/image/radio/180/melodia-spb.png"
+      },
+      {
+        "stream": "http://icecast-vgtrk.cdnvideo.ru/unost_mp3_128kbps",
+        "name": "Радио Юность",
+        "image": "http://top-radio.ru/assets/image/radio/180/unost.png"
+      },
+      {
+        "stream": "http://ic4.101.ru:8000/a46",
+        "name": "Радио СССР 30-50х",
+        "image": "http://top-radio.ru/assets/image/radio/180/ussr3050.png"
+      },
+       {
+        "stream": "http://air.radiorecord.ru:805/naft_320",
+        "name": "Нафталин FM",
+        "image": "http://top-radio.ru/assets/image/radio/180/recordnaft.png"
+      },
+      {
+        "stream": "http://live.borneo.ru:8888/bv64",
+        "name": "Радио Благовестие",
+        "image": "http://fm-volna.ru/wp-content/uploads/edd/blagovestie.jpg"
+      },
+      {
+        "stream": "http://air.radiorecord.ru:805/deti_320",
+        "name": "Веснушка FM",
+        "image": "http://top-radio.ru/assets/image/radio/180/vesnushkafm.jpg"
+      },
+      {
+        "stream": "http://air.radiorecord.ru:805/1970_320",
+        "name": "1970-е",
+        "image": "http://top-radio.ru/assets/image/radio/180/rr-70.jpg"
+      }
+    ]
+  },
+  {
+    "genre": "Шансон",
+    "stations": [
+      {
+        "stream": "http://chanson.hostingradio.ru:8041/chanson256.mp3",
+        "name": "Шансон",
+        "image": "http://top-radio.ru/assets/image/radio/180/shanson.png"
+      },
+      {
+        "stream": "http://online.odessa.fm:8000/stream",
+        "name": "Одесса Мама",
+        "image": "http://top-radio.ru/assets/image/radio/180/odessamama.png"
+      },
+      {
+        "stream": "https://zaycevfm.cdnvideo.ru/ZaycevFM_shanson_256.mp3",
+        "name": "Зайцев.FM - Шансон",
+        "image": "http://top-radio.ru/assets/image/radio/180/zaycevfmshanson.jpg"
+      },
+      {
+        "stream": "http://chanson.hostingradio.ru:8041/chanson-uncensored256.mp3",
+        "name": "Шансон без цензуры",
+        "image": "http://top-radio.ru/assets/image/radio/180/shanson.png"
+      },
+      {
+        "stream": "http://setmedia.ru:8000/high3",
+        "name": "Кабриолет",
+        "image": "http://top-radio.ru/assets/image/radio/180/kabriolet.jpg"
+      },
+      {
+        "stream": "http://listen2.myradio24.com:9000/8144",
+        "name": "Волшебный Шансон",
+        "image": "http://top-radio.ru/assets/image/radio/180/volshebniy-shanson.jpg"
+      },
+      {
+        "stream": "http://music.myradio.com.ua:8000/shansonlyrics128.mp3",
+        "name": "Лирика шансона",
+        "image": "http://top-radio.ru/assets/image/radio/180/Лирика%20шансон%20обозреватель.jpg"
+      },
+      {
+        "stream": "http://chanson.hostingradio.ru:8041/chanson-romantic256.mp3",
+        "name": "Романтический Шансон",
+        "image": "http://top-radio.ru/assets/image/radio/180/shanson.png"
+      },
+      {
+        "stream": "http://music.myradio.ua:8000/bard128.mp3",
+        "name": "Авторская Песня",
+        "image": "https://images.radiovolna.net/_files/images/stations/388/k10r593ffaa407cca205045680.jpg"
+      }
+    ]
+  },
+  {
+    "genre": "Джаз, Блюз, Соул",
+    "stations": [
+      {
+        "stream": "http://nashe1.hostingradio.ru/jazz-256",
+        "name": "Радио Jazz",
+        "image": "http://top-radio.ru/assets/image/radio/180/jazzradio.png"
+      },
+      {
+        "stream": "http://icecast.omroep.nl/radio6-sb-mp3",
+        "name": "NPO Soul & Jazz",
+        "image": "https://images.radiovolna.net/_files/images/stations/4637/rju5594e1ac73d654007205120.jpg"
+      },
+      {
+        "stream": "http://144.217.158.59:5120/stream",
+        "name": "Smooth Jazz Florida",
+        "image": "https://images.radiovolna.net/_files/images/stations/25321/c98d24f30cc9ddfe1891b99a70ae2bc5.png"
+      },
+      {
+        "stream": "http://streaming.radionomy.com/JazzRadioBcn",
+        "name": "Jazz Radio BCN",
+        "image": "https://images.radiovolna.net/_files/images/stations/9407/q6j95a244e277701c297816140.jpg"
+      },
+      {
+        "stream": "http://jfm1.hostingradio.ru:14536/jvstream.mp3",
+        "name": "Радио Jazz - Vocals",
+        "image": "https://images.radiovolna.net/_files/images/stations/5108/v9d3595a8d43b8be9161549497.jpg"
+      },
+      {
+        "stream": "https://stream.pcradio.ru/jus_blues_radio-med",
+        "name": "Jus Blues",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTbfK_H57neGzNLvTZI1RROgPL9GM9SNSAn55-ASUSzNv3-Puwv"
+      },
+      {
+        "stream": "http://91.190.117.131:8000/live",
+        "name": "Радио Эрмитаж",
+        "image": "https://images.radiovolna.net/_files/images/stations/308/k3of595a9c5e0c51b705351174.jpg"
+      },
+      {
+        "stream": "http://broadcaster.smoothjazzutah.com:8000/kwbr",
+        "name": "Smooth Jazz Utah",
+        "image": "https://cdn-radiotime-logos.tunein.com/s42325q.png"
+      },
+      {
+        "stream": "http://jfm1.hostingradio.ru:14536/sjstream.mp3",
+        "name": "Радио Jazz - Smooth",
+        "image": "https://images.radiovolna.net/_files/images/stations/5109/gbg5595a8d644c62a294671863.jpg"
+      },
+      {
+        "stream": "http://jfm1.hostingradio.ru:14536/jlstream.mp3",
+        "name": "Радио Jazz - Legends",
+        "image": "https://images.radiovolna.net/_files/images/stations/5109/gbg5595a8d644c62a294671863.jpg"
+      },
+      {
+        "stream": "http://sc-blues.1.fm:8030/",
+        "name": "1.FM - Blues",
+        "image": "https://images.radiovolna.net/_files/images/stations/418/mbh8593fdcad7f751774226269.jpg"
+      },
+      {
+        "stream": "https://str4.pcradio.ru/jazz_swing_manouche-med",
+        "name": "Jazz Swing Manouche Radio (JSM)",
+        "image": "https://static.radio.net/images/broadcasts/70/6e/33414/c300.png"
+      },
+      {
+        "stream": "http://jfm1.hostingradio.ru:14536/ijstream.mp3",
+        "name": "Радио Jazz - Classic",
+        "image": "https://images.radiovolna.net/_files/images/stations/5109/gbg5595a8d644c62a294671863.jpg"
+      },
+      {
+        "stream": "http://91.207.59.26/c19_2",
+        "name": "Relax FM Jazz",
+        "image": "http://top-radio.ru/assets/image/radio/180/relaxjazz.png"
+      },
+      {
+        "stream": "http://176.9.150.163:8026/stream",
+        "name": "Radio BSJ",
+        "image": "http://top-radio.ru/assets/image/radio/180/BSJ.png"
+    },
+      {
+        "stream": "http://stream01.radiocon.ru:8000/bobjazz?07988f",
+        "name": "Bob Jazz",
+        "image": "https://online.lagoonfm.ru/wp-content/uploads/2018/08/bob-jazz.jpg"
+    },
+      {
+        "stream": "http://radio.adds.su:8020/radioj?332b",
+        "name": "RadioJ",
+        "image": "https://radiomaniya.ru/sites/default/files/stations/97bcca9cf502bdbb3c84.jpg"
+  },
+      {
+        "stream": "http://173.249.21.17:8108/;?bdb3b2e",
+        "name": "BluesMen Channel",
+        "image": "https://pixhost.icu/avaxhome/41/65/00616541_medium.jpg"
+      }
+    ]
+  },
+  {
+    "genre": "Электронная, Deep, House",
+    "stations": [
+      {
+        "stream": "http://air2.radiorecord.ru:805/tm_320",
+        "name": "Trancemission Radio",
+        "image": "https://www.radiobells.com/stations/trancemission.jpg"
+      },
+      {
+        "stream": "http://radio.btuner.ru:8000/aac",
+        "name": "bTuner's Radio",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRfdnhVRQ2lt48CyB1_9tJy6ddEy7jEn_Q2pqIEQS5DBj8EQmC7"
+      },
+      {
+        "stream": "http://96mp3.lradio.ru:8000/lradio.stereo.96.mp3",
+        "name": "L-Radio",
+        "image": "http://top-radio.ru/assets/image/radio/180/l-fm.jpg"
+      },
+      {
+        "stream": "http://185.220.35.56:8000/128",
+        "name": "SoundPark Radio",
+        "image": "https://www.radiobells.com/stations/soundparkdeep.jpg"
+      },
+      {
+        "stream": "http://188.17.157.29:8000/uralpremium",
+        "name": "Ural Sound FM",
+        "image": "https://www.radiobells.com/stations/uralsound.jpg"
+      },
+      {
+        "stream": "https://graalradio.com:8128/highway160",
+        "name": "Graal Radio Highway",
+        "image": "https://graalradio.com/static/img/seologo.jpg"
+      },
+      {
+        "stream": "https://graalradio.com:8128/goodtimes160",
+        "name": "Graal Radio Goodtimes",
+        "image": "https://graalradio.com/static/img/seologo.jpg"
+      },
+      {
+        "stream": "https://graalradio.com:8128/future160",
+        "name": "Graal Radio Future",
+        "image": "https://www.radiobells.com/stations/graalradiofuture.jpg"
+      },
+      {
+        "stream": "https://graalradio.com:8128/club160",
+        "name": "Graal Radio Club",
+        "image": "https://www.radiobells.com/stations/graalradio.jpg"
+      },
+      {
+        "stream": "https://play.sas-media.ru/play",
+        "name": "Noise FM",
+        "image": "http://top-radio.ru/assets/image/radio/180/noise-fm.jpg"
+      },
+      {
+        "stream": "http://91.213.196.95:8000/300kmh-192",
+        "name": "Promo DJ - 300 kmh",
+        "image": "http://vitoff.net/radio/promo-dj/promo-dj-300kmh-logo.jpg"
+      },
+      {
+        "stream": "https://str4.pcradio.ru/promo_186mph-med",
+        "name": "Promo DJ - 186 kmh",
+        "image": "https://pcradio.ru/sites/default/files/styles/icon_search/public/radio_logo/1470424482_4.jpeg"
+      },
+      {
+        "stream": "http://radio.maases.com:8000/deep-192",
+        "name": "Promo DJ - Deep",
+        "image": "https://images.radiovolna.net/_files/images/stations/1554/cych5952bf3350021469139431.jpg"
+      },
+      {
+        "stream": "http://radio.promodj.com/mini",
+        "name": "Promo DJ - Mini",
+        "image": "https://www.radiobells.com/stations/promodjmini.jpg"
+      },
+      {
+        "stream": "http://radio.promodj.com:8000/toodeep-192",
+        "name": "Promo DJ - Too Deep",
+        "image": "http://vitoff.net/radio/promo-dj/promo-dj-too-deep-logo.jpg"
+      },
+      {
+        "stream": "http://radio.promodj.com:8000/pop-192",
+        "name": "Promo DJ - Pop",
+        "image": "https://www.radiobells.com/stations/promodjpop.jpg"
+      },
+      {
+        "stream": "http://radio.promodj.com/oldschool",
+        "name": "Promo DJ - Old-School",
+        "image": "https://www.radiobells.com/stations/promodjoldschool.jpg"
+      },
+      {
+        "stream": "http://radio.promodj.com/strange",
+        "name": "Promo DJ - Strange",
+        "image": "https://www.radiobells.com/stations/promodjstrange.jpg"
+      },
+      {
+        "stream": "http://radio.promodj.com/brainfck",
+        "name": "Promo DJ - Brainfck",
+        "image": "https://www.radiobells.com/stations/promodjbrainfck.jpg"
+      },
+      {
+        "stream": "http://radio.promodj.com:8000/bobina-192",
+        "name": "Promo DJ - Bobina",
+        "image": "https://www.radiobells.com/stations/promodjbobina.jpg"
+      },
+      {
+        "stream": "http://radio.promodj.com:8000/groove-192",
+        "name": "Promo DJ - DJ GROOVE",
+        "image": "http://vitoff.net/radio/promo-dj/promo-dj-groove-logo.jpg"
+      },
+      {
+        "stream": "http://radio.promodj.com/vata",
+        "name": "Promo DJ - Vata",
+        "image": "http://vitoff.net/radio/promo-dj/promo-dj-vata-logo.jpg"
+      },
+      {
+        "stream": "http://radio.promodj.com/fullmoon",
+        "name": "Promo DJ - Full Moon",
+        "image": "https://www.radiobells.com/stations/promodjfullmoon.jpg"
+      },
+      {
+        "stream": "http://radio.promodj.com:8000/yo-192",
+        "name": "Promo DJ - Yo",
+        "image": "https://www.radiobells.com/stations/promodjyo.jpg"
+      },
+      {
+        "stream": "http://radio.promodj.com:8000/toonu-192",
+        "name": "Promo DJ - Too Nu",
+        "image": "http://vitoff.net/radio/promo-dj/promo-dj-too-nu-logo.jpg"
+      },
+      {
+        "stream": "http://radio.promodj.com:8000/nu-192",
+        "name": "Promo DJ - Nu",
+        "image": "https://www.radiobells.com/stations/promodjnu.jpg"
+      },
+      {
+        "stream": "http://radio.promodj.com:8000/dubstep-192",
+        "name": "Promo DJ - Dubstep",
+        "image": "https://www.radiobells.com/stations/promodjdubstep.jpg"
+      },
+      {
+        "stream": "http://radio.promodj.com:8000/klubb-192",
+        "name": "Promo DJ - Klubb",
+        "image": "https://www.radiobells.com/stations/promodjklubb.jpg"
+      },
+      {
+        "stream": "http://radio.maases.com:8000/channel5-192",
+        "name": "Promo DJ - Channel 5",
+        "image": "http://vitoff.net/radio/promo-dj/promo-dj-channel-5-logo.jpg"
+      },
+      {
+        "stream": "http://radio.promodj.com:8000/top100-192",
+        "name": "Promo DJ - TOP100",
+        "image": "https://www.radiobells.com/stations/promodjtop100.jpg"
+      },
+      {
+        "stream": "http://194.87.111.252:8000/live",
+        "name": "Nu Euphoria",
+        "image": "https://images.radiovolna.net/_files/images/stations/9417/hunp593ffe87deb3b960838034.jpg"
+      },
+      {
+        "stream": "http://95.84.164.172:8000/discofever",
+        "name": "Radio Discofever",
+        "image": "https://images.radiovolna.net/_files/images/stations/418089/cfa38cf6208e00b83b1bf1723a8ec1a5.png"
+      },
+      {
+        "stream": "http://stream.friskyradio.com:8000/frisky_aac_hi",
+        "name": "Frisky Radio",
+        "image": "https://images.radiovolna.net/_files/images/stations/1651/ztbt595baf3885a37969381506.jpg"
+      },
+      {
+        "stream": "http://deep.friskyradio.com/friskydeep_mp3lo",
+        "name": "Frisky Radio - Deep",
+        "image": "https://images.radiovolna.net/_files/images/stations/401001/yi9p595baf84c6f5a300803603.jpg"
+      },
+      {
+        "stream": "http://sc2b-sjc.1.fm:7704/",
+        "name": "Amsterdam Trance Radio",
+        "image": "https://images.radiovolna.net/_files/images/stations/368/da7s593fdcb4dfcb9201905601.jpg"
+      },
+      {
+        "stream": "http://necta.burn.net:8000/nectarine",
+        "name": "Nectarine Demoscene Radio",
+        "image": "https://www.amigafrance.com/wp-content/uploads/hm_bbpui/30863/fqmxiyy7y6075ema9vwwkxu7qtztzqx4.jpg"
+      },
+      {
+        "stream": "https://stream.pcradio.ru/uturn_dnb-med",
+        "name": "Uturn Radio - Drum And Bass",
+        "image": "http://cdn-radiotime-logos.tunein.com/s115693q.png"
+      },
+      {
+        "stream": "https://mdeep.ru/station/live",
+        "name": "M.Deep Radio",
+        "image": "https://images.radiovolna.net/_files/images/stations/403918/rzgg5a0c050e0bbb6051083191.jpg"
+      },
+      {
+        "stream": "https://api.graalradio.com/channel/play/space192",
+        "name": "Graal Radio Space",
+        "image": "https://graalradio.com/static/img/seologo.jpg"
+      },
+      {
+        "stream": "https://streamingv2.shoutcast.com/layzer",
+        "name": "Layzer",
+        "image": "https://static.radio.net/images/broadcasts/11/a3/104069/1/c175.png"
+      },
+      {
+        "stream": "http://listen.uturnradio.com/electro_house",
+        "name": "Uturn Radio - Electro House",
+        "image": "http://cdn-radiotime-logos.tunein.com/s115693q.png"
+      },
+      {
+        "stream": "http://23.89.9.181:9780/stream",
+        "name": "Ibiza Sound Radio",
+        "image": "https://images.radiovolna.net/_files/images/stations/31252/13e77cbfdb882379d6c04090c1aa9cfe.png"
+      },
+      {
+        "stream": "http://comet.shoutca.st:8271/stream",
+        "name": "Radio Plato",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9VISmLqb1wYUixkvREtiGQMb3KJsvkf4ZoFjTghB1joobdfTR"
+      },
+      {
+        "stream": "http://192.99.39.108:7872/stream/1/",
+        "name": "Deep Vocal House",
+        "image": "https://static.radio.net/images/broadcasts/b9/07/100257/1/c175.png"
+      },
+      {
+        "stream": "http://212.47.253.28:8000/5a991d3a4c40a40007e2b152",
+        "name": "RCM Radio",
+        "image": "http://185.154.53.28/images/radio-logo/deep-fm.png"
+      },
+      {
+        "stream": "http://84.52.126.211:8085/stream.ogg/;type=mp3",
+        "name": "Shmup Radio",
+        "image": "https://www.radiobells.com/stations/shmupradio.jpg"
+      },
+      {
+        "stream": "http://stream.161.fm:8000/128",
+        "name": "161 FM",
+        "image": "http://top-radio.ru/assets/image/radio/180/161-fm.jpg"
+      }
+    ]
+  },
+  {
+    "genre": "Рэп, R&B, Хип-Хоп",
+    "stations": [
+      {
+        "stream": "https://hitfm-urban.hostingradio.ru/urban96.aacp",
+        "name": "Хит FM Urban",
+        "image": "http://top-radio.ru/assets/image/radio/180/hitfmurban.png"
+      },
+     {
+        "stream": "https://blackstarradio.hostingradio.ru:8024/blackstarradio128.mp3?radiostatistica=top-radio",
+        "name": "Black Star Radio",
+        "image": "http://top-radio.ru/assets/image/radio/180/bsr.png"
+        },
+      {
+        "stream": "https://zaycevfm.cdnvideo.ru/ZaycevFM_rnb_256.mp3",
+        "name": "Зайцев FM RnB",
+        "image": "http://top-radio.ru/assets/image/radio/180/zajcevrnb.png"
+    },
+      {
+        "stream": "http://epdop.hostingradio.ru:8033/ep-urban128.mp3",
+        "name": "Urban - Европа Плюс",
+        "image": "http://top-radio.ru/assets/image/radio/180/epurban.png"
+      },
+      {
+        "stream": "http://radio.yasenbit.net:8000/yasenbit128k",
+        "name": "Ясенбит",
+        "image": "http://slushat-radio.online/uploads/posts/2017-12/1512167789_yasenbit.png"
+      },
+      {
+        "stream": "http://icecast-studio21.cdnvideo.ru/S21_1",
+        "name": "STUDIO 21",
+        "image": "https://images.radiovolna.net/_files/images/164x164/33a0fbf4efb2a6e196baf857ba4ac49d/mt/wzv55b87b27166d51871695211.jpg"
+      },
+      {
+        "stream": "http://stream.jammfm.nl:8221/;stream.nsv",
+        "name": "Jamm FM",
+        "image": "https://static.radio.net/images/broadcasts/95/76/11760/c300.png"
+      },
+      {
+        "stream": "http://air.radiorecord.ru:805/mf_320",
+        "name": "Маятник Фуко",
+        "image": "http://top-radio.ru/assets/image/radio/180/recordmayatnikfuko.png"
+      },
+      {
+        "stream": "http://air.radiorecord.ru:8102/yo_128",
+        "name": "Record Black / YO FM",
+        "image": "https://images.radiovolna.net/_files/images/164x164/de4ae824e0c8af6e6e62feb5a1429b29/le/otp8593bb4d120c0b178424570.jpg"
+      },
+      {
+        "stream": "http://air.radiorecord.ru:805/rapclassics_320",
+        "name": "Rap Classics",
+        "image": "http://top-radio.ru/assets/image/radio/180/record-rap-classics.png"
+      }
+    ]
+  },
+  {
+    "genre": "Кантри, Фолк, Этническая",
+    "stations": [
+      {
+        "stream": "http://193.242.149.55:8000/256",
+        "name": "Казак FM",
+        "image": "http://top-radio.ru/assets/image/radio/180/kazak-fm.jpg"
+      },
+      {
+        "stream": "http://thassos.cdnstream.com:5479/stream?cb=276782.mp3",
+        "name": "Radio Free Americana",
+        "image": "https://i0.wp.com/radiofreeamericana.com/wp-content/uploads/RFA-Logos/cropped-RFA-VinylRecordLogo-512x512-1.png"
+      },
+      {
+        "stream": "http://strm112.1.fm/ccountry_mobile_mp3",
+        "name": "1.FM Classic Country",
+        "image": "http://cdn-radiotime-logos.tunein.com/s98671g.png"
+      },
+      {
+        "stream": "https://radio.mediacdn.ru/uldash.mp3",
+        "name": "Юлдаш",
+        "image": "http://top-radio.ru/assets/image/radio/180/uldashfm.png"
+      },
+      {
+        "stream": "http://strm112.1.fm/acountry_mobile_mp3",
+        "name": "Absolute Country Hits",
+        "image": "http://cdn-radiotime-logos.tunein.com/s98671g.png"
+      },
+      {
+        "stream": "http://ice4.somafm.com/bootliquor-320-mp3?r=078659?retry=2",
+        "name": "SomaFM - Boot Liquor",
+        "image": "http://cdn-profiles.tunein.com/s50955/images/logog.jpg"
+      },
+      {
+        "stream": "https://wdvx.streamguys1.com/live?_=1422694411",
+        "name": "WDVX",
+        "image": "https://www.knoxvilletnlist.com/wp-content/uploads/2017/08/WDVX.jpg"
+      },
+      {
+        "stream": "http://1.ice1.sslstream.com:8000/whcc_fm.aac",
+        "name": "Hoosier Country 105",
+        "image": "https://static.radio.net/images/broadcasts/9b/fb/30159/c300.png"
+      },
+      {
+        "stream": "http://sc1c-sjc.1.fm:7048/",
+        "name": "1.FM Country One",
+        "image": "http://cdn-radiotime-logos.tunein.com/s98671g.png"
+      },
+      {
+        "stream": "http://87.98.130.255:8401/stream",
+        "name": "HPRM2 - Today's Classic Country",
+        "image": "http://db.radioline.fr/pictures/radio_f9363ced823eae7920d3a9bc907c2e3c/logo200.jpg"
+      },
+      {
+        "stream": "http://buryadfm.hostingradio.ru:8018/buryadfm128.mp3",
+        "name": "Buryad FM",
+        "image": "https://topradio.me/assets/image/radio/180/buryad-fm.png"
+      },
+      {
+        "stream": "http://stream.tatarradio.ru:2068/;",
+        "name": "Татар Радиосы",
+        "image": "http://top-radio.ru/assets/image/radio/180/Татар%20радио.jpg"
+      },
+      {
+        "stream": "http://icecast.ntrk21.ru:8000/nacradio",
+        "name": "Национальное радио Чувашии - Чаваш Ен",
+        "image": "http://top-radio.ru/assets/image/radio/180/nrch.jpg"
+      },
+      {
+        "stream": "http://icecast.ntrk21.ru:8000/tavan",
+        "name": "Таван Радио",
+        "image": "http://top-radio.ru/assets/image/radio/180/59766%20(1).jpg"
+      },
+      {
+        "stream": "http://94.180.249.163:8000/tatar64kbps.mp3",
+        "name": "Татарстан Радиосы",
+        "image": "http://online-red.com/images/radio-logo/radiotatarstana.png"
+      }
+    ]
+  },
+  {
+    "genre": "Классическая",
+    "stations": [
+      {
+        "stream": "https://klassikr.streamabc.net/klr-puremozart-mp3-128-9628333",
+        "name": "Pure Mozart",
+        "image": "https://mytuner.global.ssl.fastly.net/media/tvos_radios/pPdZMbsTFd.jpg"
+      },
+      {
+        "stream": "https://orfeyfm.hostingradio.ru:8034/orfeyfm192.mp3",
+        "name": "Радио Орфей",
+        "image": "http://top-radio.ru/assets/image/radio/180/orfey.jpg"
+      },
+      {
+        "stream": "http://pianosolo.streamguys.net/live",
+        "name": "Радио Solo Piano",
+        "image": "http://top-radio.ru/assets/image/radio/180/spr.jpg"
+      },
+      {
+        "stream": "https://str2.pcradio.ru/wqxr_q2-med",
+        "name": "Q2 Music",
+        "image": "http://db.radioline.fr/pictures/radio_454737702b5f2460510958b96b5c6816/logo200.jpg"
+      },
+      {
+        "stream": "http://jfm1.hostingradio.ru:14536/cvstream.mp3",
+        "name": "Радио Классик Vocals",
+        "image": "http://top-radio.ru/assets/image/radio/180/classicvoc.png"
+      },
+      {
+        "stream": "http://109.123.116.202:8022/;stream.nsv",
+        "name": "Venice Classic Radio",
+        "image": "https://www.radiospeaker.it/images/blog/massimo-lombardi-di-venice-classic-radio-al-web-radio-festival_landscape_300x1000.jpg"
+      },
+      {
+        "stream": "http://38.100.128.106:8000/fmlive/;",
+        "name": "Classical WETA",
+        "image": "https://is3-ssl.mzstatic.com/image/thumb/Purple123/v4/94/46/6d/94466d44-2230-15f6-8573-1c0d74ce3aa7/AppIcon-0-1x_U007emarketing-0-85-220-4.png/246x0w.jpg"
+      },
+      {
+        "stream": "http://sc17.1.fm:8045/;",
+        "name": "Otto's Baroque Music ",
+        "image": "https://static.radio.net/images/broadcasts/6a/58/1366/2/c300.png"
+      },
+      {
+     "stream": "http://sc17.1.fm:8045/;",
+        "name": "1.FM - Otto's Baroque Musick",
+        "image": "https://static.radio.net/images/broadcasts/6a/58/1366/2/c300.png"
+      },
+      {
+        "stream": "http://sc-classical.1.fm:8047/",
+        "name": "1.FM - All Otto Classical Music",
+        "image": "https://static.radio.net/images/broadcasts/c8/0d/6175/2/c300.png"
+      },
+      {
+        "stream": "http://mdr-edge-2053.dus-lg.cdn.addradio.net/mdr/klassik/live/aac/128/stream.aac?ar-distributor=f0e3",
+        "name": "MDR Klassik",
+        "image": "http://api.my-radios.com/images/thumb.php?countryCode=DE&name=14573-8219553.png&size=200"
+      },
+      {
+        "stream": "http://strm112.1.fm/opera_mobile_mp3",
+        "name": "1.FM - Otto's Opera House",
+        "image": "https://volna.top/fls/1fmopera.png"
+      },
+      {
+        "stream": "http://stream.srg-ssr.ch/m/rsc_de/aacp_96",
+        "name": "Radio Swiss Classic",
+        "image": "http://www.radioswissclassic.ch/social-media/rsc-web.png"
+      },
+      {
+        "stream": "http://pianosolo.streamguys.net/live",
+        "name": "Whisperings Solo Piano Radio",
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/a7/16/15/a7161571-96ca-7a24-3d66-c7d13ef01802/source/512x512bb.jpg"
+      }
+    ]
+  },
+  {
+    "genre": "Разговорное",
+    "stations": [
+      {
+        "stream": "http://icecast.vgtrk.cdnvideo.ru/mayakfm_mp3_192kbps",
+        "name": "Радио Маяк",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Маяк2017.jpg"
+      },
+      {
+        "stream": "http://kpradio.hostingradio.ru:8000/russia.radiokp128.mp3",
+        "name": "Комсомольская правда",
+        "image": "https://radiomaniya.ru/sites/default/files/stations/Комсомольская%20правда.jpg"
+      },
+      {
+        "stream": "http://icecast.vgtrk.cdnvideo.ru/vestifm_mp3_192kbps",
+        "name": "Вести FM",
+        "image": "https://smarttips.fun/images/0/4/5/045048d3279f4eac0b2045769a1d50549db9cbd9/img_0.jpg"
+      },
+      {
+        "stream": "http://video.govoritmoskva.ru:8880/rufm_m.mp3",
+        "name": "Говорит Москва",
+        "image": "http://ruzaregion.ru/fotosnews/12607.jpg"
+      },
+      {
+        "stream": "http://icecast.vgtrk.cdnvideo.ru/rrzonam_mp3_192kbps",
+        "name": "Радио России",
+        "image": "https://www.radiobells.com/stations/radiorossii.jpg"
+      },
+      {
+        "stream": "http://ice912.echo.msk.ru:9120/stream",
+        "name": "Эхо Москвы",
+        "image": "https://guzei.com/online_radio/logo300/14040.jpg"
+      },
+      {
+        "stream": "http://stream.mds-station.com:8000/01-mds",
+        "name": "Радио Модель для сборки",
+        "image": "https://images.radiovolna.net/_files/images/stations/846/uqwm597b514bd91b1958984057.jpg"
+      },
+      {
+        "stream": "http://ic7.101.ru:8000/a199",
+        "name": "Детское радио",
+        "image": "https://guzei.com/online_radio/logo300/18890.jpg"
+      },
+      {
+        "stream": "http://kommersant77.hostingradio.ru:8016/kommersant128.mp3",
+        "name": "Коммерсантъ FM",
+        "image": "https://mytuner.global.ssl.fastly.net/media/tvos_radios/VD7uUTNGA3.jpg"
+      },
+      {
+        "stream": "https://str4.pcradio.ru/nashe_podmoscow-med",
+        "name": "Наше подмосковье",
+        "image": "https://is4-ssl.mzstatic.com/image/thumb/Purple118/v4/89/33/d1/8933d10d-7cb0-db5a-d415-e65301657509/source/512x512bb.jpg"
+      },
+      {
+        "stream": "http://89.208.99.16:8088/zvezda_128",
+        "name": "Радио Звезда",
+        "image": "https://volna.top/fls/radiozvezda-900x900.jpg"
+      },
+      {
+        "stream": "http://icecast.vgtrk.cdnvideo.ru/kulturafm_mp3_192kbps",
+        "name": "Радио Культура",
+        "image": "https://pbs.twimg.com/media/DFBmbhXXUAEKtkz.jpg"
+      },
+      {
+        "stream": "http://bfm.hostingradio.ru:8004/fm",
+        "name": "Бизнес FM",
+        "image": "https://volna.top/fls/bfm-900x900.jpg"
+      },
+      {
+        "stream": "http://icecast.vgtrk.cdnvideo.ru/moscowfm128",
+        "name": "Москва FM",
+        "image": "http://www.allenmedia.ru/images/logo-radio/logo-moscow-fm-ru.png"
+      },
+      {
+        "stream": "http://icecast.radonezh.cdnvideo.ru:8000/rad",
+        "name": "Радонеж",
+        "image": "http://www.radiogrom.com/paint_new/logo_big/radio_radonezh_logo_2018.jpg"
+      },
+      {
+        "stream": "http://bookradio.hostingradio.ru:8069/fm",
+        "name": "Радио Книга",
+        "image": "https://onradios.ru/wp-content/uploads/2014/08/radio-kniga-fm.jpg"
+      },
+      {
+        "stream": "http://audio2.video.ria.ru/voicerushi",
+        "name": "Радио Спутник",
+        "image": "https://guzei.com/online_radio/logo300/39.jpg"
+      },
+      {
+        "stream": "http://icecast.vgtrk.cdnvideo.ru/moscowtalk128?2644",
+        "name": "Радио Москвы",
+        "image": "http://online-red.com/images/radio-logo/radiomoskvy.png"
+      },
+      {
+        "stream": "http://ic2.101.ru:8000/a222",
+        "name": "Сказка за сказкой",
+        "image": "https://radiomass.ru/upload/cache/cf/cd/cfcd208495d565ef66e7dff9f98764da/_unic_672_150x150.png"
+      },
+      {
+        "stream": "https://a5.radioheart.ru:9012/RH1916",
+        "name": "Baby FM",
+        "image": "https://st28.stblizko.ru/images/companyabout/001/741/617_original.jpg"
+      },
+      {
+        "stream": "http://gamaun.online:8020/radio",
+        "name": "Гамаюн - радио для детей",
+        "image": "https://gamaun.online/img/gamaun.png"
+      },
+      {
+        "stream": "http://ic2.101.ru:8000/v15_1",
+        "name": "Радио Зенит",
+        "image": "https://pbs.twimg.com/media/DEh-_QbXoAA8Pgb.jpg:large"
+      },
+      {
+        "stream": "https://radiovera.hostingradio.ru:8007/radiovera_128",
+        "name": "Радио Вера",
+        "image": "https://guzei.com/online_radio/logo300/24272.jpg"
+      },
+      {
+        "stream": "http://radioserver.abinet.com:8800/dr.mp3",
+        "name": "Davidzon Radio",
+        "image": "https://guzei.com/online_radio/logo300/1401.jpg"
+      },
+     {
+        "stream": "http://server.audiopedia.su:8000/ices128",
+        "name": "Старое радио",
+        "image": "http://top-radio.ru/assets/image/radio/180/staroe-radio.jpg"
+      },
+      {
+        "stream": "http://213.177.106.78:8006/;?2578",
+        "name": "Образ FM",
+        "image": "http://top-radio.ru/assets/image/radio/180/obraz-fm.jpg"
+      },
+      {
+        "stream": "http://eu.radioboss.fm:8135/stream",
+        "name": "Радио Автодор",
+        "image": "https://guzei.com/online_radio/logo300/24744.jpg"
+      },
+      {
+        "stream": "http://s01.radio-tochka.com:6590/;",
+        "name": "Радиогазета Слово",
+        "image": "http://the-radio.ru/up/radio/ava/2017/03/2381_the_radio_ru_jif1noh.png"
+      },
+      {
+        "stream": "http://jfm1.hostingradio.ru:14536/rcstream.mp3?4ca4",
+        "name": "Радио Классик",
+        "image": "http://top-radio.ru/assets/image/radio/180/1500.png"
+      },
+      {
+        "stream": "http://217.24.181.164:8000/stream.mp3?fc31",
+        "name": "Радио Воскресение",
+        "image": "http://www.radiogrom.com/paint_new/logo_big/radio_voskresenie_online.jpg"
+      },
+      {
+        "stream": "http://online.echoekb.ru:8000/echoekb",
+        "name": "Эхо Москвы (Екатиринбург)",
+        "image": "https://www.echoekb.ru/DESIGN/ECHO/images/logo-fb.png"
+      },
+      {
+        "stream": "http://icecast.vgtrk.cdnvideo.ru/russiafm_nn",
+        "name": "Радио России (Нижний Новгород)",
+        "image": "http://top-radio.ru/assets/image/radio/180/radioru.png"
+      },
+       {
+        "stream": "http://icecast.vgtrk.cdnvideo.ru/mayak_nn",
+        "name": "Радио Маяк (Нижний Новгород)",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Маяк2017.jpg"
+      },
+      {
+        "stream": "http://195.190.97.147:8001/live",
+        "name": "Радио России (Санкт-Петербург)",
+        "image": "http://top-radio.ru/assets/image/radio/180/radioru.png"
+      },
+      {
+        "stream": "https://echokirova.ru:8443/radio.mp3",
+        "name": "Эхо Москвы (Киров)",
+        "image": "https://guzei.com/online_radio/logo300/14040.jpg"
+      },
+      {
+        "stream": "http://video.tvr.by:8000/radio1",
+        "name": "Первый канал Минск",
+        "image": "http://top-radio.ru/assets/image/radio/180/1kanalby.png"
+      },
+      {
+        "stream": "http://109.194.47.19:8000/echotomsk",
+        "name": "Эхо Москвы (Томск)",
+        "image": "https://guzei.com/online_radio/logo300/14040.jpg"
+      },
+      {
+        "stream": "http://bfm.hostingradio.ru:8004/fm",
+        "name": "Бизнес FM (Санкт-Петербург)",
+        "image": "http://stream.businessfm.spb.ru:8000/live"
+      },
+      {
+        "stream": "http://213.108.204.214:8000/Echo_msk_Oren",
+        "name": "Эхо Москвы (Оренбург)",
+        "image": "https://guzei.com/online_radio/logo300/14040.jpg"
+      },
+      {
+        "stream": "https://kpradio.hostingradio.ru:8000/spb.radiokp128.mp3",
+        "name": "Комсомольская правда (Санкт-Петербург)",
+        "image": "https://radiomaniya.ru/sites/default/files/stations/Комсомольская%20правда.jpg"
+      },
+      {
+        "stream": "https://kpradio.hostingradio.ru:8003/novosibirsk.radiokp128.mp3",
+        "name": "Комсомольская правда (Новосибирск)",
+        "image": "https://radiomaniya.ru/sites/default/files/stations/Комсомольская%20правда.jpg"
+      },
+      {
+        "stream": "http://80.70.108.71:8000/live",
+        "name": "Радио России (Иваново)",
+        "image": "https://www.radiobells.com/stations/radiorossii.jpg"
+      },
+      {
+        "stream": "http://kommersant77.hostingradio.ru:8016/kommersant128.mp3",
+        "name": "Коммерсантъ FM (Нижний Новгород)",
+        "image": "https://mytuner.global.ssl.fastly.net/media/tvos_radios/VD7uUTNGA3.jpg"
+      },
+      {
+        "stream": "http://kpradio.hostingradio.ru:8000/ekaterinburg.radiokp128.mp3",
+        "name": "Комсомольская правда (Екатеринбург)",
+        "image": "https://radiomaniya.ru/sites/default/files/stations/Комсомольская%20правда.jpg"
+      },
+      {
+        "stream": "http://icecast.vgtrk.cdnvideo.ru/rr_penza_aac",
+        "name": "Радио России (Пенза)",
+        "image": "https://www.radiobells.com/stations/radiorossii.jpg"
+      },
+      {
+        "stream": "http://193.124.115.157:8000/;stream.nsv",
+        "name": "Голос патриота",
+        "image": "https://vo-radio.ru/images/genre/talk/patriot-180.jpg"
+      },
+      {
+        "stream": "http://176.101.223.52:8000/klassnoe",
+        "name": "Классное Радио",
+        "image": "http://top-radio.ru/assets/image/radio/180/klassnoe-radio.jpg"
+      },
+      {
+        "stream": "http://radiorusd.cheltv.ru/stream",
+        "name": "Радио Южный Урал",
+        "image": "http://chel.fas.gov.ru/sites/chel.f.isfb.ru/files/images/20180305164836.jpg"
+      },
+      {
+        "stream": "http://asculta.rfi.ro:9128/live.aac",
+        "name": "RFI на русском",
+        "image": "http://top-radio.ru/assets/image/radio/180/rfi-r-m.png"
+      },
+      {
+        "stream": "http://bbcwssc.ic.llnwd.net/stream/bbcwssc_mp1_ws-einws",
+        "name": "BBC World Service (Английский)",
+        "image": "https://pbs.twimg.com/profile_images/1145627323967975424/Uwd1hK0p_400x400.png"
+      },
+      {
+        "stream": "https://npr-ice.streamguys1.com/live.mp3",
+        "name": "National Public Radio (Английский)",
+        "image": "http://s12982.pcdn.co/wp-content/uploads/2014/02/NPR.png"
+      },
+      {
+        "stream": "http://fm.1tvcrimea.ru:8000/stream.mp3?8aab5ce7",
+        "name": "Радиостанция Крым»",
+        "image": "https://business-sound.ru/sites/default/files/radio_krym.jpg"
+  },
+      {
+        "stream": "https://radioarctika.hostingradio.ru:80/radioarctika128.mp3?9034cafd",
+        "name": "Радио Русская Арктика»",
+        "image": "https://online-red.com/images/radio-logo/arctica.png"
+  },
+      {
+        "stream": "http://92.222.162.167:8000/live?6286",
+        "name": "Радио Завтра Да»",
+        "image": "https://pbs.twimg.com/media/D33GwjMW4AARJLX.png:large"
+  },
+      {
+        "stream": "http://radiovos.ru:9000/radiovos-64?d8f7",
+        "name": "Радио ВОС»",
+        "image": "https://yt3.ggpht.com/a/AGF-l790ibCOWnSLcs6lt5qwQuIJKHP7HFpChZI-=s900-c-k-c0xffffffff-no-rj-mo"
+  },
+      {
+        "stream": "http://storyfm.hostingradio.ru:8031/storyfm128.mp3?0307",
+        "name": "Story FM»",
+        "image": "https://iphone-image.apkpure.com/v2/app/a/d/9/ad9c86cf9822dccd5b547693c507ae8a.jpg"
+      }
+    ]
+  }
+]

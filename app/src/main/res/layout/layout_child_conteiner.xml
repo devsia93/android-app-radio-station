@@ -60,7 +60,6 @@
         app:el_parallax="1">
 
         <LinearLayout
-            android:paddingTop="6dp"
             android:id="@+id/child_container.container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

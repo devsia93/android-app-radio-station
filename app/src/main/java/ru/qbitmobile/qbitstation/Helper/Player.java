@@ -15,10 +15,9 @@ import com.google.android.exoplayer2.util.Util;
 public class Player {
 
    private static String mURLStream;
-   private static boolean isStart;
    private static SimpleExoPlayer mExoPlayer;
+   private static String preUrl;
 
-   private Thread thread;
 
     public Player (String URLStream){
         mURLStream = URLStream;
@@ -31,7 +30,6 @@ public class Player {
         }
 
                 Uri URI = Uri.parse(mURLStream);
-//        DataSource.Factory httpDataSourceFactory = new OkHttpDataSourceFactory(new OkHttpClient().newBuilder().build(), Util.getUserAgent(context, context.getPackageName()), null);
 
                 DataSource.Factory factory = new DefaultHttpDataSourceFactory(Util.getUserAgent(context, context.getPackageName()));
                 MediaSource mediaSource = new ProgressiveMediaSource.Factory(factory)
@@ -42,9 +40,7 @@ public class Player {
     }
 
     public void stop(){
-
         mExoPlayer.stop();
-        isStart = false;
     }
 
     public static String getCurrentUrlStream(){
