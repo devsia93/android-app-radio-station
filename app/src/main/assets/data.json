@@ -43,6 +43,11 @@
         "image": "https://images.radiovolna.net/_files/images/stations/343/tuv7593d4e3124003481445688.jpg"
       },
       {
+        "stream": "http://pub0201.101.ru:8000/stream/pro/aac/64/323?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpcCI6IjIxNy4xNzUuNDYuMTgyIiwidXNlcmFnZW50IjoiTW96aWxsYVwvNS4wIChYMTE7IExpbnV4IHg4Nl82NDsgcnY6NzIuMCkgR2Vja29cLzIwMTAwMTAxIEZpcmVmb3hcLzcyLjAiLCJ1aWRfY2hhbm5lbCI6IjMyMyIsInR5cGVfY2hhbm5lbCI6ImNoYW5uZWwiLCJleHAiOjE1ODA0NzY2Nzd9._3Q7cWbnnFujg_l3WuJak8uDojUyzGQKhrP4bly7hSM",
+        "name": "K-Pop ",
+        "image": "https://alchetron.com/cdn/4ten-0277032d-c218-4073-ab45-4a85eaa6adc-resize-750.jpeg"
+      },
+      {
         "stream": "http://dorognoe.hostingradio.ru:8000/dorognoe_acc",
         "name": "Дорожное радио",
         "image": "https://images.radiovolna.net/_files/images/stations/140/kueu58d0d5a689840947816728.jpg"
@@ -633,9 +638,84 @@
         "image": "https://images.radiovolna.net/_files/images/stations/8257/sbyu5943b54328ac5116125796.jpg"
       },
       {
+        "stream": "http://svoeradiofm.hostingradio.ru:8032/svoe-128.mp3?3177",
+        "name": "Своё Радио",
+        "image": "https://online.lagoonfm.ru/wp-content/uploads/2018/08/svoe-radio.png"
+      },
+      {
+        "stream": "http://stream.motoradio.online:8000/high-mp3?a4a3",
+        "name": "MotoRadio",
+        "image": "http://cdn-profiles.tunein.com/s301146/images/logog.png?t=153970"
+      },
+      {
+        "stream": "http://zaycevfm.cdnvideo.ru/ZaycevFM_alternative_128.mp3?ddee",
+        "name": "Зайцев FM: NewRock",
+        "image": "https://online.lagoonfm.ru/wp-content/uploads/2018/08/czae72528s9yneo4.jpg"
+      },
+      {
+        "stream": "https://zaycevfm.cdnvideo.ru/ZaycevFM_rurock_256.mp3?d50a",
+        "name": "Зайцев FM: РуРок",
+        "image": "https://www.radiobells.com/stations/zaycevfmrurock.jpg"
+      },
+      {
+        "stream": "http://jfm1.hostingradio.ru:14536/prog.mp3?4f3c",
+        "name": "Rock FM: Progressive Rock",
+        "image": "https://images.radiovolna.net/_files/images/stations/318/89bdc8544af80e90f37f9e247836d6eb.jpg"
+      },
+      {
+        "stream": "http://jfm1.hostingradio.ru:14536/metal.mp3?8476",
+        "name": "Rock FM: Heavy",
+        "image": "https://images.radiovolna.net/_files/images/stations/318/89bdc8544af80e90f37f9e247836d6eb.jpg"
+      },
+      {
+        "stream": "http://jfm1.hostingradio.ru:14536/rock70.mp3?ab61",
+        "name": "Rock FM: 70s",
+        "image": "https://images.radiovolna.net/_files/images/stations/318/89bdc8544af80e90f37f9e247836d6eb.jpg"
+      },
+      {
+        "stream": "http://jfm1.hostingradio.ru:14536/rock80.mp3?4b54",
+        "name": "Rock FM: 80s",
+        "image": "https://images.radiovolna.net/_files/images/stations/318/89bdc8544af80e90f37f9e247836d6eb.jpg"
+      },
+      {
+        "stream": "http://jfm1.hostingradio.ru:14536/rock90.mp3?244c",
+        "name": "Rock FM: 90s",
+        "image": "https://images.radiovolna.net/_files/images/stations/318/89bdc8544af80e90f37f9e247836d6eb.jpg"
+      },
+      {
+        "stream": "http://jfm1.hostingradio.ru:14536/rock00.mp3?f4c9",
+        "name": "Rock FM: 00s",
+        "image": "https://images.radiovolna.net/_files/images/stations/318/89bdc8544af80e90f37f9e247836d6eb.jpg"
+      },
+      {
+        "stream": "https://maximum90.hostingradio.ru/maximum9096.aacp?9506",
+        "name": "Радио Maximum '90",
+        "image": "https://pl.pea.fm/uploads/posts/radio_23634_%D0%A0%D0%B0%D0%B4%D0%B8%D0%BE%20%D0%9C%D0%B0%D0%BA%D1%81%D0%B8%D0%BC%D1%83%D0%BC%20%D0%B2%2090-%D0%B5%20%D0%B3%D0%BE%D0%B4%D1%8B..jpg"
+      },
+      {
+        "stream": "https://rockhits.hostingradio.ru/rockhits96.aacp?04da",
+        "name": "Радио Maximum: Rock Hits",
+        "image": "https://uk.pea.fm/uploads/posts/radio_71223_Maximum%20Rock%20Hits.jpg"
+      },
+      {
+        "stream": "https://depechemode.hostingradio.ru/depechemode96.aacp?1190",
+        "name": "Радио Maximum: Depeche Mode",
+        "image": "https://images.radiovolna.net/_files/images/stations/1059/12ab9cbd0eee84014ef70b49f0f26907.png"
+      },
+      {
         "stream": "https://metallica.hostingradio.ru/metallica96.aacp",
         "name": "Maximum Metallica",
         "image": "https://images.radiovolna.net/_files/images/stations/1060/c6b77c0f104882ab44772a90c411beb8.png"
+      },
+      {
+        "stream": "http://live.ncradio.fm/192.mp3?18cb",
+        "name": "Новое Чистое Радио",
+        "image": "https://66.media.tumblr.com/avatar_6cf3b6fd42a9_512.pnj"
+      },
+      {
+        "stream": "https://eu6.fastcast4u.com/proxy/polygonf?mp=/stream?72fc",
+        "name": "Polygon FM",
+        "image": "https://pbs.twimg.com/media/DZp6zsxXUAAMN4m.jpg:large"
       }
     ]
   },
