@@ -65,6 +65,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mLinearLayout = findViewById(R.id.main_container);
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
+
+
         if (savedInstanceState == null) {
             // Set the local night mode to some value
             AppCompatDelegate.setDefaultNightMode(
@@ -74,16 +79,11 @@ public class MainActivity extends AppCompatActivity {
         ArrayList<Radio> radioArray = new ArrayList<>();
         radioArray = (ArrayList<Radio>) JSONHelper.importFromJSON(getApplicationContext());
 
-        SearchFragment searchFragment = new SearchFragment(radioArray);
+        SearchFragment searchFragment = new SearchFragment(radioArray, mLinearLayout);
         FragmentTransaction mFragmentTransaction = getSupportFragmentManager().beginTransaction();
         mFragmentTransaction.add(R.id.container_from_toolbar, searchFragment).commit();
 
-        mLinearLayout = findViewById(R.id.main_container);
-
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
-
-//        createListStations(radioArray);
-
+        createListStations(radioArray);
     }
 
     private void createListStations(ArrayList<Radio> radioArray) {
@@ -95,10 +95,8 @@ public class MainActivity extends AppCompatActivity {
             for (Radio r : radioArray) {
                 Const.ALL_STATIONS.addAll(Arrays.asList(r.getStationNames()));
 
-                View childLayout = new View(this);
-
                 LayoutInflater inflater = (LayoutInflater) this.getSystemService(this.LAYOUT_INFLATER_SERVICE);
-                childLayout = inflater.inflate(R.layout.layout_child_conteiner, mLinearLayout, false);
+                View childLayout = inflater.inflate(R.layout.layout_child_conteiner, mLinearLayout, false);
 
                 ImageView imageView = childLayout.findViewById(R.id.child_container_imageview_arrow);
 

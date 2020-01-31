@@ -18,7 +18,6 @@ public class AnimatorHelper {
     public void startAnimation(){
         if (indicatorView != null){
             indicatorView.setVisibility(View.VISIBLE);
-            Log.d("audio", indicatorView.getIndicator().toString());
         }
 
     }

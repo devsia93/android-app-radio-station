@@ -1,6 +1,7 @@
 package ru.qbitmobile.qbitstation.Adapter;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.widget.SearchView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
@@ -26,7 +27,9 @@ import java.util.List;
 
 import ru.qbitmobile.qbitstation.BaseObject.Station;
 import ru.qbitmobile.qbitstation.Const;
+import ru.qbitmobile.qbitstation.Fragment.SearchFragment;
 import ru.qbitmobile.qbitstation.Helper.AnimatorHelper;
+import ru.qbitmobile.qbitstation.Helper.KeyboardHelper;
 import ru.qbitmobile.qbitstation.Helper.Player;
 import ru.qbitmobile.qbitstation.Notification.NotificationService;
 import ru.qbitmobile.qbitstation.R;
@@ -34,17 +37,17 @@ import ru.qbitmobile.qbitstation.R;
 public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRecyclerStationAdapter.ViewHolder> implements Filterable {
 
     private LayoutInflater mLayoutInflater;
-    private List<Station> mStations;
     private Context mContext;
     private static AnimatorHelper animatorHelper;
     private List<Station> mAllStations;
+    private List<Station> filteredList;
 
 
     public FilterRecyclerStationAdapter(LayoutInflater layoutInflater, List<Station> stations, Context context) {
         this.mLayoutInflater = layoutInflater;
         this.mContext = context;
-        this.mStations = stations;
         mAllStations = new ArrayList<>(stations);
+        filteredList = mAllStations;
     }
 
     @Override
@@ -53,16 +56,18 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
             @Override
             protected FilterResults performFiltering(CharSequence constraint) {
 
-                List<Station> filteredList = new ArrayList<>();
+                List<Station> tempFilteredList = new ArrayList<>();
 
                 if (constraint.toString().isEmpty()) {
-                    filteredList.addAll(mAllStations);
-                } else
+                    filteredList = mAllStations;
+                } else {
                     for (Station station : mAllStations) {
                         if (station.getName().toLowerCase().contains(constraint.toString().toLowerCase())) {
-                            filteredList.add(station);
+                            tempFilteredList.add(station);
                         }
                     }
+                    filteredList = tempFilteredList;
+                }
 
                 FilterResults filterResults = new FilterResults();
                 filterResults.values = filteredList;
@@ -72,8 +77,7 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
 
             @Override
             protected void publishResults(CharSequence constraint, FilterResults results) {
-                mStations.clear();
-                mStations.addAll((Collection<? extends Station>) results.values);
+                filteredList =(ArrayList<Station>) results.values;
                 notifyDataSetChanged();
             }
         };
@@ -92,40 +96,38 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        if (mStations.get(position) != null && position != 0) {
-            Station station = mStations.get(position);
-            holder.textView.setText(station.getName());
+        holder.textView.setText(filteredList.get(position).getName());
 //        holder.setIsRecyclable(false);
-            Glide.with(mContext)
-                    .load(mStations.get(position).getImage())
-                    .error(R.drawable.ic_launcher_foreground)
-                    .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
-                    .into(holder.imageView);
-            holder.itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    createFirebaseReport(position);
-                    Log.d("debug", mStations.get(position).getName());
+        Glide.with(mContext)
+                .load(filteredList.get(position).getImage())
+                .error(R.drawable.ic_launcher_foreground)
+                .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
+                .into(holder.imageView);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                createFirebaseReport(position);
+                Log.d("debug", filteredList.get(position).getName());
 
-                    Player player = new Player(mStations.get(position).getStream());
-                    player.start(mContext);
+                Player player = new Player(filteredList.get(position).getStream());
+                player.start(mContext);
 
+                startPlayerService();
 
-                    startPlayerService();
-                    if (animatorHelper != null)
-                        animatorHelper.stopAnimation();
-                    animatorHelper = new AnimatorHelper(holder.playViewAnimation);
-                    animatorHelper.startAnimation();
-                    Log.d("anm", String.valueOf(holder.getItemId()));
-                }
+                if (animatorHelper != null)
+                    animatorHelper.stopAnimation();
+                animatorHelper = new AnimatorHelper(holder.playViewAnimation);
+                animatorHelper.startAnimation();
+                KeyboardHelper.closeKeyboard(mContext);
+                Log.d("anm", String.valueOf(holder.getItemId()));
+            }
 
-                private void startPlayerService() {
-                    Intent serviceIntent = new Intent(mContext, NotificationService.class);
-                    serviceIntent.setAction(Const.ACTION.STARTFOREGROUND_ACTION);
-                    mContext.startService(serviceIntent);
-                }
-            });
-        }
+            private void startPlayerService() {
+                Intent serviceIntent = new Intent(mContext, NotificationService.class);
+                serviceIntent.setAction(Const.ACTION.STARTFOREGROUND_ACTION);
+                mContext.startService(serviceIntent);
+            }
+        });
     }
 
     private void createFirebaseReport(int position) {
@@ -133,7 +135,8 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
         Bundle eventDetails = new Bundle();
 
         StringBuilder sb = new StringBuilder();
-        sb.append(mStations.get(position).getName() + " : " + mStations.get(position).getStream());
+        sb.append(filteredList.get(position).getName())
+                .append(" : ").append(filteredList.get(position).getStream());
 
         eventDetails.putString("station", sb.toString());
         firebaseAnalytics.logEvent("select_station", eventDetails);
@@ -141,7 +144,7 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
 
     @Override
     public int getItemCount() {
-        return mAllStations.size();
+        return filteredList.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

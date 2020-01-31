@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#252525</color>
-    <color name="colorPrimaryDark">#252525</color>
-    <color name="colorAccent">#252525</color>
+    <color name="colorPrimaryDark">#191919</color>
+    <color name="colorAccent">#464646</color>
     <color name="colorPressed">#CCCCCC</color>
     <color name="colorTriangle">#464646</color>
     <color name="colorChildContainerBackground">#191919</color>
     <color name="colorToolbarBackground">#191919</color>
-
+    <color name="colorSurface">#121212</color>
 </resources>

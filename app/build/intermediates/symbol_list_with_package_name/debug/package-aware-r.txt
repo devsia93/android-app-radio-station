@@ -716,6 +716,7 @@ color colorChildContainerBackground
 color colorPressed
 color colorPrimary
 color colorPrimaryDark
+color colorSurface
 color colorToolbarBackground
 color colorTriangle
 color common_google_signin_btn_text_dark
@@ -1137,6 +1138,7 @@ drawable abc_vector_test
 drawable arrow_24dp
 drawable avd_hide_password
 drawable avd_show_password
+drawable bg_grey_searchview
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl

@@ -1,6 +1,8 @@
 package ru.qbitmobile.qbitstation.Fragment;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -17,6 +19,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,6 +27,7 @@ import java.util.List;
 import ru.qbitmobile.qbitstation.Adapter.FilterRecyclerStationAdapter;
 import ru.qbitmobile.qbitstation.BaseObject.Radio;
 import ru.qbitmobile.qbitstation.BaseObject.Station;
+import ru.qbitmobile.qbitstation.Helper.KeyboardHelper;
 import ru.qbitmobile.qbitstation.R;
 
 /**
@@ -37,9 +41,14 @@ public class SearchFragment extends Fragment {
     private RecyclerView mRecyclerView;
     private FilterRecyclerStationAdapter mAdapter;
 
-    public SearchFragment(List<Radio> radios) {
+    private LinearLayout mLinearLayout;
+
+    private String preSearchText;
+
+    public SearchFragment(List<Radio> radios, LinearLayout container) {
         mRadios = radios;
         mStations = new ArrayList<>();
+        mLinearLayout = container;
     }
 
 
@@ -58,13 +67,9 @@ public class SearchFragment extends Fragment {
         mAdapter = new FilterRecyclerStationAdapter(inflater, mStations, view.getContext());
         mRecyclerView.setAdapter(mAdapter);
 
-        Toolbar toolbar = (Toolbar)view.findViewById(R.id.toolbar_main);
+        Toolbar toolbar = view.findViewById(R.id.toolbar_main);
         AppCompatActivity activity = (AppCompatActivity)getActivity();
         activity.setSupportActionBar(toolbar);
-        ActionBar actionBar = activity.getSupportActionBar();
-        if(actionBar!= null) {
-
-        }
 
         return view;
     }
@@ -75,19 +80,32 @@ public class SearchFragment extends Fragment {
         MenuItem item = menu.findItem(R.id.action_search);
 
         mSearchView = (SearchView) item.getActionView();
+        mSearchView.setBackgroundResource(R.drawable.bg_grey_searchview);
         mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
+                KeyboardHelper.closeKeyboard(getContext());
                 return false;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
+                if (newText.isEmpty()){
+                    setVisibilityContainers(View.VISIBLE, View.GONE);
+                } else {
+                    setVisibilityContainers(View.GONE, View.VISIBLE);
+                }
 
                 mAdapter.getFilter().filter(newText);
                 return false;
             }
+
+            private void setVisibilityContainers(int mainContainerVisibility, int bodyContainerVisibility) {
+                mLinearLayout.setVisibility(mainContainerVisibility);
+                mRecyclerView.setVisibility(bodyContainerVisibility);
+            }
         });
+
         super.onCreateOptionsMenu(menu, inflater);
     }
 
