@@ -638,11 +638,6 @@
         "image": "https://images.radiovolna.net/_files/images/stations/8257/sbyu5943b54328ac5116125796.jpg"
       },
       {
-        "stream": "http://stream3.radiostyle.ru:8001/biker-fm?b20b2f7d",
-        "name": "Biker FM",
-        "image": "http://www.gitaristu.ru/img/radio/9.jpg"
-      },
-      {
         "stream": "http://svoeradiofm.hostingradio.ru:8032/svoe-128.mp3?3177",
         "name": "Своё Радио",
         "image": "https://online.lagoonfm.ru/wp-content/uploads/2018/08/svoe-radio.png"
