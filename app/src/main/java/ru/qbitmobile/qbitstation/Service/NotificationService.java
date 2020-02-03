@@ -1,4 +1,4 @@
-package ru.qbitmobile.qbitstation.Notification;
+package ru.qbitmobile.qbitstation.Service;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -10,13 +10,11 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.IBinder;
-import android.support.v4.media.MediaDescriptionCompat;
-import android.support.v4.media.MediaMetadataCompat;
-import android.support.v4.media.session.MediaControllerCompat;
-import android.view.View;
+import android.support.v4.media.session.MediaSessionCompat;
 import android.widget.RemoteViews;
 
 import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import ru.qbitmobile.qbitstation.Activity.MainActivity;
 import ru.qbitmobile.qbitstation.Const;
@@ -27,6 +25,11 @@ public class NotificationService extends Service {
     public static Context context;
     Notification status;
     boolean isPause = true;
+
+    private NotificationManagerCompat notificationManagerCompat;
+
+    private MediaSessionCompat mediaSessionCompat;
+
 
     private void showNotification(int pos) {
         RemoteViews views = new RemoteViews(getPackageName(),

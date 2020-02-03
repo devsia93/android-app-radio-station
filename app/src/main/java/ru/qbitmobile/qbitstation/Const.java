@@ -15,4 +15,10 @@ public class Const {
 
     public static String YANDEX_API_KEY = "f204189a-9d5c-425a-b19f-4f96ee739ee7";
 
+    public static final String TAG_MEDIA_SESSION = "MEDIA_SESSION";
+    public static final String CHANEL_MEDIA_ID = "chanel_media_1";
+
+    /*Extras*/
+    public static String EXTRA_BITMAP_STATION = "EXTRA_BITMAP_STATION";
+
 }

@@ -14,8 +14,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.Priority;
-import com.bumptech.glide.RequestBuilder;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.wang.avi.AVLoadingIndicatorView;
@@ -27,7 +25,7 @@ import ru.qbitmobile.qbitstation.Helper.AnimatorHelper;
 import ru.qbitmobile.qbitstation.BaseObject.Station;
 import ru.qbitmobile.qbitstation.Helper.Player;
 import ru.qbitmobile.qbitstation.Helper.ReportHelper;
-import ru.qbitmobile.qbitstation.Notification.NotificationService;
+import ru.qbitmobile.qbitstation.Service.NotificationService;
 import ru.qbitmobile.qbitstation.R;
 
 public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStationAdapter.ViewHolder> {

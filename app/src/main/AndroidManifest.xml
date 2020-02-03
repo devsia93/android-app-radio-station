@@ -15,6 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <service
+            android:name=".Service.PlayerService"
+            android:enabled="true"
+            android:exported="true"></service>
 
         <activity android:name=".Activity.MainActivity">
             <intent-filter>
@@ -23,7 +27,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service android:name=".Notification.NotificationService" />
+
+        <service android:name=".Service.NotificationService" />
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
