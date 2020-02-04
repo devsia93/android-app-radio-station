@@ -15,10 +15,24 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+        <receiver android:name="androidx.media.session.MediaButtonReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".Receiver.ActionReceiver"
+            android:enabled="true"
+            android:exported="true"></receiver>
+
         <service
             android:name=".Service.PlayerService"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
 
         <activity android:name=".Activity.MainActivity">
             <intent-filter>
@@ -27,8 +41,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service android:name=".Service.NotificationService" />
 
         <meta-data
             android:name="preloaded_fonts"

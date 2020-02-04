@@ -17,8 +17,15 @@ public class Const {
 
     public static final String TAG_MEDIA_SESSION = "MEDIA_SESSION";
     public static final String CHANEL_MEDIA_ID = "chanel_media_1";
+    public static final int NOTIFICATION_MEDIA_ID = 1;
 
     /*Extras*/
-    public static String EXTRA_BITMAP_STATION = "EXTRA_BITMAP_STATION";
+    public static final String EXTRA_BITMAP_STATION = "EXTRA_BITMAP_STATION";
+    public static final String EXTRA_TITLE_STATION = "EXTRA_TITLE_STATION";
+    public static final String EXTRA_STREAM_URL = "EXTRA_STREAM_URL";
+    public static final String EXTRA_IMAGE_URL = "EXTRA_IMAGE_URL";
 
+    /*Actions*/
+    public static final String ACTION = "ACTION";
+    public static final String ACTION_EXIT = "ACTION_EXIT";
 }

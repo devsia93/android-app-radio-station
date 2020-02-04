@@ -29,6 +29,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+        <service
+            android:name="ru.qbitmobile.qbitstation.Service.PlayerService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+
         <activity android:name="ru.qbitmobile.qbitstation.Activity.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,7 +47,7 @@
             </intent-filter>
         </activity>
 
-        <service android:name="ru.qbitmobile.qbitstation.Notification.NotificationService" />
+        <service android:name="ru.qbitmobile.qbitstation.Service.NotificationService" />
 
         <meta-data
             android:name="preloaded_fonts"

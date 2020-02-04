@@ -4,7 +4,7 @@
             "outputFile": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/ea3905d66051af9fc0c9933b921bd176/appcompat-1.1.0/res/values-en-rAU/values-en-rAU.xml",
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/aa65a4d0f67acde5a7711193590d3b52/appcompat-1.1.0/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/6fd791391ee69c6a287895afbab72f4b/core-1.1.0/res/values-en-rAU/values-en-rAU.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "70",
-                        "startColumns": "4",
-                        "startOffsets": "5505",
-                        "endColumns": "100",
-                        "endOffsets": "5601"
-                    }
-                },
-                {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/ede07d5c139bf871cfee29106a386ed7/exoplayer-ui-2.11.1/res/values-en-rAU/values-en-rAU.xml",
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/fa73fd35cd45093cd1d64c8ddc2367cf/jetified-exoplayer-ui-2.11.1/res/values-en-rAU/values-en-rAU.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -52,6 +35,23 @@
                         "startOffsets": "2762,2840,2921,2988,3057,3122,3185,3262,3337,3413,3488,3555,3622,3699,3774,3837,3901,3971,4033,4098,4162,4239,4308,4361,4419,4467,4528,4593,4655,4720,4791,4849,4907,4973,5037,5103,5155,5217,5293,5369",
                         "endColumns": "77,80,66,68,64,62,76,74,75,74,66,66,76,74,62,63,69,61,64,63,76,68,52,57,47,60,64,61,64,70,57,57,65,63,65,51,61,75,75,53",
                         "endOffsets": "2835,2916,2983,3052,3117,3180,3257,3332,3408,3483,3550,3617,3694,3769,3832,3896,3966,4028,4093,4157,4234,4303,4356,4414,4462,4523,4588,4650,4715,4786,4844,4902,4968,5032,5098,5150,5212,5288,5364,5418"
+                    }
+                },
+                {
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/6f9443962039c01d6b5520430b8692bb/core-1.1.0/res/values-en-rAU/values-en-rAU.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "70",
+                        "startColumns": "4",
+                        "startOffsets": "5505",
+                        "endColumns": "100",
+                        "endOffsets": "5601"
                     }
                 }
             ]

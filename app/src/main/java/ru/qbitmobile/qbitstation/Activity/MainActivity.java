@@ -23,20 +23,15 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.material.snackbar.BaseTransientBottomBar;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 import net.cachapa.expandablelayout.ExpandableLayout;
 
 import java.util.ArrayList;
 
-import ru.qbitmobile.qbitstation.Adapter.StationAdapter;
 import ru.qbitmobile.qbitstation.BaseObject.Radio;
 import ru.qbitmobile.qbitstation.Const;
-import ru.qbitmobile.qbitstation.Fragment.RadiosFragment;
 import ru.qbitmobile.qbitstation.Fragment.StationsFragment;
 import ru.qbitmobile.qbitstation.Helper.AnimationRotate;
 import ru.qbitmobile.qbitstation.Helper.JSONHelper;
@@ -46,15 +41,10 @@ import ru.qbitmobile.qbitstation.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    LinearLayout llFromFragment;
-//    FragmentManager mFragmentManager;
-//    FragmentTransaction mFragmentTransaction;
-
     LinearLayout mLinearLayout;
 
     private FirebaseAnalytics mFirebaseAnalytics;
 
-    //    RecyclerStationFragment mRecyclerStationFragment;
     static {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
     }

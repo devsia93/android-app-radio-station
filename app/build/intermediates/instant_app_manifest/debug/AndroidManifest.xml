@@ -32,6 +32,25 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+        <receiver android:name="androidx.media.session.MediaButtonReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="ru.qbitmobile.qbitstation.Receiver.ActionReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="ru.qbitmobile.qbitstation.Service.PlayerService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+
         <activity android:name="ru.qbitmobile.qbitstation.Activity.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,8 +58,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service android:name="ru.qbitmobile.qbitstation.Notification.NotificationService" />
 
         <meta-data
             android:name="preloaded_fonts"
