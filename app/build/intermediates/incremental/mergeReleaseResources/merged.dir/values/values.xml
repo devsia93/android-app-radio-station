@@ -1543,10 +1543,22 @@
     <style name="Base.V14.Theme.MaterialComponents" parent="Base.V14.Theme.MaterialComponents.Bridge">
     <item name="viewInflaterClass">com.google.android.material.theme.MaterialComponentsViewInflater</item>
 
+<<<<<<< HEAD:app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
     <!-- Colors -->
     <item name="colorPrimary">@color/design_dark_default_color_primary</item>
     <item name="colorPrimaryDark">@color/design_dark_default_color_primary_dark</item>
     <item name="colorAccent">?attr/colorSecondary</item>
+||||||| merged common ancestors
+    
+    <item name="colorPrimary">@color/design_default_color_primary</item>
+    <item name="colorPrimaryLight">?attr/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
+=======
+    <!-- Colors -->
+    <item name="colorPrimary">@color/design_default_color_primary</item>
+    <item name="colorPrimaryLight">?attr/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
+>>>>>>> search:app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
 
     <item name="android:colorBackground">@color/design_dark_default_color_background</item>
     <item name="colorError">@color/design_dark_default_color_error</item>
@@ -1604,11 +1616,19 @@
     <item name="scrimBackground">@color/mtrl_scrim_color</item>
     <item name="popupMenuBackground">@drawable/mtrl_popupmenu_background_dark</item>
 
+<<<<<<< HEAD:app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
     <item name="minTouchTargetSize">@dimen/mtrl_min_touch_target_size</item>
 
     <!-- Widget styles -->
     <item name="appBarLayoutStyle">@style/Widget.MaterialComponents.AppBarLayout.Surface</item>
     <item name="badgeStyle">@style/Widget.MaterialComponents.Badge</item>
+||||||| merged common ancestors
+    
+    <item name="borderlessButtonStyle">@style/Widget.MaterialComponents.Button.TextButton</item>
+=======
+    <!-- Widget styles -->
+    <item name="borderlessButtonStyle">@style/Widget.MaterialComponents.Button.TextButton</item>
+>>>>>>> search:app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
     <item name="bottomAppBarStyle">@style/Widget.MaterialComponents.BottomAppBar</item>
     <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView</item>
     <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Action</item>
@@ -1628,7 +1648,19 @@
     <item name="tabStyle">@style/Widget.MaterialComponents.TabLayout</item>
     <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.FilledBox</item>
 
+<<<<<<< HEAD:app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
     <!-- Type styles -->
+||||||| merged common ancestors
+    
+    <item name="alertDialogTheme">@style/ThemeOverlay.MaterialComponents.Dialog.Alert</item>
+
+    
+=======
+    <!-- Dialog themes -->
+    <item name="alertDialogTheme">@style/ThemeOverlay.MaterialComponents.Dialog.Alert</item>
+
+    <!-- Type styles -->
+>>>>>>> search:app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
     <item name="textAppearanceHeadline1">@style/TextAppearance.MaterialComponents.Headline1</item>
     <item name="textAppearanceHeadline2">@style/TextAppearance.MaterialComponents.Headline2</item>
     <item name="textAppearanceHeadline3">@style/TextAppearance.MaterialComponents.Headline3</item>
@@ -1643,6 +1675,7 @@
     <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>
     <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
 
+<<<<<<< HEAD:app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
     <!-- Shape styles -->
     <item name="shapeAppearanceSmallComponent">
       @style/ShapeAppearance.MaterialComponents.SmallComponent
@@ -1653,6 +1686,17 @@
     <item name="shapeAppearanceLargeComponent">
       @style/ShapeAppearance.MaterialComponents.LargeComponent
     </item>
+||||||| merged common ancestors
+    
+    <item name="colorPrimary">@color/design_default_color_primary</item>
+    <item name="colorPrimaryLight">?attr/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
+=======
+    <!-- Colors -->
+    <item name="colorPrimary">@color/design_default_color_primary</item>
+    <item name="colorPrimaryLight">?attr/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
+>>>>>>> search:app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
 
     <!-- Elevation Overlays -->
     <item name="elevationOverlayEnabled">true</item>
@@ -1676,10 +1720,16 @@
     <item name="actionBarTheme">@style/ThemeOverlay.MaterialComponents.ActionBar.Surface</item>
     <item name="actionOverflowMenuStyle">@style/Widget.MaterialComponents.PopupMenu.Overflow</item>
 
+<<<<<<< HEAD:app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
     <!-- Widget styles -->
     <item name="android:contextPopupMenuStyle" ns2:targetApi="n">
       @style/Widget.MaterialComponents.PopupMenu.ContextMenu
     </item>
+||||||| merged common ancestors
+    
+=======
+    <!-- Widget styles -->
+>>>>>>> search:app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
     <item name="borderlessButtonStyle">@style/Widget.MaterialComponents.Button.TextButton</item>
     <item name="buttonBarButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush</item>
     <item name="checkboxStyle">@style/Widget.MaterialComponents.CompoundButton.CheckBox</item>
@@ -1831,11 +1881,19 @@
     <item name="scrimBackground">@color/mtrl_scrim_color</item>
     <item name="popupMenuBackground">@drawable/mtrl_popupmenu_background</item>
 
+<<<<<<< HEAD:app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
     <item name="minTouchTargetSize">@dimen/mtrl_min_touch_target_size</item>
 
     <!-- Widget styles -->
     <item name="appBarLayoutStyle">@style/Widget.MaterialComponents.AppBarLayout.Primary</item>
     <item name="badgeStyle">@style/Widget.MaterialComponents.Badge</item>
+||||||| merged common ancestors
+    
+    <item name="borderlessButtonStyle">@style/Widget.MaterialComponents.Button.TextButton</item>
+=======
+    <!-- Widget styles -->
+    <item name="borderlessButtonStyle">@style/Widget.MaterialComponents.Button.TextButton</item>
+>>>>>>> search:app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
     <item name="bottomAppBarStyle">@style/Widget.MaterialComponents.BottomAppBar</item>
     <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView</item>
     <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Action</item>
@@ -1855,7 +1913,19 @@
     <item name="tabStyle">@style/Widget.MaterialComponents.TabLayout</item>
     <item name="textInputStyle">@style/Widget.MaterialComponents.TextInputLayout.FilledBox</item>
 
+<<<<<<< HEAD:app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
     <!-- Type styles -->
+||||||| merged common ancestors
+    
+    <item name="alertDialogTheme">@style/ThemeOverlay.MaterialComponents.Dialog.Alert</item>
+
+    
+=======
+    <!-- Dialog themes -->
+    <item name="alertDialogTheme">@style/ThemeOverlay.MaterialComponents.Dialog.Alert</item>
+
+    <!-- Type styles -->
+>>>>>>> search:app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
     <item name="textAppearanceHeadline1">@style/TextAppearance.MaterialComponents.Headline1</item>
     <item name="textAppearanceHeadline2">@style/TextAppearance.MaterialComponents.Headline2</item>
     <item name="textAppearanceHeadline3">@style/TextAppearance.MaterialComponents.Headline3</item>
@@ -1929,6 +1999,7 @@
       @style/ShapeAppearance.MaterialComponents.LargeComponent
     </item>
 
+<<<<<<< HEAD:app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
     <!-- Elevation Overlays -->
     <item name="elevationOverlayEnabled">false</item>
     <item name="elevationOverlayColor">?attr/colorOnSurface</item>
@@ -1937,6 +2008,11 @@
     <item name="viewInflaterClass">com.google.android.material.theme.MaterialComponentsViewInflater</item>
 
     <!-- Colors -->
+||||||| merged common ancestors
+    
+=======
+    <!-- Colors -->
+>>>>>>> search:app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
     <item name="colorPrimary">@color/design_default_color_primary</item>
     <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
     <item name="colorSecondary">@color/design_default_color_secondary</item>
@@ -1989,11 +2065,19 @@
     <item name="scrimBackground">@color/mtrl_scrim_color</item>
     <item name="popupMenuBackground">@drawable/mtrl_popupmenu_background</item>
 
+<<<<<<< HEAD:app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
     <item name="minTouchTargetSize">@dimen/mtrl_min_touch_target_size</item>
 
     <!-- Widget styles -->
     <item name="appBarLayoutStyle">@style/Widget.MaterialComponents.AppBarLayout.Primary</item>
     <item name="badgeStyle">@style/Widget.MaterialComponents.Badge</item>
+||||||| merged common ancestors
+    
+    <item name="borderlessButtonStyle">@style/Widget.MaterialComponents.Button.TextButton</item>
+=======
+    <!-- Widget styles -->
+    <item name="borderlessButtonStyle">@style/Widget.MaterialComponents.Button.TextButton</item>
+>>>>>>> search:app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
     <item name="bottomAppBarStyle">@style/Widget.MaterialComponents.BottomAppBar</item>
     <item name="bottomNavigationStyle">@style/Widget.MaterialComponents.BottomNavigationView</item>
     <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Action</item>
@@ -2048,6 +2132,7 @@
     <item name="materialButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush</item>
   </style>
     <style name="Base.V14.ThemeOverlay.MaterialComponents.Dialog.Alert" parent="ThemeOverlay.AppCompat.Dialog.Alert">
+<<<<<<< HEAD:app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
     <!-- Widget styles -->
     <item name="buttonBarButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush</item>
   </style>
@@ -2056,6 +2141,11 @@
     <item name="alertDialogStyle">@style/MaterialAlertDialog.MaterialComponents</item>
     <item name="android:checkedTextViewStyle" ns2:ignore="NewApi">@style/Widget.MaterialComponents.CheckedTextView</item>
     <item name="android:dialogCornerRadius" ns2:ignore="newApi">@null</item>
+||||||| merged common ancestors
+    
+=======
+    <!-- Widget styles -->
+>>>>>>> search:app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
     <item name="buttonBarButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
     <item name="buttonBarPositiveButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
     <item name="buttonBarNegativeButtonStyle">@style/Widget.MaterialComponents.Button.TextButton.Dialog</item>
@@ -3502,7 +3592,43 @@
     <item name="android:textSize">14sp</item>
     <item name="android:letterSpacing">0.0178571429</item>
   </style>
+<<<<<<< HEAD:app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
     <style name="TextAppearance.MaterialComponents.Button" parent="Base.TextAppearance.MaterialComponents.Button"/>
+||||||| merged common ancestors
+    <style name="TextAppearance.MaterialComponents.BottomNavigationView" parent="TextAppearance.AppCompat.Caption">
+    <item name="android:textColor">@color/mtrl_bottom_nav_item_tint</item>
+  </style>
+    <style name="TextAppearance.MaterialComponents.BottomNavigationView.Active"/>
+    <style name="TextAppearance.MaterialComponents.BottomNavigationView.Colored">
+    <item name="android:textColor">@color/mtrl_bottom_nav_colored_item_tint</item>
+  </style>
+    <style name="TextAppearance.MaterialComponents.BottomNavigationView.Colored.Active"/>
+    <style name="TextAppearance.MaterialComponents.Button" parent="TextAppearance.AppCompat.Button">
+    
+    <item name="fontFamily">sans-serif-medium</item>
+    <item name="android:textStyle">bold</item>
+    <item name="textAllCaps">true</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:letterSpacing">0.0892857143</item>
+  </style>
+=======
+    <style name="TextAppearance.MaterialComponents.BottomNavigationView" parent="TextAppearance.AppCompat.Caption">
+    <item name="android:textColor">@color/mtrl_bottom_nav_item_tint</item>
+  </style>
+    <style name="TextAppearance.MaterialComponents.BottomNavigationView.Active"/>
+    <style name="TextAppearance.MaterialComponents.BottomNavigationView.Colored">
+    <item name="android:textColor">@color/mtrl_bottom_nav_colored_item_tint</item>
+  </style>
+    <style name="TextAppearance.MaterialComponents.BottomNavigationView.Colored.Active"/>
+    <style name="TextAppearance.MaterialComponents.Button" parent="TextAppearance.AppCompat.Button">
+    <!-- Fake Roboto Medium. -->
+    <item name="fontFamily">sans-serif-medium</item>
+    <item name="android:textStyle">bold</item>
+    <item name="textAllCaps">true</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:letterSpacing">0.0892857143</item>
+  </style>
+>>>>>>> search:app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
     <style name="TextAppearance.MaterialComponents.Caption" parent="TextAppearance.AppCompat.Caption">
     <item name="fontFamily">sans-serif</item>
     <item name="android:fontFamily">sans-serif</item>
@@ -3555,13 +3681,69 @@
     <item name="android:textSize">24sp</item>
     <item name="android:letterSpacing">0</item>
   </style>
+<<<<<<< HEAD:app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
     <style name="TextAppearance.MaterialComponents.Headline6" parent="Base.TextAppearance.MaterialComponents.Headline6"/>
+||||||| merged common ancestors
+    <style name="TextAppearance.MaterialComponents.Headline6" parent="TextAppearance.AppCompat.Title">
+    
+    <item name="fontFamily">sans-serif-medium</item>
+    <item name="android:textStyle">bold</item>
+    <item name="textAllCaps">false</item>
+    <item name="android:textSize">20sp</item>
+    <item name="android:letterSpacing">0.0125</item>
+  </style>
+    <style name="TextAppearance.MaterialComponents.MaterialButton" parent="android:TextAppearance">
+    <item name="android:textColor">@color/mtrl_btn_text_color_selector</item>
+    <item name="android:textAllCaps">@bool/mtrl_btn_textappearance_all_caps</item>
+    <item name="android:textSize">@dimen/mtrl_btn_text_size</item>
+    
+    <item name="fontFamily" ns2:ignore="NewApi">sans-serif-medium</item>
+    <item name="android:letterSpacing" ns2:ignore="NewApi">@dimen/mtrl_btn_letter_spacing</item>
+  </style>
+    <style name="TextAppearance.MaterialComponents.MaterialButton.Secondary">
+    <item name="android:textColor">@color/mtrl_text_btn_text_color_selector</item>
+  </style>
+=======
+    <style name="TextAppearance.MaterialComponents.Headline6" parent="TextAppearance.AppCompat.Title">
+    <!-- Fake Roboto Medium. -->
+    <item name="fontFamily">sans-serif-medium</item>
+    <item name="android:textStyle">bold</item>
+    <item name="textAllCaps">false</item>
+    <item name="android:textSize">20sp</item>
+    <item name="android:letterSpacing">0.0125</item>
+  </style>
+    <style name="TextAppearance.MaterialComponents.MaterialButton" parent="android:TextAppearance">
+    <item name="android:textColor">@color/mtrl_btn_text_color_selector</item>
+    <item name="android:textAllCaps">@bool/mtrl_btn_textappearance_all_caps</item>
+    <item name="android:textSize">@dimen/mtrl_btn_text_size</item>
+    <!-- Roboto medium -->
+    <item name="fontFamily" ns2:ignore="NewApi">sans-serif-medium</item>
+    <item name="android:letterSpacing" ns2:ignore="NewApi">@dimen/mtrl_btn_letter_spacing</item>
+  </style>
+    <style name="TextAppearance.MaterialComponents.MaterialButton.Secondary">
+    <item name="android:textColor">@color/mtrl_text_btn_text_color_selector</item>
+  </style>
+>>>>>>> search:app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
     <style name="TextAppearance.MaterialComponents.Overline" parent="TextAppearance.AppCompat">
+<<<<<<< HEAD:app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
     <item name="fontFamily">sans-serif</item>
     <item name="android:fontFamily">sans-serif</item>
     <item name="android:textStyle">normal</item>
     <item name="android:textAllCaps">true</item>
     <item name="android:textSize">10sp</item>
+||||||| merged common ancestors
+    
+    <item name="fontFamily">sans-serif-medium</item>
+    <item name="android:textStyle">bold</item>
+    <item name="textAllCaps">true</item>
+    <item name="android:textSize">12sp</item>
+=======
+    <!-- Fake Roboto Medium. -->
+    <item name="fontFamily">sans-serif-medium</item>
+    <item name="android:textStyle">bold</item>
+    <item name="textAllCaps">true</item>
+    <item name="android:textSize">12sp</item>
+>>>>>>> search:app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
     <item name="android:letterSpacing">0.166666667</item>
   </style>
     <style name="TextAppearance.MaterialComponents.Subtitle1" parent="TextAppearance.AppCompat.Subhead">
@@ -3572,9 +3754,39 @@
     <item name="android:textSize">16sp</item>
     <item name="android:letterSpacing">0.009375</item>
   </style>
+<<<<<<< HEAD:app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
     <style name="TextAppearance.MaterialComponents.Subtitle2" parent="Base.TextAppearance.MaterialComponents.Subtitle2"/>
     <style name="TextAppearance.MaterialComponents.Tooltip" parent="TextAppearance.MaterialComponents.Body2">
     <item name="android:textColor">?attr/colorOnPrimary</item>
+||||||| merged common ancestors
+    <style name="TextAppearance.MaterialComponents.Subtitle2" parent="TextAppearance.AppCompat.Subhead">
+    
+    <item name="fontFamily">sans-serif-medium</item>
+    <item name="android:textStyle">bold</item>
+    <item name="textAllCaps">false</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:letterSpacing">0.00714285714</item>
+  </style>
+    <style name="TextAppearance.MaterialComponents.Tab" parent="TextAppearance.Design.Tab">
+    <item name="android:textColor">@color/mtrl_tabs_icon_color_selector</item>
+  </style>
+    <style name="TextAppearance.MaterialComponents.Tab.Colored">
+    <item name="android:textColor">@color/mtrl_tabs_icon_color_selector_colored</item>
+=======
+    <style name="TextAppearance.MaterialComponents.Subtitle2" parent="TextAppearance.AppCompat.Subhead">
+    <!-- Fake Roboto Medium. -->
+    <item name="fontFamily">sans-serif-medium</item>
+    <item name="android:textStyle">bold</item>
+    <item name="textAllCaps">false</item>
+    <item name="android:textSize">14sp</item>
+    <item name="android:letterSpacing">0.00714285714</item>
+  </style>
+    <style name="TextAppearance.MaterialComponents.Tab" parent="TextAppearance.Design.Tab">
+    <item name="android:textColor">@color/mtrl_tabs_icon_color_selector</item>
+  </style>
+    <style name="TextAppearance.MaterialComponents.Tab.Colored">
+    <item name="android:textColor">@color/mtrl_tabs_icon_color_selector_colored</item>
+>>>>>>> search:app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
   </style>
     <style name="TextAppearance.Widget.AppCompat.ExpandedMenu.Item" parent="Base.TextAppearance.Widget.AppCompat.ExpandedMenu.Item">
     </style>
@@ -6835,6 +7047,7 @@
         <attr format="dimension" name="paddingTopNoTitle"/>
     </declare-styleable>
     <declare-styleable name="RecyclerView">
+<<<<<<< HEAD:app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml
         <!-- Class name of the Layout Manager to be used.
         <p/>
         The class must ext androidx.recyclerview.widget.RecyclerViewView$LayoutManager
@@ -6844,6 +7057,19 @@
          If the name starts with a '.', application package is prefixed.
          Else, if the name contains a '.', the classname is assumed to be a full class name.
          Else, the recycler view package naandroidx.appcompat.widgetdget) is prefixed. -->
+||||||| merged common ancestors
+        
+=======
+        <!-- Class name of the Layout Manager to be used.
+        <p/>
+        The class must extandroidx.recyclerview.widget.RecyclerViewView$LayoutManager
+        and have either a default constructor or constructor with the signature
+        (android.content.Context, android.util.AttributeSet, int, int).
+         <p/>
+         If the name starts with a '.', application package is prefixed.
+         Else, if the name contains a '.', the classname is assumed to be a full class name.
+         Else, the recycler view package naandroidx.appcompat.widgetdget) is prefixed. -->
+>>>>>>> search:app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml
         <attr format="string" name="layoutManager"/>
 
         <!-- ============================= -->

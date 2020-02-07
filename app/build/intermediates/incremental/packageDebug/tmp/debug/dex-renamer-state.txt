@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 #Fri Jan 31 16:56:05 GMT+03:00 2020
 path.2=classes2.dex
 path.1=classes.dex
+||||||| merged common ancestors
+#Tue Jan 28 17:10:36 GMT+03:00 2020
+base.0=/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/dex/debug/out/classes.dex
+=======
+#Fri Jan 31 14:06:34 GMT+03:00 2020
+base.0=/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/dex/debug/out/classes.dex
+>>>>>>> search
 path.0=classes.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex

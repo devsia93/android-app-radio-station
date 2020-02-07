@@ -854,6 +854,7 @@ color colorChildContainerBackground
 color colorPressed
 color colorPrimary
 color colorPrimaryDark
+color colorSurface
 color colorToolbarBackground
 color colorTriangle
 color common_google_signin_btn_text_dark
@@ -1460,6 +1461,7 @@ drawable abc_vector_test
 drawable arrow_24dp
 drawable avd_hide_password
 drawable avd_show_password
+drawable bg_grey_searchview
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1690,6 +1692,7 @@ id clip_vertical
 id collapseActionView
 id confirm_button
 id container
+id container_from_toolbar
 id content
 id contentPanel
 id coordinator
@@ -1843,6 +1846,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id recyclerView
+id recyclerViewSearch
 id right
 id right_icon
 id right_side
@@ -2040,6 +2044,7 @@ layout exo_player_view
 layout exo_simple_player_view
 layout exo_track_selection_dialog
 layout fragment_radios
+layout fragment_search
 layout fragment_stations
 layout layout_child_conteiner
 layout mtrl_alert_dialog

@@ -2,6 +2,7 @@ package ru.qbitmobile.qbitstation.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -11,6 +12,7 @@ import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AccelerateInterpolator;
@@ -31,12 +33,18 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 
 import net.cachapa.expandablelayout.ExpandableLayout;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
+import ru.qbitmobile.qbitstation.Adapter.RecyclerStationAdapter;
 import ru.qbitmobile.qbitstation.Adapter.StationAdapter;
 import ru.qbitmobile.qbitstation.BaseObject.Radio;
 import ru.qbitmobile.qbitstation.Const;
 import ru.qbitmobile.qbitstation.Fragment.RadiosFragment;
+import ru.qbitmobile.qbitstation.Fragment.SearchFragment;
 import ru.qbitmobile.qbitstation.Fragment.StationsFragment;
 import ru.qbitmobile.qbitstation.Helper.AnimationRotate;
 import ru.qbitmobile.qbitstation.Helper.JSONHelper;
@@ -45,10 +53,6 @@ import ru.qbitmobile.qbitstation.Helper.ReportHelper;
 import ru.qbitmobile.qbitstation.R;
 
 public class MainActivity extends AppCompatActivity {
-
-    LinearLayout llFromFragment;
-//    FragmentManager mFragmentManager;
-//    FragmentTransaction mFragmentTransaction;
 
     LinearLayout mLinearLayout;
 
@@ -59,11 +63,7 @@ public class MainActivity extends AppCompatActivity {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
+
 
     @Override
     protected void onDestroy() {
@@ -77,23 +77,23 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mLinearLayout = findViewById(R.id.main_container);
+        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
+
+
+
         if (savedInstanceState == null) {
             // Set the local night mode to some value
             AppCompatDelegate.setDefaultNightMode(
                     AppCompatDelegate.MODE_NIGHT_YES);
         }
 
-        mLinearLayout = findViewById(R.id.main_container);
-
-        mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
-
-        Toolbar toolbar = findViewById(R.id.toolbar_main);
-        setSupportActionBar(toolbar);
-
         ArrayList<Radio> radioArray = new ArrayList<>();
         radioArray = (ArrayList<Radio>) JSONHelper.importFromJSON(getApplicationContext());
 
-        createListStations(radioArray);
+        SearchFragment searchFragment = new SearchFragment(radioArray, mLinearLayout);
+        FragmentTransaction mFragmentTransaction = getSupportFragmentManager().beginTransaction();
+        mFragmentTransaction.add(R.id.container_from_toolbar, searchFragment).commit();
 
         initialyzeAppMetrica(radioArray);
 
@@ -104,12 +104,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void createListStations(ArrayList<Radio> radioArray) {
+
+        if (Const.ALL_STATIONS != null)
+            Const.ALL_STATIONS = new ArrayList<>();
+
         if (radioArray != null) {
             for (Radio r : radioArray) {
-                View childLayout = new View(this);
+                Const.ALL_STATIONS.addAll(Arrays.asList(r.getStationNames()));
 
                 LayoutInflater inflater = (LayoutInflater) this.getSystemService(this.LAYOUT_INFLATER_SERVICE);
-                childLayout = inflater.inflate(R.layout.layout_child_conteiner, mLinearLayout, false);
+                View childLayout = inflater.inflate(R.layout.layout_child_conteiner, mLinearLayout, false);
 
                 ImageView imageView = childLayout.findViewById(R.id.child_container_imageview_arrow);
 
