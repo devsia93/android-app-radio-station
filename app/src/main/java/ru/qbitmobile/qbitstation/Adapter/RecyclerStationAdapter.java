@@ -3,9 +3,7 @@ package ru.qbitmobile.qbitstation.Adapter;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -15,24 +13,21 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.request.target.CustomTarget;
-import com.bumptech.glide.request.transition.Transition;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.wang.avi.AVLoadingIndicatorView;
 
-import java.io.ByteArrayOutputStream;
 import java.util.List;
 
 import ru.qbitmobile.qbitstation.Const;
 import ru.qbitmobile.qbitstation.Helper.AnimatorHelper;
 import ru.qbitmobile.qbitstation.BaseObject.Station;
-import ru.qbitmobile.qbitstation.Helper.Player;
+import ru.qbitmobile.qbitstation.Player.Player;
 import ru.qbitmobile.qbitstation.Helper.ReportHelper;
+import ru.qbitmobile.qbitstation.Helper.Toaster;
 import ru.qbitmobile.qbitstation.R;
 import ru.qbitmobile.qbitstation.Service.PlayerService;
 
@@ -78,7 +73,7 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
                 @Override
                 public void onClick(View v) {
                     createFirebaseReport(position);
-                    Log.d("debug", mStations.get(position).getName());
+                    Toaster.Toast(mContext, "Adapter.holder.onClick: "+mStations.get(position).getName());
 
                     ReportHelper.report(mStations.get(position));
 
@@ -105,10 +100,12 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
                     serviceIntent.putExtra(Const.EXTRA_STREAM_URL, mStations.get(position).getStream());
                     serviceIntent.setAction(Const.CHANEL_MEDIA_ID);
                     mContext.startService(serviceIntent);
+                    Toaster.Toast(mContext, "Adapter.StartService");
                 }
 
                 private void stopPlayerService() {
                     mContext.stopService(serviceIntent);
+                    Toaster.Toast(mContext, "Adapter.StopService");
                 }
             });
         } catch (Exception e) {

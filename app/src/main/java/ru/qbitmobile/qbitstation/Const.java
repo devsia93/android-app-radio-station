@@ -28,4 +28,9 @@ public class Const {
     /*Actions*/
     public static final String ACTION = "ACTION";
     public static final String ACTION_EXIT = "ACTION_EXIT";
+    public static final String ACTION_PLAY_PAUSE = "ACTION_PLAY_PAUSE";
+    public static final String ACTION_NEXT = "ACTION_NEXT";
+    public static final String ACTION_PREVIOUS = "ACTION_PREVIOUS";
+    public static final String ACTION_FAVORITE = "ACTION_FAVORITE";
+    public static final String ACTION_STOP = "ACTION_STOP";
 }

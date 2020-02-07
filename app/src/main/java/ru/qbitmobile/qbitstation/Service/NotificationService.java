@@ -18,7 +18,7 @@
 //
 //import ru.qbitmobile.qbitstation.Activity.MainActivity;
 //import ru.qbitmobile.qbitstation.Const;
-//import ru.qbitmobile.qbitstation.Helper.Player;
+//import ru.qbitmobile.qbitstation.Player.Player;
 //import ru.qbitmobile.qbitstation.R;
 //
 //public class NotificationService extends Service {
