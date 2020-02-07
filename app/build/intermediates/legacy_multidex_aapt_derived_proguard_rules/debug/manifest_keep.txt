@@ -1,4 +1,4 @@
-# Referenced at /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:22
+# Referenced at /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:25
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
-# Referenced at /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:22
+# Referenced at /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/merged_manifests/debug/AndroidManifest.xml:25
 -keep class ru.qbitmobile.qbitstation.Helper.QbitStationApplication { <init>(); }

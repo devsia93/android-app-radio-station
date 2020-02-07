@@ -20,6 +20,22 @@ public class Const {
 
     public static String YANDEX_API_KEY = "f204189a-9d5c-425a-b19f-4f96ee739ee7";
 
-    public static List<String> ALL_STATIONS = new ArrayList<>();
+    public static final String TAG_MEDIA_SESSION = "MEDIA_SESSION";
+    public static final String CHANEL_MEDIA_ID = "chanel_media_1";
+    public static final int NOTIFICATION_MEDIA_ID = 1;
 
+    /*Extras*/
+    public static final String EXTRA_BITMAP_STATION = "EXTRA_BITMAP_STATION";
+    public static final String EXTRA_TITLE_STATION = "EXTRA_TITLE_STATION";
+    public static final String EXTRA_STREAM_URL = "EXTRA_STREAM_URL";
+    public static final String EXTRA_IMAGE_URL = "EXTRA_IMAGE_URL";
+
+    /*Actions*/
+    public static final String ACTION = "ACTION";
+    public static final String ACTION_EXIT = "ACTION_EXIT";
+    public static final String ACTION_PLAY_PAUSE = "ACTION_PLAY_PAUSE";
+    public static final String ACTION_NEXT = "ACTION_NEXT";
+    public static final String ACTION_PREVIOUS = "ACTION_PREVIOUS";
+    public static final String ACTION_FAVORITE = "ACTION_FAVORITE";
+    public static final String ACTION_STOP = "ACTION_STOP";
 }

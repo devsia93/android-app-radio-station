@@ -1539,6 +1539,8 @@ drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_close_white_24dp
 drawable ic_edit_black_24dp
+drawable ic_favorite_border_white_24dp
+drawable ic_favorite_white_24dp
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_launcher_background
@@ -1554,6 +1556,8 @@ drawable ic_pause_white_24dp
 drawable ic_play_arrow_black_24dp
 drawable ic_play_arrow_white_24dp
 drawable ic_play_circle_filled_white_24dp
+drawable ic_skip_next_white_24dp
+drawable ic_skip_previous_white_24dp
 drawable icon_toolbar_search
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
@@ -1742,7 +1746,6 @@ id exo_subtitles
 id exo_track_selection_view
 id exo_vr
 id expand_activities_button
-id expandableLayout1
 id expanded_menu
 id fade
 id fill
@@ -1756,8 +1759,6 @@ id fixed_height
 id fixed_width
 id floating
 id forever
-id fragment_radios_container
-id fragment_radios_textview_genre
 id ghost_view
 id ghost_view_holder
 id glide_custom_view_target_tag
@@ -2040,7 +2041,6 @@ layout exo_player_control_view
 layout exo_player_view
 layout exo_simple_player_view
 layout exo_track_selection_dialog
-layout fragment_radios
 layout fragment_stations
 layout layout_child_conteiner
 layout mtrl_alert_dialog

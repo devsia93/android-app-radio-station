@@ -56,6 +56,7 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/dcb989a22d9175db4adc2677bae6896e/jetified-play-services-base-17.0.0/res/values-as/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
@@ -102,6 +103,11 @@
                 },
                 {
                     "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/8913c5778706b764517b7c7ebe4b92c1/jetified-play-services-base-16.0.1/res/values-as/values.xml",
+||||||| merged common ancestors
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/a8190108256f478ca2c6d9d63fb42d4f/play-services-base-17.0.0/res/values-as/values.xml",
+=======
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/dcb989a22d9175db4adc2677bae6896e/jetified-play-services-base-17.0.0/res/values-as/values.xml",
+>>>>>>> medianotification
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -116,6 +122,7 @@
                         "endColumns": "109,184,124,111,188,123,142,141,201,109,179,125,190,182,89,95,115",
                         "endOffsets": "2946,3131,3256,3368,3557,3681,3824,3966,4353,4463,4643,4769,4960,5143,5233,5329,5445"
                     }
+<<<<<<< HEAD
                 },
                 {
                     "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/ea3905d66051af9fc0c9933b921bd176/appcompat-1.1.0/res/values-as/values-as.xml",
@@ -150,6 +157,26 @@
                         "endColumns": "100",
                         "endOffsets": "5628"
                     }
+||||||| merged common ancestors
+                },
+                {
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/6fd791391ee69c6a287895afbab72f4b/core-1.1.0/res/values-as/values-as.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "48",
+                        "startColumns": "4",
+                        "startOffsets": "5532",
+                        "endColumns": "100",
+                        "endOffsets": "5628"
+                    }
+=======
+>>>>>>> medianotification
                 }
             ]
         }

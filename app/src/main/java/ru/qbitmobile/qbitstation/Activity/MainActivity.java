@@ -8,27 +8,16 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
-import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.animation.AccelerateDecelerateInterpolator;
-import android.view.animation.AccelerateInterpolator;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.view.animation.Interpolator;
 import android.view.animation.LinearInterpolator;
-import android.view.animation.OvershootInterpolator;
-import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.google.android.material.snackbar.BaseTransientBottomBar;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 import net.cachapa.expandablelayout.ExpandableLayout;
@@ -48,7 +37,7 @@ import ru.qbitmobile.qbitstation.Fragment.SearchFragment;
 import ru.qbitmobile.qbitstation.Fragment.StationsFragment;
 import ru.qbitmobile.qbitstation.Helper.AnimationRotate;
 import ru.qbitmobile.qbitstation.Helper.JSONHelper;
-import ru.qbitmobile.qbitstation.Helper.Player;
+import ru.qbitmobile.qbitstation.Player.Player;
 import ru.qbitmobile.qbitstation.Helper.ReportHelper;
 import ru.qbitmobile.qbitstation.R;
 
@@ -58,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseAnalytics mFirebaseAnalytics;
 
-    //    RecyclerStationFragment mRecyclerStationFragment;
     static {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
     }

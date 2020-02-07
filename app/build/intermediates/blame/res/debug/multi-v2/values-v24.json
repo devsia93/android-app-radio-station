@@ -4,7 +4,17 @@
             "outputFile": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/a29a49314467f05707dd3914b9f6a695/media-1.0.1/res/values-v24/values-v24.xml",
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/aa65a4d0f67acde5a7711193590d3b52/appcompat-1.1.0/res/values-v24/values-v24.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,212",
+                        "endColumns": "156,134",
+                        "endOffsets": "207,342"
+                    }
+                },
+                {
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/8893434d83d0f98c1f6fde01f8218e70/media-1.1.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -18,16 +28,6 @@
                         "startOffsets": "347,413,474,540",
                         "endColumns": "65,60,65,66",
                         "endOffsets": "408,469,535,602"
-                    }
-                },
-                {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/ea3905d66051af9fc0c9933b921bd176/appcompat-1.1.0/res/values-v24/values-v24.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,212",
-                        "endColumns": "156,134",
-                        "endOffsets": "207,342"
                     }
                 }
             ]
