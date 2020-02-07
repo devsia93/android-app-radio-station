@@ -2044,13 +2044,7 @@ layout exo_player_control_view
 layout exo_player_view
 layout exo_simple_player_view
 layout exo_track_selection_dialog
-<<<<<<< HEAD
-layout fragment_radios
 layout fragment_search
-||||||| merged common ancestors
-layout fragment_radios
-=======
->>>>>>> medianotification
 layout fragment_stations
 layout layout_child_conteiner
 layout mtrl_alert_dialog

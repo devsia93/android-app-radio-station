@@ -30,9 +30,9 @@ import ru.qbitmobile.qbitstation.Const;
 import ru.qbitmobile.qbitstation.Fragment.SearchFragment;
 import ru.qbitmobile.qbitstation.Helper.AnimatorHelper;
 import ru.qbitmobile.qbitstation.Helper.KeyboardHelper;
-import ru.qbitmobile.qbitstation.Helper.Player;
-import ru.qbitmobile.qbitstation.Notification.NotificationService;
+import ru.qbitmobile.qbitstation.Player.Player;
 import ru.qbitmobile.qbitstation.R;
+import ru.qbitmobile.qbitstation.Service.PlayerService;
 
 public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRecyclerStationAdapter.ViewHolder> implements Filterable {
 
@@ -42,6 +42,7 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
     private List<Station> mAllStations;
     private List<Station> filteredList;
 
+    private static RecyclerView.ViewHolder preHolder;
 
     public FilterRecyclerStationAdapter(LayoutInflater layoutInflater, List<Station> stations, Context context) {
         this.mLayoutInflater = layoutInflater;
@@ -114,17 +115,24 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
 
                 startPlayerService();
 
-                if (animatorHelper != null)
-                    animatorHelper.stopAnimation();
-                animatorHelper = new AnimatorHelper(holder.playViewAnimation);
-                animatorHelper.startAnimation();
+                if (preHolder == holder) {
+                    player.stop();
+                    AnimatorHelper.stopAnimation(holder.playViewAnimation);
+                    preHolder = null;
+                } else {
+                    player.start(mContext);
+                    startPlayerService();
+                    AnimatorHelper.startAnimation(holder.playViewAnimation);
+                    preHolder = holder;
+                }
+
                 KeyboardHelper.closeKeyboard(mContext);
                 Log.d("anm", String.valueOf(holder.getItemId()));
             }
 
             private void startPlayerService() {
-                Intent serviceIntent = new Intent(mContext, NotificationService.class);
-                serviceIntent.setAction(Const.ACTION.STARTFOREGROUND_ACTION);
+                Intent serviceIntent = new Intent(mContext, PlayerService.class);
+                serviceIntent.setAction(Const.ACTION_PLAY_PAUSE);
                 mContext.startService(serviceIntent);
             }
         });

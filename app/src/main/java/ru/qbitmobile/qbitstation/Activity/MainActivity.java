@@ -29,10 +29,9 @@ import java.util.Collections;
 import java.util.List;
 
 import ru.qbitmobile.qbitstation.Adapter.RecyclerStationAdapter;
-import ru.qbitmobile.qbitstation.Adapter.StationAdapter;
 import ru.qbitmobile.qbitstation.BaseObject.Radio;
 import ru.qbitmobile.qbitstation.Const;
-import ru.qbitmobile.qbitstation.Fragment.RadiosFragment;
+
 import ru.qbitmobile.qbitstation.Fragment.SearchFragment;
 import ru.qbitmobile.qbitstation.Fragment.StationsFragment;
 import ru.qbitmobile.qbitstation.Helper.AnimationRotate;
@@ -76,8 +75,7 @@ public class MainActivity extends AppCompatActivity {
                     AppCompatDelegate.MODE_NIGHT_YES);
         }
 
-        ArrayList<Radio> radioArray = new ArrayList<>();
-        radioArray = (ArrayList<Radio>) JSONHelper.importFromJSON(getApplicationContext());
+        ArrayList<Radio> radioArray = (ArrayList<Radio>) JSONHelper.importFromJSON(getApplicationContext());
 
         SearchFragment searchFragment = new SearchFragment(radioArray, mLinearLayout);
         FragmentTransaction mFragmentTransaction = getSupportFragmentManager().beginTransaction();
@@ -85,6 +83,7 @@ public class MainActivity extends AppCompatActivity {
 
         initialyzeAppMetrica(radioArray);
 
+        createListStations(radioArray);
     }
 
     private void initialyzeAppMetrica(ArrayList<Radio> radioArray) {
@@ -93,12 +92,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void createListStations(ArrayList<Radio> radioArray) {
 
-        if (Const.ALL_STATIONS != null)
-            Const.ALL_STATIONS = new ArrayList<>();
-
         if (radioArray != null) {
             for (Radio r : radioArray) {
-                Const.ALL_STATIONS.addAll(Arrays.asList(r.getStationNames()));
 
                 LayoutInflater inflater = (LayoutInflater) this.getSystemService(this.LAYOUT_INFLATER_SERVICE);
                 View childLayout = inflater.inflate(R.layout.layout_child_conteiner, mLinearLayout, false);

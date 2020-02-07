@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
     "logs": [
         {
@@ -37,44 +36,3 @@
         }
     ]
 }
-||||||| merged common ancestors
-=======
-{
-    "logs": [
-        {
-            "outputFile": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-v16/values-v16.xml",
-            "map": [
-                {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/6f9443962039c01d6b5520430b8692bb/core-1.1.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/aa65a4d0f67acde5a7711193590d3b52/appcompat-1.1.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "5",
-                        "endColumns": "12",
-                        "endOffsets": "223"
-                    },
-                    "to": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "121",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "289"
-                    }
-                }
-            ]
-        }
-    ]
-}
->>>>>>> search

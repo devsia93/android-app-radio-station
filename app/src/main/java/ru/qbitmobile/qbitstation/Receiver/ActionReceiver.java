@@ -80,6 +80,5 @@ public class ActionReceiver extends BroadcastReceiver {
         }
         mNotification.actions[2] = new Notification.Action(imagePlayPause, "Play", playPendingIntent);
         mNotification = PlayerService.getBuilder().build();
-        mNotification.notify();
     }
 }

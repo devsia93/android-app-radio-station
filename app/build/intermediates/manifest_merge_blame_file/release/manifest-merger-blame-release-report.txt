@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="ru.qbitmobile.qbitstation"
@@ -20,964 +19,317 @@
 13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 13-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:7:5-77
 13-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:7:22-74
-14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-14-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:21:5-79
-14-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:21:22-76
-15    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
-15-->[com.android.installreferrer:installreferrer:1.1.1] /home/ivan/.gradle/caches/transforms-2/files-2.1/be9b012468954e65523a4dbe6aa41c3b/jetified-installreferrer-1.1.1/AndroidManifest.xml:5:5-110
-15-->[com.android.installreferrer:installreferrer:1.1.1] /home/ivan/.gradle/caches/transforms-2/files-2.1/be9b012468954e65523a4dbe6aa41c3b/jetified-installreferrer-1.1.1/AndroidManifest.xml:5:22-107
-16    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-17    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-18    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-19    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-19-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:25:5-68
-19-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:25:22-65
-20    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-20-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:26:5-82
-20-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:26:22-79
-21
-22    <application
-22-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:9:5-41:19
-23        android:name="ru.qbitmobile.qbitstation.Helper.QbitStationApplication"
-23-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:10:9-54
-24        android:allowBackup="true"
-24-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:11:9-35
-25        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-25-->[androidx.core:core:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/6f9443962039c01d6b5520430b8692bb/core-1.1.0/AndroidManifest.xml:24:18-86
-26        android:icon="@mipmap/ic_launcher"
-26-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:12:9-43
-27        android:label="@string/app_name"
-27-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:13:9-41
-28        android:roundIcon="@mipmap/ic_launcher_round"
-28-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:14:9-54
-29        android:supportsRtl="true"
-29-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:15:9-35
-30        android:theme="@style/AppTheme"
-30-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:16:9-40
-31        android:usesCleartextTraffic="true" >
-31-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:17:9-44
-32        <service
-32-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:18:9-26:19
-33            android:name="ru.qbitmobile.qbitstation.Service.PlayerService"
-33-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:19:13-50
-34            android:enabled="true"
-34-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:20:13-35
-35            android:exported="true" >
-35-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:21:13-36
+14
+15    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+15-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:8:5-75
+15-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:8:17-72
+16
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:21:5-79
+17-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:21:22-76
+18    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+18-->[com.android.installreferrer:installreferrer:1.1.1] /home/ivan/.gradle/caches/transforms-2/files-2.1/be9b012468954e65523a4dbe6aa41c3b/jetified-installreferrer-1.1.1/AndroidManifest.xml:5:5-110
+18-->[com.android.installreferrer:installreferrer:1.1.1] /home/ivan/.gradle/caches/transforms-2/files-2.1/be9b012468954e65523a4dbe6aa41c3b/jetified-installreferrer-1.1.1/AndroidManifest.xml:5:22-107
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+20    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+21    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+22    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+22-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:25:5-68
+22-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:25:22-65
+23    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+23-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:26:5-82
+23-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:26:22-79
+24
+25    <application
+25-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:10:5-49:19
+26        android:name="ru.qbitmobile.qbitstation.Helper.QbitStationApplication"
+26-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:11:9-54
+27        android:allowBackup="true"
+27-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:12:9-35
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/6f9443962039c01d6b5520430b8692bb/core-1.1.0/AndroidManifest.xml:24:18-86
+29        android:icon="@mipmap/ic_launcher"
+29-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:13:9-43
+30        android:label="@string/app_name"
+30-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:14:9-41
+31        android:roundIcon="@mipmap/ic_launcher_round"
+31-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:15:9-54
+32        android:supportsRtl="true"
+32-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:16:9-35
+33        android:theme="@style/AppTheme"
+33-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:17:9-40
+34        android:usesCleartextTraffic="true" >
+34-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:18:9-44
+35        <receiver android:name="androidx.media.session.MediaButtonReceiver" >
+35-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:19:9-23:20
+35-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:19:19-76
 36            <intent-filter>
-36-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:22:13-25:29
+36-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:20:13-22:29
 37                <action android:name="android.intent.action.MEDIA_BUTTON" />
-37-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:23:13-73
-37-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:23:21-70
-38                <action android:name="android.media.browse.MediaBrowserService" />
-38-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:24:13-79
-38-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:24:21-76
-39            </intent-filter>
-40        </service>
-41
-<<<<<<< HEAD
-42        <meta-data
-42-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:27:9-29:57
-43            android:name="preloaded_fonts"
-43-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:28:13-43
-44            android:resource="@array/preloaded_fonts" />
-44-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:29:13-54
-45        <!-- Yandex Mobile Metrica Analytics: common service -->
-46        <service
-46-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:26:9-43:19
-47            android:name="com.yandex.metrica.MetricaService"
-47-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:27:13-61
-48            android:enabled="true"
-48-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:28:13-35
-49            android:exported="true"
-49-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:29:13-36
-50            android:process=":Metrica" >
-50-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:30:13-39
-51            <intent-filter>
-51-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:32:13-38:29
-52                <category android:name="android.intent.category.DEFAULT" />
-52-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:33:17-76
-52-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:33:27-73
+37-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:21:17-77
+37-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:21:25-74
+38            </intent-filter>
+39        </receiver>
+40        <receiver
+40-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:24:9-27:48
+41            android:name="ru.qbitmobile.qbitstation.Receiver.ActionReceiver"
+41-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:25:13-52
+42            android:enabled="true"
+42-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:26:13-35
+43            android:exported="true" />
+43-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:27:13-36
+44
+45        <service
+45-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:29:9-36:19
+46            android:name="ru.qbitmobile.qbitstation.Service.PlayerService"
+46-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:30:13-50
+47            android:enabled="true"
+47-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:31:13-35
+48            android:exported="true" >
+48-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:32:13-36
+49            <intent-filter>
+49-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:33:13-35:29
+50                <action android:name="android.media.browse.MediaBrowserService" />
+50-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:34:17-83
+50-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:34:25-80
+51            </intent-filter>
+52        </service>
 53
-54                <action android:name="com.yandex.metrica.IMetricaService" />
-54-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:35:17-77
-54-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:35:25-74
-55
-56                <data android:scheme="metrica" />
-56-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:37:17-50
-56-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:37:23-47
-57            </intent-filter>
-58
-59            <meta-data
-59-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:40:13-42:38
-60                android:name="metrica:api:level"
-60-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:41:17-49
-61                android:value="85" />
-61-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:42:17-35
-62        </service>
-63        <service
-63-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:44:9-60:19
-64            android:name="com.yandex.metrica.ConfigurationService"
-64-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:45:13-67
-65            android:enabled="true"
-65-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:46:13-35
-66            android:exported="false"
-66-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:47:13-37
-67            android:process=":Metrica" >
-67-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:48:13-39
-68            <meta-data
-68-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:50:13-52:37
-69                android:name="metrica:configuration:api:level"
-69-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:51:17-63
-70                android:value="3" />
-70-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:52:17-34
-71
-72            <intent-filter>
-72-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:54:13-59:29
+54        <activity android:name="ru.qbitmobile.qbitstation.Activity.MainActivity" >
+54-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:38:9-44:20
+54-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:38:19-56
+55            <intent-filter>
+55-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:39:13-43:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:40:17-69
+56-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:40:25-66
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:42:17-77
+58-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:42:27-74
+59            </intent-filter>
+60        </activity>
+61
+62        <meta-data
+62-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:46:9-48:57
+63            android:name="preloaded_fonts"
+63-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:47:13-43
+64            android:resource="@array/preloaded_fonts" />
+64-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:48:13-54
+65        <!-- Yandex Mobile Metrica Analytics: common service -->
+66        <service
+66-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:26:9-43:19
+67            android:name="com.yandex.metrica.MetricaService"
+67-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:27:13-61
+68            android:enabled="true"
+68-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:28:13-35
+69            android:exported="true"
+69-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:29:13-36
+70            android:process=":Metrica" >
+70-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:30:13-39
+71            <intent-filter>
+71-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:32:13-38:29
+72                <category android:name="android.intent.category.DEFAULT" />
+72-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:33:17-76
+72-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:33:27-73
 73
-74                <!-- This action was used by old background location collecting and should not be used again -->
-75                <!-- <action android:name="com.yandex.metrica.configuration.ACTION_START"/> -->
-76                <action android:name="com.yandex.metrica.configuration.ACTION_INIT" />
-76-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:58:17-87
-76-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:58:25-84
+74                <action android:name="com.yandex.metrica.IMetricaService" />
+74-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:35:17-77
+74-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:35:25-74
+75
+76                <data android:scheme="metrica" />
+76-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:37:17-50
+76-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:37:23-47
 77            </intent-filter>
-78        </service>
-79        <service
-79-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:61:9-67:19
-80            android:name="com.yandex.metrica.ConfigurationJobService"
-80-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:62:13-70
-81            android:enabled="true"
-81-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:63:13-35
-82            android:exported="false"
-82-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:64:13-37
-83            android:permission="android.permission.BIND_JOB_SERVICE"
-83-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:65:13-69
-84            android:process=":Metrica" >
-84-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:66:13-39
-85        </service> <!-- Yandex Mobile Metrica Analytics: main receiver -->
-86        <receiver
-86-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:70:9-78:20
-87            android:name="com.yandex.metrica.MetricaEventHandler"
-87-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:71:13-66
-88            android:enabled="true"
-88-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:72:13-35
-89            android:exported="true" >
-89-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:73:13-36
-90            <intent-filter>
-90-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:75:13-77:29
-91                <action android:name="com.android.vending.INSTALL_REFERRER" />
-91-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:76:17-79
-91-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:76:25-76
-92            </intent-filter>
-93        </receiver>
-94        <receiver
-94-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:79:9-88:20
-95            android:name="com.yandex.metrica.ConfigurationServiceReceiver"
-95-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:80:13-75
-96            android:enabled="true"
-96-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:81:13-35
-97            android:exported="true"
-97-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:82:13-36
-98            android:process=":Metrica" >
-98-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:83:13-39
-99            <intent-filter>
-99-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:85:13-87:29
-100                <action android:name="com.yandex.metrica.configuration.service.PLC" />
-100-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:86:17-87
-100-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:86:25-84
-101            </intent-filter>
-102        </receiver>
-103        <receiver
-103-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:29:9-33:20
-104            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-104-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:30:13-85
-105            android:enabled="true"
-105-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:31:13-35
-106            android:exported="false" >
-106-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:32:13-37
-107        </receiver>
-108        <receiver
-108-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:34:9-42:20
-109            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-109-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:35:13-100
-110            android:enabled="true"
-110-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:36:13-35
-111            android:exported="true"
-111-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:37:13-36
-112            android:permission="android.permission.INSTALL_PACKAGES" >
-112-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:38:13-69
-113            <intent-filter>
-113-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:75:13-77:29
-114                <action android:name="com.android.vending.INSTALL_REFERRER" />
-114-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:76:17-79
-114-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:76:25-76
-115            </intent-filter>
-116        </receiver>
-117
-118        <service
-118-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:44:9-47:40
-119            android:name="com.google.android.gms.measurement.AppMeasurementService"
-119-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:45:13-84
-||||||| merged common ancestors
-42        <meta-data
-42-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:27:9-29:57
-43            android:name="preloaded_fonts"
-43-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:28:13-43
-44            android:resource="@array/preloaded_fonts" />
-44-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:29:13-54
-45        <!-- Yandex Mobile Metrica Analytics: common service -->
-46        <service
-46-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:26:9-43:19
-47            android:name="com.yandex.metrica.MetricaService"
-47-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:27:13-61
-48            android:enabled="true"
-48-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:28:13-35
-49            android:exported="true"
-49-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:29:13-36
-50            android:process=":Metrica" >
-50-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:30:13-39
-51            <intent-filter>
-51-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:32:13-38:29
-52                <category android:name="android.intent.category.DEFAULT" />
-52-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:33:17-76
-52-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:33:27-73
-53
-54                <action android:name="com.yandex.metrica.IMetricaService" />
-54-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:35:17-77
-54-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:35:25-74
-55
-56                <data android:scheme="metrica" />
-56-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:37:17-50
-56-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:37:23-47
-57            </intent-filter>
-58
-59            <meta-data
-59-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:40:13-42:38
-60                android:name="metrica:api:level"
-60-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:41:17-49
-61                android:value="85" />
-61-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:42:17-35
-62        </service>
-63        <service
-63-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:44:9-60:19
-64            android:name="com.yandex.metrica.ConfigurationService"
-64-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:45:13-67
-65            android:enabled="true"
-65-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:46:13-35
-66            android:exported="false"
-66-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:47:13-37
-67            android:process=":Metrica" >
-67-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:48:13-39
-68            <meta-data
-68-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:50:13-52:37
-69                android:name="metrica:configuration:api:level"
-69-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:51:17-63
-70                android:value="3" />
-70-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:52:17-34
-71
-72            <intent-filter>
-72-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:54:13-59:29
-73
-74                <!-- This action was used by old background location collecting and should not be used again -->
-75                <!-- <action android:name="com.yandex.metrica.configuration.ACTION_START"/> -->
-76                <action android:name="com.yandex.metrica.configuration.ACTION_INIT" />
-76-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:58:17-87
-76-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:58:25-84
-77            </intent-filter>
-78        </service>
-79        <service
-79-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:61:9-67:19
-80            android:name="com.yandex.metrica.ConfigurationJobService"
-80-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:62:13-70
-81            android:enabled="true"
-81-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:63:13-35
-82            android:exported="false"
-82-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:64:13-37
-83            android:permission="android.permission.BIND_JOB_SERVICE"
-83-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:65:13-69
-84            android:process=":Metrica" >
-84-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:66:13-39
-85        </service> <!-- Yandex Mobile Metrica Analytics: main receiver -->
-86        <receiver
-86-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:70:9-78:20
-87            android:name="com.yandex.metrica.MetricaEventHandler"
-87-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:71:13-66
-88            android:enabled="true"
-88-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:72:13-35
-89            android:exported="true" >
-89-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:73:13-36
-90            <intent-filter>
-90-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:75:13-77:29
-91                <action android:name="com.android.vending.INSTALL_REFERRER" />
-91-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:76:17-79
-91-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:76:25-76
-92            </intent-filter>
-93        </receiver>
-94        <receiver
-94-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:79:9-88:20
-95            android:name="com.yandex.metrica.ConfigurationServiceReceiver"
-95-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:80:13-75
-96            android:enabled="true"
-96-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:81:13-35
-97            android:exported="true"
-97-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:82:13-36
-98            android:process=":Metrica" >
-98-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:83:13-39
-99            <intent-filter>
-99-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:85:13-87:29
-100                <action android:name="com.yandex.metrica.configuration.service.PLC" />
-100-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:86:17-87
-100-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:86:25-84
-101            </intent-filter>
-102        </receiver>
-103        <receiver
-103-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:29:9-33:20
-104            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-104-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:30:13-85
-105            android:enabled="true"
-105-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:31:13-35
-106            android:exported="false" >
-106-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:32:13-37
-107        </receiver>
-108        <receiver
-108-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:34:9-42:20
-109            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-109-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:35:13-100
-110            android:enabled="true"
-110-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:36:13-35
-111            android:exported="true"
-111-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:37:13-36
-112            android:permission="android.permission.INSTALL_PACKAGES" >
-112-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:38:13-69
-113            <intent-filter>
-113-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:75:13-77:29
-114                <action android:name="com.android.vending.INSTALL_REFERRER" />
-114-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:76:17-79
-114-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f25f1756e3d5e3f8718eb08724ae6dbf/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:76:25-76
-115            </intent-filter>
-116        </receiver>
-117
-118        <service
-118-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:44:9-47:40
-119            android:name="com.google.android.gms.measurement.AppMeasurementService"
-119-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:45:13-84
-=======
-42        <activity android:name="ru.qbitmobile.qbitstation.Activity.MainActivity" >
-42-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:28:9-34:20
-42-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:28:19-56
-43            <intent-filter>
-43-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:29:13-33:29
-44                <action android:name="android.intent.action.MAIN" />
-44-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:30:17-69
-44-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:30:25-66
-45
-46                <category android:name="android.intent.category.LAUNCHER" />
-46-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:32:17-77
-46-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:32:27-74
-47            </intent-filter>
-48        </activity>
-49
-50        <service android:name="ru.qbitmobile.qbitstation.Service.NotificationService" />
-50-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:36:9-64
-50-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:36:18-61
-51
-52        <meta-data
-52-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:38:9-40:57
-53            android:name="preloaded_fonts"
-53-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:39:13-43
-54            android:resource="@array/preloaded_fonts" />
-54-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:40:13-54
-55        <!-- Yandex Mobile Metrica Analytics: common service -->
-56        <service
-56-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:26:9-43:19
-57            android:name="com.yandex.metrica.MetricaService"
-57-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:27:13-61
-58            android:enabled="true"
-58-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:28:13-35
-59            android:exported="true"
-59-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:29:13-36
-60            android:process=":Metrica" >
-60-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:30:13-39
-61            <intent-filter>
-61-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:32:13-38:29
-62                <category android:name="android.intent.category.DEFAULT" />
-62-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:33:17-76
-62-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:33:27-73
-63
-64                <action android:name="com.yandex.metrica.IMetricaService" />
-64-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:35:17-77
-64-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:35:25-74
-65
-66                <data android:scheme="metrica" />
-66-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:37:17-50
-66-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:37:23-47
-67            </intent-filter>
-68
-69            <meta-data
-69-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:40:13-42:38
-70                android:name="metrica:api:level"
-70-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:41:17-49
-71                android:value="85" />
-71-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:42:17-35
-72        </service>
-73        <service
-73-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:44:9-60:19
-74            android:name="com.yandex.metrica.ConfigurationService"
-74-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:45:13-67
-75            android:enabled="true"
-75-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:46:13-35
-76            android:exported="false"
-76-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:47:13-37
-77            android:process=":Metrica" >
-77-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:48:13-39
-78            <meta-data
-78-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:50:13-52:37
-79                android:name="metrica:configuration:api:level"
-79-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:51:17-63
-80                android:value="3" />
-80-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:52:17-34
-81
-82            <intent-filter>
-82-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:54:13-59:29
-83
-84                <!-- This action was used by old background location collecting and should not be used again -->
-85                <!-- <action android:name="com.yandex.metrica.configuration.ACTION_START"/> -->
-86                <action android:name="com.yandex.metrica.configuration.ACTION_INIT" />
-86-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:58:17-87
-86-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:58:25-84
-87            </intent-filter>
-88        </service>
-89        <service
-89-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:61:9-67:19
-90            android:name="com.yandex.metrica.ConfigurationJobService"
-90-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:62:13-70
-91            android:enabled="true"
-91-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:63:13-35
-92            android:exported="false"
-92-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:64:13-37
-93            android:permission="android.permission.BIND_JOB_SERVICE"
-93-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:65:13-69
-94            android:process=":Metrica" >
-94-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:66:13-39
-95        </service> <!-- Yandex Mobile Metrica Analytics: main receiver -->
-96        <receiver
-96-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:70:9-78:20
-97            android:name="com.yandex.metrica.MetricaEventHandler"
-97-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:71:13-66
-98            android:enabled="true"
-98-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:72:13-35
-99            android:exported="true" >
-99-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:73:13-36
-100            <intent-filter>
-100-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:75:13-77:29
-101                <action android:name="com.android.vending.INSTALL_REFERRER" />
-101-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:76:17-79
-101-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:76:25-76
-102            </intent-filter>
-103        </receiver>
-104        <receiver
-104-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:79:9-88:20
-105            android:name="com.yandex.metrica.ConfigurationServiceReceiver"
-105-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:80:13-75
-106            android:enabled="true"
-106-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:81:13-35
-107            android:exported="true"
-107-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:82:13-36
-108            android:process=":Metrica" >
-108-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:83:13-39
-109            <intent-filter>
-109-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:85:13-87:29
-110                <action android:name="com.yandex.metrica.configuration.service.PLC" />
-110-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:86:17-87
-110-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:86:25-84
-111            </intent-filter>
-112        </receiver>
-113        <receiver
-113-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:29:9-33:20
-114            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-114-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:30:13-85
-115            android:enabled="true"
-115-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:31:13-35
-116            android:exported="false" >
-116-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:32:13-37
-117        </receiver>
-118        <receiver
-118-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:34:9-42:20
-119            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-119-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:35:13-100
->>>>>>> medianotification
-120            android:enabled="true"
-<<<<<<< HEAD
-120-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:46:13-35
-121            android:exported="false" />
-121-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:47:13-37
-122        <service
-122-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:48:9-52:72
-123            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-123-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:49:13-87
-124            android:enabled="true"
-124-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:50:13-35
-125            android:exported="false"
-125-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:51:13-37
-126            android:permission="android.permission.BIND_JOB_SERVICE" />
-126-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:52:13-69
-127        <service
-127-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:27:9-33:19
-128            android:name="com.google.firebase.components.ComponentDiscoveryService"
-128-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:28:13-84
-129            android:directBootAware="true"
-129-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
-130            android:exported="false" >
-130-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:29:13-37
-131            <meta-data
-131-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:30:13-32:85
-132                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-132-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:31:17-139
-133                android:value="com.google.firebase.components.ComponentRegistrar" />
-133-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:32:17-82
-134            <meta-data
-134-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
-135                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-135-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
-136                android:value="com.google.firebase.components.ComponentRegistrar" />
-136-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
-137        </service>
-138
-139        <receiver
-139-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
-140            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-140-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
-141            android:exported="true"
-141-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
-142            android:permission="com.google.android.c2dm.permission.SEND" >
-142-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
-143            <intent-filter>
-143-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
-144                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-144-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:42:17-81
-144-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:42:25-78
-145            </intent-filter>
-146        </receiver>
-147
-148        <provider
-148-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
-149            android:name="com.google.firebase.provider.FirebaseInitProvider"
-149-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
-150            android:authorities="ru.qbitmobile.qbitstation.firebaseinitprovider"
-150-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
-151            android:exported="false"
-151-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
-152            android:initOrder="100" />
-152-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
-153
-154        <activity
-154-->[com.google.android.gms:play-services-base:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/dcb989a22d9175db4adc2677bae6896e/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-155            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-155-->[com.google.android.gms:play-services-base:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/dcb989a22d9175db4adc2677bae6896e/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-156            android:exported="false"
-156-->[com.google.android.gms:play-services-base:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/dcb989a22d9175db4adc2677bae6896e/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-157            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-157-->[com.google.android.gms:play-services-base:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/dcb989a22d9175db4adc2677bae6896e/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-158
-159        <meta-data
-159-->[com.google.android.gms:play-services-basement:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f84fce8114b364518946f20bca07dfab/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-160            android:name="com.google.android.gms.version"
-160-->[com.google.android.gms:play-services-basement:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f84fce8114b364518946f20bca07dfab/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-161            android:value="@integer/google_play_services_version" />
-161-->[com.google.android.gms:play-services-basement:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f84fce8114b364518946f20bca07dfab/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-162    </application>
-||||||| merged common ancestors
-120-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:46:13-35
-121            android:exported="false" />
-121-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:47:13-37
-122        <service
-122-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:48:9-52:72
-123            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-123-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:49:13-87
-124            android:enabled="true"
-124-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:50:13-35
-125            android:exported="false"
-125-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:51:13-37
-126            android:permission="android.permission.BIND_JOB_SERVICE" />
-126-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/d3ada161cba227a44e4867c1a7ce0248/play-services-measurement-17.2.2/AndroidManifest.xml:52:13-69
-127        <service
-127-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/b7c426b46f7ed39e9e6d07606eee9d75/play-services-measurement-api-17.2.2/AndroidManifest.xml:27:9-33:19
-128            android:name="com.google.firebase.components.ComponentDiscoveryService"
-128-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/b7c426b46f7ed39e9e6d07606eee9d75/play-services-measurement-api-17.2.2/AndroidManifest.xml:28:13-84
-129            android:directBootAware="true"
-129-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ec9241faa6c4a45c79aa36c72b0c6d65/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
-130            android:exported="false" >
-130-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/b7c426b46f7ed39e9e6d07606eee9d75/play-services-measurement-api-17.2.2/AndroidManifest.xml:29:13-37
-131            <meta-data
-131-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/b7c426b46f7ed39e9e6d07606eee9d75/play-services-measurement-api-17.2.2/AndroidManifest.xml:30:13-32:85
-132                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-132-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/b7c426b46f7ed39e9e6d07606eee9d75/play-services-measurement-api-17.2.2/AndroidManifest.xml:31:17-139
-133                android:value="com.google.firebase.components.ComponentRegistrar" />
-133-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/b7c426b46f7ed39e9e6d07606eee9d75/play-services-measurement-api-17.2.2/AndroidManifest.xml:32:17-82
-134            <meta-data
-134-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/957e341af4e4359327cb1e662191325a/firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
-135                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-135-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/957e341af4e4359327cb1e662191325a/firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
-136                android:value="com.google.firebase.components.ComponentRegistrar" />
-136-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/957e341af4e4359327cb1e662191325a/firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
-137        </service>
-138
-139        <receiver
-139-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/957e341af4e4359327cb1e662191325a/firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
-140            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-140-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/957e341af4e4359327cb1e662191325a/firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
-141            android:exported="true"
-141-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/957e341af4e4359327cb1e662191325a/firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
-142            android:permission="com.google.android.c2dm.permission.SEND" >
-142-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/957e341af4e4359327cb1e662191325a/firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
-143            <intent-filter>
-143-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/957e341af4e4359327cb1e662191325a/firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
-144                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-144-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/957e341af4e4359327cb1e662191325a/firebase-iid-20.0.2/AndroidManifest.xml:42:17-81
-144-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/957e341af4e4359327cb1e662191325a/firebase-iid-20.0.2/AndroidManifest.xml:42:25-78
-145            </intent-filter>
-146        </receiver>
-147
-148        <provider
-148-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ec9241faa6c4a45c79aa36c72b0c6d65/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
-149            android:name="com.google.firebase.provider.FirebaseInitProvider"
-149-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ec9241faa6c4a45c79aa36c72b0c6d65/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
-150            android:authorities="ru.qbitmobile.qbitstation.firebaseinitprovider"
-150-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ec9241faa6c4a45c79aa36c72b0c6d65/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
-151            android:exported="false"
-151-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ec9241faa6c4a45c79aa36c72b0c6d65/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
-152            android:initOrder="100" />
-152-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ec9241faa6c4a45c79aa36c72b0c6d65/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
-153
-154        <activity
-154-->[com.google.android.gms:play-services-base:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8190108256f478ca2c6d9d63fb42d4f/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-155            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-155-->[com.google.android.gms:play-services-base:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8190108256f478ca2c6d9d63fb42d4f/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-156            android:exported="false"
-156-->[com.google.android.gms:play-services-base:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8190108256f478ca2c6d9d63fb42d4f/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-157            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-157-->[com.google.android.gms:play-services-base:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8190108256f478ca2c6d9d63fb42d4f/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-158
-159        <meta-data
-159-->[com.google.android.gms:play-services-basement:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/cb1e003e14f23c05b88d55f870e0ae09/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-160            android:name="com.google.android.gms.version"
-160-->[com.google.android.gms:play-services-basement:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/cb1e003e14f23c05b88d55f870e0ae09/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-161            android:value="@integer/google_play_services_version" />
-161-->[com.google.android.gms:play-services-basement:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/cb1e003e14f23c05b88d55f870e0ae09/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-162    </application>
-=======
-120-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:36:13-35
-121            android:exported="true"
-121-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:37:13-36
-122            android:permission="android.permission.INSTALL_PACKAGES" >
-122-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:38:13-69
-123            <intent-filter>
-123-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:75:13-77:29
-124                <action android:name="com.android.vending.INSTALL_REFERRER" />
-124-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:76:17-79
-124-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:76:25-76
-125            </intent-filter>
-126        </receiver>
-127
-128        <service
-128-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:44:9-47:40
-129            android:name="com.google.android.gms.measurement.AppMeasurementService"
-129-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:45:13-84
+78
+79            <meta-data
+79-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:40:13-42:38
+80                android:name="metrica:api:level"
+80-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:41:17-49
+81                android:value="85" />
+81-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:42:17-35
+82        </service>
+83        <service
+83-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:44:9-60:19
+84            android:name="com.yandex.metrica.ConfigurationService"
+84-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:45:13-67
+85            android:enabled="true"
+85-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:46:13-35
+86            android:exported="false"
+86-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:47:13-37
+87            android:process=":Metrica" >
+87-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:48:13-39
+88            <meta-data
+88-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:50:13-52:37
+89                android:name="metrica:configuration:api:level"
+89-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:51:17-63
+90                android:value="3" />
+90-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:52:17-34
+91
+92            <intent-filter>
+92-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:54:13-59:29
+93
+94                <!-- This action was used by old background location collecting and should not be used again -->
+95                <!-- <action android:name="com.yandex.metrica.configuration.ACTION_START"/> -->
+96                <action android:name="com.yandex.metrica.configuration.ACTION_INIT" />
+96-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:58:17-87
+96-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:58:25-84
+97            </intent-filter>
+98        </service>
+99        <service
+99-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:61:9-67:19
+100            android:name="com.yandex.metrica.ConfigurationJobService"
+100-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:62:13-70
+101            android:enabled="true"
+101-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:63:13-35
+102            android:exported="false"
+102-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:64:13-37
+103            android:permission="android.permission.BIND_JOB_SERVICE"
+103-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:65:13-69
+104            android:process=":Metrica" >
+104-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:66:13-39
+105        </service> <!-- Yandex Mobile Metrica Analytics: main receiver -->
+106        <receiver
+106-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:70:9-78:20
+107            android:name="com.yandex.metrica.MetricaEventHandler"
+107-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:71:13-66
+108            android:enabled="true"
+108-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:72:13-35
+109            android:exported="true" >
+109-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:73:13-36
+110            <intent-filter>
+110-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:75:13-77:29
+111                <action android:name="com.android.vending.INSTALL_REFERRER" />
+111-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:76:17-79
+111-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:76:25-76
+112            </intent-filter>
+113        </receiver>
+114        <receiver
+114-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:79:9-88:20
+115            android:name="com.yandex.metrica.ConfigurationServiceReceiver"
+115-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:80:13-75
+116            android:enabled="true"
+116-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:81:13-35
+117            android:exported="true"
+117-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:82:13-36
+118            android:process=":Metrica" >
+118-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:83:13-39
+119            <intent-filter>
+119-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:85:13-87:29
+120                <action android:name="com.yandex.metrica.configuration.service.PLC" />
+120-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:86:17-87
+120-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:86:25-84
+121            </intent-filter>
+122        </receiver>
+123        <receiver
+123-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:29:9-33:20
+124            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+124-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:30:13-85
+125            android:enabled="true"
+125-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:31:13-35
+126            android:exported="false" >
+126-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:32:13-37
+127        </receiver>
+128        <receiver
+128-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:34:9-42:20
+129            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+129-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:35:13-100
 130            android:enabled="true"
-130-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:46:13-35
-131            android:exported="false" />
-131-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:47:13-37
-132        <service
-132-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:48:9-52:72
-133            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-133-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:49:13-87
-134            android:enabled="true"
-134-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:50:13-35
-135            android:exported="false"
-135-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:51:13-37
-136            android:permission="android.permission.BIND_JOB_SERVICE" />
-136-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:52:13-69
-137        <service
-137-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:27:9-33:19
-138            android:name="com.google.firebase.components.ComponentDiscoveryService"
-138-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:28:13-84
-139            android:directBootAware="true"
-139-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
-140            android:exported="false" >
-140-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:29:13-37
-141            <meta-data
-141-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:30:13-32:85
-142                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-142-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:31:17-139
-143                android:value="com.google.firebase.components.ComponentRegistrar" />
-143-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:32:17-82
-144            <meta-data
-144-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
-145                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-145-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
-146                android:value="com.google.firebase.components.ComponentRegistrar" />
-146-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
-147        </service>
-148
-149        <receiver
-149-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
-150            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-150-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
-151            android:exported="true"
-151-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
-152            android:permission="com.google.android.c2dm.permission.SEND" >
-152-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
-153            <intent-filter>
-153-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
-154                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-154-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:42:17-81
-154-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:42:25-78
-155            </intent-filter>
-156        </receiver>
-157
-158        <provider
-158-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
-159            android:name="com.google.firebase.provider.FirebaseInitProvider"
-159-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
-160            android:authorities="ru.qbitmobile.qbitstation.firebaseinitprovider"
-160-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
-161            android:exported="false"
-161-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
-162            android:initOrder="100" />
-162-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
->>>>>>> medianotification
-163
-<<<<<<< HEAD
-164</manifest>
-||||||| merged common ancestors
-=======
-1<?xml version="1.0" encoding="utf-8"?>
-2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="ru.qbitmobile.qbitstation"
-4    android:versionCode="1"
-5    android:versionName="1.0" >
-6
-7    <uses-sdk
-8        android:minSdkVersion="19"
-8-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
-9        android:targetSdkVersion="29" />
-9-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
-10
-11    <uses-permission android:name="android.permission.INTERNET" />
-11-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:5:5-67
-11-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:5:22-64
-12    <uses-permission android:name="android.permission.VIBRATE" />
-12-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:6:5-66
-12-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:6:22-63
-13    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-13-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:7:5-77
-13-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:7:22-74
-14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-14-->[com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/327046f45ce22c416ac38b96b2b07198/jetified-firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml:23:5-79
-14-->[com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/327046f45ce22c416ac38b96b2b07198/jetified-firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml:23:22-76
-15    <uses-permission android:name="android.permission.WAKE_LOCK" />
-15-->[com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/327046f45ce22c416ac38b96b2b07198/jetified-firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml:24:5-68
-15-->[com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/327046f45ce22c416ac38b96b2b07198/jetified-firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml:24:22-65
-16    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" /> <!-- Required by older versions of Google Play services to create IID tokens -->
-16-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:26:5-110
-16-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:26:22-107
-17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-17-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:26:5-82
-17-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:26:22-79
-18
-19    <application
-19-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:9:5-29:19
-20        android:allowBackup="true"
-20-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:10:9-35
-21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-21-->[androidx.core:core:1.1.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/6fd791391ee69c6a287895afbab72f4b/core-1.1.0/AndroidManifest.xml:24:18-86
-22        android:icon="@mipmap/ic_launcher"
-22-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:11:9-43
-23        android:label="@string/app_name"
-23-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:12:9-41
-24        android:roundIcon="@mipmap/ic_launcher_round"
-24-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:13:9-54
-25        android:supportsRtl="true"
-25-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:14:9-35
-26        android:theme="@style/AppTheme"
-26-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:15:9-40
-27        android:usesCleartextTraffic="true" >
-27-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:16:9-44
-28        <activity android:name="ru.qbitmobile.qbitstation.Activity.MainActivity" >
-28-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:18:9-24:20
-28-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:18:19-56
-29            <intent-filter>
-29-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:19:13-23:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:20:17-69
-30-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:20:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:22:17-77
-32-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:22:27-74
-33            </intent-filter>
-34        </activity>
-35
-36        <service android:name="ru.qbitmobile.qbitstation.Notification.NotificationService" />
-36-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:25:9-69
-36-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:25:18-66
-37
-38        <meta-data
-38-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:26:9-28:57
-39            android:name="preloaded_fonts"
-39-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:27:13-43
-40            android:resource="@array/preloaded_fonts" />
-40-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:28:13-54
-41
-42        <service
-42-->[com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/327046f45ce22c416ac38b96b2b07198/jetified-firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml:27:9-31:19
-43            android:name="com.google.firebase.components.ComponentDiscoveryService"
-43-->[com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/327046f45ce22c416ac38b96b2b07198/jetified-firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml:27:18-89
-44            android:exported="false" >
-44-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:31:13-37
-45            <meta-data
-45-->[com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/327046f45ce22c416ac38b96b2b07198/jetified-firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml:28:13-30:85
-46                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
-46-->[com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/327046f45ce22c416ac38b96b2b07198/jetified-firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml:29:17-139
-47                android:value="com.google.firebase.components.ComponentRegistrar" />
-47-->[com.google.firebase:firebase-measurement-connector-impl:17.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/327046f45ce22c416ac38b96b2b07198/jetified-firebase-measurement-connector-impl-17.0.2/AndroidManifest.xml:30:17-82
-48            <meta-data
-48-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:32:13-34:85
-49                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
-49-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:33:17-96
-50                android:value="com.google.firebase.components.ComponentRegistrar" />
-50-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:34:17-82
-51        </service>
-52
-53        <receiver
-53-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:29:9-33:20
-54            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
-54-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:30:13-85
-55            android:enabled="true"
-55-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:31:13-35
-56            android:exported="false" >
-56-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:32:13-37
-57        </receiver>
-58        <receiver
-58-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:34:9-42:20
-59            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
-59-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:35:13-100
-60            android:enabled="true"
-60-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:36:13-35
-61            android:exported="true"
-61-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:37:13-36
-62            android:permission="android.permission.INSTALL_PACKAGES" >
-62-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:38:13-69
-63            <intent-filter>
-63-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:39:13-41:29
-64                <action android:name="com.android.vending.INSTALL_REFERRER" />
-64-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:40:17-79
-64-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:40:25-76
-65            </intent-filter>
-66        </receiver>
-67
-68        <service
-68-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:44:9-47:40
-69            android:name="com.google.android.gms.measurement.AppMeasurementService"
-69-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:45:13-84
-70            android:enabled="true"
-70-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:46:13-35
-71            android:exported="false" />
-71-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:47:13-37
-72        <service
-72-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:48:9-52:72
-73            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
-73-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:49:13-87
-74            android:enabled="true"
-74-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:50:13-35
-75            android:exported="false"
-75-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:51:13-37
-76            android:permission="android.permission.BIND_JOB_SERVICE" />
-76-->[com.google.firebase:firebase-analytics:16.0.4] /home/ivan/.gradle/caches/transforms-2/files-2.1/9f307c583a63d9cfa4d6e72236d31a34/jetified-firebase-analytics-16.0.4/AndroidManifest.xml:52:13-69
-77
-78        <receiver
-78-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:37:9-44:20
-79            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
-79-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:38:13-78
-80            android:exported="true"
-80-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:39:13-36
-81            android:permission="com.google.android.c2dm.permission.SEND" >
-81-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:40:13-73
-82            <intent-filter>
-82-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:41:13-43:29
-83                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
-83-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:42:17-81
-83-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:42:25-78
-84            </intent-filter>
-85        </receiver>
-86        <!--
-87             FirebaseInstanceIdService performs security checks at runtime,
-88             no need for explicit permissions despite exported="true"
-89        -->
-90        <service
-90-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:50:9-56:19
-91            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
-91-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:51:13-77
-92            android:exported="true" >
-92-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:52:13-36
-93            <intent-filter android:priority="-500" >
-93-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:53:13-55:29
-93-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:53:28-51
-94                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
-94-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:54:17-80
-94-->[com.google.firebase:firebase-iid:17.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/bca73c14e67dcfea6fb97742eca83f34/jetified-firebase-iid-17.0.3/AndroidManifest.xml:54:25-77
-95            </intent-filter>
-96        </service>
-97
-98        <provider
-98-->[com.google.firebase:firebase-common:16.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/56e7ea1caad9e259ebeec96fe1cc4465/jetified-firebase-common-16.0.3/AndroidManifest.xml:10:9-14:39
-99            android:name="com.google.firebase.provider.FirebaseInitProvider"
-99-->[com.google.firebase:firebase-common:16.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/56e7ea1caad9e259ebeec96fe1cc4465/jetified-firebase-common-16.0.3/AndroidManifest.xml:11:13-77
-100            android:authorities="ru.qbitmobile.qbitstation.firebaseinitprovider"
-100-->[com.google.firebase:firebase-common:16.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/56e7ea1caad9e259ebeec96fe1cc4465/jetified-firebase-common-16.0.3/AndroidManifest.xml:12:13-72
-101            android:exported="false"
-101-->[com.google.firebase:firebase-common:16.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/56e7ea1caad9e259ebeec96fe1cc4465/jetified-firebase-common-16.0.3/AndroidManifest.xml:13:13-37
-102            android:initOrder="100" />
-102-->[com.google.firebase:firebase-common:16.0.3] /home/ivan/.gradle/caches/transforms-2/files-2.1/56e7ea1caad9e259ebeec96fe1cc4465/jetified-firebase-common-16.0.3/AndroidManifest.xml:14:13-36
-103
-104        <activity
-104-->[com.google.android.gms:play-services-base:16.0.1] /home/ivan/.gradle/caches/transforms-2/files-2.1/8913c5778706b764517b7c7ebe4b92c1/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
-105            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-105-->[com.google.android.gms:play-services-base:16.0.1] /home/ivan/.gradle/caches/transforms-2/files-2.1/8913c5778706b764517b7c7ebe4b92c1/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
-106            android:exported="false"
-106-->[com.google.android.gms:play-services-base:16.0.1] /home/ivan/.gradle/caches/transforms-2/files-2.1/8913c5778706b764517b7c7ebe4b92c1/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
-107            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-107-->[com.google.android.gms:play-services-base:16.0.1] /home/ivan/.gradle/caches/transforms-2/files-2.1/8913c5778706b764517b7c7ebe4b92c1/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
-108
-109        <meta-data
-109-->[com.google.android.gms:play-services-basement:16.0.1] /home/ivan/.gradle/caches/transforms-2/files-2.1/daf48b019d1f42471814e347a2fe04fb/jetified-play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
-110            android:name="com.google.android.gms.version"
-110-->[com.google.android.gms:play-services-basement:16.0.1] /home/ivan/.gradle/caches/transforms-2/files-2.1/daf48b019d1f42471814e347a2fe04fb/jetified-play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
-111            android:value="@integer/google_play_services_version" />
-111-->[com.google.android.gms:play-services-basement:16.0.1] /home/ivan/.gradle/caches/transforms-2/files-2.1/daf48b019d1f42471814e347a2fe04fb/jetified-play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
-112    </application>
-113
-114</manifest>
->>>>>>> search
-||||||| merged common ancestors
-164</manifest>
-=======
-164        <activity
-164-->[com.google.android.gms:play-services-base:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/dcb989a22d9175db4adc2677bae6896e/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
-165            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-165-->[com.google.android.gms:play-services-base:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/dcb989a22d9175db4adc2677bae6896e/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
-166            android:exported="false"
-166-->[com.google.android.gms:play-services-base:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/dcb989a22d9175db4adc2677bae6896e/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
-167            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-167-->[com.google.android.gms:play-services-base:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/dcb989a22d9175db4adc2677bae6896e/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
-168
-169        <meta-data
-169-->[com.google.android.gms:play-services-basement:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f84fce8114b364518946f20bca07dfab/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
-170            android:name="com.google.android.gms.version"
-170-->[com.google.android.gms:play-services-basement:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f84fce8114b364518946f20bca07dfab/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
-171            android:value="@integer/google_play_services_version" />
-171-->[com.google.android.gms:play-services-basement:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f84fce8114b364518946f20bca07dfab/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
-172    </application>
+130-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:36:13-35
+131            android:exported="true"
+131-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:37:13-36
+132            android:permission="android.permission.INSTALL_PACKAGES" >
+132-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:38:13-69
+133            <intent-filter>
+133-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:75:13-77:29
+134                <action android:name="com.android.vending.INSTALL_REFERRER" />
+134-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:76:17-79
+134-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:76:25-76
+135            </intent-filter>
+136        </receiver>
+137
+138        <service
+138-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:44:9-47:40
+139            android:name="com.google.android.gms.measurement.AppMeasurementService"
+139-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:45:13-84
+140            android:enabled="true"
+140-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:46:13-35
+141            android:exported="false" />
+141-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:47:13-37
+142        <service
+142-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:48:9-52:72
+143            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+143-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:49:13-87
+144            android:enabled="true"
+144-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:50:13-35
+145            android:exported="false"
+145-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:51:13-37
+146            android:permission="android.permission.BIND_JOB_SERVICE" />
+146-->[com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:52:13-69
+147        <service
+147-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:27:9-33:19
+148            android:name="com.google.firebase.components.ComponentDiscoveryService"
+148-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:28:13-84
+149            android:directBootAware="true"
+149-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:34:13-43
+150            android:exported="false" >
+150-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:29:13-37
+151            <meta-data
+151-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:30:13-32:85
+152                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+152-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:31:17-139
+153                android:value="com.google.firebase.components.ComponentRegistrar" />
+153-->[com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:32:17-82
+154            <meta-data
+154-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:32:13-34:85
+155                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+155-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:33:17-96
+156                android:value="com.google.firebase.components.ComponentRegistrar" />
+156-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:34:17-82
+157        </service>
+158
+159        <receiver
+159-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:37:9-44:20
+160            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+160-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:38:13-78
+161            android:exported="true"
+161-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:39:13-36
+162            android:permission="com.google.android.c2dm.permission.SEND" >
+162-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:40:13-73
+163            <intent-filter>
+163-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:41:13-43:29
+164                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+164-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:42:17-81
+164-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:42:25-78
+165            </intent-filter>
+166        </receiver>
+167
+168        <provider
+168-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:26:9-30:39
+169            android:name="com.google.firebase.provider.FirebaseInitProvider"
+169-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:27:13-77
+170            android:authorities="ru.qbitmobile.qbitstation.firebaseinitprovider"
+170-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:28:13-72
+171            android:exported="false"
+171-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:29:13-37
+172            android:initOrder="100" />
+172-->[com.google.firebase:firebase-common:19.3.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/7c44bda61f09f0d60359477454bb4b5e/jetified-firebase-common-19.3.0/AndroidManifest.xml:30:13-36
 173
-174</manifest>
->>>>>>> medianotification
+174        <activity
+174-->[com.google.android.gms:play-services-base:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/dcb989a22d9175db4adc2677bae6896e/jetified-play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+175            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+175-->[com.google.android.gms:play-services-base:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/dcb989a22d9175db4adc2677bae6896e/jetified-play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+176            android:exported="false"
+176-->[com.google.android.gms:play-services-base:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/dcb989a22d9175db4adc2677bae6896e/jetified-play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+177            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+177-->[com.google.android.gms:play-services-base:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/dcb989a22d9175db4adc2677bae6896e/jetified-play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+178
+179        <meta-data
+179-->[com.google.android.gms:play-services-basement:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f84fce8114b364518946f20bca07dfab/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+180            android:name="com.google.android.gms.version"
+180-->[com.google.android.gms:play-services-basement:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f84fce8114b364518946f20bca07dfab/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+181            android:value="@integer/google_play_services_version" />
+181-->[com.google.android.gms:play-services-basement:17.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/f84fce8114b364518946f20bca07dfab/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+182    </application>
+183
+184</manifest>
