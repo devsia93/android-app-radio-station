@@ -95,7 +95,7 @@ public class PlayerService extends Service {
         PendingIntent favoritePendingIntent = PendingIntent.getBroadcast(this, 0, favoriteIntent, 0);
 
         Intent playIntent = new Intent(this, ActionReceiver.class);
-        playIntent.setAction(Const.ACTION_PLAY_PAUSE);
+        playIntent.setAction(Const.ACTION_PLAY);
         PendingIntent playPendingIntent = PendingIntent.getBroadcast(this, 0, playIntent, 0);
 
         NotificationCompat.Builder notification = new NotificationCompat.Builder(this, Const.CHANEL_MEDIA_ID);

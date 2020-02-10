@@ -31,9 +31,9 @@ public class Const {
     public static final String EXTRA_IMAGE_URL = "EXTRA_IMAGE_URL";
 
     /*Actions*/
-    public static final String ACTION = "ACTION";
     public static final String ACTION_EXIT = "ACTION_EXIT";
-    public static final String ACTION_PLAY_PAUSE = "ACTION_PLAY_PAUSE";
+    public static final String ACTION_PLAY = "ACTION_PLAY";
+    public static final String ACTION_PAUSE = "ACTION_PAUSE";
     public static final String ACTION_NEXT = "ACTION_NEXT";
     public static final String ACTION_PREVIOUS = "ACTION_PREVIOUS";
     public static final String ACTION_FAVORITE = "ACTION_FAVORITE";

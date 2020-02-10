@@ -107,7 +107,7 @@
         "name": "Радио для Двоих",
         "image": "http://top-radio.ru/assets/image/radio/180/radiodlyadvoih.png"
       },
-     {
+      {
         "stream": "http://tntradio.hostingradio.ru:8027/tntradio128.mp3",
         "name": "ТНТ Music Radio",
         "image": "https://images.radiovolna.net/_files/images/stations/406105/bt3s5bf124ad5dda0671362081.jpg"
@@ -242,7 +242,7 @@
         "name": "Страна FM",
         "image": "https://images.radiovolna.net/_files/images/stations/20637/aw3n5a2eb027ae9ad468746547.jpg"
       },
-       {
+      {
         "stream": "http://icecast.mirtv.cdnvideo.ru:8000/radio_mir128",
         "name": "Радио Мир",
         "image": "http://top-radio.ru/assets/image/radio/180/radiomir.jpg"
@@ -636,6 +636,11 @@
         "stream": "http://nashe.streamr.ru/nashespb128.mp3",
         "name": "Наше Радио (Санкт-Петербург)",
         "image": "https://images.radiovolna.net/_files/images/stations/8257/sbyu5943b54328ac5116125796.jpg"
+      },
+      {
+        "stream": "http://stream3.radiostyle.ru:8001/biker-fm?b20b2f7d",
+        "name": "Biker FM",
+        "image": "http://www.gitaristu.ru/img/radio/9.jpg"
       },
       {
         "stream": "http://svoeradiofm.hostingradio.ru:8032/svoe-128.mp3?3177",
@@ -1117,7 +1122,7 @@
         "name": "1980-е",
         "image": "http://top-radio.ru/assets/image/radio/180/record-1980-e.png"
       },
-     {
+      {
         "stream": "http://online.nashipesni.ru:8000/np-kras",
         "name": "Наши песни",
         "image": "http://top-radio.ru/assets/image/radio/180/nashi-pesny.jpg"
@@ -1157,7 +1162,7 @@
         "name": "Радио СССР 30-50х",
         "image": "http://top-radio.ru/assets/image/radio/180/ussr3050.png"
       },
-       {
+      {
         "stream": "http://air.radiorecord.ru:805/naft_320",
         "name": "Нафталин FM",
         "image": "http://top-radio.ru/assets/image/radio/180/recordnaft.png"
@@ -1306,17 +1311,17 @@
         "stream": "http://176.9.150.163:8026/stream",
         "name": "Radio BSJ",
         "image": "http://top-radio.ru/assets/image/radio/180/BSJ.png"
-    },
+      },
       {
         "stream": "http://stream01.radiocon.ru:8000/bobjazz?07988f",
         "name": "Bob Jazz",
         "image": "https://online.lagoonfm.ru/wp-content/uploads/2018/08/bob-jazz.jpg"
-    },
+      },
       {
         "stream": "http://radio.adds.su:8020/radioj?332b",
         "name": "RadioJ",
         "image": "https://radiomaniya.ru/sites/default/files/stations/97bcca9cf502bdbb3c84.jpg"
-  },
+      },
       {
         "stream": "http://173.249.21.17:8108/;?bdb3b2e",
         "name": "BluesMen Channel",
@@ -1572,16 +1577,16 @@
         "name": "Хит FM Urban",
         "image": "http://top-radio.ru/assets/image/radio/180/hitfmurban.png"
       },
-     {
+      {
         "stream": "https://blackstarradio.hostingradio.ru:8024/blackstarradio128.mp3?radiostatistica=top-radio",
         "name": "Black Star Radio",
         "image": "http://top-radio.ru/assets/image/radio/180/bsr.png"
-        },
+      },
       {
         "stream": "https://zaycevfm.cdnvideo.ru/ZaycevFM_rnb_256.mp3",
         "name": "Зайцев FM RnB",
         "image": "http://top-radio.ru/assets/image/radio/180/zajcevrnb.png"
-    },
+      },
       {
         "stream": "http://epdop.hostingradio.ru:8033/ep-urban128.mp3",
         "name": "Urban - Европа Плюс",
@@ -1743,7 +1748,7 @@
         "image": "https://static.radio.net/images/broadcasts/6a/58/1366/2/c300.png"
       },
       {
-     "stream": "http://sc17.1.fm:8045/;",
+        "stream": "http://sc17.1.fm:8045/;",
         "name": "1.FM - Otto's Baroque Musick",
         "image": "https://static.radio.net/images/broadcasts/6a/58/1366/2/c300.png"
       },
@@ -1897,7 +1902,7 @@
         "name": "Davidzon Radio",
         "image": "https://guzei.com/online_radio/logo300/1401.jpg"
       },
-     {
+      {
         "stream": "http://server.audiopedia.su:8000/ices128",
         "name": "Старое радио",
         "image": "http://top-radio.ru/assets/image/radio/180/staroe-radio.jpg"
@@ -1937,7 +1942,7 @@
         "name": "Радио России (Нижний Новгород)",
         "image": "http://top-radio.ru/assets/image/radio/180/radioru.png"
       },
-       {
+      {
         "stream": "http://icecast.vgtrk.cdnvideo.ru/mayak_nn",
         "name": "Радио Маяк (Нижний Новгород)",
         "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Маяк2017.jpg"
@@ -2036,22 +2041,22 @@
         "stream": "http://fm.1tvcrimea.ru:8000/stream.mp3?8aab5ce7",
         "name": "Радиостанция Крым»",
         "image": "https://business-sound.ru/sites/default/files/radio_krym.jpg"
-  },
+      },
       {
         "stream": "https://radioarctika.hostingradio.ru:80/radioarctika128.mp3?9034cafd",
         "name": "Радио Русская Арктика»",
         "image": "https://online-red.com/images/radio-logo/arctica.png"
-  },
+      },
       {
         "stream": "http://92.222.162.167:8000/live?6286",
         "name": "Радио Завтра Да»",
         "image": "https://pbs.twimg.com/media/D33GwjMW4AARJLX.png:large"
-  },
+      },
       {
         "stream": "http://radiovos.ru:9000/radiovos-64?d8f7",
         "name": "Радио ВОС»",
         "image": "https://yt3.ggpht.com/a/AGF-l790ibCOWnSLcs6lt5qwQuIJKHP7HFpChZI-=s900-c-k-c0xffffffff-no-rj-mo"
-  },
+      },
       {
         "stream": "http://storyfm.hostingradio.ru:8031/storyfm128.mp3?0307",
         "name": "Story FM»",

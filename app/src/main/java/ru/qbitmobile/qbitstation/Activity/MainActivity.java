@@ -55,8 +55,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Player player = new Player("");
-        player.stop();
+        Player.stop();
     }
 
     @Override
@@ -67,12 +66,8 @@ public class MainActivity extends AppCompatActivity {
         mLinearLayout = findViewById(R.id.main_container);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
 
-
-
         if (savedInstanceState == null) {
-            // Set the local night mode to some value
-            AppCompatDelegate.setDefaultNightMode(
-                    AppCompatDelegate.MODE_NIGHT_YES);
+            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
         }
 
         ArrayList<Radio> radioArray = (ArrayList<Radio>) JSONHelper.importFromJSON(getApplicationContext());

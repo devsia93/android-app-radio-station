@@ -34,6 +34,7 @@ import ru.qbitmobile.qbitstation.Player.Player;
 import ru.qbitmobile.qbitstation.Helper.ReportHelper;
 import ru.qbitmobile.qbitstation.Helper.Toaster;
 import ru.qbitmobile.qbitstation.R;
+import ru.qbitmobile.qbitstation.Service.NewPlayerService;
 import ru.qbitmobile.qbitstation.Service.PlayerService;
 
 public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStationAdapter.ViewHolder> {
@@ -51,7 +52,7 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
         this.mStations = stations;
         this.mLayoutInflater = LayoutInflater.from(context);
         mContext = context;
-        serviceIntent = new Intent(mContext, PlayerService.class);
+        serviceIntent = new Intent(mContext, NewPlayerService.class);
     }
 
     @NonNull

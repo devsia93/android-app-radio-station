@@ -25,8 +25,6 @@ public class StationsFragment extends Fragment {
     private List<Station> mStations;
     private Radio mRadio;
 
-    private List<Radio> mRadios;
-
     private Context mContext;
 
     private RecyclerView mRecyclerView;

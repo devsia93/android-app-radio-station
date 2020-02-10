@@ -6,11 +6,14 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
@@ -30,6 +33,8 @@ import ru.qbitmobile.qbitstation.Const;
 import ru.qbitmobile.qbitstation.Fragment.SearchFragment;
 import ru.qbitmobile.qbitstation.Helper.AnimatorHelper;
 import ru.qbitmobile.qbitstation.Helper.KeyboardHelper;
+import ru.qbitmobile.qbitstation.Helper.ReportHelper;
+import ru.qbitmobile.qbitstation.Helper.Toaster;
 import ru.qbitmobile.qbitstation.Player.Player;
 import ru.qbitmobile.qbitstation.R;
 import ru.qbitmobile.qbitstation.Service.PlayerService;
@@ -38,9 +43,10 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
 
     private LayoutInflater mLayoutInflater;
     private Context mContext;
-    private static AnimatorHelper animatorHelper;
     private List<Station> mAllStations;
     private List<Station> filteredList;
+
+    private Intent serviceIntent;
 
     private static RecyclerView.ViewHolder preHolder;
 
@@ -49,6 +55,7 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
         this.mContext = context;
         mAllStations = new ArrayList<>(stations);
         filteredList = mAllStations;
+        serviceIntent = new Intent(mContext, PlayerService.class);
     }
 
     @Override
@@ -91,14 +98,14 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = mLayoutInflater.inflate(R.layout.example_list_item_station, parent, false);
-        FilterRecyclerStationAdapter.ViewHolder viewHolder = new FilterRecyclerStationAdapter.ViewHolder(view);
-        return new FilterRecyclerStationAdapter.ViewHolder(view);
+        ViewHolder viewHolder = new ViewHolder(view);
+        return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.textView.setText(filteredList.get(position).getName());
-//        holder.setIsRecyclable(false);
+
         Glide.with(mContext)
                 .load(filteredList.get(position).getImage())
                 .error(R.drawable.ic_launcher_foreground)
@@ -109,15 +116,15 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
             public void onClick(View v) {
                 createFirebaseReport(position);
                 Log.d("debug", filteredList.get(position).getName());
+                ReportHelper.report(filteredList.get(position));
 
                 Player player = new Player(filteredList.get(position).getStream());
                 player.start(mContext);
 
-                startPlayerService();
-
                 if (preHolder == holder) {
                     player.stop();
                     AnimatorHelper.stopAnimation(holder.playViewAnimation);
+                    stopPlayerService();
                     preHolder = null;
                 } else {
                     player.start(mContext);
@@ -125,15 +132,28 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
                     AnimatorHelper.startAnimation(holder.playViewAnimation);
                     preHolder = holder;
                 }
-
-                KeyboardHelper.closeKeyboard(mContext);
-                Log.d("anm", String.valueOf(holder.getItemId()));
             }
 
             private void startPlayerService() {
-                Intent serviceIntent = new Intent(mContext, PlayerService.class);
-                serviceIntent.setAction(Const.ACTION_PLAY_PAUSE);
+                serviceIntent.putExtra(Const.EXTRA_BITMAP_STATION, ((BitmapDrawable)holder.imageView.getDrawable()).getBitmap());
+                serviceIntent.putExtra(Const.EXTRA_TITLE_STATION, filteredList.get(position).getName());
+                serviceIntent.putExtra(Const.EXTRA_STREAM_URL, filteredList.get(position).getStream());
+                serviceIntent.setAction(Const.CHANEL_MEDIA_ID);
                 mContext.startService(serviceIntent);
+                Toaster.Toast(mContext, "Adapter.StartService");
+            }
+
+            private void stopPlayerService() {
+                mContext.stopService(serviceIntent);
+                Toaster.Toast(mContext, "Adapter.StopService");
+            }
+        });
+
+        holder.itemView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                KeyboardHelper.closeKeyboard(mContext, holder.itemView);
+                return false;
             }
         });
     }

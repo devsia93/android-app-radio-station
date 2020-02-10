@@ -12,11 +12,14 @@ import android.graphics.drawable.BitmapDrawable;
 import android.support.v4.media.session.PlaybackStateCompat;
 
 import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import ru.qbitmobile.qbitstation.Const;
+import ru.qbitmobile.qbitstation.Helper.NotificationHelper;
 import ru.qbitmobile.qbitstation.Helper.Toaster;
 import ru.qbitmobile.qbitstation.Player.Player;
 import ru.qbitmobile.qbitstation.R;
+import ru.qbitmobile.qbitstation.Service.NewPlayerService;
 import ru.qbitmobile.qbitstation.Service.PlayerService;
 
 import static java.lang.String.valueOf;
@@ -25,6 +28,9 @@ public class ActionReceiver extends BroadcastReceiver {
     private NotificationCompat.Builder mBuilder;
     private NotificationManager mNotificationManager;
     private Notification mNotification;
+
+    NotificationHelper notificationHelper;
+
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -35,12 +41,14 @@ public class ActionReceiver extends BroadcastReceiver {
             switch (action) {
                 case Const.ACTION_EXIT:
                     Toaster.Toast(context, "ActionReceiver.ACTION_EXIT");
-                    Intent serviceIntent = new Intent(context, PlayerService.class);
+                    Intent serviceIntent = new Intent(context, NewPlayerService.class);
                     context.stopService(serviceIntent);
                     Toaster.Toast(context, "ActionReceiver.ACTION_EXIT");
                     break;
-                case Const.ACTION_PLAY_PAUSE:
-                    handlePlayPause(context);
+                case Const.ACTION_PAUSE:
+                    Player.stop();
+                    notificationHelper = new NotificationHelper();
+                    NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(context);
                     Toaster.Toast(context, "ActionReceiver.ACTION_PLAY_PAUSE");
                     break;
                 case Const.ACTION_NEXT:
@@ -59,26 +67,5 @@ public class ActionReceiver extends BroadcastReceiver {
             }
         }
 
-    }
-
-    private void handlePlayPause(Context context) {
-
-        int imagePlayPause = Player.isPlayed() ?
-                R.drawable.ic_pause_white_24dp : R.drawable.ic_play_arrow_white_24dp;
-
-        if (!Player.isPlayed())
-            Player.start(context);
-        else Player.stop();
-
-        Intent playIntent = new Intent(context, ActionReceiver.class);
-        playIntent.setAction(Const.ACTION_PLAY_PAUSE);
-        PendingIntent playPendingIntent = PendingIntent.getBroadcast(context, 0, playIntent, 0);
-
-        if (mBuilder == null) {
-            mBuilder = PlayerService.getBuilder();
-            mNotification = PlayerService.getBuilder().build();
-        }
-        mNotification.actions[2] = new Notification.Action(imagePlayPause, "Play", playPendingIntent);
-        mNotification = PlayerService.getBuilder().build();
     }
 }

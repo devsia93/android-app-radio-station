@@ -1,19 +1,24 @@
-<LinearLayout android:layout_height="wrap_content"
-    android:layout_width="match_parent"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-    <include layout="@layout/toolbar_main"/>
-<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:descendantFocusability="blocksDescendants">
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerViewSearch"
-        android:focusableInTouchMode="true"
-        android:visibility="gone"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_main" />
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layoutManager="LinearLayoutManager" />
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:focusableInTouchMode="true"
+        android:isScrollContainer="true">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:visibility="gone"
+            app:layoutManager="LinearLayoutManager" />
+    </RelativeLayout>
 </LinearLayout>

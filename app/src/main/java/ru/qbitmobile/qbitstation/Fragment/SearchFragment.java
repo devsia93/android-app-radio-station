@@ -1,8 +1,10 @@
 package ru.qbitmobile.qbitstation.Fragment;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -10,24 +12,34 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.LinearLayout;
+import android.widget.QuickContactBadge;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+
+import javax.xml.XMLConstants;
 
 import ru.qbitmobile.qbitstation.Adapter.FilterRecyclerStationAdapter;
 import ru.qbitmobile.qbitstation.BaseObject.Radio;
 import ru.qbitmobile.qbitstation.BaseObject.Station;
 import ru.qbitmobile.qbitstation.Helper.KeyboardHelper;
+import ru.qbitmobile.qbitstation.Helper.Toaster;
 import ru.qbitmobile.qbitstation.R;
 
 /**
@@ -45,6 +57,8 @@ public class SearchFragment extends Fragment {
 
     private String preSearchText;
 
+    private static boolean isSearchable;
+
     public SearchFragment(List<Radio> radios, LinearLayout container) {
         mRadios = radios;
         mStations = new ArrayList<>();
@@ -60,15 +74,23 @@ public class SearchFragment extends Fragment {
 
         setHasOptionsMenu(true);
 
-        for(Radio radio : mRadios)
+        for (Radio radio : mRadios)
             mStations.addAll(radio.getStations());
 
+        Collections.sort(mStations, new Comparator<Station>() {
+            @Override
+            public int compare(Station o1, Station o2) {
+                return o1.getName().compareToIgnoreCase(o2.getName());
+            }
+        });
+
         mRecyclerView = view.findViewById(R.id.recyclerViewSearch);
+        mRecyclerView.setNestedScrollingEnabled(false);
         mAdapter = new FilterRecyclerStationAdapter(inflater, mStations, view.getContext());
         mRecyclerView.setAdapter(mAdapter);
 
         Toolbar toolbar = view.findViewById(R.id.toolbar_main);
-        AppCompatActivity activity = (AppCompatActivity)getActivity();
+        AppCompatActivity activity = (AppCompatActivity) getActivity();
         activity.setSupportActionBar(toolbar);
 
         return view;
@@ -81,23 +103,27 @@ public class SearchFragment extends Fragment {
 
         mSearchView = (SearchView) item.getActionView();
         mSearchView.setBackgroundResource(R.drawable.bg_grey_searchview);
+        mSearchView.setQueryHint("Поиск");
+        View v = mSearchView.findViewById(R.id.search_plate);
+        v.setBackgroundColor(Color.TRANSPARENT);
         mSearchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
-                KeyboardHelper.closeKeyboard(getContext());
-                return false;
+                mSearchView.clearFocus();
+                return true;
             }
 
             @Override
             public boolean onQueryTextChange(String newText) {
-                if (newText.isEmpty()){
+                if (newText.isEmpty()) {
                     setVisibilityContainers(View.VISIBLE, View.GONE);
                 } else {
-                    setVisibilityContainers(View.GONE, View.VISIBLE);
+                        setVisibilityContainers(View.GONE, View.VISIBLE);
                 }
 
                 mAdapter.getFilter().filter(newText);
-                return false;
+                mRecyclerView.setItemViewCacheSize(mAdapter.getItemCount());
+                return true;
             }
 
             private void setVisibilityContainers(int mainContainerVisibility, int bodyContainerVisibility) {
