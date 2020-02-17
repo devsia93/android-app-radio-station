@@ -1,5 +1,6 @@
 package ru.qbitmobile.qbitstation.Adapter;
 
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -20,15 +21,20 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.wang.avi.AVLoadingIndicatorView;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import ru.qbitmobile.qbitstation.Const;
 import ru.qbitmobile.qbitstation.Helper.AnimatorHelper;
 import ru.qbitmobile.qbitstation.BaseObject.Station;
+import ru.qbitmobile.qbitstation.Notification.CreateChannelNotification;
+import ru.qbitmobile.qbitstation.Notification.CreateNotification;
 import ru.qbitmobile.qbitstation.Player.Player;
 import ru.qbitmobile.qbitstation.Helper.ReportHelper;
 import ru.qbitmobile.qbitstation.Helper.Toaster;
 import ru.qbitmobile.qbitstation.R;
+import ru.qbitmobile.qbitstation.Receiver.BroadcastActioner;
+import ru.qbitmobile.qbitstation.Service.NewPlayerService;
 import ru.qbitmobile.qbitstation.Service.PlayerService;
 
 public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStationAdapter.ViewHolder> {
@@ -46,7 +52,7 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
         this.mStations = stations;
         this.mLayoutInflater = LayoutInflater.from(context);
         mContext = context;
-        serviceIntent = new Intent(mContext, PlayerService.class);
+        serviceIntent = new Intent(mContext, NewPlayerService.class);
     }
 
     @NonNull
@@ -54,8 +60,14 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = mLayoutInflater.inflate(R.layout.example_list_item_station, parent, false);
         ViewHolder viewHolder = new ViewHolder(view);
+        CreateChannelNotification.create(mContext);
 //        viewHolder.setIsRecyclable(false);
         return new ViewHolder(view);
+    }
+
+    private void onTrackPlay(int position, Bitmap bitmap) {
+        CreateNotification.createNotification(mContext, mStations.get(position), bitmap,
+                R.drawable.ic_pause_white_24dp, position, mStations.size()-1);
     }
 
     @Override
@@ -77,15 +89,15 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
 
                     ReportHelper.report(mStations.get(position));
 
-                    Player player = new Player(mStations.get(position).getStream());
 
                     if (preHolder == holder) {
-                        player.stop();
+                        Player.stop();
                         stopPlayerService();
                         AnimatorHelper.stopAnimation(holder.playViewAnimation);
                         preHolder = null;
                     } else {
-                        player.start(mContext);
+//                        Player.start(mContext, mStations, mStations.get(position));
+//                        onTrackPlay(position, ((BitmapDrawable)holder.imageView.getDrawable()).getBitmap());
                         startPlayerService();
                         AnimatorHelper.startAnimation(holder.playViewAnimation);
                         preHolder = holder;
@@ -95,17 +107,22 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
                 }
 
                 private void startPlayerService() {
-                    serviceIntent.putExtra(Const.EXTRA_BITMAP_STATION, ((BitmapDrawable)holder.imageView.getDrawable()).getBitmap());
-                    serviceIntent.putExtra(Const.EXTRA_TITLE_STATION, mStations.get(position).getName());
-                    serviceIntent.putExtra(Const.EXTRA_STREAM_URL, mStations.get(position).getStream());
-                    serviceIntent.setAction(Const.CHANEL_MEDIA_ID);
+                    serviceIntent.putExtra("BITMAP", ((BitmapDrawable)holder.imageView.getDrawable()).getBitmap());
+                    serviceIntent.putExtra("STATION", mStations.get(position));
+                    serviceIntent.putExtra("POSITION", position);
+                    serviceIntent.putExtra("SIZE", mStations.size());
+                    serviceIntent.putExtra("STATIONS",(ArrayList<Station>)mStations);
+                    serviceIntent.putExtra("BUTTON", R.drawable.ic_pause_white_24dp);
+                    serviceIntent.putExtra("STATUS", "PLAY");
+                    serviceIntent.setAction("RADIO_STATION");
                     mContext.startService(serviceIntent);
-                    Toaster.Toast(mContext, "Adapter.StartService");
                 }
 
                 private void stopPlayerService() {
-                    mContext.stopService(serviceIntent);
-                    Toaster.Toast(mContext, "Adapter.StopService");
+                    serviceIntent.putExtra("STATUS", "PAUSE");
+                    serviceIntent.putExtra("BUTTON", R.drawable.ic_play_arrow_white_24dp);
+                    mContext.startService(serviceIntent);
+//                    mContext.stopService(serviceIntent);
                 }
             });
         } catch (Exception e) {

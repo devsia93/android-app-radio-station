@@ -6,6 +6,7 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -27,9 +28,11 @@ import ru.qbitmobile.qbitstation.Const;
 import ru.qbitmobile.qbitstation.Fragment.StationsFragment;
 import ru.qbitmobile.qbitstation.Helper.AnimationRotate;
 import ru.qbitmobile.qbitstation.Helper.JSONHelper;
+import ru.qbitmobile.qbitstation.Notification.CreateChannelNotification;
 import ru.qbitmobile.qbitstation.Player.Player;
 import ru.qbitmobile.qbitstation.Helper.ReportHelper;
 import ru.qbitmobile.qbitstation.R;
+import ru.qbitmobile.qbitstation.Service.NewPlayerService;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,8 +53,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Player player = new Player("");
-        player.stop();
+        Player.stop();
+        Intent intent = new Intent(getApplicationContext(), NewPlayerService.class);
+        stopService(intent);
     }
 
     @Override

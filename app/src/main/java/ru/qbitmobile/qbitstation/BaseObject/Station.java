@@ -1,6 +1,8 @@
 package ru.qbitmobile.qbitstation.BaseObject;
 
-public class Station {
+import java.io.Serializable;
+
+public class Station implements Serializable {
     private String name;
     private String stream;
     private String image;

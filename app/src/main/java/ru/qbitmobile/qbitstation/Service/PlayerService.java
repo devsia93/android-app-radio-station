@@ -59,8 +59,7 @@ public class PlayerService extends Service {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        player = new Player(Player.getCurrentUrlStream());
-        player.stop();
+        Player.stop();
         notificationManagerCompat.cancelAll();
     }
 

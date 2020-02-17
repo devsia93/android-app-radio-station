@@ -34,6 +34,29 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+        <service
+            android:name="ru.qbitmobile.qbitstation.Service.NewPlayerService"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.media.browse.MediaBrowserService" />
+            </intent-filter>
+        </service>
+
+        <receiver
+            android:name="ru.qbitmobile.qbitstation.Receiver.BroadcastActioner"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name="ru.qbitmobile.qbitstation.Service.OnClearFromRecentService"
+            android:enabled="true"
+            android:exported="true" />
+
         <receiver android:name="androidx.media.session.MediaButtonReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
