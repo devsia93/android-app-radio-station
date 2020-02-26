@@ -15,7 +15,7 @@ import com.google.android.exoplayer2.util.Util;
 import java.util.List;
 
 import ru.qbitmobile.qbitstation.BaseObject.Station;
-import ru.qbitmobile.qbitstation.Notification.CreateNotification;
+import ru.qbitmobile.qbitstation.Controller.RadioStationController;
 
 
 public class Player {
@@ -27,12 +27,12 @@ public class Player {
     private static int mPosition;
     private static Station currentStation;
 
-    public static void start(Context context, List<Station> stations, Station station) {
+    public static void start(Context context, Station station) {
 
         if (mExoPlayer != null) {
             mExoPlayer.stop();
         }
-        sStations = stations;
+        sStations = RadioStationController.getSelectedRadio().getStations();
         mPosition = sStations.indexOf(station);
         currentStation = station;
 
@@ -53,14 +53,18 @@ public class Player {
         isPlay = false;
     }
 
+    public static void release(){
+        mExoPlayer.release();
+    }
+
     public static void nextStation(Context context) {
         currentStation = sStations.get(sStations.indexOf(currentStation)+1);
-        start(context, sStations, currentStation);
+        start(context, currentStation);
     }
 
     public static void previousStation(Context context){
         currentStation = sStations.get(sStations.indexOf(currentStation)-1);
-        start(context, sStations, currentStation);
+        start(context, currentStation);
     }
     public static String getCurrentUrlStream() {
         return mURLStream;

@@ -5,12 +5,14 @@ import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.os.Build;
 
+import androidx.multidex.MultiDexApplication;
+
 import com.yandex.metrica.YandexMetrica;
 import com.yandex.metrica.YandexMetricaConfig;
 
 import ru.qbitmobile.qbitstation.Const;
 
-public class QbitStationApplication extends Application {
+public class QbitStationApplication extends MultiDexApplication {
     @Override
     public void onCreate() {
         super.onCreate();
@@ -21,7 +23,7 @@ public class QbitStationApplication extends Application {
         // Automatic tracking of user activity.
         YandexMetrica.enableActivityAutoTracking(this);
 
-        createNotificationChanel();
+//        createNotificationChanel();
     }
 
     private void createNotificationChanel() {

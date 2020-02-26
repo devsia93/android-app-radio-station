@@ -15,6 +15,7 @@ import java.util.List;
 import ru.qbitmobile.qbitstation.Adapter.RecyclerStationAdapter;
 import ru.qbitmobile.qbitstation.BaseObject.Radio;
 import ru.qbitmobile.qbitstation.BaseObject.Station;
+import ru.qbitmobile.qbitstation.Helper.Toaster;
 import ru.qbitmobile.qbitstation.R;
 
 /**
@@ -22,18 +23,14 @@ import ru.qbitmobile.qbitstation.R;
  */
 public class StationsFragment extends Fragment {
 
-    private List<Station> mStations;
     private Radio mRadio;
-
-    private List<Radio> mRadios;
 
     private Context mContext;
 
-    private RecyclerView mRecyclerView;
+    public RecyclerView mRecyclerView;
     private RecyclerStationAdapter mRecyclerStationAdapter;
 
     public StationsFragment(Context context, Radio radio) {
-        mStations = radio.getStations();
         mRadio = radio;
         mContext = context;
     }
@@ -48,6 +45,7 @@ public class StationsFragment extends Fragment {
         mRecyclerView.setNestedScrollingEnabled(false);
         mRecyclerStationAdapter = new RecyclerStationAdapter(mContext, mRadio.getStations());
         mRecyclerView.setAdapter(mRecyclerStationAdapter);
+
         return view;
     }
 }

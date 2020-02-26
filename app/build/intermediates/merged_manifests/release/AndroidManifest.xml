@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ru.qbitmobile.qbitstation"
-    android:versionCode="1"
-    android:versionName="1.0.0" >
+    android:versionCode="3"
+    android:versionName="1.0.3" >
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -11,6 +11,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -32,9 +35,37 @@
         <service
             android:name="ru.qbitmobile.qbitstation.Service.PlayerService"
             android:enabled="true"
-            android:exported="true" >
+            android:exported="false" >
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </service>
+        <!--
+        <receiver
+            android:name=".Receiver.BroadcastActioner"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        -->
+
+        <receiver android:name="androidx.media.session.MediaButtonReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="ru.qbitmobile.qbitstation.Receiver.ActionReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="ru.qbitmobile.qbitstation.Service.pls"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
                 <action android:name="android.media.browse.MediaBrowserService" />
             </intent-filter>
         </service>
@@ -46,8 +77,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <service android:name="ru.qbitmobile.qbitstation.Service.NotificationService" />
 
         <meta-data
             android:name="preloaded_fonts"
