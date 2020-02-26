@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ru.qbitmobile.qbitstation"
-<<<<<<< HEAD
-    android:versionCode="3"
-    android:versionName="1.0.2" >
-||||||| merged common ancestors
-    android:versionCode="1"
-    android:versionName="1.0.0" >
-=======
     android:versionCode="3"
     android:versionName="1.0.3" >
->>>>>>> medianotification
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -44,14 +36,6 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
-<<<<<<< HEAD
-        <service
-            android:name="ru.qbitmobile.qbitstation.Service.NewPlayerService"
-            android:enabled="true"
-            android:exported="true" />
-
-||||||| merged common ancestors
-=======
         <service
             android:name="ru.qbitmobile.qbitstation.Service.PlayerService"
             android:enabled="true"
@@ -61,7 +45,6 @@
             </intent-filter>
         </service>
 
->>>>>>> medianotification
         <receiver android:name="androidx.media.session.MediaButtonReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />

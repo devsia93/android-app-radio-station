@@ -8,6 +8,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Filter;
@@ -33,6 +34,7 @@ import java.util.List;
 import ru.qbitmobile.qbitstation.BaseObject.Radio;
 import ru.qbitmobile.qbitstation.Helper.AnimatorHelper;
 import ru.qbitmobile.qbitstation.BaseObject.Station;
+import ru.qbitmobile.qbitstation.Helper.KeyboardHelper;
 import ru.qbitmobile.qbitstation.Helper.MediaControllerHelper;
 import ru.qbitmobile.qbitstation.Helper.ReportHelper;
 import ru.qbitmobile.qbitstation.R;
@@ -114,7 +116,13 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
                 RadioStationController.setImageSelectedStation(((BitmapDrawable) holder.imageView.getDrawable()).getBitmap());
             }
         });
-
+        holder.itemView.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                KeyboardHelper.closeKeyboard(mContext, holder.itemView);
+                return false;
+            }
+        });
         viewHolders.add(holder);
     }
 

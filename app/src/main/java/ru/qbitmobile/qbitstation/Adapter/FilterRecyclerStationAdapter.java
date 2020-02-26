@@ -28,11 +28,14 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
+import ru.qbitmobile.qbitstation.BaseObject.Radio;
 import ru.qbitmobile.qbitstation.BaseObject.Station;
 import ru.qbitmobile.qbitstation.Const;
+import ru.qbitmobile.qbitstation.Controller.RadioStationController;
 import ru.qbitmobile.qbitstation.Fragment.SearchFragment;
 import ru.qbitmobile.qbitstation.Helper.AnimatorHelper;
 import ru.qbitmobile.qbitstation.Helper.KeyboardHelper;
+import ru.qbitmobile.qbitstation.Helper.MediaControllerHelper;
 import ru.qbitmobile.qbitstation.Helper.ReportHelper;
 import ru.qbitmobile.qbitstation.Helper.Toaster;
 import ru.qbitmobile.qbitstation.Player.Player;
@@ -49,6 +52,7 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
     private Intent serviceIntent;
 
     private static RecyclerView.ViewHolder preHolder;
+    private List<RecyclerStationAdapter.ViewHolder> viewHolders;
 
     public FilterRecyclerStationAdapter(LayoutInflater layoutInflater, List<Station> stations, Context context) {
         this.mLayoutInflater = layoutInflater;
@@ -114,38 +118,30 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                createFirebaseReport(position);
-                Log.d("debug", filteredList.get(position).getName());
                 ReportHelper.report(filteredList.get(position));
+                AnimatorHelper.viewHolders = viewHolders;
 
-                Player player = new Player(filteredList.get(position).getStream());
-                player.start(mContext);
-
-                if (preHolder == holder) {
-                    player.stop();
-                    AnimatorHelper.stopAnimation(holder.playViewAnimation);
-                    stopPlayerService();
-                    preHolder = null;
-                } else {
-                    player.start(mContext);
-                    startPlayerService();
-                    AnimatorHelper.startAnimation(holder.playViewAnimation);
-                    preHolder = holder;
+                for (Radio r : RadioStationController.getListRadios()) {
+                    if (r.getStations().contains(filteredList.get(position))) {
+                        RadioStationController.setSelectedRadio(r);
+                        break;
+                    }
                 }
-            }
 
-            private void startPlayerService() {
-                serviceIntent.putExtra(Const.EXTRA_BITMAP_STATION, ((BitmapDrawable)holder.imageView.getDrawable()).getBitmap());
-                serviceIntent.putExtra(Const.EXTRA_TITLE_STATION, filteredList.get(position).getName());
-                serviceIntent.putExtra(Const.EXTRA_STREAM_URL, filteredList.get(position).getStream());
-                serviceIntent.setAction(Const.CHANEL_MEDIA_ID);
-                mContext.startService(serviceIntent);
-                Toaster.Toast(mContext, "Adapter.StartService");
-            }
+                if (RadioStationController.getSelectedStation() != null && RadioStationController.getSelectedStation() == filteredList.get(position)) {
+                    MediaControllerHelper.mediaController.getTransportControls().pause();
+                    AnimatorHelper.stopAnimation(holder.playViewAnimation);
+                } else {
 
-            private void stopPlayerService() {
-                mContext.stopService(serviceIntent);
-                Toaster.Toast(mContext, "Adapter.StopService");
+                    if (PlayerService.isPlaying)
+                        MediaControllerHelper.mediaController.getTransportControls().stop();
+                    if (MediaControllerHelper.mediaController != null) {
+                        MediaControllerHelper.mediaController.getTransportControls().play();
+                    }
+                    AnimatorHelper.startAnimation(holder.playViewAnimation);
+                }
+                RadioStationController.setSelectedStation(filteredList.get(position));
+                RadioStationController.setImageSelectedStation(((BitmapDrawable) holder.imageView.getDrawable()).getBitmap());
             }
         });
 
@@ -156,6 +152,7 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
                 return false;
             }
         });
+
     }
 
     private void createFirebaseReport(int position) {

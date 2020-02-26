@@ -46,6 +46,7 @@ import ru.qbitmobile.qbitstation.Fragment.SearchFragment;
 import ru.qbitmobile.qbitstation.Fragment.StationsFragment;
 import ru.qbitmobile.qbitstation.Helper.AnimationRotate;
 import ru.qbitmobile.qbitstation.Helper.JSONHelper;
+import ru.qbitmobile.qbitstation.Helper.KeyboardHelper;
 import ru.qbitmobile.qbitstation.Helper.MediaControllerHelper;
 import ru.qbitmobile.qbitstation.Player.Player;
 import ru.qbitmobile.qbitstation.Helper.ReportHelper;
@@ -127,7 +128,6 @@ public class MainActivity extends AppCompatActivity {
                         }
                     });
                 }
-                View childLayout = new View(this);
                 RadioStationController.getListStations().addAll(r.getStations());
 
                 LayoutInflater inflater = (LayoutInflater) this.getSystemService(this.LAYOUT_INFLATER_SERVICE);
@@ -157,6 +157,7 @@ public class MainActivity extends AppCompatActivity {
                             expandableLayout.expand();
 
                         }
+                        KeyboardHelper.closeKeyboard(getApplicationContext(), v);
                     }
                 });
 
