@@ -4,7 +4,7 @@ import android.view.View;
 
 import com.wang.avi.AVLoadingIndicatorView;
 
-import java.util.List;
+import java.util.ArrayList;
 
 import ru.qbitmobile.qbitstation.adapter.RecyclerStationAdapter;
 
@@ -12,7 +12,7 @@ public class AnimatorHelper {
 
     private static AVLoadingIndicatorView preIndicator;
 
-    public static List<RecyclerStationAdapter.ViewHolder> viewHolders;
+    public static ArrayList<RecyclerStationAdapter.ViewHolder> viewHolders;
 
     public static void startAnimation(AVLoadingIndicatorView indicatorView){
         if (indicatorView != null){

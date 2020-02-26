@@ -1,23 +1,21 @@
-package ru.qbitmobile.qbitstation.Adapter;
+package ru.qbitmobile.qbitstation.adapter;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.widget.SearchView;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -25,22 +23,17 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 import com.wang.avi.AVLoadingIndicatorView;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
-import ru.qbitmobile.qbitstation.BaseObject.Radio;
-import ru.qbitmobile.qbitstation.BaseObject.Station;
-import ru.qbitmobile.qbitstation.Const;
-import ru.qbitmobile.qbitstation.Controller.RadioStationController;
-import ru.qbitmobile.qbitstation.Fragment.SearchFragment;
-import ru.qbitmobile.qbitstation.Helper.AnimatorHelper;
-import ru.qbitmobile.qbitstation.Helper.KeyboardHelper;
-import ru.qbitmobile.qbitstation.Helper.MediaControllerHelper;
-import ru.qbitmobile.qbitstation.Helper.ReportHelper;
-import ru.qbitmobile.qbitstation.Helper.Toaster;
-import ru.qbitmobile.qbitstation.Player.Player;
 import ru.qbitmobile.qbitstation.R;
-import ru.qbitmobile.qbitstation.Service.PlayerService;
+import ru.qbitmobile.qbitstation.baseObject.Radio;
+import ru.qbitmobile.qbitstation.baseObject.Station;
+import ru.qbitmobile.qbitstation.controller.RadioStationController;
+import ru.qbitmobile.qbitstation.helper.AnimatorHelper;
+import ru.qbitmobile.qbitstation.helper.KeyboardHelper;
+import ru.qbitmobile.qbitstation.helper.MediaControllerHelper;
+import ru.qbitmobile.qbitstation.helper.ReportHelper;
+import ru.qbitmobile.qbitstation.service.PlayerService;
 
 public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRecyclerStationAdapter.ViewHolder> implements Filterable {
 
@@ -52,7 +45,7 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
     private Intent serviceIntent;
 
     private static RecyclerView.ViewHolder preHolder;
-    private List<RecyclerStationAdapter.ViewHolder> viewHolders;
+    private ArrayList<RecyclerStationAdapter.ViewHolder> viewHolders;
 
     public FilterRecyclerStationAdapter(LayoutInflater layoutInflater, List<Station> stations, Context context) {
         this.mLayoutInflater = layoutInflater;

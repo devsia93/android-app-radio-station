@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="ru.qbitmobile.qbitstation"
-4    android:versionCode="3"
-5    android:versionName="1.0.3" >
+4    android:versionCode="4"
+5    android:versionName="1.1.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
@@ -38,7 +38,7 @@
 22-->[com.google.firebase:firebase-iid:20.0.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/a8af4c08e29ad52c1a6058ac11d2a2fd/jetified-firebase-iid-20.0.2/AndroidManifest.xml:26:22-79
 23
 24    <application
-24-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:11:5-51:19
+24-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:11:5-52:19
 25        android:name="ru.qbitmobile.qbitstation.helper.QbitStationApplication"
 25-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:12:9-54
 26        android:allowBackup="true"
@@ -66,51 +66,51 @@
 38        android:usesCleartextTraffic="true" >
 38-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:22:9-44
 39        <service
-39-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:24:9-31:19
+39-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:25:9-32:19
 40            android:name="ru.qbitmobile.qbitstation.service.PlayerService"
-40-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:25:13-50
+40-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:26:13-50
 41            android:exported="false" >
-41-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:26:13-37
+41-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:27:13-37
 42            <intent-filter>
-42-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:28:13-30:29
+42-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:29:13-31:29
 43                <action android:name="android.intent.action.MEDIA_BUTTON" />
-43-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:29:17-77
-43-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:29:25-74
+43-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:30:17-77
+43-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:30:25-74
 44            </intent-filter>
 45        </service>
 46
 47        <receiver android:name="androidx.media.session.MediaButtonReceiver" >
-47-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:34:9-38:20
-47-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:34:19-76
+47-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:35:9-39:20
+47-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:35:19-76
 48            <intent-filter>
-48-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:28:13-30:29
+48-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:29:13-31:29
 49                <action android:name="android.intent.action.MEDIA_BUTTON" />
-49-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:29:17-77
-49-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:29:25-74
+49-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:30:17-77
+49-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:30:25-74
 50            </intent-filter>
 51        </receiver>
 52
 53        <activity android:name="ru.qbitmobile.qbitstation.activity.MainActivity" >
-53-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:40:9-46:20
-53-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:40:19-56
+53-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:41:9-47:20
+53-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:41:19-56
 54            <intent-filter>
-54-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:41:13-45:29
+54-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:42:13-46:29
 55                <action android:name="android.intent.action.MAIN" />
-55-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:42:17-69
-55-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:42:25-66
+55-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:43:17-69
+55-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:43:25-66
 56
 57                <category android:name="android.intent.category.LAUNCHER" />
-57-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:44:17-77
-57-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:44:27-74
+57-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:45:17-77
+57-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:45:27-74
 58            </intent-filter>
 59        </activity>
 60
 61        <meta-data
-61-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:48:9-50:57
+61-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:49:9-51:57
 62            android:name="preloaded_fonts"
-62-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:49:13-43
+62-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:50:13-43
 63            android:resource="@array/preloaded_fonts" />
-63-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:50:13-54
+63-->/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:51:13-54
 64        <!-- Yandex Mobile Metrica Analytics: common service -->
 65        <service
 65-->[com.yandex.android:mobmetricalib:3.8.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/ab8ce4cbae7192f78c6e13ff0d399754/jetified-mobmetricalib-3.8.0/AndroidManifest.xml:26:9-43:19

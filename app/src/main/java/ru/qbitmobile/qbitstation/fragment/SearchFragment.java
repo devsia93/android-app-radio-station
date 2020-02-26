@@ -1,46 +1,31 @@
-package ru.qbitmobile.qbitstation.Fragment;
+package ru.qbitmobile.qbitstation.fragment;
 
-import android.annotation.SuppressLint;
-import android.content.Context;
 import android.graphics.Color;
-import android.graphics.PorterDuff;
-import android.os.Build;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.ActionBar;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.SearchView;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.LinearLayout;
-import android.widget.QuickContactBadge;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
+import androidx.appcompat.widget.Toolbar;
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import javax.xml.XMLConstants;
-
-import ru.qbitmobile.qbitstation.Adapter.FilterRecyclerStationAdapter;
-import ru.qbitmobile.qbitstation.BaseObject.Radio;
-import ru.qbitmobile.qbitstation.BaseObject.Station;
-import ru.qbitmobile.qbitstation.Helper.KeyboardHelper;
-import ru.qbitmobile.qbitstation.Helper.Toaster;
 import ru.qbitmobile.qbitstation.R;
+import ru.qbitmobile.qbitstation.adapter.FilterRecyclerStationAdapter;
+import ru.qbitmobile.qbitstation.baseObject.Radio;
+import ru.qbitmobile.qbitstation.baseObject.Station;
 
 /**
  * A simple {@link Fragment} subclass.

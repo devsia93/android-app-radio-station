@@ -1,27 +1,23 @@
 package ru.qbitmobile.qbitstation.activity;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.app.AppCompatDelegate;
-import androidx.appcompat.widget.SearchView;
-import androidx.appcompat.widget.Toolbar;
-import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.CustomTarget;
@@ -30,22 +26,23 @@ import com.google.firebase.analytics.FirebaseAnalytics;
 
 import net.cachapa.expandablelayout.ExpandableLayout;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
 
+import ru.qbitmobile.qbitstation.Const;
+import ru.qbitmobile.qbitstation.R;
+import ru.qbitmobile.qbitstation.adapter.RecyclerStationAdapter;
 import ru.qbitmobile.qbitstation.baseObject.Radio;
 import ru.qbitmobile.qbitstation.baseObject.Station;
-import ru.qbitmobile.qbitstation.Const;
+import ru.qbitmobile.qbitstation.controller.RadioStationController;
+import ru.qbitmobile.qbitstation.fragment.SearchFragment;
 import ru.qbitmobile.qbitstation.fragment.StationsFragment;
 import ru.qbitmobile.qbitstation.helper.AnimationRotate;
+import ru.qbitmobile.qbitstation.helper.AnimatorHelper;
 import ru.qbitmobile.qbitstation.helper.JSONHelper;
+import ru.qbitmobile.qbitstation.helper.KeyboardHelper;
 import ru.qbitmobile.qbitstation.helper.MediaControllerHelper;
 import ru.qbitmobile.qbitstation.helper.ReportHelper;
-import ru.qbitmobile.qbitstation.R;
-import ru.qbitmobile.qbitstation.controller.RadioStationController;
+import ru.qbitmobile.qbitstation.helper.TinyDB;
 import ru.qbitmobile.qbitstation.notification.CreateNotificationChannel;
 import ru.qbitmobile.qbitstation.service.PlayerService;
 
@@ -106,6 +103,44 @@ public class MainActivity extends AppCompatActivity {
 
     private void initialyzeAppMetrica(ArrayList<Radio> radioArray) {
         ReportHelper.setRadioList(radioArray);
+    }
+
+    @Override
+    protected void onPause() {
+
+        TinyDB tinydb = new TinyDB(this);
+
+        ArrayList<Object> holderObjects = tinydb.getListObject("HOLDER", RecyclerStationAdapter.ViewHolder.class);
+        if (AnimatorHelper.viewHolders == null)
+            AnimatorHelper.viewHolders = new ArrayList<>();
+
+        for(Object o : holderObjects)
+            AnimatorHelper.viewHolders.add((RecyclerStationAdapter.ViewHolder) o);
+
+
+        tinydb.putInt("POSITION", RadioStationController.getPosition());
+
+        super.onPause();
+    }
+
+    @Override
+    protected void onResume() {
+
+        TinyDB tinydb = new TinyDB(this);
+
+        ArrayList<Object> holderObjects = new ArrayList<Object>();
+
+        if (AnimatorHelper.viewHolders != null) {
+            for (RecyclerStationAdapter.ViewHolder v : AnimatorHelper.viewHolders)
+                holderObjects.add((Object) v);
+
+            RadioStationController.setPosition(tinydb.getInt("POSITION"));
+        }
+
+        if (AnimatorHelper.viewHolders != null && AnimatorHelper.viewHolders.size() > 0 && PlayerService.isPlaying)
+            AnimatorHelper.startAnimation(RadioStationController.getPosition());
+
+        super.onResume();
     }
 
     private void createListStations(ArrayList<Radio> radioArray) {

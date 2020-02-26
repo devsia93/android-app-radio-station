@@ -1,13 +1,18 @@
 package ru.qbitmobile.qbitstation.notification;
 
+import android.app.PendingIntent;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.media.MediaDescriptionCompat;
 import android.support.v4.media.MediaMetadataCompat;
-import androidx.media.session.MediaButtonReceiver;
 import android.support.v4.media.session.MediaControllerCompat;
 import android.support.v4.media.session.MediaSessionCompat;
 import android.support.v4.media.session.PlaybackStateCompat;
+
 import androidx.core.app.NotificationCompat;
+import androidx.media.session.MediaButtonReceiver;
+
+import ru.qbitmobile.qbitstation.activity.MainActivity;
 
 /**
  * Helper APIs for constructing MediaStyle notifications
@@ -27,12 +32,16 @@ public class MediaStyleHelper{
         MediaMetadataCompat mediaMetadata = controller.getMetadata();
         MediaDescriptionCompat description = mediaMetadata.getDescription();
 
+        Intent intent = new Intent(context, MainActivity.class);
+        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_NO_CREATE);
+
+
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context);
         builder
                 .setContentTitle(description.getTitle())
                 .setContentText(description.getSubtitle())
                 .setLargeIcon(description.getIconBitmap())
-                .setContentIntent(controller.getSessionActivity())
+                .setContentIntent(pendingIntent)
                 .setDeleteIntent(
                         MediaButtonReceiver.buildMediaButtonPendingIntent(context, PlaybackStateCompat.ACTION_STOP))
                 .setVisibility(NotificationCompat.VISIBILITY_PUBLIC);

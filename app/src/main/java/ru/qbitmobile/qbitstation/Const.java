@@ -3,7 +3,7 @@ package ru.qbitmobile.qbitstation;
 import java.util.ArrayList;
 import java.util.List;
 
-import ru.qbitmobile.qbitstation.BaseObject.Station;
+import ru.qbitmobile.qbitstation.baseObject.Station;
 
 public class Const {
 

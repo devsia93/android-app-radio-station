@@ -1,4 +1,4 @@
-package ru.qbitmobile.qbitstation.Helper;
+package ru.qbitmobile.qbitstation.helper;
 
 import android.content.Context;
 import android.view.View;

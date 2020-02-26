@@ -1538,12 +1538,11 @@ drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
+drawable ic_close_white_24dp
 drawable ic_close_white_32dp
 drawable ic_edit_black_24dp
 drawable ic_fast_forward_white_32dp
 drawable ic_fast_rewind_white_32dp
-drawable ic_favorite_border_white_24dp
-drawable ic_favorite_white_24dp
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_launcher_background
@@ -1562,8 +1561,6 @@ drawable ic_play_arrow_white_24dp
 drawable ic_play_arrow_white_32dp
 drawable ic_play_circle_filled_white_24dp
 drawable ic_radio_white_32dp
-drawable ic_skip_next_white_24dp
-drawable ic_skip_previous_white_24dp
 drawable icon_toolbar_search
 drawable mtrl_dialog_background
 drawable mtrl_dropdown_arrow
@@ -1592,7 +1589,6 @@ drawable play_button_notif
 drawable play_ntf
 drawable select_item_on_recycler
 drawable test_custom_background
-drawable test_forward
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 font roboto

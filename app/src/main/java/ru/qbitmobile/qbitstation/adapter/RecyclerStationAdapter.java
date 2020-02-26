@@ -10,8 +10,6 @@ import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Filter;
-import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -26,16 +24,18 @@ import com.bumptech.glide.request.transition.Transition;
 import com.google.firebase.analytics.FirebaseAnalytics;
 import com.wang.avi.AVLoadingIndicatorView;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
+import ru.qbitmobile.qbitstation.R;
 import ru.qbitmobile.qbitstation.baseObject.Radio;
-import ru.qbitmobile.qbitstation.helper.AnimatorHelper;
 import ru.qbitmobile.qbitstation.baseObject.Station;
+import ru.qbitmobile.qbitstation.controller.RadioStationController;
+import ru.qbitmobile.qbitstation.helper.AnimatorHelper;
+import ru.qbitmobile.qbitstation.helper.KeyboardHelper;
 import ru.qbitmobile.qbitstation.helper.MediaControllerHelper;
 import ru.qbitmobile.qbitstation.helper.ReportHelper;
-import ru.qbitmobile.qbitstation.R;
-import ru.qbitmobile.qbitstation.controller.RadioStationController;
 import ru.qbitmobile.qbitstation.service.PlayerService;
 
 public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStationAdapter.ViewHolder> {
@@ -44,7 +44,7 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
     private List<Station> mStations;
     private Context mContext;
 
-    private List<ViewHolder> viewHolders = new ArrayList<>();
+    private ArrayList<ViewHolder> viewHolders = new ArrayList<>();
 
     public RecyclerStationAdapter(Context context, List<Station> stations) {
         this.mStations = stations;
@@ -97,13 +97,14 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
                     }
                 }
 
-                if (RadioStationController.getSelectedStation() != null && RadioStationController.getSelectedStation() == mStations.get(position)) {
+                if (RadioStationController.getSelectedStation() != null && RadioStationController.getSelectedStation() == mStations.get(position) && PlayerService.isPlaying) {
                     MediaControllerHelper.mediaController.getTransportControls().pause();
                     AnimatorHelper.stopAnimation(holder.playViewAnimation);
                 } else {
 
-                    if (PlayerService.isPlaying)
-                        MediaControllerHelper.mediaController.getTransportControls().stop();
+                    if (PlayerService.isPlaying) {
+                        MediaControllerHelper.mediaController.getTransportControls().pause();
+                    }
                     if (MediaControllerHelper.mediaController != null) {
                         MediaControllerHelper.mediaController.getTransportControls().play();
                     }
@@ -154,7 +155,7 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
         return mStations.size();
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder implements  Serializable {
         final ImageView imageView;
         final TextView textView;
         public final AVLoadingIndicatorView playViewAnimation;

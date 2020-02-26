@@ -20,6 +20,14 @@ public class RadioStationController {
     private static Bitmap imageSelectedStation;
     private static HashMap<Station, Bitmap> bitmapHashMap;
 
+    public static int getPosition(){
+        return position;
+    }
+
+    public static void setPosition(int position) {
+        RadioStationController.position = position;
+    }
+
     public static void setHashMap(Station station, Bitmap bitmap){
         if (bitmapHashMap == null)
             bitmapHashMap = new HashMap<>();
