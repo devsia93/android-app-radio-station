@@ -1,1 +1,7 @@
+<<<<<<< HEAD
 [{"outputType":{"type":"BUNDLE_MANIFEST"},"apkData":{"type":"MAIN","splits":[],"versionCode":3,"versionName":"1.0.2","enabled":true,"outputFile":"app-debug.apk","fullName":"debug","baseName":"debug","dirName":""},"path":"AndroidManifest.xml","properties":{"packageId":"ru.qbitmobile.qbitstation","split":"","minSdkVersion":"19"}}]
+||||||| merged common ancestors
+[{"outputType":{"type":"BUNDLE_MANIFEST"},"apkData":{"type":"MAIN","splits":[],"versionCode":1,"versionName":"1.0.0","enabled":true,"outputFile":"app-debug.apk","fullName":"debug","baseName":"debug","dirName":""},"path":"AndroidManifest.xml","properties":{"packageId":"ru.qbitmobile.qbitstation","split":"","minSdkVersion":"19"}}]
+=======
+[{"outputType":{"type":"BUNDLE_MANIFEST"},"apkData":{"type":"MAIN","splits":[],"versionCode":3,"versionName":"1.0.3","enabled":true,"outputFile":"app-debug.apk","fullName":"debug","baseName":"debug","dirName":""},"path":"AndroidManifest.xml","properties":{"packageId":"ru.qbitmobile.qbitstation","split":"","minSdkVersion":"19"}}]
+>>>>>>> medianotification

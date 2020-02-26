@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 #Mon Feb 10 17:29:34 GMT+03:00 2020
+||||||| merged common ancestors
+#Fri Feb 07 17:24:43 GMT+03:00 2020
+=======
+#Wed Feb 26 08:59:59 GMT+03:00 2020
+>>>>>>> medianotification
 path.2=classes2.dex
 path.1=classes.dex
 path.0=classes.dex

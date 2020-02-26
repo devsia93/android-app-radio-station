@@ -12,52 +12,73 @@ import com.google.android.exoplayer2.upstream.DataSource;
 import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory;
 import com.google.android.exoplayer2.util.Util;
 
+import java.util.List;
+
+import ru.qbitmobile.qbitstation.BaseObject.Station;
+import ru.qbitmobile.qbitstation.Controller.RadioStationController;
+
 
 public class Player {
 
-   private static String mURLStream;
-   private static SimpleExoPlayer mExoPlayer;
-   private static boolean isPlay;
+    private static String mURLStream;
+    private static SimpleExoPlayer mExoPlayer;
+    private static boolean isPlay;
+    private static List<Station> sStations;
+    private static int mPosition;
+    private static Station currentStation;
 
-    public Player (String URLStream){
-        mURLStream = URLStream;
-    }
-
-    public static void start(Context context){
+    public static void start(Context context, Station station) {
 
         if (mExoPlayer != null) {
             mExoPlayer.stop();
         }
+        sStations = RadioStationController.getSelectedRadio().getStations();
+        mPosition = sStations.indexOf(station);
+        currentStation = station;
 
-                Uri URI = Uri.parse(mURLStream);
+        Uri URI = Uri.parse(station.getStream());
 
-                DataSource.Factory factory = new DefaultHttpDataSourceFactory(Util.getUserAgent(context, context.getPackageName()));
-                MediaSource mediaSource = new ProgressiveMediaSource.Factory(factory)
-                        .createMediaSource(URI);
-                mExoPlayer = ExoPlayerFactory.newSimpleInstance(context);
-                mExoPlayer.prepare(mediaSource);
-                mExoPlayer.setPlayWhenReady(true);
-                isPlay = true;
+        DataSource.Factory factory = new DefaultHttpDataSourceFactory(Util.getUserAgent(context, context.getPackageName()));
+        MediaSource mediaSource = new ProgressiveMediaSource.Factory(factory)
+                .createMediaSource(URI);
+        mExoPlayer = ExoPlayerFactory.newSimpleInstance(context);
+        mExoPlayer.prepare(mediaSource);
+        mExoPlayer.setPlayWhenReady(true);
+        isPlay = true;
+
     }
 
-    public static void stop(){
+    public static void stop() {
         mExoPlayer.stop();
         isPlay = false;
     }
 
-    public static String getCurrentUrlStream(){
+    public static void release(){
+        mExoPlayer.release();
+    }
+
+    public static void nextStation(Context context) {
+        currentStation = sStations.get(sStations.indexOf(currentStation)+1);
+        start(context, currentStation);
+    }
+
+    public static void previousStation(Context context){
+        currentStation = sStations.get(sStations.indexOf(currentStation)-1);
+        start(context, currentStation);
+    }
+    public static String getCurrentUrlStream() {
         return mURLStream;
     }
 
-    public static void setUrlStream(String url){
+    public static void setUrlStream(String url) {
         mURLStream = url;
     }
 
-    public static ExoPlayer getPlayer(){
+    public static ExoPlayer getPlayer() {
         return mExoPlayer;
     }
 
-    public static boolean isPlayed(){
+    public static boolean isPlayed() {
         return isPlay;
     }
 }

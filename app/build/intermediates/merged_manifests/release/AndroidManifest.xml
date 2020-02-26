@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ru.qbitmobile.qbitstation"
+<<<<<<< HEAD
     android:versionCode="3"
     android:versionName="1.0.2" >
+||||||| merged common ancestors
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+=======
+    android:versionCode="3"
+    android:versionName="1.0.3" >
+>>>>>>> medianotification
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -50,8 +58,42 @@
         <service
             android:name="ru.qbitmobile.qbitstation.Service.PlayerService"
             android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </service>
+        <!--
+        <receiver
+            android:name=".Receiver.BroadcastActioner"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON"/>
+            </intent-filter>
+        </receiver>
+        -->
+
+        <receiver android:name="androidx.media.session.MediaButtonReceiver" >
+            <intent-filter>
+<<<<<<< HEAD
+||||||| merged common ancestors
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+=======
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="ru.qbitmobile.qbitstation.Receiver.ActionReceiver"
+            android:enabled="true"
+            android:exported="true" />
+
+        <service
+            android:name="ru.qbitmobile.qbitstation.Service.pls"
+            android:enabled="true"
             android:exported="true" >
             <intent-filter>
+>>>>>>> medianotification
                 <action android:name="android.media.browse.MediaBrowserService" />
             </intent-filter>
         </service>

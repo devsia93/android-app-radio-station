@@ -1,12 +1,18 @@
 package ru.qbitmobile.qbitstation.Activity;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -18,6 +24,9 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.target.CustomTarget;
+import com.bumptech.glide.request.transition.Transition;
 import com.google.firebase.analytics.FirebaseAnalytics;
 
 import net.cachapa.expandablelayout.ExpandableLayout;
@@ -30,15 +39,19 @@ import java.util.List;
 
 import ru.qbitmobile.qbitstation.Adapter.RecyclerStationAdapter;
 import ru.qbitmobile.qbitstation.BaseObject.Radio;
+import ru.qbitmobile.qbitstation.BaseObject.Station;
 import ru.qbitmobile.qbitstation.Const;
 
 import ru.qbitmobile.qbitstation.Fragment.SearchFragment;
 import ru.qbitmobile.qbitstation.Fragment.StationsFragment;
 import ru.qbitmobile.qbitstation.Helper.AnimationRotate;
 import ru.qbitmobile.qbitstation.Helper.JSONHelper;
+import ru.qbitmobile.qbitstation.Helper.MediaControllerHelper;
 import ru.qbitmobile.qbitstation.Player.Player;
 import ru.qbitmobile.qbitstation.Helper.ReportHelper;
 import ru.qbitmobile.qbitstation.R;
+import ru.qbitmobile.qbitstation.Controller.RadioStationController;
+import ru.qbitmobile.qbitstation.Service.PlayerService;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -55,13 +68,24 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Player.stop();
+
+        unbindService(MediaControllerHelper.serviceConnection);
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        if (savedInstanceState == null) {
+            // Set the local night mode to some value
+            AppCompatDelegate.setDefaultNightMode(
+                    AppCompatDelegate.MODE_NIGHT_YES);
+        }
+
+        MediaControllerHelper.onCreate(this);
+
+        bindService(new Intent(this, PlayerService.class), MediaControllerHelper.serviceConnection, BIND_AUTO_CREATE);
 
         mLinearLayout = findViewById(R.id.main_container);
         mFirebaseAnalytics = FirebaseAnalytics.getInstance(this);
@@ -71,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         ArrayList<Radio> radioArray = (ArrayList<Radio>) JSONHelper.importFromJSON(getApplicationContext());
+        RadioStationController.setListRadios(radioArray);
 
         SearchFragment searchFragment = new SearchFragment(radioArray, mLinearLayout);
         FragmentTransaction mFragmentTransaction = getSupportFragmentManager().beginTransaction();
@@ -89,6 +114,21 @@ public class MainActivity extends AppCompatActivity {
 
         if (radioArray != null) {
             for (Radio r : radioArray) {
+                for (Station station : r.getStations()){
+                    Glide.with(this).asBitmap().load(station.getImage()).into(new CustomTarget<Bitmap>() {
+                        @Override
+                        public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
+                            RadioStationController.setHashMap(station, resource);
+                        }
+
+                        @Override
+                        public void onLoadCleared(@Nullable Drawable placeholder) {
+
+                        }
+                    });
+                }
+                View childLayout = new View(this);
+                RadioStationController.getListStations().addAll(r.getStations());
 
                 LayoutInflater inflater = (LayoutInflater) this.getSystemService(this.LAYOUT_INFLATER_SERVICE);
                 View childLayout = inflater.inflate(R.layout.layout_child_conteiner, mLinearLayout, false);
@@ -138,6 +178,7 @@ public class MainActivity extends AppCompatActivity {
                 expandableLayout.toggle();
                 if (!expandableLayout.isExpanded())
                     imageView.setRotation(Const.CURRENT_ROTATE_ARROW);
+
             }
         }
     }

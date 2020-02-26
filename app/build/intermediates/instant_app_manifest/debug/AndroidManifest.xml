@@ -2,8 +2,16 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ru.qbitmobile.qbitstation"
     android:targetSandboxVersion="2"
+<<<<<<< HEAD
     android:versionCode="3"
     android:versionName="1.0.2" >
+||||||| merged common ancestors
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+=======
+    android:versionCode="3"
+    android:versionName="1.0.3" >
+>>>>>>> medianotification
 
     <uses-sdk
         android:minSdkVersion="19"
@@ -28,37 +36,49 @@
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+<<<<<<< HEAD
         <service
             android:name="ru.qbitmobile.qbitstation.Service.NewPlayerService"
             android:enabled="true"
             android:exported="true" />
 
+||||||| merged common ancestors
+=======
+        <service
+            android:name="ru.qbitmobile.qbitstation.Service.PlayerService"
+            android:enabled="true"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </service>
+
+>>>>>>> medianotification
         <receiver android:name="androidx.media.session.MediaButtonReceiver" >
             <intent-filter>
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
         </receiver>
-        <receiver
-            android:name="ru.qbitmobile.qbitstation.Receiver.ActionReceiver"
-            android:enabled="true"
-            android:exported="true" />
 
+        <!--
         <service
-            android:name="ru.qbitmobile.qbitstation.Service.PlayerService"
+            android:name=".Service.pls"
             android:enabled="true"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.media.browse.MediaBrowserService" />
             </intent-filter>
         </service>
-
+        -->
         <activity android:name="ru.qbitmobile.qbitstation.Activity.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

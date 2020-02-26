@@ -1,136 +1,388 @@
 package ru.qbitmobile.qbitstation.Service;
 
+import android.annotation.SuppressLint;
 import android.app.Notification;
+import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.graphics.Bitmap;
+import android.media.AudioAttributes;
+import android.media.AudioFocusRequest;
+import android.media.AudioManager;
+import android.net.Uri;
+import android.os.Binder;
+import android.os.Build;
 import android.os.IBinder;
-import android.support.v4.media.session.MediaControllerCompat;
+
+import androidx.annotation.Nullable;
+import androidx.core.app.NotificationManagerCompat;
+import androidx.core.content.ContextCompat;
+import android.support.v4.media.MediaMetadataCompat;
+import androidx.media.session.MediaButtonReceiver;
 import android.support.v4.media.session.MediaSessionCompat;
 import android.support.v4.media.session.PlaybackStateCompat;
 
 import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
-import androidx.media.MediaSessionManager;
-import androidx.media.session.MediaButtonReceiver;
+
+
+import com.google.android.exoplayer2.DefaultLoadControl;
+import com.google.android.exoplayer2.DefaultRenderersFactory;
+import com.google.android.exoplayer2.ExoPlaybackException;
+import com.google.android.exoplayer2.ExoPlayer;
+import com.google.android.exoplayer2.ExoPlayerFactory;
+import com.google.android.exoplayer2.PlaybackParameters;
+import com.google.android.exoplayer2.SimpleExoPlayer;
+import com.google.android.exoplayer2.extractor.DefaultExtractorsFactory;
+import com.google.android.exoplayer2.extractor.ExtractorsFactory;
+import com.google.android.exoplayer2.source.ExtractorMediaSource;
+import com.google.android.exoplayer2.source.TrackGroupArray;
+import com.google.android.exoplayer2.trackselection.DefaultTrackSelector;
+import com.google.android.exoplayer2.trackselection.TrackSelectionArray;
+import com.google.android.exoplayer2.upstream.DataSource;
+import com.google.android.exoplayer2.upstream.DefaultHttpDataSourceFactory;
+import com.google.android.exoplayer2.upstream.cache.Cache;
+import com.google.android.exoplayer2.upstream.cache.CacheDataSource;
+import com.google.android.exoplayer2.upstream.cache.CacheDataSourceFactory;
+import com.google.android.exoplayer2.upstream.cache.LeastRecentlyUsedCacheEvictor;
+import com.google.android.exoplayer2.upstream.cache.SimpleCache;
+import com.google.android.exoplayer2.util.Util;
+
+
+import java.io.File;
 
 import ru.qbitmobile.qbitstation.Activity.MainActivity;
+import ru.qbitmobile.qbitstation.BaseObject.Station;
 import ru.qbitmobile.qbitstation.Const;
-import ru.qbitmobile.qbitstation.Helper.Toaster;
-import ru.qbitmobile.qbitstation.Player.Player;
+import ru.qbitmobile.qbitstation.Controller.RadioStationController;
+import ru.qbitmobile.qbitstation.Notification.MediaStyleHelper;
 import ru.qbitmobile.qbitstation.R;
-import ru.qbitmobile.qbitstation.Receiver.ActionReceiver;
-
-public class PlayerService extends Service {
-
-    private NotificationManagerCompat notificationManagerCompat;
-    private MediaSessionCompat mSession;
-    private MediaSessionManager mManager;;
-    private MediaControllerCompat mController;
-    private Bitmap mBitmap;
-    private String mTitleStation;
-    private Player player;
-    private String mStreamURL;
-    private String mImageURL;
-    private ActionReceiver receiver;
-
-    private static NotificationCompat.Builder sBuilder;
-
-    @Override
-    public int onStartCommand(Intent intent, int flags, int startId) {
-        mTitleStation = (String) intent.getStringExtra(Const.EXTRA_TITLE_STATION);
-        mStreamURL = (String) intent.getStringExtra(Const.EXTRA_STREAM_URL);
-        mBitmap = intent.getParcelableExtra(Const.EXTRA_BITMAP_STATION);
-
-        createNotification();
-        Toaster.Toast(getApplicationContext(), "PlayerService.onStartCommand");
-
-        if (intent.getAction() != null && intent.getAction().equals("STOP_ACTION")){
-            stopForeground(true);
-        }
-
-        return super.onStartCommand(intent, flags, startId);
-    }
 
 
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        player = new Player(Player.getCurrentUrlStream());
-        player.stop();
-        notificationManagerCompat.cancelAll();
-    }
+final public class PlayerService extends Service {
+
+    public static boolean isPlaying;
+
+    private final MediaMetadataCompat.Builder metadataBuilder = new MediaMetadataCompat.Builder();
+
+    private final PlaybackStateCompat.Builder stateBuilder = new PlaybackStateCompat.Builder().setActions(
+            PlaybackStateCompat.ACTION_PLAY
+                    | PlaybackStateCompat.ACTION_STOP
+                    | PlaybackStateCompat.ACTION_PAUSE
+                    | PlaybackStateCompat.ACTION_PLAY_PAUSE
+                    | PlaybackStateCompat.ACTION_SKIP_TO_NEXT
+                    | PlaybackStateCompat.ACTION_SKIP_TO_PREVIOUS
+    );
+
+    private MediaSessionCompat mediaSession;
+
+    private AudioManager audioManager;
+    private AudioFocusRequest audioFocusRequest;
+    private boolean audioFocusRequested = false;
+
+    private SimpleExoPlayer exoPlayer;
+    private ExtractorsFactory extractorsFactory;
+    private DataSource.Factory dataSourceFactory;
 
     @Override
     public void onCreate() {
         super.onCreate();
 
-        final Intent activityIntent = new Intent(this, MainActivity.class);
-        final PendingIntent pendingIntent = PendingIntent.getActivity(this, Const.NOTIFICATION_MEDIA_ID, activityIntent, 0);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            @SuppressLint("WrongConstant") NotificationChannel notificationChannel = new NotificationChannel(Const.CHANEL_MEDIA_ID, Const.NOTIFICATION_CHANNEL_NAME, NotificationManagerCompat.IMPORTANCE_DEFAULT);
+            NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
+            notificationManager.createNotificationChannel(notificationChannel);
 
-        mSession = new MediaSessionCompat(this, Const.TAG_MEDIA_SESSION);
-        notificationManagerCompat = NotificationManagerCompat.from(this);
-        Toaster.Toast(getApplicationContext(), "PlayerService.onCreate");
-    }
+            AudioAttributes audioAttributes = new AudioAttributes.Builder()
+                    .setUsage(AudioAttributes.USAGE_MEDIA)
+                    .setContentType(AudioAttributes.CONTENT_TYPE_MUSIC)
+                    .build();
+            audioFocusRequest = new AudioFocusRequest.Builder(AudioManager.AUDIOFOCUS_GAIN)
+                    .setOnAudioFocusChangeListener(audioFocusChangeListener)
+                    .setAcceptsDelayedFocusGain(false)
+                    .setWillPauseWhenDucked(true)
+                    .setAudioAttributes(audioAttributes)
+                    .build();
+        }
 
-    private void createNotification() {
+        audioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
 
-        Intent exitIntent = new Intent(this, ActionReceiver.class);
-        exitIntent.setAction(Const.ACTION_EXIT);
-        PendingIntent exitPendingIntent = PendingIntent.getBroadcast(this, 0, exitIntent, 0);
+        mediaSession = new MediaSessionCompat(this, "PlayerService");
+        mediaSession.setFlags(MediaSessionCompat.FLAG_HANDLES_MEDIA_BUTTONS | MediaSessionCompat.FLAG_HANDLES_TRANSPORT_CONTROLS);
+        mediaSession.setCallback(mediaSessionCallback);
 
-        Intent nextIntent = new Intent(this, ActionReceiver.class);
-        nextIntent.setAction(Const.ACTION_NEXT);
-        PendingIntent nextPendingIntent = PendingIntent.getBroadcast(this, 0, nextIntent, 0);
+        Context appContext = getApplicationContext();
 
-        Intent previousIntent = new Intent(this, ActionReceiver.class);
-        previousIntent.setAction(Const.ACTION_PREVIOUS);
-        PendingIntent previousPendingIntent = PendingIntent.getBroadcast(this, 0, previousIntent, 0);
+        Intent activityIntent = new Intent(appContext, MainActivity.class);
+        mediaSession.setSessionActivity(PendingIntent.getActivity(appContext, 0, activityIntent, 0));
 
-        Intent favoriteIntent = new Intent(this, ActionReceiver.class);
-        favoriteIntent.setAction(Const.ACTION_FAVORITE);
-        PendingIntent favoritePendingIntent = PendingIntent.getBroadcast(this, 0, favoriteIntent, 0);
+        Intent mediaButtonIntent = new Intent(Intent.ACTION_MEDIA_BUTTON, null, appContext, MediaButtonReceiver.class);
+        mediaSession.setMediaButtonReceiver(PendingIntent.getBroadcast(appContext, 0, mediaButtonIntent, 0));
 
-        Intent playIntent = new Intent(this, ActionReceiver.class);
-        playIntent.setAction(Const.ACTION_PLAY);
-        PendingIntent playPendingIntent = PendingIntent.getBroadcast(this, 0, playIntent, 0);
-
-        NotificationCompat.Builder notification = new NotificationCompat.Builder(this, Const.CHANEL_MEDIA_ID);
-                notification.setOngoing(true)
-                .setSmallIcon(R.drawable.exo_notification_play)
-                .setLargeIcon(mBitmap)
-                .setContentTitle(mTitleStation)
-                .setShowWhen(false)
-                .setDeleteIntent(MediaButtonReceiver.buildMediaButtonPendingIntent(getApplicationContext(), PlaybackStateCompat.ACTION_STOP))
-                .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
-                .setOnlyAlertOnce(true)
-                .addAction(R.drawable.ic_close_white_24dp, "Close", exitPendingIntent)
-                .addAction(R.drawable.exo_icon_previous, "Previous", MediaButtonReceiver.buildMediaButtonPendingIntent(getApplicationContext(), PlaybackStateCompat.ACTION_SKIP_TO_PREVIOUS))
-                .addAction(new NotificationCompat.Action(R.drawable.ic_pause_white_24dp, "Pause", playPendingIntent))
-                .addAction(R.drawable.exo_icon_next, "Next", MediaButtonReceiver.buildMediaButtonPendingIntent(getApplicationContext(), PlaybackStateCompat.ACTION_SKIP_TO_NEXT))
-                .addAction(R.drawable.ic_favorite_border_white_24dp, "Favorite", null)
-                .setStyle(new androidx.media.app.NotificationCompat.MediaStyle()
-                        .setShowActionsInCompactView(1,2,3)
-                        .setMediaSession(mSession.getSessionToken())
-                        .setShowCancelButton(true)
-                        .setCancelButtonIntent(MediaButtonReceiver.buildMediaButtonPendingIntent(this, PlaybackStateCompat.ACTION_STOP)))
-                .setPriority(NotificationCompat.PRIORITY_LOW);
-        sBuilder = notification;
-
-        notificationManagerCompat.notify(Const.NOTIFICATION_MEDIA_ID, notification.build());
-//        startForeground(Const.NOTIFICATION_MEDIA_ID, notification.build());
-    }
-
-    public static NotificationCompat.Builder getBuilder(){
-        return sBuilder;
+        exoPlayer = ExoPlayerFactory.newSimpleInstance(this, new DefaultRenderersFactory(this), new DefaultTrackSelector(), new DefaultLoadControl());
+        exoPlayer.addListener(exoPlayerListener);
+        DataSource.Factory httpDataSourceFactory = new DefaultHttpDataSourceFactory(Util.getUserAgent(getApplicationContext(), getString(R.string.app_name)));
+        Cache cache = new SimpleCache(new File(this.getCacheDir().getAbsolutePath() + "/exoplayer"), new LeastRecentlyUsedCacheEvictor(1024 * 1024 * 100)); // 100 Mb max
+        this.dataSourceFactory = new CacheDataSourceFactory(cache, httpDataSourceFactory, CacheDataSource.FLAG_BLOCK_ON_CACHE | CacheDataSource.FLAG_IGNORE_CACHE_ON_ERROR);
+        this.extractorsFactory = new DefaultExtractorsFactory();
     }
 
     @Override
+    public int onStartCommand(Intent intent, int flags, int startId) {
+        MediaButtonReceiver.handleIntent(mediaSession, intent);
+        return super.onStartCommand(intent, flags, startId);
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mediaSession.release();
+        exoPlayer.release();
+    }
+
+    private MediaSessionCompat.Callback mediaSessionCallback = new MediaSessionCompat.Callback() {
+
+        private Uri currentUri;
+        int currentState = PlaybackStateCompat.STATE_STOPPED;
+
+        @Override
+        public void onPlay() {
+            if (!exoPlayer.getPlayWhenReady()) {
+                startService(new Intent(getApplicationContext(), PlayerService.class));
+
+                Station station = RadioStationController.getSelectedStation();
+                updateMetadataFromStation(station);
+                prepareToPlay(Uri.parse(station.getStream()));
+
+                if (!audioFocusRequested) {
+                    audioFocusRequested = true;
+
+                    int audioFocusResult;
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                        audioFocusResult = audioManager.requestAudioFocus(audioFocusRequest);
+                    } else {
+                        audioFocusResult = audioManager.requestAudioFocus(audioFocusChangeListener, AudioManager.STREAM_MUSIC, AudioManager.AUDIOFOCUS_GAIN);
+                    }
+                    if (audioFocusResult != AudioManager.AUDIOFOCUS_REQUEST_GRANTED)
+                        return;
+                }
+
+                mediaSession.setActive(true); // Сразу после получения фокуса
+
+                registerReceiver(becomingNoisyReceiver, new IntentFilter(AudioManager.ACTION_AUDIO_BECOMING_NOISY));
+
+                exoPlayer.setPlayWhenReady(true);
+            }
+
+            mediaSession.setPlaybackState(stateBuilder.setState(PlaybackStateCompat.STATE_PLAYING, PlaybackStateCompat.PLAYBACK_POSITION_UNKNOWN, 1).build());
+            currentState = PlaybackStateCompat.STATE_PLAYING;
+
+            RadioStationController.getPlayStation();
+
+            refreshNotificationAndForegroundStatus(currentState);
+            isPlaying = true;
+        }
+
+        @Override
+        public void onPause() {
+            if (exoPlayer.getPlayWhenReady()) {
+                exoPlayer.setPlayWhenReady(false);
+                unregisterReceiver(becomingNoisyReceiver);
+            }
+
+            if (audioFocusRequested) {
+                audioFocusRequested = false;
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    audioManager.abandonAudioFocusRequest(audioFocusRequest);
+                } else {
+                    audioManager.abandonAudioFocus(audioFocusChangeListener);
+                }
+            }
+            mediaSession.setPlaybackState(stateBuilder.setState(PlaybackStateCompat.STATE_PAUSED, PlaybackStateCompat.PLAYBACK_POSITION_UNKNOWN, 1).build());
+            currentState = PlaybackStateCompat.STATE_PAUSED;
+
+            RadioStationController.getPauseStation();
+
+            refreshNotificationAndForegroundStatus(currentState);
+            isPlaying = false;
+        }
+
+        @Override
+        public void onStop() {
+            if (exoPlayer.getPlayWhenReady()) {
+                exoPlayer.setPlayWhenReady(false);
+                unregisterReceiver(becomingNoisyReceiver);
+            }
+
+            if (audioFocusRequested) {
+                audioFocusRequested = false;
+
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                    audioManager.abandonAudioFocusRequest(audioFocusRequest);
+                } else {
+                    audioManager.abandonAudioFocus(audioFocusChangeListener);
+                }
+            }
+
+            mediaSession.setActive(false);
+
+            mediaSession.setPlaybackState(stateBuilder.setState(PlaybackStateCompat.STATE_STOPPED, PlaybackStateCompat.PLAYBACK_POSITION_UNKNOWN, 1).build());
+            currentState = PlaybackStateCompat.STATE_STOPPED;
+
+            refreshNotificationAndForegroundStatus(currentState);
+
+            isPlaying = false;
+
+            RadioStationController.getPauseStation();
+
+            stopSelf();
+        }
+
+        @Override
+        public void onSkipToNext() {
+            Station station = RadioStationController.getNextStation();
+            updateMetadataFromStation(station);
+
+            refreshNotificationAndForegroundStatus(currentState);
+
+            prepareToPlay(Uri.parse(station.getStream()));
+        }
+
+        @Override
+        public void onSkipToPrevious() {
+            Station station = RadioStationController.getPreviousStation();
+            updateMetadataFromStation(station);
+
+            refreshNotificationAndForegroundStatus(currentState);
+
+            prepareToPlay(Uri.parse(station.getStream()));
+        }
+
+        private void prepareToPlay(Uri uri) {
+            if (!uri.equals(currentUri)) {
+                currentUri = uri;
+                ExtractorMediaSource mediaSource = new ExtractorMediaSource(uri, dataSourceFactory, extractorsFactory, null, null);
+                exoPlayer.prepare(mediaSource);
+            }
+        }
+
+        private void updateMetadataFromStation(Station station) {
+                    metadataBuilder.putBitmap(MediaMetadataCompat.METADATA_KEY_ART, RadioStationController.getBitmapFromhashmap(RadioStationController.getSelectedStation()));
+                    metadataBuilder.putString(MediaMetadataCompat.METADATA_KEY_TITLE, RadioStationController.getSelectedRadio().getGenre());
+                    metadataBuilder.putString(MediaMetadataCompat.METADATA_KEY_ARTIST, station.getName());
+                    mediaSession.setMetadata(metadataBuilder.build());
+        }
+    };
+
+    private AudioManager.OnAudioFocusChangeListener audioFocusChangeListener = new AudioManager.OnAudioFocusChangeListener() {
+        @Override
+        public void onAudioFocusChange(int focusChange) {
+            switch (focusChange) {
+                case AudioManager.AUDIOFOCUS_GAIN:
+                    mediaSessionCallback.onPlay(); // Не очень красиво
+                    break;
+                case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK:
+                    mediaSessionCallback.onPause();
+                    break;
+                default:
+                    mediaSessionCallback.onPause();
+                    break;
+            }
+        }
+    };
+
+    private final BroadcastReceiver becomingNoisyReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            // Disconnecting headphones - stop playback
+            if (AudioManager.ACTION_AUDIO_BECOMING_NOISY.equals(intent.getAction())) {
+                mediaSessionCallback.onPause();
+            }
+        }
+    };
+
+    private ExoPlayer.EventListener exoPlayerListener = new ExoPlayer.EventListener() {
+
+        @Override
+        public void onTracksChanged(TrackGroupArray trackGroups, TrackSelectionArray trackSelections) {
+        }
+
+        @Override
+        public void onLoadingChanged(boolean isLoading) {
+        }
+
+        @Override
+        public void onPlayerStateChanged(boolean playWhenReady, int playbackState) {
+            if (playWhenReady && playbackState == ExoPlayer.STATE_ENDED) {
+                mediaSessionCallback.onSkipToNext();
+            }
+        }
+
+        @Override
+        public void onPlayerError(ExoPlaybackException error) {
+        }
+
+        @Override
+        public void onPlaybackParametersChanged(PlaybackParameters playbackParameters) {
+        }
+    };
+
+    @Nullable
+    @Override
     public IBinder onBind(Intent intent) {
-        // TODO: Return the communication channel to the service.
-        return null;
+        return new PlayerServiceBinder();
+    }
+
+    public class PlayerServiceBinder extends Binder {
+        public MediaSessionCompat.Token getMediaSessionToken() {
+            return mediaSession.getSessionToken();
+        }
+    }
+
+    private void refreshNotificationAndForegroundStatus(int playbackState) {
+        switch (playbackState) {
+            case PlaybackStateCompat.STATE_PLAYING: {
+                startForeground(Const.NOTIFICATION_MEDIA_ID, getNotification(playbackState));
+                break;
+            }
+            case PlaybackStateCompat.STATE_PAUSED: {
+                NotificationManagerCompat.from(PlayerService.this).notify(Const.NOTIFICATION_MEDIA_ID, getNotification(playbackState));
+                stopForeground(false);
+                break;
+            }
+            default: {
+                stopForeground(true);
+                break;
+            }
+        }
+    }
+
+    private Notification getNotification(int playbackState) {
+        NotificationCompat.Builder builder = MediaStyleHelper.from(this, mediaSession);
+        builder.addAction(new NotificationCompat.Action(R.drawable.ic_close_white_32dp, "Close", MediaButtonReceiver.buildMediaButtonPendingIntent(this, PlaybackStateCompat.ACTION_STOP)));
+        builder.addAction(new NotificationCompat.Action(R.drawable.ic_fast_rewind_white_32dp, getString(R.string.previous), MediaButtonReceiver.buildMediaButtonPendingIntent(this, PlaybackStateCompat.ACTION_SKIP_TO_PREVIOUS)));
+
+        if (playbackState == PlaybackStateCompat.STATE_PLAYING)
+            builder.addAction(new NotificationCompat.Action(R.drawable.ic_pause_white_32dp, getString(R.string.pause), MediaButtonReceiver.buildMediaButtonPendingIntent(this, PlaybackStateCompat.ACTION_PLAY_PAUSE)));
+        else
+            builder.addAction(new NotificationCompat.Action(R.drawable.ic_play_arrow_white_32dp, getString(R.string.play), MediaButtonReceiver.buildMediaButtonPendingIntent(this, PlaybackStateCompat.ACTION_PLAY_PAUSE)));
+
+        builder.addAction(new NotificationCompat.Action(R.drawable.ic_fast_forward_white_32dp, getString(R.string.next), MediaButtonReceiver.buildMediaButtonPendingIntent(this, PlaybackStateCompat.ACTION_SKIP_TO_NEXT)));
+        builder.setStyle(new androidx.media.app.NotificationCompat.MediaStyle()
+                .setShowActionsInCompactView(2,3)
+                .setMediaSession(mediaSession.getSessionToken())); // setMediaSession требуется для Android Wear
+        builder.setSmallIcon(R.drawable.ic_radio_white_32dp);
+        builder.setColor(ContextCompat.getColor(this, R.color.colorPrimaryDark)); // The whole background (in MediaStyle), not just icon background
+        builder.setShowWhen(false);
+        builder.setPriority(NotificationCompat.PRIORITY_HIGH);
+        builder.setOnlyAlertOnce(true);
+        builder.setChannelId(Const.CHANEL_MEDIA_ID);
+
+        return builder.build();
     }
 }
