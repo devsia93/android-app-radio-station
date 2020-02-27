@@ -43,11 +43,13 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
     private LayoutInflater mLayoutInflater;
     private List<Station> mStations;
     private Context mContext;
+    private Radio mRadio;
 
     private ArrayList<ViewHolder> viewHolders = new ArrayList<>();
 
-    public RecyclerStationAdapter(Context context, List<Station> stations) {
-        this.mStations = stations;
+    public RecyclerStationAdapter(Context context, Radio radio) {
+        this.mStations = radio.getStations();
+        this.mRadio = radio;
         this.mLayoutInflater = LayoutInflater.from(context);
         mContext = context;
     }
@@ -67,7 +69,7 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
         holder.textView.setText(station.getName());
         Glide.with(mContext)
                 .asBitmap()
-                .load(mStations.get(position).getImage())
+                .load(station.getImage())
                 .diskCacheStrategy(DiskCacheStrategy.ALL)
                 .into(new CustomTarget<Bitmap>() {
                     @Override
@@ -90,12 +92,7 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
                 ReportHelper.report(mStations.get(position));
                 AnimatorHelper.viewHolders = viewHolders;
 
-                for (Radio r : RadioStationController.getListRadios()) {
-                    if (r.getStations().contains(mStations.get(position))) {
-                        RadioStationController.setSelectedRadio(r);
-                        break;
-                    }
-                }
+                RadioStationController.setSelectedRadio(mRadio);
 
                 if (RadioStationController.getSelectedStation() != null && RadioStationController.getSelectedStation() == mStations.get(position) && PlayerService.isPlaying) {
                     MediaControllerHelper.mediaController.getTransportControls().pause();
@@ -123,6 +120,12 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
             }
         });
         viewHolders.add(holder);
+        if (RadioStationController.getSelectedStation() != null && checkEqualsStation(station, RadioStationController.getSelectedStation()) && PlayerService.isPlaying)
+            AnimatorHelper.startAnimation(holder.playViewAnimation);
+    }
+
+    private boolean checkEqualsStation(Station station, Station selectedStation) {
+        return station.getStream().equals(selectedStation.getStream());
     }
 
     @Override

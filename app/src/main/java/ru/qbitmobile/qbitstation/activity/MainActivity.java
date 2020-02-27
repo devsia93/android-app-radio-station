@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
@@ -16,6 +15,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -41,6 +41,7 @@ import ru.qbitmobile.qbitstation.helper.AnimatorHelper;
 import ru.qbitmobile.qbitstation.helper.JSONHelper;
 import ru.qbitmobile.qbitstation.helper.KeyboardHelper;
 import ru.qbitmobile.qbitstation.helper.MediaControllerHelper;
+import ru.qbitmobile.qbitstation.helper.PreferenceHelper;
 import ru.qbitmobile.qbitstation.helper.ReportHelper;
 import ru.qbitmobile.qbitstation.helper.TinyDB;
 import ru.qbitmobile.qbitstation.notification.CreateNotificationChannel;
@@ -48,7 +49,8 @@ import ru.qbitmobile.qbitstation.service.PlayerService;
 
 public class MainActivity extends AppCompatActivity {
 
-    LinearLayout mLinearLayout;
+    private LinearLayout mLinearLayout;
+    private PreferenceHelper preferenceHelper;
 
     private FirebaseAnalytics mFirebaseAnalytics;
 
@@ -61,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
+        MediaControllerHelper.mediaController.getTransportControls().stop();
         unbindService(MediaControllerHelper.serviceConnection);
     }
 
@@ -71,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         CreateNotificationChannel.create(this);
+
+        preferenceHelper = new PreferenceHelper(this);
 
         if (savedInstanceState == null) {
             // Set the local night mode to some value
@@ -90,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         ArrayList<Radio> radioArray = (ArrayList<Radio>) JSONHelper.importFromJSON(getApplicationContext());
+        radioArray.add(0, preferenceHelper.getRadio());
         RadioStationController.setListRadios(radioArray);
 
         SearchFragment searchFragment = new SearchFragment(radioArray, mLinearLayout);
@@ -125,20 +130,20 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onResume() {
-
-        TinyDB tinydb = new TinyDB(this);
-
-        ArrayList<Object> holderObjects = new ArrayList<Object>();
-
-        if (AnimatorHelper.viewHolders != null) {
-            for (RecyclerStationAdapter.ViewHolder v : AnimatorHelper.viewHolders)
-                holderObjects.add((Object) v);
-
-            RadioStationController.setPosition(tinydb.getInt("POSITION"));
-        }
-
-        if (AnimatorHelper.viewHolders != null && AnimatorHelper.viewHolders.size() > 0 && PlayerService.isPlaying)
-            AnimatorHelper.startAnimation(RadioStationController.getPosition());
+//
+//        TinyDB tinydb = new TinyDB(this);
+//
+//        ArrayList<Object> holderObjects = new ArrayList<Object>();
+//
+//        if (AnimatorHelper.viewHolders != null) {
+//            for (RecyclerStationAdapter.ViewHolder v : AnimatorHelper.viewHolders)
+//                holderObjects.add((Object) v);
+//
+//            RadioStationController.setPosition(tinydb.getInt("POSITION"));
+//        }
+//
+//        if (AnimatorHelper.viewHolders != null && AnimatorHelper.viewHolders.size() > 0 && PlayerService.isPlaying)
+//            AnimatorHelper.startAnimation(RadioStationController.getPosition());
 
         super.onResume();
     }
@@ -146,6 +151,9 @@ public class MainActivity extends AppCompatActivity {
     private void createListStations(ArrayList<Radio> radioArray) {
 
         if (radioArray != null) {
+
+            preferenceHelper.addFavoriteStation(radioArray.get(1).getStations().get(0));//test fav
+
             for (Radio r : radioArray) {
                 for (Station station : r.getStations()){
                     Glide.with(this).asBitmap().load(station.getImage()).into(new CustomTarget<Bitmap>() {
@@ -162,58 +170,62 @@ public class MainActivity extends AppCompatActivity {
                 }
                 RadioStationController.getListStations().addAll(r.getStations());
 
-                LayoutInflater inflater = (LayoutInflater) this.getSystemService(this.LAYOUT_INFLATER_SERVICE);
-                View childLayout = inflater.inflate(R.layout.layout_child_conteiner, mLinearLayout, false);
-
-                ImageView imageView = childLayout.findViewById(R.id.child_container_imageview_arrow);
-
-                FragmentManager mFragmentManager = getSupportFragmentManager();
-                FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
-
                 StationsFragment stationsFragment = new StationsFragment(this, r);
 
-                ExpandableLayout expandableLayout = childLayout.findViewById(R.id.child_container_expandableLayout);
-                expandableLayout.setId(View.generateViewId());
-                expandableLayout.setInterpolator(new LinearInterpolator());
-
-                LinearLayout linearLayout = childLayout.findViewById(R.id.child_container_main_container);
-                linearLayout.setId(LinearLayout.generateViewId());
-                linearLayout.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        if (expandableLayout.isExpanded()) {
-                            AnimationRotate.RotateArrow(imageView, expandableLayout.isExpanded());
-                            expandableLayout.toggle();
-                        } else {
-                            AnimationRotate.RotateArrow(imageView, expandableLayout.isExpanded());
-                            expandableLayout.expand();
-
-                        }
-                        KeyboardHelper.closeKeyboard(getApplicationContext(), v);
-                    }
-                });
-
-                LinearLayout linearLayoutContainer = childLayout.findViewById(R.id.child_container_container);
-                linearLayoutContainer.setId(LinearLayout.generateViewId());
-
-                TextView textViewGenre = childLayout.findViewById(R.id.child_container_textview_genre);
-                textViewGenre.setId(View.generateViewId());
-                textViewGenre.setText(r.getGenre());
-
-                TextView textViewCountStations = childLayout.findViewById(R.id.child_container_textview_count_stations);
-                textViewCountStations.setId(View.generateViewId());
-                textViewCountStations.setText(String.valueOf(r.getStations().size()));
-
-                mFragmentTransaction.add(linearLayoutContainer.getId(), stationsFragment, r.getGenre()).commit();
-                Log.d("debug", r.getGenre());
-                mLinearLayout.addView(linearLayout);
-
-                expandableLayout.toggle();
-                if (!expandableLayout.isExpanded())
-                    imageView.setRotation(Const.CURRENT_ROTATE_ARROW);
+                inflateContainers(stationsFragment, r.getGenre(), r.getStations().size());
 
             }
         }
+    }
+
+    private void inflateContainers(Fragment fragment, String textGenre, int textCount){
+        LayoutInflater inflater = (LayoutInflater) this.getSystemService(this.LAYOUT_INFLATER_SERVICE);
+        View childLayout = inflater.inflate(R.layout.layout_child_conteiner, mLinearLayout, false);
+
+        ImageView imageView = childLayout.findViewById(R.id.child_container_imageview_arrow);
+
+        FragmentManager mFragmentManager = getSupportFragmentManager();
+        FragmentTransaction mFragmentTransaction = mFragmentManager.beginTransaction();
+
+        ExpandableLayout expandableLayout = childLayout.findViewById(R.id.child_container_expandableLayout);
+        expandableLayout.setId(View.generateViewId());
+        expandableLayout.setInterpolator(new LinearInterpolator());
+
+        LinearLayout linearLayout = childLayout.findViewById(R.id.child_container_main_container);
+        linearLayout.setId(LinearLayout.generateViewId());
+        linearLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (expandableLayout.isExpanded()) {
+                    AnimationRotate.RotateArrow(imageView, expandableLayout.isExpanded());
+                    expandableLayout.toggle();
+                } else {
+                    AnimationRotate.RotateArrow(imageView, expandableLayout.isExpanded());
+                    expandableLayout.expand();
+
+                }
+                KeyboardHelper.closeKeyboard(getApplicationContext(), v);
+            }
+        });
+
+        LinearLayout linearLayoutContainer = childLayout.findViewById(R.id.child_container_container);
+        linearLayoutContainer.setId(LinearLayout.generateViewId());
+
+        TextView textViewGenre = childLayout.findViewById(R.id.child_container_textview_genre);
+        textViewGenre.setId(View.generateViewId());
+        textViewGenre.setText(textGenre);
+
+        TextView textViewCountStations = childLayout.findViewById(R.id.child_container_textview_count_stations);
+        textViewCountStations.setId(View.generateViewId());
+        textViewCountStations.setText(String.valueOf(textCount));
+
+        mFragmentTransaction.add(linearLayoutContainer.getId(), fragment, textGenre).commit();
+        mLinearLayout.addView(linearLayout);
+
+        expandableLayout.toggle();
+        if (!expandableLayout.isExpanded())
+            imageView.setRotation(Const.CURRENT_ROTATE_ARROW);
+
     }
 }
 

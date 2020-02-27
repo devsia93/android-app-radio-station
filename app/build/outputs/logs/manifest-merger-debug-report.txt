@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-54:12
+ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-57:12
 MERGED from [androidx.multidex:multidex:2.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/6bc7043b6622df44e884d3f1e766a6df/multidex-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/d6e2e84f42830f228d53c060ad7ed7cb/jetified-glide-4.11.0/AndroidManifest.xml:2:1-12:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/2cad105297333180f00690525024c7f9/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -75,22 +75,22 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/ivan/.gradle/cac
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/059d5d880b9371fb07550cfc3d4d2271/lifecycle-livedata-core-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/aac1d14413ee292349ea2c1b2abc1cb4/core-runtime-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/237e3c6aac4efe48de1be2a46cb98baf/jetified-annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-57:12
+INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-57:12
 	package
 		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:4:5-40
 		INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
 		INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-54:12
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-57:12
 		INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-54:12
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-57:12
 		INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:11-69
@@ -119,7 +119,7 @@ ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/A
 	android:name
 		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:9:17-72
 application
-ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:11:5-52:19
+ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:11:5-55:19
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/d6e2e84f42830f228d53c060ad7ed7cb/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/ivan/.gradle/caches/transforms-2/files-2.1/d6e2e84f42830f228d53c060ad7ed7cb/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
 MERGED from [com.google.android.material:material:1.2.0-alpha04] /home/ivan/.gradle/caches/transforms-2/files-2.1/d91589e8211af84fe9b453717a242323/material-1.2.0-alpha04/AndroidManifest.xml:22:5-20
@@ -213,25 +213,29 @@ ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/A
 	android:name
 		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:35:19-76
 activity#ru.qbitmobile.qbitstation.activity.MainActivity
-ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:41:9-47:20
+ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:41:9-50:20
+	android:launchMode
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:42:13-44
+	android:taskAffinity
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:43:13-36
 	android:name
 		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:41:19-56
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:42:13-46:29
+ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:45:13-49:29
 action#android.intent.action.MAIN
-ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:43:17-69
+ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:46:17-69
 	android:name
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:43:25-66
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:46:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:45:17-77
+ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:48:17-77
 	android:name
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:45:27-74
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:48:27-74
 meta-data#preloaded_fonts
-ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:49:9-51:57
+ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:52:9-54:57
 	android:resource
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:51:13-54
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:54:13-54
 	android:name
-		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:50:13-43
+		ADDED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:53:13-43
 uses-sdk
 INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml
@@ -513,11 +517,11 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.2] /home
 	android:name
 		ADDED from [com.android.installreferrer:installreferrer:1.1.1] /home/ivan/.gradle/caches/transforms-2/files-2.1/be9b012468954e65523a4dbe6aa41c3b/jetified-installreferrer-1.1.1/AndroidManifest.xml:5:22-107
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-IMPLIED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-54:12 reason: com.android.installreferrer has a targetSdkVersion < 4
+IMPLIED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-57:12 reason: com.android.installreferrer has a targetSdkVersion < 4
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-54:12 reason: com.android.installreferrer has a targetSdkVersion < 4
+IMPLIED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-57:12 reason: com.android.installreferrer has a targetSdkVersion < 4
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-IMPLIED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-54:12 reason: com.android.installreferrer requested WRITE_EXTERNAL_STORAGE
+IMPLIED from /home/ivan/Documents/workProjects/git/qbit/QbitStation/app/src/main/AndroidManifest.xml:2:1-57:12 reason: com.android.installreferrer requested WRITE_EXTERNAL_STORAGE
 uses-permission#android.permission.WAKE_LOCK
 ADDED from [com.google.android.gms:play-services-measurement:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/2ac985858bbbc660cf8e6e569c6511e3/jetified-play-services-measurement-17.2.2/AndroidManifest.xml:25:5-68
 MERGED from [com.google.android.gms:play-services-measurement-api:17.2.2] /home/ivan/.gradle/caches/transforms-2/files-2.1/aec7413efa8bc346a36703c93c8410cf/jetified-play-services-measurement-api-17.2.2/AndroidManifest.xml:24:5-68

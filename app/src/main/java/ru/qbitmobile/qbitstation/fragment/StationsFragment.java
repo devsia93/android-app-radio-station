@@ -2,17 +2,16 @@ package ru.qbitmobile.qbitstation.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.RecyclerView;
+
+import ru.qbitmobile.qbitstation.R;
 import ru.qbitmobile.qbitstation.adapter.RecyclerStationAdapter;
 import ru.qbitmobile.qbitstation.baseObject.Radio;
-import ru.qbitmobile.qbitstation.R;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -39,7 +38,7 @@ public class StationsFragment extends Fragment {
 
         mRecyclerView = view.findViewById(R.id.recyclerView);
         mRecyclerView.setNestedScrollingEnabled(false);
-        mRecyclerStationAdapter = new RecyclerStationAdapter(mContext, mRadio.getStations());
+        mRecyclerStationAdapter = new RecyclerStationAdapter(mContext, mRadio);
         mRecyclerView.setAdapter(mRecyclerStationAdapter);
 
         return view;

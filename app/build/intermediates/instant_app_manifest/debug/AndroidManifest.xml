@@ -51,7 +51,10 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name="ru.qbitmobile.qbitstation.activity.MainActivity" >
+        <activity
+            android:name="ru.qbitmobile.qbitstation.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

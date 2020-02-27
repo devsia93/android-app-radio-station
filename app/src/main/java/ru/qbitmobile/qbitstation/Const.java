@@ -1,11 +1,11 @@
 package ru.qbitmobile.qbitstation;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import ru.qbitmobile.qbitstation.baseObject.Station;
-
 public class Const {
+
+    public class Preference{
+        public static final String PK_STATIONS = "STATIONS";
+        public static final String PK_RADIO = "RADIO";
+    }
 
     public interface ACTION {
         String MAIN_ACTION = "ru.qbitmobile.qbitstation.action.main";
