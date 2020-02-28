@@ -19,6 +19,9 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.load.resource.bitmap.CenterCrop;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.bumptech.glide.request.RequestOptions;
 import com.bumptech.glide.request.target.CustomTarget;
 import com.bumptech.glide.request.transition.Transition;
 import com.google.firebase.analytics.FirebaseAnalytics;
@@ -67,13 +70,16 @@ public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStation
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         Station station = mStations.get(position);
         holder.textView.setText(station.getName());
+
         Glide.with(mContext)
                 .asBitmap()
                 .load(station.getImage())
-                .diskCacheStrategy(DiskCacheStrategy.ALL)
+                .apply(new RequestOptions().transforms(new CenterCrop(), new RoundedCorners(16)))
+                .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
                 .into(new CustomTarget<Bitmap>() {
                     @Override
                     public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
+                        RadioStationController.setHashMap(station, resource);
                         holder.imageView.setImageBitmap(resource);
                     }
 
