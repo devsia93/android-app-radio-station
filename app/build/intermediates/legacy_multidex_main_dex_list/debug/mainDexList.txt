@@ -568,4 +568,4 @@ org/jetbrains/annotations/Nullable.class
 org/jetbrains/annotations/PropertyKey.class
 org/jetbrains/annotations/TestOnly.class
 ru/qbitmobile/qbitstation/Const.class
-ru/qbitmobile/qbitstation/Helper/QbitStationApplication.class
+ru/qbitmobile/qbitstation/helper/QbitStationApplication.class

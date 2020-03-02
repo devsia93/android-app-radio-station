@@ -23,19 +23,17 @@ import java.util.ArrayList;
 
 import ru.qbitmobile.qbitstation.Const;
 import ru.qbitmobile.qbitstation.R;
-import ru.qbitmobile.qbitstation.adapter.RecyclerStationAdapter;
+import ru.qbitmobile.qbitstation.adapter.FavoriteStationAdapter;
 import ru.qbitmobile.qbitstation.baseObject.Radio;
 import ru.qbitmobile.qbitstation.controller.RadioStationController;
 import ru.qbitmobile.qbitstation.fragment.SearchFragment;
 import ru.qbitmobile.qbitstation.fragment.StationsFragment;
 import ru.qbitmobile.qbitstation.helper.AnimationRotate;
-import ru.qbitmobile.qbitstation.helper.AnimatorHelper;
 import ru.qbitmobile.qbitstation.helper.JSONHelper;
 import ru.qbitmobile.qbitstation.helper.KeyboardHelper;
 import ru.qbitmobile.qbitstation.helper.MediaControllerHelper;
 import ru.qbitmobile.qbitstation.helper.PreferenceHelper;
 import ru.qbitmobile.qbitstation.helper.ReportHelper;
-import ru.qbitmobile.qbitstation.helper.TinyDB;
 import ru.qbitmobile.qbitstation.notification.CreateNotificationChannel;
 import ru.qbitmobile.qbitstation.service.PlayerService;
 
@@ -49,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
     static {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
     }
-
 
 
     @Override
@@ -105,37 +102,23 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
 
-        TinyDB tinydb = new TinyDB(this);
+/*        TinyDB tinydb = new TinyDB(this);
 
         ArrayList<Object> holderObjects = tinydb.getListObject("HOLDER", RecyclerStationAdapter.ViewHolder.class);
         if (AnimatorHelper.viewHolders == null)
             AnimatorHelper.viewHolders = new ArrayList<>();
 
-        for(Object o : holderObjects)
+        for (Object o : holderObjects)
             AnimatorHelper.viewHolders.add((RecyclerStationAdapter.ViewHolder) o);
 
 
-        tinydb.putInt("POSITION", RadioStationController.getPosition());
+        tinydb.putInt("POSITION", RadioStationController.getPosition());*/
 
         super.onPause();
     }
 
     @Override
     protected void onResume() {
-//
-//        TinyDB tinydb = new TinyDB(this);
-//
-//        ArrayList<Object> holderObjects = new ArrayList<Object>();
-//
-//        if (AnimatorHelper.viewHolders != null) {
-//            for (RecyclerStationAdapter.ViewHolder v : AnimatorHelper.viewHolders)
-//                holderObjects.add((Object) v);
-//
-//            RadioStationController.setPosition(tinydb.getInt("POSITION"));
-//        }
-//
-//        if (AnimatorHelper.viewHolders != null && AnimatorHelper.viewHolders.size() > 0 && PlayerService.isPlaying)
-//            AnimatorHelper.startAnimation(RadioStationController.getPosition());
 
         super.onResume();
     }
@@ -143,34 +126,21 @@ public class MainActivity extends AppCompatActivity {
     private void createListStations(ArrayList<Radio> radioArray) {
 
         if (radioArray != null) {
-
-            preferenceHelper.addFavoriteStation(radioArray.get(1).getStations().get(0));//test fav
+            FavoriteStationAdapter favoriteStationAdapter = new FavoriteStationAdapter(this, radioArray.get(0));
 
             for (Radio r : radioArray) {
-               /* for (Station station : r.getStations()){
-                    Glide.with(this).asBitmap().load(station.getImage()).into(new CustomTarget<Bitmap>() {
-                        @Override
-                        public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
-                            RadioStationController.setHashMap(station, resource);
-                        }
+                StationsFragment stationsFragment;
 
-                        @Override
-                        public void onLoadCleared(@Nullable Drawable placeholder) {
-
-                        }
-                    });
-                }*/
                 RadioStationController.getListStations().addAll(r.getStations());
 
-                StationsFragment stationsFragment = new StationsFragment(this, r);
+                stationsFragment = new StationsFragment(this, r, favoriteStationAdapter);
 
                 inflateContainers(stationsFragment, r.getGenre(), r.getStations().size());
-
             }
         }
     }
 
-    private void inflateContainers(Fragment fragment, String textGenre, int textCount){
+    private void inflateContainers(Fragment fragment, String textGenre, int textCount) {
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(this.LAYOUT_INFLATER_SERVICE);
         View childLayout = inflater.inflate(R.layout.layout_child_conteiner, mLinearLayout, false);
 
@@ -194,8 +164,8 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     AnimationRotate.RotateArrow(imageView, expandableLayout.isExpanded());
                     expandableLayout.expand();
-
                 }
+
                 KeyboardHelper.closeKeyboard(getApplicationContext(), v);
             }
         });

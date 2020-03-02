@@ -1,179 +1,54 @@
 package ru.qbitmobile.qbitstation.adapter;
 
 import android.content.Context;
-import android.graphics.Bitmap;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.recyclerview.widget.RecyclerView;
 
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.bumptech.glide.load.resource.bitmap.CenterCrop;
-import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
-import com.bumptech.glide.request.RequestOptions;
-import com.bumptech.glide.request.target.CustomTarget;
-import com.bumptech.glide.request.transition.Transition;
-import com.google.firebase.analytics.FirebaseAnalytics;
-import com.wang.avi.AVLoadingIndicatorView;
-
-import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-import ru.qbitmobile.qbitstation.R;
 import ru.qbitmobile.qbitstation.baseObject.Radio;
 import ru.qbitmobile.qbitstation.baseObject.Station;
-import ru.qbitmobile.qbitstation.controller.RadioStationController;
-import ru.qbitmobile.qbitstation.helper.AnimatorHelper;
-import ru.qbitmobile.qbitstation.helper.KeyboardHelper;
-import ru.qbitmobile.qbitstation.helper.MediaControllerHelper;
-import ru.qbitmobile.qbitstation.helper.ReportHelper;
-import ru.qbitmobile.qbitstation.service.PlayerService;
+import ru.qbitmobile.qbitstation.helper.Toaster;
 
-public class RecyclerStationAdapter extends RecyclerView.Adapter<RecyclerStationAdapter.ViewHolder> {
+public class RecyclerStationAdapter extends BaseStationAdapter {
 
-    private LayoutInflater mLayoutInflater;
-    private List<Station> mStations;
-    private Context mContext;
     private Radio mRadio;
+    private Context mContext;
+    private ArrayList<Station> mStations;
+    private FavoriteStationAdapter mFavoriteStationAdapter;
 
-    private ArrayList<ViewHolder> viewHolders = new ArrayList<>();
+    public RecyclerStationAdapter(Context context, Radio radio, FavoriteStationAdapter adapter) {
+        super(context, radio);
 
-    public RecyclerStationAdapter(Context context, Radio radio) {
-        this.mStations = radio.getStations();
-        this.mRadio = radio;
-        this.mLayoutInflater = LayoutInflater.from(context);
+        mRadio = radio;
         mContext = context;
-    }
-
-    @NonNull
-    @Override
-    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = mLayoutInflater.inflate(R.layout.example_list_item_station, parent, false);
-        ViewHolder viewHolder = new ViewHolder(view);
-
-        return new ViewHolder(view);
+        mStations = mRadio.getStations();
+        mFavoriteStationAdapter = adapter;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position, @NonNull List<Object> payloads) {
+        super.onBindViewHolder(holder, position, payloads);
+
         Station station = mStations.get(position);
-        holder.textView.setText(station.getName());
 
-        Glide.with(mContext)
-                .asBitmap()
-                .load(station.getImage())
-                .apply(new RequestOptions().transforms(new CenterCrop(), new RoundedCorners(16)))
-                .diskCacheStrategy(DiskCacheStrategy.AUTOMATIC)
-                .into(new CustomTarget<Bitmap>() {
-                    @Override
-                    public void onResourceReady(@NonNull Bitmap resource, @Nullable Transition<? super Bitmap> transition) {
-                        RadioStationController.setHashMap(station, resource);
-                        holder.imageView.setImageBitmap(resource);
-                    }
-
-                    @Override
-                    public void onLoadCleared(@Nullable Drawable placeholder) {
-
-                    }
-                });
-
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
+        holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
-            public void onClick(View v) {
-                createFirebaseReport(position);
-                //Toaster.Toast(mContext, "Adapter.holder.onClick: " + mStations.get(position).getName());
+            public boolean onLongClick(View v) {
+                if (preferenceHelper.checkContainsStation(station)) {
+                    preferenceHelper.deleteFavoriteStation(station);
+                    Toaster.Toast(mContext, "RecyclerStationAdapter.OnLongClickListener.DELETE_FROM_"+mRadio.getGenre().toUpperCase());
 
-                ReportHelper.report(mStations.get(position));
-                AnimatorHelper.viewHolders = viewHolders;
-
-                RadioStationController.setSelectedRadio(mRadio);
-
-                if (RadioStationController.getSelectedStation() != null && RadioStationController.getSelectedStation() == mStations.get(position) && PlayerService.isPlaying) {
-                    MediaControllerHelper.mediaController.getTransportControls().pause();
-                    AnimatorHelper.stopAnimation(holder.playViewAnimation);
                 } else {
-
-                    if (PlayerService.isPlaying) {
-                        MediaControllerHelper.mediaController.getTransportControls().pause();
-                    }
-                    if (MediaControllerHelper.mediaController != null) {
-                        MediaControllerHelper.mediaController.getTransportControls().play();
-                    }
-                    AnimatorHelper.startAnimation(holder.playViewAnimation);
+                    preferenceHelper.addFavoriteStation(station);
+                    Toaster.Toast(mContext, "RecyclerStationAdapter.OnLongClickListener.ADD_TO_"+mRadio.getGenre().toUpperCase());
                 }
-                RadioStationController.setSelectedStation(mStations.get(position));
-                if (((BitmapDrawable) holder.imageView.getDrawable()) != null)
-                    RadioStationController.setImageSelectedStation(((BitmapDrawable) holder.imageView.getDrawable()).getBitmap());
-            }
-        });
-        holder.itemView.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                KeyboardHelper.closeKeyboard(mContext, holder.itemView);
+                mFavoriteStationAdapter.setData(preferenceHelper.getRadio());
+
                 return false;
             }
         });
-        viewHolders.add(holder);
-        if (RadioStationController.getSelectedStation() != null && checkEqualsStation(station, RadioStationController.getSelectedStation()) && PlayerService.isPlaying)
-            AnimatorHelper.startAnimation(holder.playViewAnimation);
-    }
-
-    private boolean checkEqualsStation(Station station, Station selectedStation) {
-        return station.getStream().equals(selectedStation.getStream());
-    }
-
-    @Override
-    public int getItemViewType(int position) {
-        return position;
-    }
-
-    @Override
-    public long getItemId(int position) {
-        return position;
-    }
-
-    private void createFirebaseReport(int position) {
-        try {
-            FirebaseAnalytics firebaseAnalytics = FirebaseAnalytics.getInstance(mContext);
-            Bundle eventDetails = new Bundle();
-
-            StringBuilder sb = new StringBuilder();
-            sb.append(mStations.get(position).getName() + " : " + mStations.get(position).getStream());
-
-            eventDetails.putString("station", sb.toString());
-            firebaseAnalytics.logEvent("select_station", eventDetails);
-        } catch (Exception e) {
-            Log.d("glide", e.getMessage());
-        }
-    }
-
-    @Override
-    public int getItemCount() {
-        return mStations.size();
-    }
-
-    public class ViewHolder extends RecyclerView.ViewHolder implements  Serializable {
-        final ImageView imageView;
-        final TextView textView;
-        public final AVLoadingIndicatorView playViewAnimation;
-
-        public ViewHolder(@NonNull View itemView) {
-            super(itemView);
-            imageView = itemView.findViewById(R.id.ivStation);
-            textView = itemView.findViewById(R.id.tvStation);
-            playViewAnimation = itemView.findViewById(R.id.playing_anim);
-        }
     }
 }

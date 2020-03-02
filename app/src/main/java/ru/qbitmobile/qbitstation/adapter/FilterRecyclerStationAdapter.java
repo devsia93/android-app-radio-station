@@ -45,7 +45,7 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
     private Intent serviceIntent;
 
     private static RecyclerView.ViewHolder preHolder;
-    private ArrayList<RecyclerStationAdapter.ViewHolder> viewHolders;
+    private ArrayList<BaseStationAdapter.ViewHolder> viewHolders;
 
     public FilterRecyclerStationAdapter(LayoutInflater layoutInflater, List<Station> stations, Context context) {
         this.mLayoutInflater = layoutInflater;

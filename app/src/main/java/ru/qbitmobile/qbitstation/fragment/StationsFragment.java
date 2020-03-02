@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
 import ru.qbitmobile.qbitstation.R;
+import ru.qbitmobile.qbitstation.adapter.FavoriteStationAdapter;
 import ru.qbitmobile.qbitstation.adapter.RecyclerStationAdapter;
 import ru.qbitmobile.qbitstation.baseObject.Radio;
 
@@ -23,11 +24,17 @@ public class StationsFragment extends Fragment {
     private Context mContext;
 
     public RecyclerView mRecyclerView;
-    private RecyclerStationAdapter mRecyclerStationAdapter;
+    private FavoriteStationAdapter mRecyclerStationAdapter;
 
     public StationsFragment(Context context, Radio radio) {
         mRadio = radio;
         mContext = context;
+    }
+
+    public StationsFragment(Context context, Radio radio, FavoriteStationAdapter adapter) {
+        mRadio = radio;
+        mContext = context;
+        mRecyclerStationAdapter = adapter;
     }
 
     @Override
@@ -38,8 +45,12 @@ public class StationsFragment extends Fragment {
 
         mRecyclerView = view.findViewById(R.id.recyclerView);
         mRecyclerView.setNestedScrollingEnabled(false);
-        mRecyclerStationAdapter = new RecyclerStationAdapter(mContext, mRadio);
-        mRecyclerView.setAdapter(mRecyclerStationAdapter);
+
+        if (mRadio.getGenre().equals("Избранное")) {
+            mRecyclerView.setAdapter(mRecyclerStationAdapter);
+        } else {
+            mRecyclerView.setAdapter(new RecyclerStationAdapter(mContext, mRadio, mRecyclerStationAdapter));
+        }
 
         return view;
     }

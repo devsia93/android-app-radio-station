@@ -6,13 +6,13 @@ import com.wang.avi.AVLoadingIndicatorView;
 
 import java.util.ArrayList;
 
-import ru.qbitmobile.qbitstation.adapter.RecyclerStationAdapter;
+import ru.qbitmobile.qbitstation.adapter.BaseStationAdapter;
 
 public class AnimatorHelper {
 
     private static AVLoadingIndicatorView preIndicator;
 
-    public static ArrayList<RecyclerStationAdapter.ViewHolder> viewHolders;
+    public static ArrayList<BaseStationAdapter.ViewHolder> viewHolders;
 
     public static void startAnimation(AVLoadingIndicatorView indicatorView){
         if (indicatorView != null){

@@ -38,14 +38,21 @@ public class PreferenceHelper {
         configureRadio();
     }
 
-    public void deleteFavoriteStation(Station station) {
+    public int deleteFavoriteStation(Station station) {
         mStations = getFavoriteStationsList();
-
+        int position = -1;
+        
         if (mStations.size() > 0) {
-            for (Station s : mStations) {
-                if (s.getName().equals(station.getName()))
-                    mStations.remove(s);
+            Station removableStation = null;
+            for (int i = 0; i < mStations.size()-1; i++) {
+                if (mStations.get(i).getName().equals(station.getName())) {
+                    removableStation = mStations.get(i);
+                    position = i;
+                    break;
+                }
             }
+            if (removableStation!= null)
+                mStations.remove(removableStation);
         }
 
         ArrayList<Object> objects = convertStationListToObjectList();
@@ -53,6 +60,8 @@ public class PreferenceHelper {
         tinyDB.putListObject(Const.Preference.PK_STATIONS, objects);
 
         configureRadio();
+        
+        return position;
     }
 
     public ArrayList<Station> getFavoriteListStations() {
@@ -104,5 +113,15 @@ public class PreferenceHelper {
     public Radio getRadio() {
         mRadio = (Radio) tinyDB.getObject(Const.Preference.PK_RADIO, Radio.class);
         return mRadio;
+    }
+
+    public boolean checkContainsStation(Station station){
+        boolean result = false;
+        for (Station s : mStations){
+            result = s.getName().equals(station.getName());
+            if (result)
+                break;
+        }
+        return result;
     }
 }
