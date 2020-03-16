@@ -23,7 +23,9 @@ import java.util.Comparator;
 import java.util.List;
 
 import ru.qbitmobile.qbitstation.R;
+import ru.qbitmobile.qbitstation.adapter.FavoriteStationAdapter;
 import ru.qbitmobile.qbitstation.adapter.FilterRecyclerStationAdapter;
+import ru.qbitmobile.qbitstation.adapter.RecyclerStationAdapter;
 import ru.qbitmobile.qbitstation.baseObject.Radio;
 import ru.qbitmobile.qbitstation.baseObject.Station;
 
@@ -43,11 +45,13 @@ public class SearchFragment extends Fragment {
     private String preSearchText;
 
     private static boolean isSearchable;
+    private ArrayList<RecyclerStationAdapter> mRecyclerStationAdapters;
 
-    public SearchFragment(List<Radio> radios, LinearLayout container) {
+    public SearchFragment(List<Radio> radios, LinearLayout container, ArrayList<RecyclerStationAdapter> favoriteStationAdapters) {
         mRadios = radios;
         mStations = new ArrayList<>();
         mLinearLayout = container;
+        mRecyclerStationAdapters = favoriteStationAdapters;
     }
 
 
@@ -59,8 +63,10 @@ public class SearchFragment extends Fragment {
 
         setHasOptionsMenu(true);
 
-        for (Radio radio : mRadios)
+        for (Radio radio : mRadios){
+            if (!radio.getGenre().equals("Избранное"))
             mStations.addAll(radio.getStations());
+        }
 
         Collections.sort(mStations, new Comparator<Station>() {
             @Override
@@ -71,7 +77,7 @@ public class SearchFragment extends Fragment {
 
         mRecyclerView = view.findViewById(R.id.recyclerViewSearch);
         mRecyclerView.setNestedScrollingEnabled(false);
-        mAdapter = new FilterRecyclerStationAdapter(inflater, mStations, view.getContext());
+        mAdapter = new FilterRecyclerStationAdapter(inflater, mStations, view.getContext(), mRecyclerStationAdapters);
         mRecyclerView.setAdapter(mAdapter);
 
         Toolbar toolbar = view.findViewById(R.id.toolbar_main);

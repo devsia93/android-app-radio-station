@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
+            "outputFile": "/home/ivan/Documents/GitHub/qbitstation/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/aa65a4d0f67acde5a7711193590d3b52/appcompat-1.1.0/res/values-v24/values-v24.xml",
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/6d75e00ae54b8a0a14c9e0a6cd046acc/appcompat-1.1.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/8893434d83d0f98c1f6fde01f8218e70/media-1.1.0/res/values-v24/values-v24.xml",
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/98af56c3c419178c23005a204932fb7a/media-1.1.0/res/values-v24/values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

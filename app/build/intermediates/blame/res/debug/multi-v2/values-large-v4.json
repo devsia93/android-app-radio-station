@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
+            "outputFile": "/home/ivan/Documents/GitHub/qbitstation/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-large-v4/values-large-v4.xml",
             "map": [
                 {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/aa65a4d0f67acde5a7711193590d3b52/appcompat-1.1.0/res/values-large-v4/values-large-v4.xml",
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/6d75e00ae54b8a0a14c9e0a6cd046acc/appcompat-1.1.0/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10",
                         "startColumns": "4,4,4,4,4,4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/d91589e8211af84fe9b453717a242323/material-1.2.0-alpha04/res/values-large-v4/values-large-v4.xml",
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/22b5224831559613967844f673c745ea/material-1.2.0-alpha04/res/values-large-v4/values-large-v4.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

@@ -49,9 +49,6 @@ public class BaseStationAdapter extends RecyclerView.Adapter<BaseStationAdapter.
 
     private ArrayList<ViewHolder> viewHolders = new ArrayList<>();
 
-    private boolean on_attach = true;
-    long DURATION = 500;
-
     PreferenceHelper preferenceHelper;
 
     public BaseStationAdapter(Context context, Radio radio) {
@@ -60,6 +57,8 @@ public class BaseStationAdapter extends RecyclerView.Adapter<BaseStationAdapter.
         this.mLayoutInflater = LayoutInflater.from(context);
         mContext = context;
         preferenceHelper = new PreferenceHelper(mContext);
+
+        setHasStableIds(true);
     }
 
     public void setRadio(Radio radio){
@@ -76,21 +75,9 @@ public class BaseStationAdapter extends RecyclerView.Adapter<BaseStationAdapter.
     }
 
     @Override
-    public void onAttachedToRecyclerView(@NonNull RecyclerView recyclerView) {
-        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
-            @Override
-            public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
-                on_attach = false;
-                super.onScrollStateChanged(recyclerView, newState);
-            }
-        });
-        super.onAttachedToRecyclerView(recyclerView);
-
-    }
-
-    @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
         Station station = mStations.get(position);
+
         holder.textView.setText(station.getName());
 
         Glide.with(mContext)
@@ -150,28 +137,10 @@ public class BaseStationAdapter extends RecyclerView.Adapter<BaseStationAdapter.
         viewHolders.add(holder);
         if (RadioStationController.getSelectedStation() != null && checkEqualsStation(station, RadioStationController.getSelectedStation()) && PlayerService.isPlaying)
             AnimatorHelper.startAnimation(holder.playViewAnimation);
-
-        setAnimation(holder.itemView, position);
-    }
-
-    private void setAnimation(View itemView, int position) {
-        if(!on_attach){
-            position = -1;
-        }
-        boolean isNotFirstItem = position == -1;
-        position++;
-        itemView.setAlpha(0.f);
-        AnimatorSet animatorSet = new AnimatorSet();
-        ObjectAnimator animator = ObjectAnimator.ofFloat(itemView, "alpha", 0.f, 0.5f, 1.0f);
-        ObjectAnimator.ofFloat(itemView, "alpha", 0.f).start();
-        animator.setStartDelay(isNotFirstItem ? DURATION / 2 : (position * DURATION / 3));
-        animator.setDuration(500);
-        animatorSet.play(animator);
-        animator.start();
     }
 
     private boolean checkEqualsStation(Station station, Station selectedStation) {
-        return station.getStream().equals(selectedStation.getStream());
+        return station.getName().equals(selectedStation.getName());
     }
 
     @Override
@@ -198,7 +167,9 @@ public class BaseStationAdapter extends RecyclerView.Adapter<BaseStationAdapter.
             Log.d("glide", e.getMessage());
         }
     }
-
+    public void notifyDataSetStart(){
+        notifyDataSetChanged();
+    }
     @Override
     public int getItemCount() {
         return mStations.size();

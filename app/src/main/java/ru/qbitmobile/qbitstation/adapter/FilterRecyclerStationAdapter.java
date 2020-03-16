@@ -46,13 +46,18 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
 
     private static RecyclerView.ViewHolder preHolder;
     private ArrayList<BaseStationAdapter.ViewHolder> viewHolders;
+    private ArrayList<RecyclerStationAdapter> mRecyclerStationAdapters;
 
-    public FilterRecyclerStationAdapter(LayoutInflater layoutInflater, List<Station> stations, Context context) {
+    public FilterRecyclerStationAdapter(LayoutInflater layoutInflater, List<Station> stations, Context context, ArrayList<RecyclerStationAdapter> recyclerStationAdapters) {
         this.mLayoutInflater = layoutInflater;
         this.mContext = context;
         mAllStations = new ArrayList<>(stations);
         filteredList = mAllStations;
         serviceIntent = new Intent(mContext, PlayerService.class);
+
+        mRecyclerStationAdapters = recyclerStationAdapters;
+
+        setHasStableIds(true);
     }
 
     @Override
@@ -100,7 +105,19 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
     }
 
     @Override
+    public long getItemId(int position) {
+        return position;
+    }
+
+    @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+        Station station = filteredList.get(position);
+
+        if (RadioStationController.getSelectedStation() != null && station != null
+                && station.getName().equals(RadioStationController.getSelectedStation().getName())) {
+            AnimatorHelper.startAnimation(holder.playViewAnimation);
+        }
+
         holder.textView.setText(filteredList.get(position).getName());
 
         Glide.with(mContext)
@@ -135,6 +152,10 @@ public class FilterRecyclerStationAdapter extends RecyclerView.Adapter<FilterRec
                 }
                 RadioStationController.setSelectedStation(filteredList.get(position));
                 RadioStationController.setImageSelectedStation(((BitmapDrawable) holder.imageView.getDrawable()).getBitmap());
+
+                for (RecyclerStationAdapter r : mRecyclerStationAdapters){
+                    r.notifyDataSetChanged();
+                }
             }
         });
 
