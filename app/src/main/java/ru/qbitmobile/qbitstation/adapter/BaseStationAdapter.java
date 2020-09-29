@@ -70,7 +70,6 @@ public class BaseStationAdapter extends RecyclerView.Adapter<BaseStationAdapter.
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = mLayoutInflater.inflate(R.layout.example_list_item_station, parent, false);
-        ViewHolder viewHolder = new ViewHolder(view);
 
         return new ViewHolder(view);
     }

@@ -26,10 +26,8 @@
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:fullBackupContent="false"
-        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
@@ -48,7 +46,10 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name="ru.qbitmobile.qbitstation.activity.MainActivity" >
+        <activity
+            android:name="ru.qbitmobile.qbitstation.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity="" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
