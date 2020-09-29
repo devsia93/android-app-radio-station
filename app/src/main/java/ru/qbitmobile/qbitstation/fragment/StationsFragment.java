@@ -25,6 +25,7 @@ public class StationsFragment extends Fragment {
 
     public RecyclerView mRecyclerView;
     private FavoriteStationAdapter mRecyclerStationAdapter;
+    private RecyclerView.Adapter mAdapter;
 
     public StationsFragment(Context context, Radio radio) {
         mRadio = radio;
@@ -48,11 +49,18 @@ public class StationsFragment extends Fragment {
 
         if (mRadio.getGenre().equals("Избранное")) {
             mRecyclerView.setAdapter(mRecyclerStationAdapter);
+            mAdapter = mRecyclerStationAdapter;
         } else {
-            mRecyclerView.setAdapter(new RecyclerStationAdapter(mContext, mRadio, mRecyclerStationAdapter));
+            mAdapter = new RecyclerStationAdapter(mContext, mRadio, mRecyclerStationAdapter);
+            mRecyclerView.setAdapter(mAdapter);
+
         }
 
         return view;
+    }
+
+    public RecyclerStationAdapter getAdapter(){
+        return (RecyclerStationAdapter) mAdapter;
     }
 }
 

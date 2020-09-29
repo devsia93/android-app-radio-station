@@ -24,6 +24,7 @@ import java.util.ArrayList;
 import ru.qbitmobile.qbitstation.Const;
 import ru.qbitmobile.qbitstation.R;
 import ru.qbitmobile.qbitstation.adapter.FavoriteStationAdapter;
+import ru.qbitmobile.qbitstation.adapter.RecyclerStationAdapter;
 import ru.qbitmobile.qbitstation.baseObject.Radio;
 import ru.qbitmobile.qbitstation.controller.RadioStationController;
 import ru.qbitmobile.qbitstation.fragment.SearchFragment;
@@ -43,6 +44,8 @@ public class MainActivity extends AppCompatActivity {
     private PreferenceHelper preferenceHelper;
 
     private FirebaseAnalytics mFirebaseAnalytics;
+
+    private ArrayList<RecyclerStationAdapter> recyclerStationAdapters;
 
     static {
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
@@ -86,13 +89,14 @@ public class MainActivity extends AppCompatActivity {
         radioArray.add(0, preferenceHelper.getRadio());
         RadioStationController.setListRadios(radioArray);
 
-        SearchFragment searchFragment = new SearchFragment(radioArray, mLinearLayout);
-        FragmentTransaction mFragmentTransaction = getSupportFragmentManager().beginTransaction();
-        mFragmentTransaction.add(R.id.container_from_toolbar, searchFragment).commit();
-
         initialyzeAppMetrica(radioArray);
 
         createListStations(radioArray);
+
+        SearchFragment searchFragment = new SearchFragment(radioArray, mLinearLayout, recyclerStationAdapters);
+        FragmentTransaction mFragmentTransaction = getSupportFragmentManager().beginTransaction();
+        mFragmentTransaction.add(R.id.container_from_toolbar, searchFragment).commit();
+
     }
 
     private void initialyzeAppMetrica(ArrayList<Radio> radioArray) {
@@ -126,14 +130,19 @@ public class MainActivity extends AppCompatActivity {
     private void createListStations(ArrayList<Radio> radioArray) {
 
         if (radioArray != null) {
+
+            if (recyclerStationAdapters == null)
+                recyclerStationAdapters = new ArrayList<>();
             FavoriteStationAdapter favoriteStationAdapter = new FavoriteStationAdapter(this, radioArray.get(0));
 
+
             for (Radio r : radioArray) {
-                StationsFragment stationsFragment;
 
                 RadioStationController.getListStations().addAll(r.getStations());
 
-                stationsFragment = new StationsFragment(this, r, favoriteStationAdapter);
+                StationsFragment stationsFragment = new StationsFragment(this, r, favoriteStationAdapter);
+
+                recyclerStationAdapters.add(stationsFragment.getAdapter());
 
                 inflateContainers(stationsFragment, r.getGenre(), r.getStations().size());
             }

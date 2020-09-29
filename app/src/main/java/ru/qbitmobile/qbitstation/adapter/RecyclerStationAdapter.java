@@ -10,6 +10,8 @@ import java.util.List;
 
 import ru.qbitmobile.qbitstation.baseObject.Radio;
 import ru.qbitmobile.qbitstation.baseObject.Station;
+import ru.qbitmobile.qbitstation.controller.RadioStationController;
+import ru.qbitmobile.qbitstation.helper.AnimatorHelper;
 import ru.qbitmobile.qbitstation.helper.Toaster;
 
 public class RecyclerStationAdapter extends BaseStationAdapter {
@@ -33,6 +35,11 @@ public class RecyclerStationAdapter extends BaseStationAdapter {
         super.onBindViewHolder(holder, position, payloads);
 
         Station station = mStations.get(position);
+
+        if (RadioStationController.getSelectedStation() != null && station != null
+                && station.getName().equals(RadioStationController.getSelectedStation().getName())) {
+            AnimatorHelper.startAnimation(holder.playViewAnimation);
+        }
 
         holder.itemView.setOnLongClickListener(new View.OnLongClickListener() {
             @Override

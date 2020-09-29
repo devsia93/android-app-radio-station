@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/ivan/Documents/workProjects/git/qbit/QbitStation/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
+            "outputFile": "/home/ivan/Documents/GitHub/qbitstation/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v22/values-v22.xml",
             "map": [
                 {
-                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/aa65a4d0f67acde5a7711193590d3b52/appcompat-1.1.0/res/values-v22/values-v22.xml",
+                    "source": "/home/ivan/.gradle/caches/transforms-2/files-2.1/6d75e00ae54b8a0a14c9e0a6cd046acc/appcompat-1.1.0/res/values-v22/values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",
